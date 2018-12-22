@@ -1,0 +1,4 @@
+#Sat Nov 24 11:57:10 CET 2018
+base.0=/home/toulain/AndroidStudioProjects/nfc-reader/app/build/intermediates/transforms/dexMerger/debug/9
+path.0=classes.dex
+renamed.0=classes.dex
