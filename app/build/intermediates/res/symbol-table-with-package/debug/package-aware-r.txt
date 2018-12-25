@@ -767,6 +767,8 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textView
+id textView2
+id textView3
 id textViewFiliere
 id textViewGroupe
 id time
