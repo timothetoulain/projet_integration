@@ -26,7 +26,7 @@ public class AdminActivity extends Activity {
         mfiliereButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent filiereCreationActivity = new Intent(AdminActivity.this, FiliereCreationActivity.class);
+                Intent filiereCreationActivity = new Intent(getApplicationContext(), FiliereCreationActivity.class);
                 startActivity(filiereCreationActivity);
             }
         });
@@ -34,7 +34,7 @@ public class AdminActivity extends Activity {
         mgroupeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent groupeCreationActivity = new Intent(AdminActivity.this, GroupeCreationActivity.class);
+                Intent groupeCreationActivity = new Intent(getApplicationContext(), GroupeCreationActivity.class);
                 startActivity(groupeCreationActivity);
             }
         });

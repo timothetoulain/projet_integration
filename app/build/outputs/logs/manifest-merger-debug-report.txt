@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:2:1-52:12
-INJECTED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:2:1-52:12
-INJECTED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:2:1-52:12
-INJECTED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:2:1-52:12
+ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:2:1-51:12
+INJECTED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:2:1-51:12
+INJECTED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:2:1-51:12
+INJECTED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:2:1-51:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/toulain/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/c247e24b8f08a36baa8d6fd3392f65ff/AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/ade63ace44e8b11966f4c7f0e56b1e09/AndroidManifest.xml:17:1-28:12
@@ -15,9 +15,9 @@ MERGED from [com.android.support:support-core-utils:26.1.0] /home/toulain/.gradl
 MERGED from [com.android.support:support-core-ui:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/f3819ec120fd331d9162f582f240e12c/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/8308ffea15fe3f23710f1d044bcc2bd6/AndroidManifest.xml:17:1-31:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/3b0186fc03984b63f9a4cee74e84fd3e/AndroidManifest.xml:17:1-30:12
-INJECTED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:2:1-52:12
-INJECTED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:2:1-52:12
-INJECTED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:2:1-52:12
+INJECTED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:2:1-51:12
+INJECTED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:2:1-51:12
+INJECTED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:2:1-51:12
 	package
 		ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:3:5-34
 		INJECTED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml
@@ -34,16 +34,20 @@ INJECTED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/Androi
 		INJECTED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml
 	android:installLocation
 		ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:4:5-35
+uses-permission#android.permission.INTERNET
+ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:9:5-66
+	android:name
+		ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:9:22-64
 uses-permission#android.permission.NFC
 ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:10:5-62
 	android:name
 		ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:10:22-59
 uses-feature#android.hardware.nfc
-ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:12:5-57
+ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:11:5-57
 	android:name
-		ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:12:19-54
+		ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:11:19-54
 application
-ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:14:5-50:19
+ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:13:5-49:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/toulain/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/c247e24b8f08a36baa8d6fd3392f65ff/AndroidManifest.xml:9:5-20
@@ -67,67 +71,67 @@ MERGED from [com.android.support:support-compat:26.1.0] /home/toulain/.gradle/ca
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/3b0186fc03984b63f9a4cee74e84fd3e/AndroidManifest.xml:24:5-28:19
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/3b0186fc03984b63f9a4cee74e84fd3e/AndroidManifest.xml:24:5-28:19
 	android:label
-		ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:17:9-41
+		ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:16:9-41
 	android:icon
-		ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:16:9-38
+		ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:15:9-38
 	android:allowBackup
-		ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:15:9-35
+		ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:14:9-35
 activity#se.anyro.nfc_reader.TagViewer
-ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:18:9-37:20
+ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:17:9-36:20
 	android:screenOrientation
-		ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:23:13-49
+		ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:22:13-49
 	android:label
-		ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:21:13-45
+		ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:20:13-45
 	android:launchMode
-		ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:22:13-48
+		ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:21:13-48
 	android:alwaysRetainTaskState
-		ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:20:13-49
+		ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:19:13-49
 	android:name
-		ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:19:13-38
+		ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:18:13-38
 intent-filter#action:name:android.nfc.action.TAG_DISCOVERED+category:name:android.intent.category.DEFAULT
-ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:32:13-36:29
+ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:31:13-35:29
 action#android.nfc.action.TAG_DISCOVERED
-ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:33:17-76
+ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:32:17-76
 	android:name
-		ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:33:25-73
+		ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:32:25-73
 category#android.intent.category.DEFAULT
-ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:35:17-76
+ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:34:17-76
 	android:name
-		ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:35:27-73
+		ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:34:27-73
 activity#se.anyro.nfc_reader.MainActivity
-ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:38:9-44:20
+ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:37:9-43:20
 	android:name
-		ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:38:19-47
+		ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:37:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:39:13-43:29
+ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:38:13-42:29
 action#android.intent.action.MAIN
-ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:40:17-69
+ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:39:17-69
 	android:name
-		ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:40:25-66
+		ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:39:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:42:17-77
+ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:41:17-77
 	android:name
-		ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:42:27-74
+		ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:41:27-74
 activity#se.anyro.nfc_reader.admin.AdminActivity
-ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:45:9-57
+ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:44:9-57
 	android:name
-		ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:45:19-54
+		ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:44:19-54
 activity#se.anyro.nfc_reader.ProfActivity
-ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:46:9-50
+ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:45:9-50
 	android:name
-		ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:46:19-47
+		ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:45:19-47
 activity#se.anyro.nfc_reader.AppelActivity
-ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:47:9-51
+ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:46:9-51
 	android:name
-		ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:47:19-48
+		ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:46:19-48
 activity#se.anyro.nfc_reader.admin.FiliereCreationActivity
-ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:48:9-67
+ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:47:9-67
 	android:name
-		ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:48:19-64
+		ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:47:19-64
 activity#se.anyro.nfc_reader.admin.GroupeCreationActivity
-ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:49:9-75
+ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:48:9-65
 	android:name
-		ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:49:19-63
+		ADDED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml:48:19-63
 uses-sdk
 INJECTED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/toulain/AndroidStudioProjects/nfc-reader/app/src/main/AndroidManifest.xml

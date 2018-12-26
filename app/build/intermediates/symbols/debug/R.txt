@@ -766,10 +766,10 @@ int id text2 0x7f07008e
 int id textSpacerNoButtons 0x7f07008f
 int id textSpacerNoTitle 0x7f070090
 int id textView 0x7f070091
-int id textView2 0x7f070092
-int id textView3 0x7f070093
-int id textViewFiliere 0x7f070094
-int id textViewGroupe 0x7f070095
+int id textViewAnnee 0x7f070092
+int id textViewFiliere 0x7f070093
+int id textViewGroupe 0x7f070094
+int id textViewInfo 0x7f070095
 int id time 0x7f070096
 int id title 0x7f070097
 int id titleDividerNoCustom 0x7f070098

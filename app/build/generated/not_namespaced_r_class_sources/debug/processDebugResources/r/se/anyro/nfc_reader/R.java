@@ -2959,10 +2959,10 @@ public final class R {
     public static final int textSpacerNoButtons=0x7f07008f;
     public static final int textSpacerNoTitle=0x7f070090;
     public static final int textView=0x7f070091;
-    public static final int textView2=0x7f070092;
-    public static final int textView3=0x7f070093;
-    public static final int textViewFiliere=0x7f070094;
-    public static final int textViewGroupe=0x7f070095;
+    public static final int textViewAnnee=0x7f070092;
+    public static final int textViewFiliere=0x7f070093;
+    public static final int textViewGroupe=0x7f070094;
+    public static final int textViewInfo=0x7f070095;
     public static final int time=0x7f070096;
     public static final int title=0x7f070097;
     public static final int titleDividerNoCustom=0x7f070098;
