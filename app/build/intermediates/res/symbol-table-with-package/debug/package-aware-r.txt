@@ -651,7 +651,6 @@ id add
 id admin_button
 id alertTitle
 id always
-id annulerButton
 id async
 id barrier
 id beginning
@@ -659,6 +658,7 @@ id blocking
 id bottom
 id buttonPanel
 id buttonTest
+id buttonValider
 id cancel_action
 id chains
 id checkbox
@@ -674,6 +674,8 @@ id direct
 id disableHome
 id editTextFiliere
 id editTextGroupe
+id editTextIdentifiant
+id editTextMdp
 id edit_query
 id end
 id end_padder
@@ -767,8 +769,8 @@ id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
-id textView
 id textViewAnnee
+id textViewAuthentification
 id textViewFiliere
 id textViewGroupe
 id textViewInfo
@@ -819,9 +821,9 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout activity_admin
-layout activity_appel
 layout activity_filiere_creation
 layout activity_groupe_creation
+layout activity_login_prof
 layout activity_main
 layout activity_prof
 layout notification_action

@@ -1,5 +1,8 @@
 package se.anyro.nfc_reader;
 
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
 import java.nio.charset.Charset;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -57,6 +60,9 @@ public class TagViewer extends Activity {
 
     private List<Tag> mTags = new ArrayList<>();
     private Button mTestButton;
+    private String data = "data.txt";
+    private String prof=null;
+
 
 
     @Override
@@ -66,6 +72,8 @@ public class TagViewer extends Activity {
         mTestButton = (Button) findViewById(R.id.buttonTest);
         mTestButton.setEnabled(true);
         mTagContent = (LinearLayout) findViewById(R.id.list);
+        this.prof=readData();
+        System.out.println("prof:"+prof);
         resolveIntent(getIntent());
 
         mDialog = new AlertDialog.Builder(this).setNeutralButton("Ok", null).create();
@@ -523,12 +531,28 @@ public class TagViewer extends Activity {
     public String appel(String sb){
         String nomEtu=null;
         try {
-            nomEtu=new AppelQuery(this).execute(sb).get();
+            nomEtu=new AppelQuery(this).execute(sb,prof).get();
         } catch (InterruptedException e) {
             e.printStackTrace();
         } catch (ExecutionException e) {
             e.printStackTrace();
         }
         return nomEtu;
+    }
+    private String readData() {
+        try {
+            FileInputStream in = this.openFileInput(data);
+            BufferedReader br= new BufferedReader(new InputStreamReader(in));
+            StringBuilder sb= new StringBuilder();
+            String s= null;
+            while((s= br.readLine())!= null)  {
+                sb.append(s).append("\n");
+            }
+            return sb.toString();
+            // this.mTextView.setText(sb.toString());
+        } catch (Exception e) {
+            Toast.makeText(this,"Error:"+ e.getMessage(),Toast.LENGTH_SHORT).show();
+        }
+        return null;
     }
 }

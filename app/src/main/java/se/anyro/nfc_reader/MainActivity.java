@@ -34,8 +34,8 @@ public class MainActivity extends Activity {
         mProfButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent profActivity = new Intent(MainActivity.this, ProfActivity.class);
-                startActivity(profActivity);
+                Intent loginProf = new Intent(MainActivity.this, LoginProf.class);
+                startActivity(loginProf);
             }
         });
 

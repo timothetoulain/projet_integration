@@ -27,26 +27,24 @@ import se.anyro.nfc_reader.R;
 /**
  * permet d'indiquer un etudiant comme present au cours dans la bd
  */
-public class AppelQuery extends AsyncTask<String, Void, String>{
+public class LoginProfQuery extends AsyncTask<String, Void, String>{
     private Context context;
     String my_url;
 
-    public AppelQuery(Context context) {
+    public LoginProfQuery(Context context) {
         this.context=context;
     }
 
     @Override
     protected void onPreExecute(){
-        my_url="http://192.168.1.72/appel.php";
+        my_url="http://192.168.1.72/login_prof.php";
     }
 
     @Override
     protected String doInBackground(String... params)  {
 
-        String dec=params[0];
-        String prof=params[1];
-       // String cours=param[2];
-        System.out.println("dec:"+dec);
+        String login=params[0];
+        String mdp=params[1];
         try{
             URL url=new URL(my_url);
             HttpURLConnection httpURLConnection=(HttpURLConnection)url.openConnection();
@@ -54,9 +52,9 @@ public class AppelQuery extends AsyncTask<String, Void, String>{
             httpURLConnection.setDoOutput(true);
             OutputStream outputStream=httpURLConnection.getOutputStream();
             BufferedWriter bw=new BufferedWriter(new OutputStreamWriter(outputStream,"UTF-8"));
-            String my_data=URLEncoder.encode("dec","UTF-8")+"="+URLEncoder.encode(dec,"UTF-8");
-            my_data += "&" + URLEncoder.encode("prof", "UTF-8") + "=" +
-                    URLEncoder.encode(prof, "UTF-8");
+            String my_data=URLEncoder.encode("login","UTF-8")+"="+URLEncoder.encode(login,"UTF-8");
+             my_data += "&" + URLEncoder.encode("mdp", "UTF-8") + "=" +
+                   URLEncoder.encode(mdp, "UTF-8");
             bw.write(my_data);
             bw.flush();
             bw.close();

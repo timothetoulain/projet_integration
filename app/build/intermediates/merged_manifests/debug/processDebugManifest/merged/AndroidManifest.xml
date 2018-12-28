@@ -50,9 +50,9 @@
         </activity>
         <activity android:name="se.anyro.nfc_reader.admin.AdminActivity" />
         <activity android:name="se.anyro.nfc_reader.ProfActivity" />
-        <activity android:name="se.anyro.nfc_reader.AppelActivity" />
         <activity android:name="se.anyro.nfc_reader.admin.FiliereCreationActivity" />
         <activity android:name="se.anyro.nfc_reader.admin.GroupeCreationActivity" />
+        <activity android:name="se.anyro.nfc_reader.LoginProf" />
 
         <meta-data
             android:name="android.support.VERSION"

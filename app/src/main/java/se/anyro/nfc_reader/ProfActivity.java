@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -53,7 +54,7 @@ public class ProfActivity extends Activity {
                 if(/*meditTextGroupe.getText().length()==0 ||*/
                         mSpinnerCours.getSelectedItem().toString().equals("Selectionnez le cours"))
                 {
-                    //afficher message d'erreur
+                    champIncompletMessage();
                 }
                 else{
                     //stocker les valeurs des spinners quelque part pour bdd
@@ -62,5 +63,8 @@ public class ProfActivity extends Activity {
                 }
             }
         });
+    }
+    private void champIncompletMessage(){
+        Toast.makeText(this,"Veuillez selectionner un cours",Toast.LENGTH_SHORT).show();
     }
 }
