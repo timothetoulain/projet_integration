@@ -1,7 +1,6 @@
 package se.anyro.nfc_reader.admin;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -15,7 +14,7 @@ import java.util.List;
 
 import se.anyro.nfc_reader.R;
 import se.anyro.nfc_reader.database.GroupeCreationQuery;
-import se.anyro.nfc_reader.database.SpinnerQuery;
+import se.anyro.nfc_reader.database.SpinnerFiliereQuery;
 
 /**
  * permet de creer un nouveau groupe pour une filiere et année données
@@ -45,7 +44,7 @@ public class GroupeCreationActivity extends Activity {
         List filiereList=new ArrayList();
         filiereList.add("Selectionnez la filière");
         //la liste sera créee dynamiquement à partir de la base de données
-       new SpinnerQuery(this,filiereList).execute();
+       new SpinnerFiliereQuery(this,filiereList).execute();
 
 
 

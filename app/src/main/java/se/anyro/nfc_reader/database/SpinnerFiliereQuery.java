@@ -31,20 +31,20 @@ import se.anyro.nfc_reader.R;
  * permet de recuperer les intitulés des differentes filieres existantes dans la bd
  * afin de les afficher dynamiquement dans les spinners
  */
-public class SpinnerQuery extends AsyncTask<String, Void, Void>{
+public class SpinnerFiliereQuery extends AsyncTask<String, Void, Void>{
     private Context context;
     String my_url;
     private TextView mtextViewInfo;
     private List filiereList;
 
-    public SpinnerQuery(Context context,List filiereList) {
+    public SpinnerFiliereQuery(Context context, List filiereList) {
         this.context=context;
         this.filiereList=filiereList;
     }
 
     @Override
     protected void onPreExecute(){
-        my_url="http://192.168.1.72/spinner.php";
+        my_url="http://192.168.1.72/spinnerFiliere.php";
     }
 
     @Override

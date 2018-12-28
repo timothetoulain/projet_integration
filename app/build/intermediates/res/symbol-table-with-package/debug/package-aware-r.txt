@@ -747,6 +747,7 @@ id showHome
 id showTitle
 id spacer
 id spinnerAnnee
+id spinnerCours
 id spinnerFiliere
 id spinnerGroupe
 id split_action_bar

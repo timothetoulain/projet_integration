@@ -7,8 +7,11 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
+import java.util.concurrent.ExecutionException;
 
 import se.anyro.nfc_reader.admin.AdminActivity;
+import se.anyro.nfc_reader.database.AppelQuery;
+import se.anyro.nfc_reader.database.FiliereCreationQuery;
 import se.anyro.nfc_reader.record.ParsedNdefRecord;
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -54,6 +57,7 @@ public class TagViewer extends Activity {
 
     private List<Tag> mTags = new ArrayList<>();
     private Button mTestButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -180,11 +184,11 @@ public class TagViewer extends Activity {
     private String dumpTagData(Tag tag) {
         StringBuilder sb = new StringBuilder();
         byte[] id = tag.getId();
-        sb.append("ID (hex): ").append(toHex(id)).append('\n');
+        sb.append(toDec(id));
+        /*sb.append("ID (hex): ").append(toHex(id)).append('\n');
         sb.append("ID (reversed hex): ").append(toReversedHex(id)).append('\n');
         sb.append("ID (dec): ").append(toDec(id)).append('\n');
         sb.append("ID (reversed dec): ").append(toReversedDec(id)).append('\n');
-
         String prefix = "android.nfc.tech.";
         sb.append("Technologies: ");
         for (String tech : tag.getTechList()) {
@@ -192,6 +196,7 @@ public class TagViewer extends Activity {
             sb.append(", ");
         }
         sb.delete(sb.length() - 2, sb.length());
+        */
         for (String tech : tag.getTechList()) {
             if (tech.equals(MifareClassic.class.getName())) {
                 sb.append('\n');
@@ -251,8 +256,11 @@ public class TagViewer extends Activity {
                 sb.append(type);
             }
         }
-
-        return sb.toString();
+        String nomEtu;
+        nomEtu=appel(sb.toString());
+        //sb.append(nomEtu);
+        //return sb.toString();
+        return nomEtu;
     }
 
     private Tag cleanupTag(Tag oTag) {
@@ -511,5 +519,16 @@ public class TagViewer extends Activity {
     public void onNewIntent(Intent intent) {
         setIntent(intent);
         resolveIntent(intent);
+    }
+    public String appel(String sb){
+        String nomEtu=null;
+        try {
+            nomEtu=new AppelQuery(this).execute(sb).get();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+        return nomEtu;
     }
 }
