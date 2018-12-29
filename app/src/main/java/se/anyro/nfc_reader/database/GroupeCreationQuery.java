@@ -40,7 +40,7 @@ public class GroupeCreationQuery extends AsyncTask<String, Void, Void>{
 
     @Override
     protected void onPreExecute(){
-        my_url="http://192.168.1.72/creation_groupe.php";
+        my_url="http://192.168.43.65/creation_groupe.php";
     }
 
         @Override

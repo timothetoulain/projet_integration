@@ -37,7 +37,7 @@ public class AppelQuery extends AsyncTask<String, Void, String>{
 
     @Override
     protected void onPreExecute(){
-        my_url="http://192.168.1.72/appel.php";
+        my_url="http://192.168.43.65/appel.php";
     }
 
     @Override
@@ -45,7 +45,7 @@ public class AppelQuery extends AsyncTask<String, Void, String>{
 
         String dec=params[0];
         String prof=params[1];
-       // String cours=param[2];
+        String cours=params[2];
         System.out.println("dec:"+dec);
         try{
             URL url=new URL(my_url);
@@ -57,6 +57,8 @@ public class AppelQuery extends AsyncTask<String, Void, String>{
             String my_data=URLEncoder.encode("dec","UTF-8")+"="+URLEncoder.encode(dec,"UTF-8");
             my_data += "&" + URLEncoder.encode("prof", "UTF-8") + "=" +
                     URLEncoder.encode(prof, "UTF-8");
+            my_data += "&" + URLEncoder.encode("cours", "UTF-8") + "=" +
+                    URLEncoder.encode(cours, "UTF-8");
             bw.write(my_data);
             bw.flush();
             bw.close();

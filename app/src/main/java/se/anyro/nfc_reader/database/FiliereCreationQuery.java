@@ -37,7 +37,7 @@ public class FiliereCreationQuery extends AsyncTask<String, Void, Void>{
 
     @Override
     protected void onPreExecute(){
-        my_url="http://192.168.1.72/creation_filiere.php";
+        my_url="http://192.168.43.65/creation_filiere.php";
     }
 
     @Override

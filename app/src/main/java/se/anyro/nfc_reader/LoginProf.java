@@ -24,7 +24,7 @@ public class LoginProf extends Activity {
     private Button mButtonValider;
     private EditText meditTextIdentifiant;
     private EditText meditTextMdp;
-    private String data = "data.txt";
+    private String data = "prof.txt";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

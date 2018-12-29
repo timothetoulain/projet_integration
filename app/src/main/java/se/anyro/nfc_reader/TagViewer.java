@@ -59,21 +59,26 @@ public class TagViewer extends Activity {
     private AlertDialog mDialog;
 
     private List<Tag> mTags = new ArrayList<>();
-    private Button mTestButton;
-    private String data = "data.txt";
+    private String profFile = "prof.txt";
     private String prof=null;
 
+    private String coursFile = "cours.txt";
+    private String cours=null;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tag_viewer);
-        mTestButton = (Button) findViewById(R.id.buttonTest);
-        mTestButton.setEnabled(true);
+
         mTagContent = (LinearLayout) findViewById(R.id.list);
-        this.prof=readData();
+
+        this.prof=readData(profFile);
         System.out.println("prof:"+prof);
+
+        this.cours=readData(coursFile);
+        System.out.println("cours:"+cours);
+
         resolveIntent(getIntent());
 
         mDialog = new AlertDialog.Builder(this).setNeutralButton("Ok", null).create();
@@ -90,13 +95,6 @@ public class TagViewer extends Activity {
         mNdefPushMessage = new NdefMessage(new NdefRecord[] { newTextRecord(
                 "Message from NFC Reader :-)", Locale.ENGLISH, true) });
 
-        mTestButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent adminActivity = new Intent(TagViewer.this, AdminActivity.class);
-                startActivity(adminActivity);
-            }
-        });
     }
 
     private void showMessage(int title, int message) {
@@ -446,7 +444,7 @@ public class TagViewer extends Activity {
         }
 
         switch (item.getItemId()) {
-        case R.id.menu_main_clear:
+        case R.id.menu_main_end:
             clearTags();
             return true;
         case R.id.menu_copy_hex:
@@ -531,7 +529,8 @@ public class TagViewer extends Activity {
     public String appel(String sb){
         String nomEtu=null;
         try {
-            nomEtu=new AppelQuery(this).execute(sb,prof).get();
+            //sb contient le numero nfc decimal
+            nomEtu=new AppelQuery(this).execute(sb,prof,cours).get();
         } catch (InterruptedException e) {
             e.printStackTrace();
         } catch (ExecutionException e) {
@@ -539,9 +538,9 @@ public class TagViewer extends Activity {
         }
         return nomEtu;
     }
-    private String readData() {
+    private String readData(String file) {
         try {
-            FileInputStream in = this.openFileInput(data);
+            FileInputStream in = this.openFileInput(file);
             BufferedReader br= new BufferedReader(new InputStreamReader(in));
             StringBuilder sb= new StringBuilder();
             String s= null;
@@ -555,4 +554,5 @@ public class TagViewer extends Activity {
         }
         return null;
     }
+
 }

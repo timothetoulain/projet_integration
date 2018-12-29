@@ -44,7 +44,7 @@ public class SpinnerFiliereQuery extends AsyncTask<String, Void, Void>{
 
     @Override
     protected void onPreExecute(){
-        my_url="http://192.168.1.72/spinnerFiliere.php";
+        my_url="http://192.168.43.65/spinnerFiliere.php";
     }
 
     @Override

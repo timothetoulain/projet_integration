@@ -657,7 +657,6 @@ id beginning
 id blocking
 id bottom
 id buttonPanel
-id buttonTest
 id buttonValider
 id cancel_action
 id chains
@@ -706,8 +705,8 @@ id menu_copy_dec
 id menu_copy_hex
 id menu_copy_reversed_dec
 id menu_copy_reversed_hex
-id menu_main_clear
 id menu_main_copy
+id menu_main_end
 id message
 id middle
 id multiply
@@ -888,8 +887,8 @@ string menu_copy_dec
 string menu_copy_hex
 string menu_copy_reversed_dec
 string menu_copy_reversed_hex
-string menu_main_clear_title
 string menu_main_copy
+string menu_main_end_title
 string nfc_disabled
 string no_nfc
 string nothing_scanned

@@ -44,18 +44,24 @@ public class SpinnerProfQuery extends AsyncTask<String, Void, Void>{
 
     @Override
     protected void onPreExecute(){
-        my_url="http://192.168.1.72/spinnerProf.php";
+        my_url="http://192.168.43.65/spinnerProf.php";
     }
 
     @Override
     protected Void doInBackground(String... params)  {
 
         try{
+            String enseignant=params[0];
             URL url=new URL(my_url);
             HttpURLConnection httpURLConnection=(HttpURLConnection)url.openConnection();
             httpURLConnection.setRequestMethod("POST");
             httpURLConnection.setDoOutput(true);
             OutputStream outputStream=httpURLConnection.getOutputStream();
+            BufferedWriter bw=new BufferedWriter(new OutputStreamWriter(outputStream,"UTF-8"));
+            String my_data=URLEncoder.encode("enseignant","UTF-8")+"="+URLEncoder.encode(enseignant,"UTF-8");
+            bw.write(my_data);
+            bw.flush();
+            bw.close();
             BufferedReader reader = new BufferedReader(new
                     InputStreamReader(httpURLConnection.getInputStream()));
 

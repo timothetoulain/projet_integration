@@ -2,59 +2,30 @@
 <instant-run
     abi="armeabi-v7a,armeabi"
     api-level="23"
-    build-mode="FULL"
+    build-mode="COLD"
     density="xxhdpi"
     format="10"
+    ir-eligibility="COMPATIBLE"
     plugin-version="3.2.1"
-    timestamp="1546017744169"
+    timestamp="1546093969368"
     token="-1062958816174012804"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="2503" />
+        duration="178" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="1236" />
+        duration="23" />
     <task
         name="verifier"
-        duration="218" />
+        duration="2" />
 
     <artifact
-        location="/home/toulain/AndroidStudioProjects/nfc-reader/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
-        type="SPLIT" />
-    <artifact
-        location="/home/toulain/AndroidStudioProjects/nfc-reader/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
-        type="SPLIT" />
-    <artifact
-        location="/home/toulain/AndroidStudioProjects/nfc-reader/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
-        type="SPLIT" />
-    <artifact
-        location="/home/toulain/AndroidStudioProjects/nfc-reader/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
-        type="SPLIT" />
-    <artifact
-        location="/home/toulain/AndroidStudioProjects/nfc-reader/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
-        type="SPLIT" />
-    <artifact
         location="/home/toulain/AndroidStudioProjects/nfc-reader/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
-        type="SPLIT" />
-    <artifact
-        location="/home/toulain/AndroidStudioProjects/nfc-reader/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
-        type="SPLIT" />
-    <artifact
-        location="/home/toulain/AndroidStudioProjects/nfc-reader/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
-        type="SPLIT" />
-    <artifact
-        location="/home/toulain/AndroidStudioProjects/nfc-reader/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
-        type="SPLIT" />
-    <artifact
-        location="/home/toulain/AndroidStudioProjects/nfc-reader/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
-        type="SPLIT" />
-    <artifact
-        location="/home/toulain/AndroidStudioProjects/nfc-reader/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
         type="SPLIT" />
     <artifact
         location="/home/toulain/AndroidStudioProjects/nfc-reader/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
@@ -62,25 +33,16 @@
 
     <build
         build-mode="FULL"
-        timestamp="1546017744169"
+        timestamp="1546093900260"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="/home/toulain/AndroidStudioProjects/nfc-reader/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+            location="/home/toulain/AndroidStudioProjects/nfc-reader/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="/home/toulain/AndroidStudioProjects/nfc-reader/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="/home/toulain/AndroidStudioProjects/nfc-reader/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
-            type="SPLIT" />
+            location="/home/toulain/AndroidStudioProjects/nfc-reader/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
+            type="SPLIT_MAIN" />
         <artifact
             location="/home/toulain/AndroidStudioProjects/nfc-reader/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
-            type="SPLIT" />
-        <artifact
-            location="/home/toulain/AndroidStudioProjects/nfc-reader/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
-            type="SPLIT" />
-        <artifact
-            location="/home/toulain/AndroidStudioProjects/nfc-reader/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
             location="/home/toulain/AndroidStudioProjects/nfc-reader/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
@@ -92,10 +54,31 @@
             location="/home/toulain/AndroidStudioProjects/nfc-reader/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="/home/toulain/AndroidStudioProjects/nfc-reader/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            location="/home/toulain/AndroidStudioProjects/nfc-reader/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
             type="SPLIT" />
         <artifact
             location="/home/toulain/AndroidStudioProjects/nfc-reader/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/toulain/AndroidStudioProjects/nfc-reader/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/toulain/AndroidStudioProjects/nfc-reader/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/toulain/AndroidStudioProjects/nfc-reader/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/toulain/AndroidStudioProjects/nfc-reader/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="COMPATIBLE"
+        timestamp="1546093969368"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/home/toulain/AndroidStudioProjects/nfc-reader/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
             location="/home/toulain/AndroidStudioProjects/nfc-reader/app/build/intermediates/instant-run-apk/debug/app-debug.apk"

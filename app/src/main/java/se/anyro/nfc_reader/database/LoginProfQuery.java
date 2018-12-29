@@ -37,7 +37,7 @@ public class LoginProfQuery extends AsyncTask<String, Void, String>{
 
     @Override
     protected void onPreExecute(){
-        my_url="http://192.168.1.72/login_prof.php";
+        my_url="http://192.168.43.65/login_prof.php";
     }
 
     @Override
