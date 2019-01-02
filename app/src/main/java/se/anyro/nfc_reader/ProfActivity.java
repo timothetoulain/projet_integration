@@ -46,7 +46,7 @@ public class ProfActivity extends Activity {
 
 
         List coursList=new ArrayList();
-        coursList.add("Selectionnez le cours");
+        coursList.add("Sélectionnez le cours");
 
         new SpinnerProfQuery(this,coursList).execute(prof);
 
@@ -62,7 +62,7 @@ public class ProfActivity extends Activity {
             @Override
             public void onClick(View v) {
                 if(/*meditTextGroupe.getText().length()==0 ||*/
-                        mSpinnerCours.getSelectedItem().toString().equals("Selectionnez le cours"))
+                        mSpinnerCours.getSelectedItem().toString().equals("Sélectionnez le cours"))
                 {
                     champIncompletMessage();
                 }
@@ -79,7 +79,7 @@ public class ProfActivity extends Activity {
         });
     }
     private void champIncompletMessage(){
-        Toast.makeText(this,"Veuillez selectionner un cours",Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,"Veuillez sélectionner un cours",Toast.LENGTH_SHORT).show();
     }
     private void saveData(String cours) {
         try {

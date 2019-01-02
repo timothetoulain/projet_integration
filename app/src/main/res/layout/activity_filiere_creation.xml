@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
-        android:text="Indiquer le nom de la filière a ajouté"
+        android:text="Indiquez le nom de la filière à ajouter"
         android:textSize="24dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

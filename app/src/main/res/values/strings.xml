@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">NFC Reader</string>
-    <string name="intro_message">Présenter votre carte étudiant au dos de l\'appareil</string>
+    <string name="intro_message">Present your student card at the back of the device</string>
     <string name="error">Error</string>
     <string name="no_nfc">No NFC found on this device</string>
-    <string name="nfc_disabled">NFC is not enabled. Please go to the wireless settings to enable it.</string>
+    <string name="nfc_disabled">NFC is not enable. Please go to the wireless settings to enable it.</string>
     <string name="menu_main_end_title">Clear all</string>
     <string name="menu_main_copy">Copy IDs</string>
     <string name="menu_copy_hex">Hex</string>

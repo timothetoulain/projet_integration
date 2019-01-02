@@ -42,7 +42,7 @@ public class GroupeCreationActivity extends Activity {
         mSpinnerFiliere = (Spinner) findViewById(R.id.spinnerFiliere);
 
         List filiereList=new ArrayList();
-        filiereList.add("Selectionnez la filière");
+        filiereList.add("Sélectionnez la filière");
         //la liste sera créee dynamiquement à partir de la base de données
        new SpinnerFiliereQuery(this,filiereList).execute();
 
@@ -50,7 +50,7 @@ public class GroupeCreationActivity extends Activity {
 
 
         List anneeList = new ArrayList();
-        anneeList.add("Selectionnez l'année d'étude");
+        anneeList.add("Sélectionnez l'année d'étude");
         anneeList.add("L1");
         anneeList.add("L2");
         anneeList.add("L3");

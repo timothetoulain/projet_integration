@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/admin_button"
         android:layout_marginTop="24dp"
-        android:text="Professeur"
+        android:text="Enseignant"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
