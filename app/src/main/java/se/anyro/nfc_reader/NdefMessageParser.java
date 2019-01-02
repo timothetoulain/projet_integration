@@ -31,7 +31,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 /**
- * Utility class for creating {@link ParsedNdefMessage}s.
+ * Utility class for creating {@link ParsedNdefMessage}.
  */
 public class NdefMessageParser {
 

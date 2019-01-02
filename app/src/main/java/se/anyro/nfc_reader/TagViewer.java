@@ -12,9 +12,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.concurrent.ExecutionException;
 
-import se.anyro.nfc_reader.admin.AdminActivity;
 import se.anyro.nfc_reader.database.AppelQuery;
-import se.anyro.nfc_reader.database.FiliereCreationQuery;
 import se.anyro.nfc_reader.record.ParsedNdefRecord;
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -39,7 +37,6 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -71,7 +68,7 @@ public class TagViewer extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tag_viewer);
 
-        mTagContent = (LinearLayout) findViewById(R.id.list);
+        mTagContent = findViewById(R.id.list);
 
         this.prof=readData(profFile);
         System.out.println("prof:"+prof);
@@ -156,7 +153,6 @@ public class TagViewer extends Activity {
             }
         });
         builder.create().show();
-        return;
     }
 
     private void resolveIntent(Intent intent) {
@@ -175,7 +171,7 @@ public class TagViewer extends Activity {
                 // Unknown tag type
                 byte[] empty = new byte[0];
                 byte[] id = intent.getByteArrayExtra(NfcAdapter.EXTRA_ID);
-                Tag tag = (Tag) intent.getParcelableExtra(NfcAdapter.EXTRA_TAG);
+                Tag tag = intent.getParcelableExtra(NfcAdapter.EXTRA_TAG);
                 byte[] payload = dumpTagData(tag).getBytes();
                 NdefRecord record = new NdefRecord(NdefRecord.TNF_UNKNOWN, empty, id, payload);
                 NdefMessage msg = new NdefMessage(new NdefRecord[] { record });
@@ -232,7 +228,7 @@ public class TagViewer extends Activity {
                     sb.append('\n');
 
                     sb.append("Mifare size: ");
-                    sb.append(mifareTag.getSize() + " bytes");
+                    sb.append(mifareTag.getSize()).append(" bytes");
                     sb.append('\n');
 
                     sb.append("Mifare sectors: ");
@@ -242,7 +238,7 @@ public class TagViewer extends Activity {
                     sb.append("Mifare blocks: ");
                     sb.append(mifareTag.getBlockCount());
                 } catch (Exception e) {
-                    sb.append("Mifare classic error: " + e.getMessage());
+                    sb.append("Mifare classic error: ").append(e.getMessage());
                 }
             }
 
@@ -388,10 +384,10 @@ public class TagViewer extends Activity {
     private long toDec(byte[] bytes) {
         long result = 0;
         long factor = 1;
-        for (int i = 0; i < bytes.length; ++i) {
-            long value = bytes[i] & 0xffl;
+        for (byte aByte : bytes) {
+            long value = aByte & 0xffL;
             result += value * factor;
-            factor *= 256l;
+            factor *= 256L;
         }
         return result;
     }
@@ -400,9 +396,9 @@ public class TagViewer extends Activity {
         long result = 0;
         long factor = 1;
         for (int i = bytes.length - 1; i >= 0; --i) {
-            long value = bytes[i] & 0xffl;
+            long value = bytes[i] & 0xffL;
             result += value * factor;
-            factor *= 256l;
+            factor *= 256L;
         }
         return result;
     }

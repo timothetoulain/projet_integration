@@ -12,4 +12,20 @@
     <string name="menu_copy_dec">Dec</string>
     <string name="menu_copy_reversed_dec">Dec renversé</string>
     <string name="nothing_scanned">Rien de scanné pour le moment</string>
+    <string name="add_sector">Ajouter une filière</string>
+    <string name="add_group">Ajouter un groupe</string>
+    <string name="new_sector">Nouvelle filière</string>
+    <string name="sector_name_add">Indiquez le nom de la filière à ajouter</string>
+    <string name="enter">Valider</string>
+    <string name="new_group">Nouveau groupe</string>
+    <string name="group_name_add">Indiquez le nom du groupe à ajouter</string>
+    <string name="sector">Pour la filière :</string>
+    <string name="year">Pour l\'année :</string>
+    <string name="sign_in">Veuillez vous authentifier</string>
+    <string name="login">Identifiant</string>
+    <string name="password">Mot de passe</string>
+    <string name="university">Université de Cergy-Pontoise</string>
+    <string name="administrator">Administrateur</string>
+    <string name="teacher">Enseignant</string>
+    <string name="group">Indiquez le groupe</string>
 </resources>

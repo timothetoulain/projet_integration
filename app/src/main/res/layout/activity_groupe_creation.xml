@@ -11,7 +11,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="96dp"
-        android:hint="Nouveau groupe"
+        android:hint="@string/new_group"
         android:inputType="text"
         android:lines="1"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,10 +26,11 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
-        android:text="Indiquez le nom du groupe à ajouter"
+        android:text="@string/group_name_add"
         android:textSize="24dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/validerButton"
@@ -37,7 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="62dp"
         android:onClick="creation"
-        android:text="Valider"
+        android:text="@string/enter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -47,7 +48,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
-        android:text="Pour la filière:"
+        android:text="@string/sector"
         app:layout_constraintBottom_toTopOf="@+id/spinnerFiliere"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
@@ -71,7 +72,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="13dp"
-        android:text="Pour l'année:"
+        android:text="@string/year"
         app:layout_constraintBottom_toTopOf="@+id/spinnerGroupe"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

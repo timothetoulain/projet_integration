@@ -177,7 +177,7 @@ public class SmartPoster implements ParsedNdefRecord {
 
         private final byte mAction;
 
-        private RecommendedAction(byte val) {
+        RecommendedAction(byte val) {
             this.mAction = val;
         }
 

@@ -17,10 +17,10 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mAdminButton = (Button) findViewById(R.id.admin_button);
+        mAdminButton = findViewById(R.id.admin_button);
         mAdminButton.setEnabled(true);
 
-        mProfButton = (Button) findViewById(R.id.prof_button);
+        mProfButton = findViewById(R.id.prof_button);
         mProfButton.setEnabled(true);
 
         mAdminButton.setOnClickListener(new View.OnClickListener() {

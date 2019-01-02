@@ -9,7 +9,6 @@ import android.widget.TextView;
 
 import se.anyro.nfc_reader.R;
 import se.anyro.nfc_reader.database.FiliereCreationQuery;
-import se.anyro.nfc_reader.database.GroupeCreationQuery;
 
 /**
  * permet d'ajouter une filiere dans la base de donnees
@@ -24,9 +23,9 @@ public class FiliereCreationActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_filiere_creation);
-        mvaliderButton = (Button) findViewById(R.id.validerButton);
-        mtextView = (TextView) findViewById(R.id.textViewFiliere);
-        meditText = (EditText) findViewById(R.id.editTextFiliere);
+        mvaliderButton = findViewById(R.id.validerButton);
+        mtextView = findViewById(R.id.textViewFiliere);
+        meditText = findViewById(R.id.editTextFiliere);
 
        /* mvaliderButton.setOnClickListener(new View.OnClickListener() {
             @Override

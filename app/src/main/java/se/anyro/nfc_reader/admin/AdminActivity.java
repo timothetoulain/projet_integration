@@ -6,8 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import se.anyro.nfc_reader.MainActivity;
-import se.anyro.nfc_reader.ProfActivity;
 import se.anyro.nfc_reader.R;
 
 public class AdminActivity extends Activity {
@@ -20,8 +18,8 @@ public class AdminActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin);
 
-        mfiliereButton = (Button) findViewById(R.id.filiereButton);
-        mgroupeButton = (Button) findViewById(R.id.groupeButton);
+        mfiliereButton = findViewById(R.id.filiereButton);
+        mgroupeButton = findViewById(R.id.groupeButton);
 
         mfiliereButton.setOnClickListener(new View.OnClickListener() {
             @Override

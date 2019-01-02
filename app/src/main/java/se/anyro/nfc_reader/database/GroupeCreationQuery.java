@@ -2,17 +2,11 @@ package se.anyro.nfc_reader.database;
 
 import android.content.Context;
 import android.os.AsyncTask;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
@@ -22,14 +16,12 @@ import java.net.ProtocolException;
 import java.net.URL;
 import java.net.URLEncoder;
 
-import se.anyro.nfc_reader.R;
-
 /**
  * permet d'ajouter un groupe dans la base de donnees
  */
 public class GroupeCreationQuery extends AsyncTask<String, Void, Void>{
     private Context context;
-    String my_url;
+    private String my_url;
     private TextView mtextViewInfo;
 
 
@@ -40,7 +32,7 @@ public class GroupeCreationQuery extends AsyncTask<String, Void, Void>{
 
     @Override
     protected void onPreExecute(){
-        my_url="http://192.168.43.65/creation_groupe.php";
+        my_url="http://192.168.1.44/l3_projet_integration/queries.php";
     }
 
         @Override

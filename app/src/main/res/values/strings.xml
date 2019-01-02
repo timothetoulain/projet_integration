@@ -12,4 +12,20 @@
     <string name="menu_copy_dec">Dec</string>
     <string name="menu_copy_reversed_dec">Reversed dec</string>
     <string name="nothing_scanned">Nothing scanned yet</string>
+    <string name="add_sector">Add a sector</string>
+    <string name="add_group">Add a group</string>
+    <string name="new_sector">New sector</string>
+    <string name="sector_name_add">Enter the name of the sector to add</string>
+    <string name="enter">Enter</string>
+    <string name="new_group">New group</string>
+    <string name="group_name_add">Enter the name of the group to add</string>
+    <string name="sector">For the sector:</string>
+    <string name="year">For the year:</string>
+    <string name="sign_in">Please sign in</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="university">University of Cergy-Pontoise</string>
+    <string name="administrator">Administrator</string>
+    <string name="teacher">Teacher</string>
+    <string name="group">Enter the group</string>
 </resources>

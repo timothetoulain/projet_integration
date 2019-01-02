@@ -2,11 +2,6 @@ package se.anyro.nfc_reader.database;
 
 import android.content.Context;
 import android.os.AsyncTask;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -22,14 +17,12 @@ import java.net.ProtocolException;
 import java.net.URL;
 import java.net.URLEncoder;
 
-import se.anyro.nfc_reader.R;
-
 /**
  * permet d'indiquer un etudiant comme present au cours dans la bd
  */
 public class AppelQuery extends AsyncTask<String, Void, String>{
     private Context context;
-    String my_url;
+    private String my_url;
 
     public AppelQuery(Context context) {
         this.context=context;
@@ -37,7 +30,7 @@ public class AppelQuery extends AsyncTask<String, Void, String>{
 
     @Override
     protected void onPreExecute(){
-        my_url="http://192.168.43.65/appel.php";
+        my_url="http://192.168.1.44/l3_projet_integration/queries.php";
     }
 
     @Override
@@ -74,13 +67,13 @@ public class AppelQuery extends AsyncTask<String, Void, String>{
                 break;
             }
             sb= sb.substring(1, sb.length()-1);
-            System.out.println(sb.toString());
+            System.out.println(sb);
 
             outputStream.close();
             InputStream inputStream=httpURLConnection.getInputStream();
             inputStream.close();
             httpURLConnection.disconnect();
-            return(sb.toString());
+            return(sb);
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         } catch (ProtocolException e) {

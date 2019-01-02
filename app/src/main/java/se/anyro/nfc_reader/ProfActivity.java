@@ -18,7 +18,6 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
-import se.anyro.nfc_reader.database.SpinnerFiliereQuery;
 import se.anyro.nfc_reader.database.SpinnerProfQuery;
 
 /**
@@ -38,9 +37,9 @@ public class ProfActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_prof);
 
-        mValiderButton = (Button) findViewById(R.id.validerButton);
-        meditTextGroupe=(EditText)findViewById(R.id.editTextGroupe);
-        mSpinnerCours = (Spinner) findViewById(R.id.spinnerCours);
+        mValiderButton = findViewById(R.id.validerButton);
+        meditTextGroupe= findViewById(R.id.editTextGroupe);
+        mSpinnerCours = findViewById(R.id.spinnerCours);
         this.prof=readData(profFile);
         System.out.println("prof="+prof);
 
@@ -67,9 +66,7 @@ public class ProfActivity extends Activity {
                     champIncompletMessage();
                 }
                 else{
-
-                    String cours=null;
-                    cours=mSpinnerCours.getSelectedItem().toString();
+                    String cours=mSpinnerCours.getSelectedItem().toString();
                     saveData(cours);
 
                     Intent tagViewer = new Intent(ProfActivity.this, TagViewer.class);

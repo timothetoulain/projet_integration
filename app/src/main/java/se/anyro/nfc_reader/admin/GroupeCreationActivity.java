@@ -31,15 +31,15 @@ public class GroupeCreationActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_groupe_creation);
-        mvaliderButton = (Button) findViewById(R.id.validerButton);
-        mtextView = (TextView) findViewById(R.id.textViewFiliere);
-        mtextViewInfo = (TextView) findViewById(R.id.textViewInfo);
+        mvaliderButton = findViewById(R.id.validerButton);
+        mtextView = findViewById(R.id.textViewFiliere);
+        mtextViewInfo = findViewById(R.id.textViewInfo);
         mtextViewInfo.setAlpha(0.0f);
 
-        meditText = (EditText) findViewById(R.id.editTextGroupe);
+        meditText = findViewById(R.id.editTextGroupe);
 
-        mSpinnerGroupe = (Spinner) findViewById(R.id.spinnerGroupe);
-        mSpinnerFiliere = (Spinner) findViewById(R.id.spinnerFiliere);
+        mSpinnerGroupe = findViewById(R.id.spinnerGroupe);
+        mSpinnerFiliere = findViewById(R.id.spinnerFiliere);
 
         List filiereList=new ArrayList();
         filiereList.add("Sélectionnez la filière");

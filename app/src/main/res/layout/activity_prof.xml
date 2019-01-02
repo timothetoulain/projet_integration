@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="39dp"
-        android:text="Valider"
+        android:text="@string/enter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -53,7 +53,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="39dp"
         android:ems="10"
-        android:hint="Indiquez le groupe"
+        android:hint="@string/group"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/spinnerAnnee"
         app:layout_constraintEnd_toEndOf="parent"

@@ -2,22 +2,15 @@ package se.anyro.nfc_reader;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Spinner;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import java.io.BufferedReader;
-import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.io.InputStreamReader;
 import java.util.concurrent.ExecutionException;
 
-import se.anyro.nfc_reader.database.AppelQuery;
 import se.anyro.nfc_reader.database.LoginProfQuery;
 
 public class LoginProf extends Activity {
@@ -30,9 +23,9 @@ public class LoginProf extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_prof);
-        mButtonValider = (Button) findViewById(R.id.buttonValider);
-        meditTextIdentifiant = (EditText) findViewById(R.id.editTextIdentifiant);
-        meditTextMdp = (EditText) findViewById(R.id.editTextMdp);
+        mButtonValider = findViewById(R.id.buttonValider);
+        meditTextIdentifiant = findViewById(R.id.editTextIdentifiant);
+        meditTextMdp = findViewById(R.id.editTextMdp);
 
 
         mButtonValider.setOnClickListener(new View.OnClickListener() {
@@ -56,11 +49,10 @@ public class LoginProf extends Activity {
         });
     }
     public String login(){
-        String resultLogin=null;
         try {
             String identifiant=meditTextIdentifiant.getText().toString();
             String mdp=meditTextMdp.getText().toString();
-            resultLogin=new LoginProfQuery(this).execute(identifiant,mdp).get();
+            String resultLogin=new LoginProfQuery(this).execute(identifiant,mdp).get();
             return resultLogin;
         } catch (InterruptedException e) {
             e.printStackTrace();
