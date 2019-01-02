@@ -27,5 +27,5 @@
     <string name="university">University of Cergy-Pontoise</string>
     <string name="administrator">Administrator</string>
     <string name="teacher">Teacher</string>
-    <string name="group">Enter the group</string>
+    <string name="enter_group">Enter the group</string>
 </resources>

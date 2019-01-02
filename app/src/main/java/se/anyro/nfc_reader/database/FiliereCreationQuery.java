@@ -43,7 +43,10 @@ public class FiliereCreationQuery extends AsyncTask<String, Void, Void>{
             httpURLConnection.setDoOutput(true);
             OutputStream outputStream=httpURLConnection.getOutputStream();
             BufferedWriter bw=new BufferedWriter(new OutputStreamWriter(outputStream,"UTF-8"));
-            String my_data=URLEncoder.encode("filiere","UTF-8")+"="+URLEncoder.encode(filiere,"UTF-8");
+            String my_data=URLEncoder.encode("type", "UTF-8")+"="+URLEncoder.encode(type, "UTF-8")
+                    +"&"+URLEncoder.encode("id","UTF-8")+"="+URLEncoder.encode(id,"UTF-8")
+                    +"&"+URLEncoder.encode("name","UTF-8")+"="+URLEncoder.encode(name,"UTF-8")
+                    +"&"+URLEncoder.encode("yearOfStudy","UTF-8")+"="+URLEncoder.encode(yearOfStudy,"UTF-8");
             bw.write(my_data);
             bw.flush();
             bw.close();

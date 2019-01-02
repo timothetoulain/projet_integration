@@ -53,7 +53,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="39dp"
         android:ems="10"
-        android:hint="@string/group"
+        android:hint="@string/enter_group"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/spinnerAnnee"
         app:layout_constraintEnd_toEndOf="parent"

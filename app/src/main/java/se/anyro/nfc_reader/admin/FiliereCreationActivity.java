@@ -38,7 +38,10 @@ public class FiliereCreationActivity extends Activity {
         });*/
     }
         public void creation(View view){
-            String filiere=meditText.getText().toString();
-            new FiliereCreationQuery(this).execute(filiere);
+            String name=meditText.getText().toString();
+            //TODO faire des champs pour récup les infos
+            String id="Test";
+            String yearOfStudy="M1";
+            new FiliereCreationQuery(this).execute(id, name, yearOfStudy);
         }
     }

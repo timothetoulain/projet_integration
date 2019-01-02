@@ -884,8 +884,8 @@ int string add_sector 0x7f0b0020
 int string administrator 0x7f0b0021
 int string app_name 0x7f0b0022
 int string enter 0x7f0b0023
-int string error 0x7f0b0024
-int string group 0x7f0b0025
+int string enter_group 0x7f0b0024
+int string error 0x7f0b0025
 int string group_name_add 0x7f0b0026
 int string intro_message 0x7f0b0027
 int string login 0x7f0b0028

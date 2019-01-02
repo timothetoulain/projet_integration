@@ -3085,8 +3085,8 @@ public final class R {
     public static final int administrator=0x7f0b0021;
     public static final int app_name=0x7f0b0022;
     public static final int enter=0x7f0b0023;
-    public static final int error=0x7f0b0024;
-    public static final int group=0x7f0b0025;
+    public static final int enter_group=0x7f0b0024;
+    public static final int error=0x7f0b0025;
     public static final int group_name_add=0x7f0b0026;
     public static final int intro_message=0x7f0b0027;
     public static final int login=0x7f0b0028;

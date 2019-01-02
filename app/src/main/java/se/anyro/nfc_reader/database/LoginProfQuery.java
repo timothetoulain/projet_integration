@@ -38,6 +38,8 @@ public class LoginProfQuery extends AsyncTask<String, Void, String>{
 
         String login=params[0];
         String mdp=params[1];
+        String type="checkAccount";
+
         try{
             URL url=new URL(my_url);
             HttpURLConnection httpURLConnection=(HttpURLConnection)url.openConnection();
@@ -45,9 +47,9 @@ public class LoginProfQuery extends AsyncTask<String, Void, String>{
             httpURLConnection.setDoOutput(true);
             OutputStream outputStream=httpURLConnection.getOutputStream();
             BufferedWriter bw=new BufferedWriter(new OutputStreamWriter(outputStream,"UTF-8"));
-            String my_data=URLEncoder.encode("login","UTF-8")+"="+URLEncoder.encode(login,"UTF-8");
-             my_data += "&" + URLEncoder.encode("mdp", "UTF-8") + "=" +
-                   URLEncoder.encode(mdp, "UTF-8");
+            String my_data=URLEncoder.encode("type", "UTF-8")+"="+URLEncoder.encode(type, "UTF-8")
+                    +"&"+URLEncoder.encode("login","UTF-8")+"="+URLEncoder.encode(login,"UTF-8")
+                    +"&"+URLEncoder.encode("mdp", "UTF-8") + "=" + URLEncoder.encode(mdp, "UTF-8");
             bw.write(my_data);
             bw.flush();
             bw.close();

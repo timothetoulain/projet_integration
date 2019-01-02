@@ -46,7 +46,7 @@
         <activity android:name=".ProfActivity" />
         <activity android:name=".admin.FiliereCreationActivity" />
         <activity android:name=".admin.GroupeCreationActivity" />
-        <activity android:name=".LoginProf"></activity>
+        <activity android:name=".LoginProf" />
     </application>
 
 </manifest>

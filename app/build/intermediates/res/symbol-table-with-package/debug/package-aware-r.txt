@@ -885,8 +885,8 @@ string add_sector
 string administrator
 string app_name
 string enter
+string enter_group
 string error
-string group
 string group_name_add
 string intro_message
 string login

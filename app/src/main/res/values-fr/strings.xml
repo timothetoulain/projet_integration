@@ -27,5 +27,5 @@
     <string name="university">Université de Cergy-Pontoise</string>
     <string name="administrator">Administrateur</string>
     <string name="teacher">Enseignant</string>
-    <string name="group">Indiquez le groupe</string>
+    <string name="enter_group">Indiquez le groupe</string>
 </resources>
