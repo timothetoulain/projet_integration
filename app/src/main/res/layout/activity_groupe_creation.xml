@@ -26,7 +26,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
-        android:text="@string/group_name_add"
+        android:text="@string/group_add"
         android:textSize="24dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -47,12 +47,9 @@
         android:id="@+id/textViewFiliere"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
         android:text="@string/sector"
-        app:layout_constraintBottom_toTopOf="@+id/spinnerFiliere"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent" />
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="199dp" />
 
     <Spinner
         android:id="@+id/spinnerFiliere"

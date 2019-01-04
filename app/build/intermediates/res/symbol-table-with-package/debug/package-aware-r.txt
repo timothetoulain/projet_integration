@@ -672,6 +672,8 @@ id dimensions
 id direct
 id disableHome
 id editTextFiliere
+id editTextFiliere2
+id editTextFiliere3
 id editTextGroupe
 id editTextIdentifiant
 id editTextMdp
@@ -887,7 +889,7 @@ string app_name
 string enter
 string enter_group
 string error
-string group_name_add
+string group_add
 string intro_message
 string login
 string menu_copy_dec
@@ -897,14 +899,16 @@ string menu_copy_reversed_hex
 string menu_main_copy
 string menu_main_end_title
 string new_group
-string new_sector
+string new_sector_id
+string new_sector_name
+string new_sector_year
 string nfc_disabled
 string no_nfc
 string nothing_scanned
 string password
 string search_menu_title
 string sector
-string sector_name_add
+string sector_add
 string sign_in
 string status_bar_notification_info_overflow
 string teacher

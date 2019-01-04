@@ -7,11 +7,37 @@
     tools:context=".admin.FiliereCreationActivity">
 
     <EditText
+        android:id="@+id/editTextFiliere2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="172dp"
+        android:hint="@string/new_sector_name"
+        android:inputType="text"
+        android:lines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextFiliere3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="260dp"
+        android:hint="@string/new_sector_year"
+        android:inputType="text"
+        android:lines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
         android:id="@+id/editTextFiliere"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="84dp"
-        android:hint="@string/new_sector"
+        android:hint="@string/new_sector_id"
         android:inputType="text"
         android:lines="1"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,7 +51,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
-        android:text="@string/sector_name_add"
+        android:text="@string/sector_add"
         android:textSize="24dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
