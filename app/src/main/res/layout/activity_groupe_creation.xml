@@ -47,9 +47,10 @@
         android:id="@+id/textViewFiliere"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
         android:text="@string/sector"
-        tools:layout_editor_absoluteX="144dp"
-        tools:layout_editor_absoluteY="199dp" />
+        app:layout_constraintBottom_toTopOf="@+id/spinnerFiliere"
+        tools:layout_editor_absoluteX="140dp" />
 
     <Spinner
         android:id="@+id/spinnerFiliere"

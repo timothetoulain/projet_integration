@@ -35,14 +35,20 @@ public class LoginProf extends Activity {
                     champIncompletMessage();
                 } else {
                     String nomProf=login();
-                    if(nomProf.equals("0")){
-                        identifiantIncorrectMessage();
+                    if(nomProf != null){
+                        if(nomProf.equals("0")){
+                            identifiantIncorrectMessage();
+                        }
+                        else{
+                            //on stocke le nom du prof qui vient de se connecter pour les requetes suivantes
+                            saveData(nomProf);
+                            Intent profActivity = new Intent(LoginProf.this, ProfActivity.class);
+                            startActivity(profActivity);
+                        }
                     }
                     else{
-                        //on stocke le nom du prof qui vient de se connecter pour les requetes suivantes
-                        saveData(nomProf);
-                        Intent profActivity = new Intent(LoginProf.this, ProfActivity.class);
-                        startActivity(profActivity);
+                        //TODO erreur !
+                        System.out.println("ERROR 1");
                     }
                 }
             }

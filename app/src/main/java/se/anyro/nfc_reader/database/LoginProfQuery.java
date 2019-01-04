@@ -46,6 +46,9 @@ public class LoginProfQuery extends AsyncTask<String, Void, String>{
             HttpURLConnection httpURLConnection=(HttpURLConnection)url.openConnection();
             httpURLConnection.setRequestMethod("POST");
             httpURLConnection.setDoOutput(true);
+
+            System.out.println(httpURLConnection.getResponseCode());
+
             OutputStream outputStream=httpURLConnection.getOutputStream();
             BufferedWriter bw=new BufferedWriter(new OutputStreamWriter(outputStream,"UTF-8"));
             String my_data=URLEncoder.encode("type", "UTF-8")+"="+URLEncoder.encode(type, "UTF-8")
@@ -54,7 +57,6 @@ public class LoginProfQuery extends AsyncTask<String, Void, String>{
             bw.write(my_data);
             bw.flush();
             bw.close();
-
             BufferedReader reader = new BufferedReader(new
                     InputStreamReader(httpURLConnection.getInputStream()));
 
@@ -67,6 +69,7 @@ public class LoginProfQuery extends AsyncTask<String, Void, String>{
             }
            // sb= sb.substring(1, sb.length()-1);
            // System.out.println("sb= " +sb);
+            System.out.println("SB=" + sb);
 
             outputStream.close();
             InputStream inputStream=httpURLConnection.getInputStream();
