@@ -75,6 +75,8 @@ public class TagViewer extends Activity {
 
         this.cours=readData(coursFile);
         System.out.println("cours:"+cours);
+        prof= prof.substring(1, prof.length()-2);
+        cours= cours.substring(2, cours.length()-3);
 
         resolveIntent(getIntent());
 
@@ -524,9 +526,14 @@ public class TagViewer extends Activity {
     }
     public String appel(String sb){
         String nomEtu=null;
+        String type="addPresent";
+
+
         try {
             //sb contient le numero nfc decimal
-            nomEtu=new AppelQuery(this).execute(sb,prof,cours).get();
+            //nomEtu=new AppelQuery(this).execute(type,sb,prof,cours).get();
+            nomEtu=new AppelQuery(this).execute(type,sb,cours).get();
+
         } catch (InterruptedException e) {
             e.printStackTrace();
         } catch (ExecutionException e) {

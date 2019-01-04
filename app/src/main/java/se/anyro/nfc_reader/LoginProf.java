@@ -52,7 +52,8 @@ public class LoginProf extends Activity {
         try {
             String identifiant=meditTextIdentifiant.getText().toString();
             String mdp=meditTextMdp.getText().toString();
-            String resultLogin=new LoginProfQuery(this).execute(identifiant,mdp).get();
+            String type="checkAccount";
+            String resultLogin=new LoginProfQuery(this).execute(type,identifiant,mdp).get();
             return resultLogin;
         } catch (InterruptedException e) {
             e.printStackTrace();

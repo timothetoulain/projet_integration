@@ -36,21 +36,29 @@ public class SpinnerProfQuery extends AsyncTask<String, Void, Void>{
 
     @Override
     protected void onPreExecute(){
-        my_url="http://192.168.1.44/l3_projet_integration/queries.php";
+        //my_url="http://192.168.1.44/l3_projet_integration/queries.php";
+        my_url="http://192.168.1.72/projet/queries.php";
+
     }
 
     @Override
     protected Void doInBackground(String... params)  {
 
         try{
-            String enseignant=params[0];
+            System.out.println("in");
+            String type=params[0];
+            String enseignant=params[1];
+            System.out.println("enseignant= "+enseignant);
+
+
             URL url=new URL(my_url);
             HttpURLConnection httpURLConnection=(HttpURLConnection)url.openConnection();
             httpURLConnection.setRequestMethod("POST");
             httpURLConnection.setDoOutput(true);
             OutputStream outputStream=httpURLConnection.getOutputStream();
             BufferedWriter bw=new BufferedWriter(new OutputStreamWriter(outputStream,"UTF-8"));
-            String my_data=URLEncoder.encode("enseignant","UTF-8")+"="+URLEncoder.encode(enseignant,"UTF-8");
+            String my_data=URLEncoder.encode("type", "UTF-8")+"="+URLEncoder.encode(type, "UTF-8")
+                    +"&"+URLEncoder.encode("enseignant","UTF-8")+"="+URLEncoder.encode(enseignant,"UTF-8");
             bw.write(my_data);
             bw.flush();
             bw.close();
@@ -64,9 +72,13 @@ public class SpinnerProfQuery extends AsyncTask<String, Void, Void>{
                 sb+=line;
                 break;
             }
+            System.out.println("sb= "+sb);
             String[] spliter = sb.split(",");
-
-            for(int i=0;i<spliter.length;i++){
+            for(int j=0;j< spliter.length;j++) {
+                System.out.println(spliter[j]);
+                coursList.add(spliter[j]);
+            }
+            /*for(int i=0;i<spliter.length;i++){
                 if(i%2==0) {
                     String[] spliter2=spliter[i].split("\"");
                     for(int j=0;j<spliter2.length;j++) {
@@ -76,7 +88,7 @@ public class SpinnerProfQuery extends AsyncTask<String, Void, Void>{
                         }
                     }
                 }
-            }
+            }*/
             outputStream.close();
             InputStream inputStream=httpURLConnection.getInputStream();
             inputStream.close();

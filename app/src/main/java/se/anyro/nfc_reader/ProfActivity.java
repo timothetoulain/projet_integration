@@ -47,7 +47,12 @@ public class ProfActivity extends Activity {
         List coursList=new ArrayList();
         coursList.add("Sélectionnez le cours");
 
-        new SpinnerProfQuery(this,coursList).execute(prof);
+        String type="getClasses";
+
+        //we have to delete the first and the last 2 characters
+        prof= prof.substring(1, prof.length()-2);
+
+        new SpinnerProfQuery(this,coursList).execute(type,prof);
 
 
 

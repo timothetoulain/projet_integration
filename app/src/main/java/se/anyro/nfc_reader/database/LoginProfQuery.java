@@ -30,15 +30,17 @@ public class LoginProfQuery extends AsyncTask<String, Void, String>{
 
     @Override
     protected void onPreExecute(){
-        my_url="http://192.168.1.44/l3_projet_integration/queries.php";
+
+        //my_url="http://192.168.1.44/l3_projet_integration/queries.php";
+        my_url="http://192.168.1.72/projet/queries.php";
     }
 
     @Override
     protected String doInBackground(String... params)  {
 
-        String login=params[0];
-        String mdp=params[1];
-        String type="checkAccount";
+        String type=params[0];
+        String login=params[1];
+        String mdp=params[2];
 
         try{
             URL url=new URL(my_url);
@@ -64,8 +66,8 @@ public class LoginProfQuery extends AsyncTask<String, Void, String>{
                 sb+=line;
                 break;
             }
-            sb= sb.substring(1, sb.length()-1);
-            System.out.println(sb);
+           // sb= sb.substring(1, sb.length()-1);
+           // System.out.println("sb= " +sb);
 
             outputStream.close();
             InputStream inputStream=httpURLConnection.getInputStream();

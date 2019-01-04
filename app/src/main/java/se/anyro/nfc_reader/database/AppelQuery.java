@@ -30,16 +30,22 @@ public class AppelQuery extends AsyncTask<String, Void, String>{
 
     @Override
     protected void onPreExecute(){
-        my_url="http://192.168.1.44/l3_projet_integration/queries.php";
+        //my_url="http://192.168.1.44/l3_projet_integration/queries.php";
+        my_url="http://192.168.1.72/projet/queries.php";
+
     }
 
     @Override
     protected String doInBackground(String... params)  {
+        String type=params[0];
+        String nfc=params[1];
+        //String prof=params[2];
+        String className=params[2];
+        System.out.println("type:"+type);
+        System.out.println("nfc:"+nfc);
+       // System.out.println("prof:"+prof);
+        System.out.println("class:"+className);
 
-        String dec=params[0];
-        String prof=params[1];
-        String cours=params[2];
-        System.out.println("dec:"+dec);
         try{
             URL url=new URL(my_url);
             HttpURLConnection httpURLConnection=(HttpURLConnection)url.openConnection();
@@ -47,11 +53,13 @@ public class AppelQuery extends AsyncTask<String, Void, String>{
             httpURLConnection.setDoOutput(true);
             OutputStream outputStream=httpURLConnection.getOutputStream();
             BufferedWriter bw=new BufferedWriter(new OutputStreamWriter(outputStream,"UTF-8"));
-            String my_data=URLEncoder.encode("dec","UTF-8")+"="+URLEncoder.encode(dec,"UTF-8");
-            my_data += "&" + URLEncoder.encode("prof", "UTF-8") + "=" +
-                    URLEncoder.encode(prof, "UTF-8");
-            my_data += "&" + URLEncoder.encode("cours", "UTF-8") + "=" +
-                    URLEncoder.encode(cours, "UTF-8");
+            String my_data=URLEncoder.encode("type","UTF-8")+"="+URLEncoder.encode(type,"UTF-8");
+            my_data += "&" + URLEncoder.encode("nfc", "UTF-8") + "=" +
+                    URLEncoder.encode(nfc, "UTF-8");
+           /* my_data += "&" + URLEncoder.encode("prof", "UTF-8") + "=" +
+                    URLEncoder.encode(prof, "UTF-8");*/
+            my_data += "&" + URLEncoder.encode("className", "UTF-8") + "=" +
+                    URLEncoder.encode(className, "UTF-8");
             bw.write(my_data);
             bw.flush();
             bw.close();
@@ -66,7 +74,7 @@ public class AppelQuery extends AsyncTask<String, Void, String>{
                 sb+=line;
                 break;
             }
-            sb= sb.substring(1, sb.length()-1);
+            //sb= sb.substring(1, sb.length()-1);
             System.out.println(sb);
 
             outputStream.close();
