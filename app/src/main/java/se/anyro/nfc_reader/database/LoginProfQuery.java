@@ -30,8 +30,10 @@ public class LoginProfQuery extends AsyncTask<String, Void, String>{
 
     @Override
     protected void onPreExecute(){
-        my_url="http://192.168.1.44/l3_projet_integration/queries.php";
+        //my_url="http://192.168.1.44/l3_projet_integration/queries.php";
         //my_url="http://192.168.1.72/projet/queries.php";
+        my_url="http://3.120.246.93/pintegration/queries.php";
+
     }
 
     @Override
@@ -47,9 +49,14 @@ public class LoginProfQuery extends AsyncTask<String, Void, String>{
             httpURLConnection.setRequestMethod("POST");
             httpURLConnection.setDoOutput(true);
 
-            System.out.println(httpURLConnection.getResponseCode());
+           // System.out.println(httpURLConnection.getResponseCode());
+
+            System.out.println(login);
+            System.out.println(mdp);
+            System.out.println(type);
 
             OutputStream outputStream=httpURLConnection.getOutputStream();
+
             BufferedWriter bw=new BufferedWriter(new OutputStreamWriter(outputStream,"UTF-8"));
             String my_data=URLEncoder.encode("type", "UTF-8")+"="+URLEncoder.encode(type, "UTF-8")
                     +"&"+URLEncoder.encode("login","UTF-8")+"="+URLEncoder.encode(login,"UTF-8")
@@ -57,6 +64,7 @@ public class LoginProfQuery extends AsyncTask<String, Void, String>{
             bw.write(my_data);
             bw.flush();
             bw.close();
+
             BufferedReader reader = new BufferedReader(new
                     InputStreamReader(httpURLConnection.getInputStream()));
 

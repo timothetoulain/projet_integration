@@ -30,9 +30,9 @@ public class AppelQuery extends AsyncTask<String, Void, String>{
 
     @Override
     protected void onPreExecute(){
-        my_url="http://192.168.1.44/l3_projet_integration/queries.php";
+        //my_url="http://192.168.1.44/l3_projet_integration/queries.php";
         //my_url="http://192.168.1.72/projet/queries.php";
-
+        my_url="http://3.120.246.93/pintegration/queries.php";
     }
 
     @Override
