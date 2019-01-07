@@ -70,10 +70,10 @@ public class LoginProf extends Activity {
     }
 
     private void identifiantIncorrectMessage(){
-        Toast.makeText(this,"Identifiant et/ou mot de passe incorrect(s)",Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,R.string.error_login_password,Toast.LENGTH_SHORT).show();
     }
     private void champIncompletMessage(){
-        Toast.makeText(this,"Au moins un champ est incomplet !",Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,R.string.error_incomplete,Toast.LENGTH_SHORT).show();
     }
     private void saveData(String nomProf) {
         try {

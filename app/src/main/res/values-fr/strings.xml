@@ -14,9 +14,9 @@
     <string name="nothing_scanned">Rien de scanné pour le moment</string>
     <string name="add_sector">Ajouter une filière</string>
     <string name="add_group">Ajouter un groupe</string>
-    <string name="new_sector_id">Identifiant de la nouvelle filière (L1MIPI, L2Info ...)</string>
-    <string name="new_sector_name">Nom de la nouvelle filière (mathématiques, physique ...)</string>
-    <string name="new_sector_year">Année d\'étude de la nouvelle filière (L1, M1 ...)</string>
+    <string name="new_sector_id">Identifiant de la nouvelle filière (L1MIPI, L2Info …)</string>
+    <string name="new_sector_name">Nom de la nouvelle filière (mathématiques, physique …)</string>
+    <string name="new_sector_year">Année d\'étude de la nouvelle filière (L1, M1 …)</string>
     <string name="sector_add">Ajoutez une filière</string>
     <string name="enter">Valider</string>
     <string name="new_group">Nouveau nom de groupe</string>
@@ -30,4 +30,8 @@
     <string name="administrator">Administrateur</string>
     <string name="teacher">Enseignant</string>
     <string name="enter_group">Indiquez le groupe</string>
+    <string name="select_class">Sélectionnez le cours</string>
+    <string name="error_select_class">Veuillez sélectionner un cours</string>
+    <string name="error_login_password">Identifiant et/ou mot de passe incorrect(s)</string>
+    <string name="error_incomplete">Au moins un champ est incomplet !</string>
 </resources>
