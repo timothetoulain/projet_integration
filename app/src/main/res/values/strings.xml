@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">NFC Reader</string>
     <string name="intro_message">Present your student card at the back of the device</string>
-    <string name="error">Error</string>
+    <string name="error">Error:</string>
     <string name="no_nfc">No NFC found on this device</string>
     <string name="nfc_disabled">NFC is not enable. Please go to the wireless settings to enable it.</string>
     <string name="menu_main_end_title">Clear all</string>
@@ -14,9 +14,9 @@
     <string name="nothing_scanned">Nothing scanned yet</string>
     <string name="add_sector">Add a sector</string>
     <string name="add_group">Add a group</string>
-    <string name="new_sector_id">Identifier of the new sector (L1MIPI, L2Info ...)</string>
-    <string name="new_sector_name">Name of the new sector (mathematics, physics ...)</string>
-    <string name="new_sector_year">Year of study for the new sector (L1, M1 ...)</string>
+    <string name="new_sector_id">Identifier of the new sector (L1MIPI, L2Info …)</string>
+    <string name="new_sector_name">Name of the new sector (mathematics, physics …)</string>
+    <string name="new_sector_year">Year of study for the new sector (L1, M1 …)</string>
     <string name="sector_add">Add a sector</string>
     <string name="enter">Enter</string>
     <string name="new_group">New group name</string>
@@ -30,4 +30,8 @@
     <string name="administrator">Administrator</string>
     <string name="teacher">Teacher</string>
     <string name="enter_group">Enter the group</string>
+    <string name="select_class">Select the class</string>
+    <string name="error_select_class">Please select a class</string>
+    <string name="error_login_password">Login and/or password incorrect(s)</string>
+    <string name="error_incomplete">At least one field is incomplete!</string>
 </resources>

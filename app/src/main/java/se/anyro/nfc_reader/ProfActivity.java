@@ -45,7 +45,7 @@ public class ProfActivity extends Activity {
 
 
         List coursList=new ArrayList();
-        coursList.add("Sélectionnez le cours");
+        coursList.add(getString(R.string.select_class));
 
         String type="getClasses";
 
@@ -66,7 +66,7 @@ public class ProfActivity extends Activity {
             @Override
             public void onClick(View v) {
                 if(/*meditTextGroupe.getText().length()==0 ||*/
-                        mSpinnerCours.getSelectedItem().toString().equals("Sélectionnez le cours"))
+                        mSpinnerCours.getSelectedItem().toString().equals(R.string.select_class))
                 {
                     champIncompletMessage();
                 }
@@ -81,7 +81,7 @@ public class ProfActivity extends Activity {
         });
     }
     private void champIncompletMessage(){
-        Toast.makeText(this,"Veuillez sélectionner un cours",Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,R.string.error_select_class,Toast.LENGTH_SHORT).show();
     }
     private void saveData(String cours) {
         try {
@@ -106,7 +106,7 @@ public class ProfActivity extends Activity {
             return sb.toString();
             // this.mTextView.setText(sb.toString());
         } catch (Exception e) {
-            Toast.makeText(this,"Error:"+ e.getMessage(),Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,R.string.error+ e.getMessage(),Toast.LENGTH_SHORT).show();
         }
         return null;
     }
