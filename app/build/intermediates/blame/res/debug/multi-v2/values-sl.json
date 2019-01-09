@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\AndroidProjects\\projet_integration2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sl\\values-sl.xml",
+            "outputFile": "/home/toulain/AndroidStudioProjects/nfc-reader/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sl/values-sl.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Hélène\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\151b15bf18db1316593068d84c3c4c18\\res\\values-sl\\values-sl.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-sl/values-sl.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
