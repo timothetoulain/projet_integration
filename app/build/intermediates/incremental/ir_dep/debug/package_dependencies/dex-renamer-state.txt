@@ -1,0 +1,4 @@
+#Thu Jan 10 20:28:51 CET 2019
+base.0=C\:\\Users\\Marcross\\Desktop\\L3\\SEMESTRE_2\\projet_integration-master\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\10
+path.0=classes.dex
+renamed.0=classes.dex
