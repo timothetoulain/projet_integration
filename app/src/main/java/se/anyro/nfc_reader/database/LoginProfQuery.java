@@ -75,7 +75,11 @@ public class LoginProfQuery extends AsyncTask<String, Void, String>{
                 sb+=line;
                 break;
             }
-           // sb= sb.substring(1, sb.length()-1);
+            //for some reason, we receive "0", so we have to delete the symbols ""
+            if(sb.equals("\"0\"")){
+                sb= sb.substring(1, sb.length()-1);
+            }
+          // sb= sb.substring(1, sb.length()-1);
            // System.out.println("sb= " +sb);
             System.out.println("SB=" + sb);
 

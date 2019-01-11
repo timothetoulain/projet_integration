@@ -1,6 +1,5 @@
 package se.anyro.nfc_reader;
 
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -38,13 +37,14 @@ public class ProfActivity extends Activity {
         setContentView(R.layout.activity_prof);
 
         mValiderButton = findViewById(R.id.validerButton);
-        meditTextGroupe= findViewById(R.id.editTextGroupe);
+      //  meditTextGroupe= findViewById(R.id.editTextGroupe);
         mSpinnerCours = findViewById(R.id.spinnerCours);
         this.prof=readData(profFile);
         System.out.println("prof="+prof);
 
 
         List coursList=new ArrayList();
+
         coursList.add(getString(R.string.select_class));
 
         String type="getClasses";
@@ -53,7 +53,6 @@ public class ProfActivity extends Activity {
         prof= prof.substring(1, prof.length()-2);
 
         new SpinnerProfQuery(this,coursList).execute(type,prof);
-
 
 
         ArrayAdapter adapterCours = new ArrayAdapter(this, android.R.layout.simple_spinner_item, coursList);
@@ -66,7 +65,7 @@ public class ProfActivity extends Activity {
             @Override
             public void onClick(View v) {
                 if(/*meditTextGroupe.getText().length()==0 ||*/
-                        mSpinnerCours.getSelectedItem().toString().equals(R.string.select_class))
+                        mSpinnerCours.getSelectedItem().toString().equals(getString(R.string.select_class)))
                 {
                     champIncompletMessage();
                 }

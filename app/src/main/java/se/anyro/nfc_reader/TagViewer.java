@@ -442,10 +442,14 @@ public class TagViewer extends Activity {
         }
 
         switch (item.getItemId()) {
-        case R.id.menu_main_end:
+        case R.id.menu_main_clear:
             clearTags();
             return true;
-        case R.id.menu_copy_hex:
+        case R.id.menu_main_end:
+            //TODO
+            return true;
+
+        /*case R.id.menu_copy_hex:
             copyIds(getIdsHex());
             return true;
         case R.id.menu_copy_reversed_hex:
@@ -456,7 +460,8 @@ public class TagViewer extends Activity {
             return true;
         case R.id.menu_copy_reversed_dec:
             copyIds(getIdsReversedDec());
-            return true;
+            return true;*/
+
         default:
             return super.onOptionsItemSelected(item);
         }

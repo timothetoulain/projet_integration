@@ -703,11 +703,7 @@ id list
 id listMode
 id list_item
 id media_actions
-id menu_copy_dec
-id menu_copy_hex
-id menu_copy_reversed_dec
-id menu_copy_reversed_hex
-id menu_main_copy
+id menu_main_clear
 id menu_main_end
 id message
 id middle
@@ -749,7 +745,6 @@ id showCustom
 id showHome
 id showTitle
 id spacer
-id spinnerAnnee
 id spinnerCours
 id spinnerFiliere
 id spinnerGroupe
@@ -899,6 +894,7 @@ string menu_copy_dec
 string menu_copy_hex
 string menu_copy_reversed_dec
 string menu_copy_reversed_hex
+string menu_main_clear_title
 string menu_main_copy
 string menu_main_end_title
 string new_group
