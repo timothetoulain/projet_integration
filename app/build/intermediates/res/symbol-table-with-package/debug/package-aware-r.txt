@@ -889,6 +889,9 @@ string app_name
 string enter
 string enter_group
 string error
+string error_incomplete
+string error_login_password
+string error_select_class
 string group_add
 string intro_message
 string login
@@ -909,6 +912,7 @@ string password
 string search_menu_title
 string sector
 string sector_add
+string select_class
 string sign_in
 string status_bar_notification_info_overflow
 string teacher

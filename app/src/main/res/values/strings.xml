@@ -1,6 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">NFC Reader</string>
+    <string name="application_name">CheckPresence</string>
+    <string name="menu">Menu</string>
+
+    <string name="massage_welcome">Welcome on CheckPresence! You can connect to access your account.</string>
+    <string name="button_connection">Connection</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+
+    <string name="massage_account">You can create a new presence list or display your existing lists</string>
+    <string name="button_create_list">Create</string>
+    <string name="button_display_list">Visualiser</string>
+    <string name="button_disconnect">Disconnect</string>
+
+    <string name="message_new_list">Create a new presence list.</string>
+    <string name="course">Choose the course</string>
+    <string name="button_registration">Start registrations</string>
+
+    <string name="message_scan">Present your student card at the back of the device.</string>
+    <string name="button_forget_card">I forgot my card</string>
+    <string name="button_registration_finish">Finish registrations</string>
+
+    <string name="student_number">Student number</string>
+    <string name="student_name">Last name First name</string>
+    <string name="button_student_add">Confirm</string>
+
+    <string name="date_start">Choose a beginning date and schedule for registrations</string>
+    <string name="date_end">>Choose a ending date and schedule for registrations</string>
+    <string name="button_search">Research</string>
+    <string name="results">Your results</string>
+
+
+    
+
+
+
     <string name="intro_message">Present your student card at the back of the device</string>
     <string name="error">Error:</string>
     <string name="no_nfc">No NFC found on this device</string>

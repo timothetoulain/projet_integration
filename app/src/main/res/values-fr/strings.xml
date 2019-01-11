@@ -1,6 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Lecteur NFC</string>
+    <string name="application_name">CheckPresence</string>
+    <string name="menu">Menu</string>
+
+    <string name="message_welcome">Bienvenue sur CheckPresence ! Connectez-vous pour accéder à votre compte.</string>
+    <string name="button_connection">Connexion</string>
+    <string name="login">Identifiant</string>
+    <string name="password">Mot de passe</string>
+
+    <string name="message_account">Vous pouvez créer une nouvelle liste de présence ou visualiser vos listes existante.</string>
+    <string name="button_create_list">Créer</string>
+    <string name="button_display_list">Visualiser</string>
+    <string name="button_disconnect">Déconnexion</string>
+
+    <string name="message_new_list">Créez une nouvelle liste de présence.</string>
+    <string name="course">Choisissez le cours</string>
+    <string name="button_registration">Lancer les inscriptions</string>
+
+    <string name="message_scan">Présentez votre carte d\'étudiant au dos de l\'appareil.</string>
+    <string name="button_forget_card">J\'ai oublié ma carte</string>
+    <string name="button_registration_finish">Terminer les inscriptions</string>
+
+    <string name="student_number">Numéro d\'étudiant</string>
+    <string name="student_name">Nom Prénom</string>
+    <string name="button_student_add">Confirmer</string>
+
+    <string name="date_start">Choisissez une date et une heure de début des inscriptions</string>
+    <string name="date_end">Choisissez une date et une heure de fin des inscriptions</string>
+    <string name="button_search">Rechercher</string>
+    <string name="results">Vos résultats</string>
+
+
+
+
+
+
     <string name="intro_message">Présentez votre carte étudiant au dos de l\'appareil</string>
     <string name="error">Erreur</string>
     <string name="no_nfc">Pas de NFC trouvé sur cet appareil</string>
