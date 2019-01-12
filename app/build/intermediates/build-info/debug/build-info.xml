@@ -2,70 +2,35 @@
 <instant-run
     abi="x86"
     api-level="27"
-    build-mode="FULL"
+    build-mode="COLD"
     density="420dpi"
     format="10"
+    ir-eligibility="CLASS_ADDED"
     plugin-version="3.2.1"
-    timestamp="1547148499083"
+    timestamp="1547317482472"
     token="6201690278475381249"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="7106" />
+        duration="2199" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="507" />
+        duration="27" />
     <task
         name="verifier"
-        duration="138" />
+        duration="14" />
 
-    <artifact
-        location="C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
-        type="SPLIT" />
     <artifact
         location="C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
         type="SPLIT" />
-    <artifact
-        location="C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
-        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1547148499083"
+        timestamp="1547310464576"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
@@ -77,10 +42,10 @@
             location="C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            location="C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            location="C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
@@ -89,13 +54,13 @@
             location="C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
         <artifact
+            location="C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            type="SPLIT" />
+        <artifact
             location="C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
@@ -106,6 +71,32 @@
         <artifact
             location="C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
             type="SPLIT_MAIN" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="COMPATIBLE"
+        timestamp="1547312351057"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1547312431191"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="CLASS_ADDED"
+        timestamp="1547317482472"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            type="SPLIT" />
     </build>
 
 </instant-run>

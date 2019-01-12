@@ -49,14 +49,7 @@
             </intent-filter>
         </activity>
         <activity android:name="se.anyro.nfc_reader.admin.AdminActivity" />
-        <activity
-            android:name="se.anyro.nfc_reader.ProfActivity"
-            android:parentActivityName="se.anyro.nfc_reader.admin.AdminActivity" />
-        <!-- The meta-data element is needed for versions lower than 4.1 -->
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value=".admin.AdminActivity" />
-            />
+        <activity android:name="se.anyro.nfc_reader.ProfActivity" />
         <activity android:name="se.anyro.nfc_reader.admin.FiliereCreationActivity" />
         <activity android:name="se.anyro.nfc_reader.admin.GroupeCreationActivity" />
         <activity android:name="se.anyro.nfc_reader.LoginProf" />

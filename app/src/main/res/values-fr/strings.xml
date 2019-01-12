@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">CheckPresence</string>
     <string name="application_name">CheckPresence</string>
     <string name="menu">Menu</string>
 
     <string name="message_welcome">Bienvenue sur CheckPresence ! Connectez-vous pour accéder à votre compte.</string>
     <string name="button_connection">Connexion</string>
-    <string name="login">Identifiant</string>
-    <string name="password">Mot de passe</string>
 
     <string name="message_account">Vous pouvez créer une nouvelle liste de présence ou visualiser vos listes existante.</string>
     <string name="button_create_list">Créer</string>
@@ -69,4 +68,9 @@
     <string name="error_select_class">Veuillez sélectionner un cours</string>
     <string name="error_login_password">Identifiant et/ou mot de passe incorrect(s)</string>
     <string name="error_incomplete">Au moins un champ est incomplet !</string>
+
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+
+    <string name="logoutDialogTitle">Attention</string>
 </resources>
