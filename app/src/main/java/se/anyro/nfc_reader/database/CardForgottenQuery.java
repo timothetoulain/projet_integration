@@ -42,7 +42,7 @@ public class CardForgottenQuery extends AsyncTask<String, Void, String>{
         course= course.substring(0, course.length()-1);
 
         System.out.println("type:"+type);
-        System.out.println("cours:"+course);
+        System.out.println("course:"+course);
         System.out.println("numberStudent:"+numberStudent);
         System.out.println("nameStudent:"+nameStudent);
 
@@ -67,7 +67,7 @@ public class CardForgottenQuery extends AsyncTask<String, Void, String>{
             BufferedReader reader = new BufferedReader(new
                     InputStreamReader(httpURLConnection.getInputStream()));
 
-            String line = null;
+            String line;
             String sb="";
             // Read Server Response
             while((line = reader.readLine()) != null) {

@@ -40,7 +40,6 @@ public class AppelQuery extends AsyncTask<String, Void, String>{
         String nfc=params[2];
         System.out.println("type:"+type);
         System.out.println("nfc:"+nfc);
-       // System.out.println("prof:"+prof);
         System.out.println("class:"+course);
 
         try{
@@ -53,7 +52,6 @@ public class AppelQuery extends AsyncTask<String, Void, String>{
             String my_data=URLEncoder.encode("type","UTF-8")+"="+URLEncoder.encode(type,"UTF-8");
             my_data += "&" + URLEncoder.encode("course", "UTF-8") + "=" +
                     URLEncoder.encode(course, "UTF-8");
-
             my_data += "&" + URLEncoder.encode("nfc", "UTF-8") + "=" +
                     URLEncoder.encode(nfc, "UTF-8");
             bw.write(my_data);

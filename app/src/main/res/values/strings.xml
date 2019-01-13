@@ -66,6 +66,8 @@
     <string name="error_login_password">Login and/or password incorrect(s)</string>
     <string name="error_incomplete">At least one field is incomplete!</string>
     <string name="error_connection">Connection to server impossible</string>
+    <string name="error_unknown_student">Unknown student</string>
+
 
 
     <string name="yes">Yes</string>

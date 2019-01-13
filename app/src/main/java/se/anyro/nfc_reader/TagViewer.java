@@ -1,6 +1,7 @@
 package se.anyro.nfc_reader;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.Charset;
@@ -63,27 +64,33 @@ public class TagViewer extends Activity {
 
     private String teacher=null;
     private String course=null;
+    private String student=null;
 
     private Button mforgottenCardButton;
     private Button mfinishButton;
 
+    private int count=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tag_viewer);
+
+
         mforgottenCardButton = findViewById(R.id.forgottenCardButton);
         mfinishButton = findViewById(R.id.finishButton);
-
         mTagContent = findViewById(R.id.list);
 
         this.teacher=readData(teacherFile);
-
         this.course=readData(classFile);
+        //this.student=readData(studentFile);
+
         teacher= teacher.substring(0, teacher.length()-1);
         course= course.substring(0, course.length()-1);
-        System.out.println("prof:"+teacher);
-        System.out.println("cours:"+course);
+
+        System.out.println("teacher:"+teacher);
+        System.out.println("course:"+course);
+       // System.out.println("student:"+student);
 
 
         resolveIntent(getIntent());
@@ -119,6 +126,27 @@ public class TagViewer extends Activity {
         });
 
     }
+
+    @Override
+    protected void onPostResume() {
+        super.onPostResume();
+        if(count>0){
+            System.out.println("let's read");
+            this.student=readData(studentFile);
+            student= student.substring(0, student.length()-1);
+            System.out.println("student: "+student);
+            if(!student.equals("unknown student")){
+                //TODO afficher nom de l'etudiant
+
+            }
+            else{
+                System.out.println("unknown student");
+            }
+        }
+        count++;
+        System.out.println("resume");
+    }
+
 
     private void showMessage(int title, int message) {
         mDialog.setTitle(title);
@@ -579,6 +607,8 @@ public class TagViewer extends Activity {
             while((s= br.readLine())!= null)  {
                 sb.append(s).append("\n");
             }
+            br.close();
+            in.close();
             return sb.toString();
             // this.mTextView.setText(sb.toString());
         } catch (Exception e) {

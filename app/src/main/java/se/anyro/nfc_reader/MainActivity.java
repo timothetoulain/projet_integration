@@ -6,12 +6,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import java.io.File;
+import java.io.FileOutputStream;
+
 import se.anyro.nfc_reader.admin.AdminActivity;
 
 public class MainActivity extends Activity {
 
    // private Button mAdminButton;
     private Button mProfButton;
+    private String studentFile="student.txt";
+    private String teacherFile = "teacher.txt";
+    private String classFile = "class.txt";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +25,9 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
        // mAdminButton = findViewById(R.id.admin_button);
         //mAdminButton.setEnabled(true);
+        deleteTextFile(studentFile);
+        deleteTextFile(teacherFile);
+        deleteTextFile(classFile);
 
         mProfButton = findViewById(R.id.prof_button);
         mProfButton.setEnabled(true);
@@ -39,5 +48,22 @@ public class MainActivity extends Activity {
             }
         });
 
+    }
+    private void deleteTextFile(String file) {
+        try {
+
+            File fileToDelete = new File(file);
+            if(fileToDelete.exists()) {
+                fileToDelete.delete();
+                System.out.println("file deleted");
+            }
+           else
+               System.out.println("file doesn't exist");
+
+            //Toast.makeText(this,"File saved!",Toast.LENGTH_SHORT).show();
+        } catch (Exception e) {
+            e.printStackTrace();
+            //Toast.makeText(this,"Error:"+ e.getMessage(),Toast.LENGTH_SHORT).show();
+        }
     }
 }

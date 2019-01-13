@@ -914,6 +914,7 @@ string error_connection
 string error_incomplete
 string error_login_password
 string error_select_class
+string error_unknown_student
 string group_add
 string intro_message
 string login
