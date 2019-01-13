@@ -47,6 +47,8 @@
         <activity android:name=".admin.FiliereCreationActivity" />
         <activity android:name=".admin.GroupeCreationActivity" />
         <activity android:name=".LoginProf" />
+        <activity android:name=".TeacherMenuActivity" />
+        <activity android:name=".CardForgottenActivity"></activity>
     </application>
 
 </manifest>

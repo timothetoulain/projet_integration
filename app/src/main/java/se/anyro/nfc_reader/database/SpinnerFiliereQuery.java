@@ -33,7 +33,7 @@ public class SpinnerFiliereQuery extends AsyncTask<String, Void, Void>{
 
     @Override
     protected void onPreExecute(){
-        my_url="http://192.168.1.44/l3_projet_integration/queries.php";
+        my_url="http://3.120.246.93/checkpresence/controller/queries.php";
     }
 
     @Override

@@ -17,5 +17,17 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/intro_message" />
 
+        <Button
+            android:id="@+id/forgottenCardButton"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:text="@string/button_forget_card" />
+
+        <Button
+            android:id="@+id/finishButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/button_registration_finish" />
+
     </LinearLayout>
 </ScrollView>

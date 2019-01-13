@@ -68,6 +68,7 @@
     <string name="error_select_class">Veuillez sélectionner un cours</string>
     <string name="error_login_password">Identifiant et/ou mot de passe incorrect(s)</string>
     <string name="error_incomplete">Au moins un champ est incomplet !</string>
+    <string name="error_connection">Connexion au serveur impossible</string>
 
     <string name="yes">Oui</string>
     <string name="no">Non</string>

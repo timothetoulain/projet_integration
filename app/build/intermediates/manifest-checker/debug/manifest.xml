@@ -53,6 +53,8 @@
         <activity android:name="se.anyro.nfc_reader.admin.FiliereCreationActivity" />
         <activity android:name="se.anyro.nfc_reader.admin.GroupeCreationActivity" />
         <activity android:name="se.anyro.nfc_reader.LoginProf" />
+        <activity android:name="se.anyro.nfc_reader.TeacherMenuActivity" />
+        <activity android:name="se.anyro.nfc_reader.CardForgottenActivity" />
 
         <meta-data
             android:name="android.support.VERSION"

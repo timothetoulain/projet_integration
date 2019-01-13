@@ -37,6 +37,7 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -56,27 +57,34 @@ public class TagViewer extends Activity {
     private AlertDialog mDialog;
 
     private List<Tag> mTags = new ArrayList<>();
-    private String profFile = "prof.txt";
-    private String prof=null;
+    private String teacherFile = "teacher.txt";
+    private String classFile = "class.txt";
+    private String studentFile = "student.txt";
 
-    private String coursFile = "cours.txt";
-    private String cours=null;
+    private String teacher=null;
+    private String course=null;
+
+    private Button mforgottenCardButton;
+    private Button mfinishButton;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tag_viewer);
+        mforgottenCardButton = findViewById(R.id.forgottenCardButton);
+        mfinishButton = findViewById(R.id.finishButton);
 
         mTagContent = findViewById(R.id.list);
 
-        this.prof=readData(profFile);
-        System.out.println("prof:"+prof);
+        this.teacher=readData(teacherFile);
 
-        this.cours=readData(coursFile);
-        System.out.println("cours:"+cours);
-        prof= prof.substring(1, prof.length()-2);
-        cours= cours.substring(2, cours.length()-3);
+        this.course=readData(classFile);
+        teacher= teacher.substring(0, teacher.length()-1);
+        course= course.substring(0, course.length()-1);
+        System.out.println("prof:"+teacher);
+        System.out.println("cours:"+course);
+
 
         resolveIntent(getIntent());
 
@@ -93,6 +101,22 @@ public class TagViewer extends Activity {
                 new Intent(this, getClass()).addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP), 0);
         mNdefPushMessage = new NdefMessage(new NdefRecord[] { newTextRecord(
                 "Message from NFC Reader :-)", Locale.ENGLISH, true) });
+
+        mforgottenCardButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                    Intent cardForgotten = new Intent(TagViewer.this, CardForgottenActivity.class);
+                    startActivity(cardForgotten);
+                }
+        });
+        mfinishButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //TODO afficher pop up demandant login/psw du prof avant de pouvoir quitter
+                Intent teacherMenu = new Intent(TagViewer.this, TeacherMenuActivity.class);
+                startActivity(teacherMenu);
+            }
+        });
 
     }
 
@@ -536,8 +560,8 @@ public class TagViewer extends Activity {
 
         try {
             //sb contient le numero nfc decimal
-            //nomEtu=new AppelQuery(this).execute(type,sb,prof,cours).get();
-            nomEtu=new AppelQuery(this).execute(type,sb,cours).get();
+            //nomEtu=new AppelQuery(this).execute(type,sb,prof,course).get();
+            nomEtu=new AppelQuery(this).execute(type,course,sb).get();
 
         } catch (InterruptedException e) {
             e.printStackTrace();

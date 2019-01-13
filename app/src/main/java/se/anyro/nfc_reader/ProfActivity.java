@@ -12,6 +12,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.BufferedReader;
@@ -24,16 +25,17 @@ import java.util.List;
 import se.anyro.nfc_reader.database.SpinnerProfQuery;
 /**
  * permet de selectionner le cours et le groupe dont on va faire l'appel
- * a t-on vraiment besoin de demander le groupe???
+ *
  */
 public class ProfActivity extends Activity implements DialogInterface {
 
     private Button mValiderButton;
     private Spinner mSpinnerCours;
     private EditText meditTextGroupe;
-    private String coursFile = "cours.txt";
-    private String profFile = "prof.txt";
-    private String prof=null;
+    private TextView mselectClassTextView;
+    private String classFile = "class.txt";
+    private String teacherFile = "teacher.txt";
+    private String teacher=null;
     private DialogFragment logOutDialog;
     private String TAG="ProfActivityLog";
 
@@ -42,43 +44,42 @@ public class ProfActivity extends Activity implements DialogInterface {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_prof);
-
+        //meditTextGroupe= findViewById(R.id.editTextGroupe);
         mValiderButton = findViewById(R.id.validerButton);
-      //  meditTextGroupe= findViewById(R.id.editTextGroupe);
         mSpinnerCours = findViewById(R.id.spinnerCours);
-        this.prof=readData(profFile);
-        System.out.println("prof="+prof);
+        mselectClassTextView=findViewById(R.id.selectClassTextView);
+
+        this.teacher=readData(teacherFile);
+        //for some reason, we have to delete the last character
+        teacher= teacher.substring(0, teacher.length()-1);
+
+        System.out.println("prof="+teacher);
 
 
-        List coursList=new ArrayList();
+        List classList=new ArrayList();
 
-        coursList.add(getString(R.string.select_class));
+        classList.add(getString(R.string.select_class));
 
-        String type="getClasses";
+        String type="getCourses";
 
-        //we have to delete the first and the last 2 characters
-        prof= prof.substring(1, prof.length()-2);
-
-        new SpinnerProfQuery(this,coursList).execute(type,prof);
+        new SpinnerProfQuery(this,classList).execute(type,teacher);
 
 
-        ArrayAdapter adapterCours = new ArrayAdapter(this, android.R.layout.simple_spinner_item, coursList);
+        ArrayAdapter adapterClass = new ArrayAdapter(this, android.R.layout.simple_spinner_item, classList);
 
-        adapterCours.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        adapterClass.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
-        mSpinnerCours.setAdapter(adapterCours);
+        mSpinnerCours.setAdapter(adapterClass);
 
         mValiderButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(/*meditTextGroupe.getText().length()==0 ||*/
-                        mSpinnerCours.getSelectedItem().toString().equals(getString(R.string.select_class)))
-                {
-                    champIncompletMessage();
+                if(mSpinnerCours.getSelectedItem().toString().equals(getString(R.string.select_class))){
+                    incompletFieldMessage();
                 }
                 else{
-                    String cours=mSpinnerCours.getSelectedItem().toString();
-                    saveData(cours);
+                    String course=mSpinnerCours.getSelectedItem().toString();
+                    saveData(course);
 
                     Intent tagViewer = new Intent(ProfActivity.this, TagViewer.class);
                     startActivity(tagViewer);
@@ -86,12 +87,12 @@ public class ProfActivity extends Activity implements DialogInterface {
             }
         });
     }
-    private void champIncompletMessage(){
+    private void incompletFieldMessage(){
         Toast.makeText(this,R.string.error_select_class,Toast.LENGTH_SHORT).show();
     }
     private void saveData(String cours) {
         try {
-            FileOutputStream out = this.openFileOutput(coursFile, MODE_PRIVATE);
+            FileOutputStream out = this.openFileOutput(classFile, MODE_PRIVATE);
             out.write(cours.getBytes());
             out.close();
             //Toast.makeText(this,"File saved!",Toast.LENGTH_SHORT).show();

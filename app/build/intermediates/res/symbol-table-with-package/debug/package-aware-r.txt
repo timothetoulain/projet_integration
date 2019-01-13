@@ -627,6 +627,7 @@ id FUNCTION
 id META
 id SHIFT
 id SYM
+id StudentNumberTextView
 id action0
 id action_bar
 id action_bar_activity_content
@@ -648,7 +649,6 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
-id admin_button
 id alertTitle
 id always
 id async
@@ -663,7 +663,9 @@ id chains
 id checkbox
 id chronometer
 id collapseActionView
+id confirmButton
 id contentPanel
+id createButton
 id custom
 id customPanel
 id decor_content_parent
@@ -671,6 +673,7 @@ id default_activity_button
 id dimensions
 id direct
 id disableHome
+id disconnectionButton
 id editTextFiliere
 id editTextFiliere2
 id editTextFiliere3
@@ -683,7 +686,9 @@ id end_padder
 id expand_activities_button
 id expanded_menu
 id filiereButton
+id finishButton
 id forever
+id forgottenCardButton
 id gone
 id groupeButton
 id groups
@@ -703,11 +708,13 @@ id list
 id listMode
 id list_item
 id media_actions
+id menuTextView
 id menu_main_clear
 id menu_main_end
 id message
 id middle
 id multiply
+id nameEditText
 id never
 id none
 id normal
@@ -739,6 +746,7 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id selectClassTextView
 id select_dialog_listview
 id shortcut
 id showCustom
@@ -757,6 +765,7 @@ id src_over
 id standard
 id start
 id status_bar_latest_event_content
+id studentNumberEditText
 id submenuarrow
 id submit_area
 id tabMode
@@ -765,6 +774,7 @@ id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
+id textView3
 id textViewAnnee
 id textViewAuthentification
 id textViewFiliere
@@ -781,6 +791,7 @@ id uniform
 id up
 id useLogo
 id validerButton
+id visualizeButton
 id withText
 id wrap
 id wrap_content
@@ -817,11 +828,13 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout activity_admin
+layout activity_card_forgotten
 layout activity_filiere_creation
 layout activity_groupe_creation
 layout activity_login_prof
 layout activity_main
 layout activity_prof
+layout activity_teacher_menu
 layout notification_action
 layout notification_action_tombstone
 layout notification_media_action
@@ -897,6 +910,7 @@ string date_start
 string enter
 string enter_group
 string error
+string error_connection
 string error_incomplete
 string error_login_password
 string error_select_class

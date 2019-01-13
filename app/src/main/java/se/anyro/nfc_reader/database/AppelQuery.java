@@ -30,21 +30,18 @@ public class AppelQuery extends AsyncTask<String, Void, String>{
 
     @Override
     protected void onPreExecute(){
-        //my_url="http://192.168.1.44/l3_projet_integration/queries.php";
-        //my_url="http://192.168.1.72/projet/queries.php";
-        my_url="http://3.120.246.93/pintegration/queries.php";
+        my_url="http://3.120.246.93/checkpresence/controller/queries.php";
     }
 
     @Override
     protected String doInBackground(String... params)  {
         String type=params[0];
-        String nfc=params[1];
-        //String prof=params[2];
-        String className=params[2];
+        String course=params[1];
+        String nfc=params[2];
         System.out.println("type:"+type);
         System.out.println("nfc:"+nfc);
        // System.out.println("prof:"+prof);
-        System.out.println("class:"+className);
+        System.out.println("class:"+course);
 
         try{
             URL url=new URL(my_url);
@@ -54,12 +51,11 @@ public class AppelQuery extends AsyncTask<String, Void, String>{
             OutputStream outputStream=httpURLConnection.getOutputStream();
             BufferedWriter bw=new BufferedWriter(new OutputStreamWriter(outputStream,"UTF-8"));
             String my_data=URLEncoder.encode("type","UTF-8")+"="+URLEncoder.encode(type,"UTF-8");
+            my_data += "&" + URLEncoder.encode("course", "UTF-8") + "=" +
+                    URLEncoder.encode(course, "UTF-8");
+
             my_data += "&" + URLEncoder.encode("nfc", "UTF-8") + "=" +
                     URLEncoder.encode(nfc, "UTF-8");
-           /* my_data += "&" + URLEncoder.encode("prof", "UTF-8") + "=" +
-                    URLEncoder.encode(prof, "UTF-8");*/
-            my_data += "&" + URLEncoder.encode("className", "UTF-8") + "=" +
-                    URLEncoder.encode(className, "UTF-8");
             bw.write(my_data);
             bw.flush();
             bw.close();
@@ -72,7 +68,7 @@ public class AppelQuery extends AsyncTask<String, Void, String>{
             // Read Server Response
             while((line = reader.readLine()) != null) {
                 sb+=line;
-                break;
+               // break;
             }
             //sb= sb.substring(1, sb.length()-1);
             System.out.println(sb);

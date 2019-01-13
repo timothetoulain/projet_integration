@@ -17,7 +17,8 @@ public class LoginProf extends Activity {
     private Button mButtonValider;
     private EditText meditTextIdentifiant;
     private EditText meditTextMdp;
-    private String data = "prof.txt";
+    private String teacherFile = "teacher.txt";
+    private String login;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,22 +33,25 @@ public class LoginProf extends Activity {
             @Override
             public void onClick(View v) {
                 if (meditTextIdentifiant.getText().length()==0 || meditTextMdp.getText().length()==0){
-                    champIncompletMessage();
+                    incompleteFieldMessage();
                 } else {
-                    String nomProf=login();
-                    if(nomProf != null){
-                        if(nomProf.equals("0")){
-                            identifiantIncorrectMessage();
+                    String teacherName=login();
+                    if(teacherName != null ){
+                        if(teacherName.equals("")){
+                            loginPasswordIncorrectMessage();
                         }
                         else{
                             //on stocke le nom du prof qui vient de se connecter pour les requetes suivantes
-                            saveData(nomProf);
-                            Intent profActivity = new Intent(LoginProf.this, ProfActivity.class);
-                            startActivity(profActivity);
+                            System.out.println("apres query");
+                            saveData(teacherName);
+                            Intent teacherMenuActivity = new Intent(LoginProf.this, TeacherMenuActivity.class);
+                            startActivity(teacherMenuActivity);
+                            /*Intent profActivity = new Intent(LoginProf.this, ProfActivity.class);
+                            startActivity(profActivity);*/
                         }
                     }
                     else{
-                        //TODO erreur !
+                        connectionErrorMessage();
                         System.out.println("ERROR 1");
                     }
                 }
@@ -56,10 +60,10 @@ public class LoginProf extends Activity {
     }
     public String login(){
         try {
-            String identifiant=meditTextIdentifiant.getText().toString();
-            String mdp=meditTextMdp.getText().toString();
+            this.login=meditTextIdentifiant.getText().toString();
+            String password=meditTextMdp.getText().toString();
             String type="checkAccount";
-            String resultLogin=new LoginProfQuery(this).execute(type,identifiant,mdp).get();
+            String resultLogin=new LoginProfQuery(this).execute(type,login,password).get();
             return resultLogin;
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -69,15 +73,18 @@ public class LoginProf extends Activity {
         return null;
     }
 
-    private void identifiantIncorrectMessage(){
+    private void loginPasswordIncorrectMessage(){
         Toast.makeText(this,R.string.error_login_password,Toast.LENGTH_SHORT).show();
     }
-    private void champIncompletMessage(){
+    private void incompleteFieldMessage(){
         Toast.makeText(this,R.string.error_incomplete,Toast.LENGTH_SHORT).show();
+    }
+    private void connectionErrorMessage(){
+        Toast.makeText(this,R.string.error_connection,Toast.LENGTH_SHORT).show();
     }
     private void saveData(String nomProf) {
         try {
-            FileOutputStream out = this.openFileOutput(data, MODE_PRIVATE);
+            FileOutputStream out = this.openFileOutput(teacherFile, MODE_PRIVATE);
             out.write(nomProf.getBytes());
             out.close();
             //Toast.makeText(this,"File saved!",Toast.LENGTH_SHORT).show();

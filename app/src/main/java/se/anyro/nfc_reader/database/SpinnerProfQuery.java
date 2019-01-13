@@ -20,26 +20,23 @@ import java.net.URLEncoder;
 import java.util.List;
 
 /**
- * permet de recuperer les intitulés des differentes filieres existantes dans la bd
- * afin de les afficher dynamiquement dans les spinners
+ * retrieves the different courses taught by the logged in teacher
+ * dynamic display in spinner
  */
 public class SpinnerProfQuery extends AsyncTask<String, Void, Void>{
     private Context context;
     private String my_url;
     private TextView mtextViewInfo;
-    private List coursList;
+    private List classList;
 
-    public SpinnerProfQuery(Context context, List coursList) {
+    public SpinnerProfQuery(Context context, List classList) {
         this.context=context;
-        this.coursList=coursList;
+        this.classList=classList;
     }
 
     @Override
     protected void onPreExecute(){
-        //my_url="http://192.168.1.44/l3_projet_integration/queries.php";
-        //my_url="http://192.168.1.72/projet/queries.php";
-        my_url="http://3.120.246.93/pintegration/queries.php";
-
+        my_url="http://3.120.246.93/checkpresence/controller/queries.php";
     }
 
     @Override
@@ -48,8 +45,11 @@ public class SpinnerProfQuery extends AsyncTask<String, Void, Void>{
         try{
             System.out.println("in");
             String type=params[0];
-            String enseignant=params[1];
-            System.out.println("enseignant= "+enseignant);
+            String teacher=params[1];
+            //for some reason, we have to delete the last character
+           // teacher= teacher.substring(0, teacher.length()-1);
+
+            System.out.println("teacher before query= "+teacher);
 
 
             URL url=new URL(my_url);
@@ -59,37 +59,33 @@ public class SpinnerProfQuery extends AsyncTask<String, Void, Void>{
             OutputStream outputStream=httpURLConnection.getOutputStream();
             BufferedWriter bw=new BufferedWriter(new OutputStreamWriter(outputStream,"UTF-8"));
             String my_data=URLEncoder.encode("type", "UTF-8")+"="+URLEncoder.encode(type, "UTF-8")
-                    +"&"+URLEncoder.encode("enseignant","UTF-8")+"="+URLEncoder.encode(enseignant,"UTF-8");
+                    +"&"+URLEncoder.encode("teacher","UTF-8")+"="+URLEncoder.encode(teacher,"UTF-8");
             bw.write(my_data);
             bw.flush();
             bw.close();
             BufferedReader reader = new BufferedReader(new
                     InputStreamReader(httpURLConnection.getInputStream()));
 
-            String line = null;
+            String line = "";
             String sb="";
             // Read Server Response
             while((line = reader.readLine()) != null) {
                 sb+=line;
-                break;
+                //break;
             }
             System.out.println("sb= "+sb);
+            //delete [ and ] at the beginning and the end
+            sb= sb.substring(1, sb.length()-1);
+
+
             String[] spliter = sb.split(",");
             for(int j=0;j< spliter.length;j++) {
+                //delete the ""
+                spliter[j]= spliter[j].substring(1, spliter[j].length()-1);
                 System.out.println(spliter[j]);
-                coursList.add(spliter[j]);
+                classList.add(spliter[j]);
             }
-            /*for(int i=0;i<spliter.length;i++){
-                if(i%2==0) {
-                    String[] spliter2=spliter[i].split("\"");
-                    for(int j=0;j<spliter2.length;j++) {
-                        if(j==3){
-                            System.out.println(spliter2[j]);
-                            coursList.add(spliter2[j]);
-                        }
-                    }
-                }
-            }*/
+
             outputStream.close();
             InputStream inputStream=httpURLConnection.getInputStream();
             inputStream.close();

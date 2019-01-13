@@ -18,7 +18,8 @@ import java.net.URL;
 import java.net.URLEncoder;
 
 /**
- * permet d'indiquer un etudiant comme present au cours dans la bd
+ * allow or denied access to the teacher's activities
+ * check login and password in the database
  */
 public class LoginProfQuery extends AsyncTask<String, Void, String>{
     private Context context;
@@ -33,7 +34,6 @@ public class LoginProfQuery extends AsyncTask<String, Void, String>{
         //my_url="http://192.168.1.44/l3_projet_integration/queries.php";
         //my_url="http://192.168.1.72/projet/queries.php";
         my_url="http://3.120.246.93/checkpresence/controller/queries.php";
-
     }
 
     @Override
@@ -41,7 +41,7 @@ public class LoginProfQuery extends AsyncTask<String, Void, String>{
 
         String type=params[0];
         String login=params[1];
-        String mdp=params[2];
+        String password=params[2];
 
         try{
             URL url=new URL(my_url);
@@ -52,7 +52,7 @@ public class LoginProfQuery extends AsyncTask<String, Void, String>{
            // System.out.println(httpURLConnection.getResponseCode());
 
             System.out.println(login);
-            System.out.println(mdp);
+            System.out.println(password);
             System.out.println(type);
 
             OutputStream outputStream=httpURLConnection.getOutputStream();
@@ -60,7 +60,7 @@ public class LoginProfQuery extends AsyncTask<String, Void, String>{
             BufferedWriter bw=new BufferedWriter(new OutputStreamWriter(outputStream,"UTF-8"));
             String my_data=URLEncoder.encode("type", "UTF-8")+"="+URLEncoder.encode(type, "UTF-8")
                     +"&"+URLEncoder.encode("login","UTF-8")+"="+URLEncoder.encode(login,"UTF-8")
-                    +"&"+URLEncoder.encode("mdp", "UTF-8") + "=" + URLEncoder.encode(mdp, "UTF-8");
+                    +"&"+URLEncoder.encode("password", "UTF-8") + "=" + URLEncoder.encode(password, "UTF-8");
             bw.write(my_data);
             bw.flush();
             bw.close();
@@ -75,10 +75,12 @@ public class LoginProfQuery extends AsyncTask<String, Void, String>{
                 sb+=line;
                 break;
             }
+            System.out.println("line=" + line);
+
             //for some reason, we receive "0", so we have to delete the symbols ""
-            if(sb.equals("\"0\"")){
+            /*if(sb.equals("\"0\"")){
                 sb= sb.substring(1, sb.length()-1);
-            }
+            }*/
           // sb= sb.substring(1, sb.length()-1);
            // System.out.println("sb= " +sb);
             System.out.println("SB=" + sb);

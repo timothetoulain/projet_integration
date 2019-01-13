@@ -30,10 +30,6 @@
     <string name="results">Your results</string>
 
 
-    
-
-
-
     <string name="intro_message">Present your student card at the back of the device</string>
     <string name="error">Error:</string>
     <string name="no_nfc">No NFC found on this device</string>
@@ -69,6 +65,8 @@
     <string name="error_select_class">Please select a class</string>
     <string name="error_login_password">Login and/or password incorrect(s)</string>
     <string name="error_incomplete">At least one field is incomplete!</string>
+    <string name="error_connection">Connection to server impossible</string>
+
 
     <string name="yes">Yes</string>
     <string name="no">No</string>
