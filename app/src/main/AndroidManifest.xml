@@ -48,7 +48,7 @@
         <activity android:name=".admin.GroupeCreationActivity" />
         <activity android:name=".LoginProf" />
         <activity android:name=".TeacherMenuActivity" />
-        <activity android:name=".CardForgottenActivity"></activity>
+        <activity android:name=".CardForgottenActivity" />
     </application>
 
 </manifest>

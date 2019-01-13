@@ -7,9 +7,6 @@ import android.view.View;
 import android.widget.Button;
 
 import java.io.File;
-import java.io.FileOutputStream;
-
-import se.anyro.nfc_reader.admin.AdminActivity;
 
 public class MainActivity extends Activity {
 

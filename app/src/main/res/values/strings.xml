@@ -9,7 +9,7 @@
 
     <string name="message_account">You can create a new presence list or display your existing lists</string>
     <string name="button_create_list">Create</string>
-    <string name="button_display_list">Visualiser</string>
+    <string name="button_display_list">Display</string>
     <string name="button_disconnect">Disconnect</string>
 
     <string name="message_new_list">Create a new presence list.</string>
