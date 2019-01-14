@@ -19,6 +19,7 @@ import se.anyro.nfc_reader.database.AppelQuery;
 import se.anyro.nfc_reader.record.ParsedNdefRecord;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.DialogFragment;
 import android.app.PendingIntent;
 import android.content.ClipData;
 import android.content.ClipboardManager;
@@ -37,6 +38,8 @@ import android.os.IBinder;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.provider.Settings;
+import android.util.Log;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -61,16 +64,21 @@ public class TagViewer extends Activity {
     private AlertDialog mDialog;
 
     private List<Tag> mTags = new ArrayList<>();
-    private String teacherFile = "teacher.txt";
-    private String classFile = "class.txt";
-    private String studentFile = "student.txt";
+    private String teacherFile;
+    private String classFile;
+    private String studentFile;
 
-    private String teacher=null;
-    private String course=null;
-    private String student=null;
+    private String teacher;
+    private String course;
+    private String student;
 
     private Button mforgottenCardButton;
     private Button mfinishButton;
+
+    // Attribute used for storing a tag used for debugging purpose. When using Log.i(TAG, "Something"), it will be easier to track these messages in the logcat.
+    private String TAG;
+
+    private DialogFragment confirmAcquittanceDialog;
 
     private int count=0;
 
@@ -85,6 +93,14 @@ public class TagViewer extends Activity {
         mfinishButton = findViewById(R.id.finishButton);
         mTagContent = findViewById(R.id.list);
 
+        teacherFile = "teacher.txt";
+        classFile = "class.txt";
+        studentFile = "student.txt";
+
+        teacher=null;
+        course=null;
+        student=null;
+
         this.teacher=readData(teacherFile);
         this.course=readData(classFile);
         //this.student=readData(studentFile);
@@ -92,8 +108,9 @@ public class TagViewer extends Activity {
         teacher= teacher.substring(0, teacher.length()-1);
         course= course.substring(0, course.length()-1);
 
-        System.out.println("teacher:"+teacher);
-        System.out.println("course:"+course);
+        this.TAG = "ViewerActivityLog";
+        Log.i(TAG,"teacher:"+teacher);
+        Log.i(TAG,"course:"+course);
        // System.out.println("student:"+student);
 
 
@@ -125,8 +142,16 @@ public class TagViewer extends Activity {
             @Override
             public void onClick(View v) {
                 //TODO afficher pop up demandant login/psw du prof avant de pouvoir quitter
+                /*
                 Intent teacherMenu = new Intent(TagViewer.this, TeacherMenuActivity.class);
                 startActivity(teacherMenu);
+                */
+                Log.d(TAG, "Finish button pressed");
+                confirmAcquittanceDialog = new DialogManager();
+                ((DialogManager) confirmAcquittanceDialog).setDialogToDisplay("acquittanceConfirmationDialog");
+                // This functions calls whatever is implemented into the DialogManager onCreateDialog method
+                confirmAcquittanceDialog.show(getFragmentManager(), "ConfirmDialog");
+                ((DialogManager)confirmAcquittanceDialog).onDismissListener(closeListener);
             }
         });
 
@@ -166,21 +191,21 @@ public class TagViewer extends Activity {
             mAdapter.enableForegroundNdefPush(this, mNdefPushMessage);
         }
         if(count>0){
-            System.out.println("let's read");
+            Log.i(TAG,"let's read");
             this.student=readData(studentFile);
             student= student.substring(0, student.length()-1);
-            System.out.println("student: "+student);
+            Log.i(TAG,"student: "+student);
             if(!student.equals("unknown student")){
                 displayIfForgottenCard(student);
-                System.out.println("display student: "+student+" and delete him from file");
+                Log.i(TAG,"display student: "+student+" and delete him from file");
                 deleteLastStudentNameFromFile(studentFile);
             }
             else{
-                System.out.println("unknown student");
+                Log.i(TAG,"unknown student");
             }
         }
         count++;
-        System.out.println("resume");
+        Log.i(TAG,"resume");
     }
 
     @Override
@@ -241,11 +266,11 @@ public class TagViewer extends Activity {
                 // Unknown tag type
                 byte[] empty = new byte[0];
                 byte[] id = intent.getByteArrayExtra(NfcAdapter.EXTRA_ID);
-                System.out.println("id: "+id);
+                Log.i(TAG,"id: "+id);
                 Tag tag = intent.getParcelableExtra(NfcAdapter.EXTRA_TAG);
-                System.out.println("tag: "+tag);
+                Log.i(TAG,"tag: "+tag);
                 byte[] payload = dumpTagData(tag).getBytes();
-                System.out.println("payload: "+payload);
+                Log.i(TAG,"payload: "+payload);
 
                 NdefRecord record = new NdefRecord(NdefRecord.TNF_UNKNOWN, empty, id, payload);
                 NdefMessage msg = new NdefMessage(new NdefRecord[] { record });
@@ -254,8 +279,7 @@ public class TagViewer extends Activity {
 
 
             }
-            System.out.println("msgs: "+msgs);
-
+            Log.i(TAG,"msgs: "+msgs);
             // Setup the views
             buildTagViews(msgs);
         }
@@ -651,4 +675,47 @@ public class TagViewer extends Activity {
         }
     }
 
+    // SOURCE => https://stackoverflow.com/questions/3141996/android-how-to-override-the-back-button-so-it-doesnt-finish-my-activity
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event)  {
+        // If we're pressing on the Back button of the phone
+        if (Integer.parseInt(android.os.Build.VERSION.SDK) > 5 && keyCode == KeyEvent.KEYCODE_BACK && event.getRepeatCount() == 0) {
+            Log.d(TAG, "onKeyDown Called");
+            // Call the onBackPressed method defined just after this onKeyDown event callback method
+            onBackPressed();
+            // Return true for whatever reason that I don't understand right at the moment as of Thursday 10th of January 5:37 PM.
+            return true;
+        }
+
+        // Doon't know what it does.
+        return super.onKeyDown(keyCode, event);
+    }
+
+    @Override
+    public void onBackPressed() {
+        Log.d(TAG, "onBackPressed Called");
+        Toast.makeText(this,R.string.end_registeration,Toast.LENGTH_SHORT).show();
+    }
+
+    se.anyro.nfc_reader.DialogInterface closeListener = new se.anyro.nfc_reader.DialogInterface() {
+
+        @Override
+        public void handleDialogClose(se.anyro.nfc_reader.DialogInterface dialog) {
+            //do here whatever you want to do on Dialog dismiss
+            if ( ((DialogManager) confirmAcquittanceDialog).getUserChose() == true ) {
+                if ( ((DialogManager) confirmAcquittanceDialog).getUserConfirm() == true ) {
+                    Intent mainIntent = new Intent(getBaseContext(), TeacherMenuActivity.class);
+                    Log.d(TAG, "goingToStartActivity");
+                    startActivity(mainIntent);
+                    finish();
+                } else {
+                    Log.d(TAG, "goingToStayOnThisActivity");
+                }
+            }
+        }
+    };
+
+    public void handleDialogClose(DialogInterface dialog) {
+        //do here whatever you want to do on Dialog dismiss
+    }
 }

@@ -725,6 +725,7 @@ id notification_main_column_container
 id packed
 id parent
 id parentPanel
+id password
 id percent
 id prof_button
 id progress_circular
@@ -836,6 +837,7 @@ layout activity_login_prof
 layout activity_main
 layout activity_prof
 layout activity_teacher_menu
+layout dialog_signin
 layout notification_action
 layout notification_action_tombstone
 layout notification_media_action
@@ -905,9 +907,14 @@ string button_registration
 string button_registration_finish
 string button_search
 string button_student_add
+string cancel
+string confirm
+string confirm_registration
+string confirm_registrationText
 string course
 string date_end
 string date_start
+string end_registeration
 string enter
 string enter_group
 string error
@@ -941,6 +948,7 @@ string no
 string no_nfc
 string nothing_scanned
 string password
+string passwordTextEditHint
 string results
 string search_menu_title
 string sector
@@ -952,6 +960,7 @@ string student_name
 string student_number
 string teacher
 string university
+string usernameTextEditHint
 string year
 string yes
 style AlertDialog_AppCompat

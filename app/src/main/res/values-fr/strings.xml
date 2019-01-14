@@ -75,5 +75,15 @@
     <string name="yes">Oui</string>
     <string name="no">Non</string>
 
-    <string name="logoutDialogTitle">Attention</string>
+    <string name="logoutDialogTitle">Souhaitez-vous vous déconnecter ?</string>
+
+    <string name="end_registeration">Veuillez compléter l\'émargement.</string>
+
+    <string name="confirm_registration">Veuillez confirmer l\'émargement</string>
+    <string name="confirm_registrationText">Entrez votre mot de passe :</string>
+
+    <string name="usernameTextEditHint">Identifiant</string>
+    <string name="passwordTextEditHint">Mot de passe</string>
+    <string name="confirm">Confirmer</string>
+    <string name="cancel">Annuler</string>
 </resources>
