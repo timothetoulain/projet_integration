@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\AndroidProjects\\projet_integration2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
+            "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Hélène\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\151b15bf18db1316593068d84c3c4c18\\res\\values-v16\\values-v16.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Hélène\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\c86ae7786f5aa195ff0a86321a85f40f\\res\\values-v16\\values-v16.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/8308ffea15fe3f23710f1d044bcc2bd6/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

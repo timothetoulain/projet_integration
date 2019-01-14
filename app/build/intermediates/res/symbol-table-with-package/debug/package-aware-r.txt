@@ -715,6 +715,7 @@ id message
 id middle
 id multiply
 id nameEditText
+id nameTextView
 id never
 id none
 id normal
@@ -736,6 +737,7 @@ id screen
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
+id scrollView2
 id search_badge
 id search_bar
 id search_button
@@ -774,7 +776,6 @@ id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
-id textView3
 id textViewAnnee
 id textViewAuthentification
 id textViewFiliere

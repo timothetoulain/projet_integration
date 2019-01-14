@@ -2,7 +2,10 @@ package se.anyro.nfc_reader;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.InputStreamReader;
+import java.io.PrintWriter;
 import java.nio.charset.Charset;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -21,6 +24,7 @@ import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.nfc.FormatException;
 import android.nfc.NdefMessage;
 import android.nfc.NdefRecord;
 import android.nfc.NfcAdapter;
@@ -75,6 +79,7 @@ public class TagViewer extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tag_viewer);
 
+        deleteLastStudentNameFromFile(studentFile);
 
         mforgottenCardButton = findViewById(R.id.forgottenCardButton);
         mfinishButton = findViewById(R.id.finishButton);
@@ -111,9 +116,10 @@ public class TagViewer extends Activity {
         mforgottenCardButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                    Intent cardForgotten = new Intent(TagViewer.this, CardForgottenActivity.class);
-                    startActivity(cardForgotten);
-                }
+               // deleteLastStudentNameFromFile(studentFile);
+                Intent cardForgotten = new Intent(TagViewer.this, CardForgottenActivity.class);
+                startActivity(cardForgotten);
+            }
         });
         mfinishButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -125,27 +131,6 @@ public class TagViewer extends Activity {
         });
 
     }
-
-    @Override
-    protected void onPostResume() {
-        super.onPostResume();
-        if(count>0){
-            System.out.println("let's read");
-            this.student=readData(studentFile);
-            student= student.substring(0, student.length()-1);
-            System.out.println("student: "+student);
-            if(!student.equals("unknown student")){
-                //TODO afficher nom de l'etudiant
-
-            }
-            else{
-                System.out.println("unknown student");
-            }
-        }
-        count++;
-        System.out.println("resume");
-    }
-
 
     private void showMessage(int title, int message) {
         mDialog.setTitle(title);
@@ -180,6 +165,22 @@ public class TagViewer extends Activity {
             mAdapter.enableForegroundDispatch(this, mPendingIntent, null, null);
             mAdapter.enableForegroundNdefPush(this, mNdefPushMessage);
         }
+        if(count>0){
+            System.out.println("let's read");
+            this.student=readData(studentFile);
+            student= student.substring(0, student.length()-1);
+            System.out.println("student: "+student);
+            if(!student.equals("unknown student")){
+                displayIfForgottenCard(student);
+                System.out.println("display student: "+student+" and delete him from file");
+                deleteLastStudentNameFromFile(studentFile);
+            }
+            else{
+                System.out.println("unknown student");
+            }
+        }
+        count++;
+        System.out.println("resume");
     }
 
     @Override
@@ -208,6 +209,22 @@ public class TagViewer extends Activity {
         builder.create().show();
     }
 
+    private void displayIfForgottenCard(String studentName){
+       // byte[] bytes = studentName.getBytes();
+        NdefMessage[] msgs;
+        byte[] empty = new byte[0];
+        byte[] id = null;//previously with intent
+        Tag tag = null;//previously with intent
+        byte[] payload = studentName.getBytes();
+
+        NdefRecord record = new NdefRecord(NdefRecord.TNF_UNKNOWN, empty, id, payload);
+        NdefMessage msg = new NdefMessage(new NdefRecord[] { record });
+        msgs = new NdefMessage[] { msg };
+        mTags.add(tag);
+        buildTagViews(msgs);
+    }
+
+
     private void resolveIntent(Intent intent) {
         String action = intent.getAction();
         if (NfcAdapter.ACTION_TAG_DISCOVERED.equals(action)
@@ -224,13 +241,21 @@ public class TagViewer extends Activity {
                 // Unknown tag type
                 byte[] empty = new byte[0];
                 byte[] id = intent.getByteArrayExtra(NfcAdapter.EXTRA_ID);
+                System.out.println("id: "+id);
                 Tag tag = intent.getParcelableExtra(NfcAdapter.EXTRA_TAG);
+                System.out.println("tag: "+tag);
                 byte[] payload = dumpTagData(tag).getBytes();
+                System.out.println("payload: "+payload);
+
                 NdefRecord record = new NdefRecord(NdefRecord.TNF_UNKNOWN, empty, id, payload);
                 NdefMessage msg = new NdefMessage(new NdefRecord[] { record });
                 msgs = new NdefMessage[] { msg };
                 mTags.add(tag);
+
+
             }
+            System.out.println("msgs: "+msgs);
+
             // Setup the views
             buildTagViews(msgs);
         }
@@ -614,6 +639,16 @@ public class TagViewer extends Activity {
             Toast.makeText(this,"Error:"+ e.getMessage(),Toast.LENGTH_SHORT).show();
         }
         return null;
+    }
+    private void deleteLastStudentNameFromFile(String file){
+        String unknownStudent="unknown student";
+        try {
+            FileOutputStream out = openFileOutput(file, MODE_PRIVATE);
+            out.write(unknownStudent.getBytes());
+            out.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 }

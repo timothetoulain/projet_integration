@@ -87,10 +87,8 @@ public class LoginProf extends Activity {
             FileOutputStream out = this.openFileOutput(teacherFile, MODE_PRIVATE);
             out.write(nomProf.getBytes());
             out.close();
-            //Toast.makeText(this,"File saved!",Toast.LENGTH_SHORT).show();
         } catch (Exception e) {
             e.printStackTrace();
-            //Toast.makeText(this,"Error:"+ e.getMessage(),Toast.LENGTH_SHORT).show();
         }
     }
 

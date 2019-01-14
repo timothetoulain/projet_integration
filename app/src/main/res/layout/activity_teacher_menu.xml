@@ -4,15 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TeacherMenuActivity">
+    tools:context=".TeacherMenuActivity"
+    tools:layout_editor_absoluteY="81dp">
 
     <TextView
         android:id="@+id/menuTextView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="41dp"
+        android:layout_width="360dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="38dp"
         android:text="@string/message_account"
+        android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/createButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,7 +22,7 @@
 
     <Button
         android:id="@+id/createButton"
-        android:layout_width="wrap_content"
+        android:layout_width="125dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="56dp"
         android:text="@string/button_create_list"
@@ -31,21 +33,23 @@
 
     <Button
         android:id="@+id/visualizeButton"
-        android:layout_width="wrap_content"
+        android:layout_width="125dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="63dp"
         android:text="@string/button_display_list"
         app:layout_constraintBottom_toTopOf="@+id/disconnectionButton"
-        app:layout_constraintStart_toStartOf="@+id/createButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/createButton" />
 
     <Button
         android:id="@+id/disconnectionButton"
-        android:layout_width="wrap_content"
+        android:layout_width="125dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="159dp"
+        android:layout_marginBottom="155dp"
         android:text="@string/button_disconnect"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/visualizeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/visualizeButton" />
 </android.support.constraint.ConstraintLayout>

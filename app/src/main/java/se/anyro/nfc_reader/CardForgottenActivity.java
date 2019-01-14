@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.InputStreamReader;
@@ -47,6 +48,7 @@ public class CardForgottenActivity extends Activity {
 
                         //we save the student name to display it on the TagViewer activity
                         saveData(nameRetrieved,studentFile);
+                        //deleteTextFile(studentFile);
                         Intent tagViewer = new Intent(CardForgottenActivity.this, TagViewer.class);
                         startActivity(tagViewer);
                     }
@@ -116,5 +118,9 @@ public class CardForgottenActivity extends Activity {
             //Toast.makeText(this,"Error:"+ e.getMessage(),Toast.LENGTH_SHORT).show();
         }
     }
+    private void deleteTextFile(String file) {
+        System.out.println(new File(file).getAbsoluteFile().delete());
+        System.out.println("delete");
 
+    }
 }
