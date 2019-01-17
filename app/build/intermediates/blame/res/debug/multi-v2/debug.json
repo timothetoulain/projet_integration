@@ -4,7 +4,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-pt-rPT_values-pt-rPT.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-pt-rPT/values-pt-rPT.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-pt-rPT/values-pt-rPT.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -19,7 +19,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-lt_values-lt.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-lt/values-lt.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-lt/values-lt.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -34,7 +34,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-pl_values-pl.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-pl/values-pl.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-pl/values-pl.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -49,7 +49,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-am_values-am.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-am/values-am.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-am/values-am.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -64,7 +64,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-en-rGB_values-en-rGB.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-en-rGB/values-en-rGB.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-en-rGB/values-en-rGB.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -79,7 +79,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-fr-rCA_values-fr-rCA.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-fr-rCA/values-fr-rCA.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-fr-rCA/values-fr-rCA.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -94,7 +94,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-v13_values-v13.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-v13/values-v13.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-v13/values-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -109,7 +109,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-vi_values-vi.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-vi/values-vi.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-vi/values-vi.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -124,7 +124,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-ko_values-ko.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-ko/values-ko.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-ko/values-ko.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -139,7 +139,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-v26_values-v26.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-v26/values-v26.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-v26/values-v26.xml",
                     "from": {
                         "startLines": "2,3,4,8,12,16",
                         "startColumns": "4,4,4,4,4,4",
@@ -155,7 +155,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-my_values-my.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-my/values-my.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-my/values-my.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -170,7 +170,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-fa_values-fa.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-fa/values-fa.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-fa/values-fa.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -185,7 +185,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-ru_values-ru.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-ru/values-ru.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-ru/values-ru.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -200,7 +200,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-ur_values-ur.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-ur/values-ur.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-ur/values-ur.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -215,7 +215,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-nl_values-nl.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-nl/values-nl.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-nl/values-nl.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -230,7 +230,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-port_values-port.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-port/values-port.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-port/values-port.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -242,55 +242,10 @@
             ]
         },
         {
-            "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-ja_values-ja.arsc.flat",
-            "map": [
-                {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-ja/values-ja.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,152,259,380,473,578,660,758,866,943,1019,1097,1199,1298,1393,1496,1591,1687,1798,1895,1973",
-                        "endColumns": "96,106,120,92,104,81,97,107,76,75,77,101,98,94,102,94,95,110,96,77,100",
-                        "endOffsets": "147,254,375,468,573,655,753,861,938,1014,1092,1194,1293,1388,1491,1586,1682,1793,1890,1968,2069"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-xlarge-v4_values-xlarge-v4.arsc.flat",
-            "map": [
-                {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-xlarge-v4/values-xlarge-v4.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "55,126,197,267,337,405",
-                        "endColumns": "70,70,69,69,67,67",
-                        "endOffsets": "121,192,262,332,400,468"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-es_values-es.arsc.flat",
-            "map": [
-                {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-es/values-es.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,172,280,403,516,624,709,810,938,1023,1105,1187,1294,1394,1493,1601,1708,1815,1937,2037,2119",
-                        "endColumns": "116,107,122,112,107,84,100,127,84,81,81,106,99,98,107,106,106,121,99,81,100",
-                        "endOffsets": "167,275,398,511,619,704,805,933,1018,1100,1182,1289,1389,1488,1596,1703,1810,1932,2032,2114,2215"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-nb_values-nb.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-nb/values-nb.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-nb/values-nb.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -302,10 +257,55 @@
             ]
         },
         {
+            "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-es_values-es.arsc.flat",
+            "map": [
+                {
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-es/values-es.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,172,280,403,516,624,709,810,938,1023,1105,1187,1294,1394,1493,1601,1708,1815,1937,2037,2119",
+                        "endColumns": "116,107,122,112,107,84,100,127,84,81,81,106,99,98,107,106,106,121,99,81,100",
+                        "endOffsets": "167,275,398,511,619,704,805,933,1018,1100,1182,1289,1389,1488,1596,1703,1810,1932,2032,2114,2215"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-xlarge-v4_values-xlarge-v4.arsc.flat",
+            "map": [
+                {
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-xlarge-v4/values-xlarge-v4.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,126,197,267,337,405",
+                        "endColumns": "70,70,69,69,67,67",
+                        "endOffsets": "121,192,262,332,400,468"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-ja_values-ja.arsc.flat",
+            "map": [
+                {
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-ja/values-ja.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,152,259,380,473,578,660,758,866,943,1019,1097,1199,1298,1393,1496,1591,1687,1798,1895,1973",
+                        "endColumns": "96,106,120,92,104,81,97,107,76,75,77,101,98,94,102,94,95,110,96,77,100",
+                        "endOffsets": "147,254,375,468,573,655,753,861,938,1014,1092,1194,1293,1388,1491,1586,1682,1793,1890,1968,2069"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-it_values-it.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-it/values-it.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-it/values-it.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -320,7 +320,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-v23_values-v23.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-v23/values-v23.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
@@ -336,7 +336,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-sl_values-sl.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-sl/values-sl.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-sl/values-sl.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -351,7 +351,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-v22_values-v22.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-v22/values-v22.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-v22/values-v22.xml",
                     "from": {
                         "startLines": "2,3,4,9",
                         "startColumns": "4,4,4,4",
@@ -367,7 +367,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-ky_values-ky.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-ky/values-ky.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-ky/values-ky.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -382,7 +382,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-th_values-th.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-th/values-th.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-th/values-th.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -397,7 +397,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-de_values-de.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-de/values-de.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-de/values-de.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -412,7 +412,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-mk_values-mk.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-mk/values-mk.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-mk/values-mk.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -427,7 +427,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-bn_values-bn.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-bn/values-bn.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-bn/values-bn.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -442,7 +442,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-sq_values-sq.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-sq/values-sq.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-sq/values-sq.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -457,7 +457,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-pt-rBR_values-pt-rBR.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-pt-rBR/values-pt-rBR.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-pt-rBR/values-pt-rBR.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -472,7 +472,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-kk_values-kk.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-kk/values-kk.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-kk/values-kk.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -487,7 +487,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-sv_values-sv.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-sv/values-sv.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-sv/values-sv.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -502,7 +502,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-az_values-az.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-az/values-az.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-az/values-az.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -517,7 +517,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-cs_values-cs.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-cs/values-cs.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-cs/values-cs.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -532,7 +532,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-v12_values-v12.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-v12/values-v12.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-v12/values-v12.xml",
                     "from": {
                         "startLines": "2,5,8,9",
                         "startColumns": "4,4,4,4",
@@ -548,7 +548,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-ka_values-ka.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-ka/values-ka.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-ka/values-ka.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -563,7 +563,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-te_values-te.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-te/values-te.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-te/values-te.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -578,7 +578,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-v14_values-v14.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-v14/values-v14.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-v14/values-v14.xml",
                     "from": {
                         "startLines": "2,7,8,9,15",
                         "startColumns": "4,4,4,4,4",
@@ -594,7 +594,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-iw_values-iw.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-iw/values-iw.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-iw/values-iw.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -609,7 +609,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-be_values-be.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-be/values-be.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-be/values-be.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -624,7 +624,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-kn_values-kn.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-kn/values-kn.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-kn/values-kn.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -639,7 +639,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-ms_values-ms.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-ms/values-ms.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-ms/values-ms.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -654,7 +654,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-uz_values-uz.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-uz/values-uz.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-uz/values-uz.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -669,7 +669,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-tr_values-tr.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-tr/values-tr.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-tr/values-tr.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -684,7 +684,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-ar_values-ar.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-ar/values-ar.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-ar/values-ar.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -699,7 +699,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-sk_values-sk.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-sk/values-sk.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-sk/values-sk.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -714,7 +714,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-da_values-da.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-da/values-da.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-da/values-da.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -729,7 +729,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-is_values-is.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-is/values-is.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-is/values-is.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -744,7 +744,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-hu_values-hu.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-hu/values-hu.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-hu/values-hu.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -759,7 +759,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-night-v8_values-night-v8.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-night-v8/values-night-v8.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-night-v8/values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8",
                         "startColumns": "4,4,4,4,4,4,4",
@@ -774,7 +774,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-in_values-in.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-in/values-in.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-in/values-in.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -789,7 +789,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-lv_values-lv.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-lv/values-lv.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-lv/values-lv.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -804,7 +804,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-v16_values-v16.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-v16/values-v16.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -823,7 +823,7 @@
                     }
                 },
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/8308ffea15fe3f23710f1d044bcc2bd6/res/values-v16/values-v16.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/55a0351154f4c00790feb49de16951e3/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -838,7 +838,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-v18_values-v18.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-v18/values-v18.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-v18/values-v18.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -853,7 +853,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-mr_values-mr.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-mr/values-mr.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-mr/values-mr.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -868,7 +868,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-zu_values-zu.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-zu/values-zu.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-zu/values-zu.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -883,7 +883,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-en-rAU_values-en-rAU.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-en-rAU/values-en-rAU.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-en-rAU/values-en-rAU.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -898,7 +898,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-uk_values-uk.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-uk/values-uk.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-uk/values-uk.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -913,7 +913,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-v11_values-v11.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-v11/values-v11.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-v11/values-v11.xml",
                     "from": {
                         "startLines": "2,8,14,20,26,32,38,39,43,47,48,52,56,57,61,66,71,76,78,80,81,82,136,191",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -929,7 +929,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-km_values-km.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-km/values-km.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-km/values-km.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -944,7 +944,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-zh-rTW_values-zh-rTW.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-zh-rTW/values-zh-rTW.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-zh-rTW/values-zh-rTW.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -959,7 +959,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-af_values-af.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-af/values-af.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-af/values-af.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -974,7 +974,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-ldltr-v21_values-ldltr-v21.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-ldltr-v21/values-ldltr-v21.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-ldltr-v21/values-ldltr-v21.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -989,7 +989,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-v24_values-v24.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/fd0d531b7e793b86d879ed7570110a41/res/values-v24/values-v24.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/3330b7f7d5c50fd17c6bef0e946b73c5/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -1006,7 +1006,7 @@
                     }
                 },
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-v24/values-v24.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
                         "startColumns": "4,4,4,4,4,4",
@@ -1021,7 +1021,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-ro_values-ro.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-ro/values-ro.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-ro/values-ro.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -1036,7 +1036,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-ne_values-ne.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-ne/values-ne.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-ne/values-ne.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -1051,7 +1051,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-gl_values-gl.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-gl/values-gl.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-gl/values-gl.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -1066,7 +1066,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-sw600dp-v13_values-sw600dp-v13.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -1081,26 +1081,26 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-v21_values-v21.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/fd0d531b7e793b86d879ed7570110a41/res/values-v21/values-v21.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-v21/values-v21.xml",
                     "from": {
-                        "startLines": "2,5,8,11",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,223,386,554",
-                        "endLines": "4,7,10,13",
-                        "endColumns": "12,12,12,12",
-                        "endOffsets": "218,381,549,716"
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,17,19,20,21,22,24,26,27,28,29,30,32,34,36,38,40,42,43,48,50,52,53,54,56,58,59,60,61,62,63,107,110,154,157,160,162,164,166,169,171,174,175,176,179,180,181,182,183,184,187,188,190,192,194,196,200,202,203,204,205,207,211,213,215,216,217,218,219,221,222,223,233,234,235,247,259,260,261,264,267,268,271,272",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,146,249,352,457,564,673,782,891,1000,1109,1216,1319,1438,1593,1748,1853,1974,2075,2222,2363,2466,2585,2692,2795,2950,3121,3270,3435,3592,3743,3862,4234,4383,4532,4644,4791,4944,5091,5166,5255,5342,5443,5546,8614,8800,11880,12078,12278,12401,12524,12637,12820,12951,13152,13241,13352,13585,13686,13781,13904,14033,14150,14327,14426,14561,14704,14839,14958,15159,15278,15371,15482,15538,15645,15840,15951,16084,16179,16270,16361,16478,16617,16688,16771,17451,17508,17566,18260,18966,19085,19214,19385,19551,19680,19851,19982",
+                        "endLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,16,18,19,20,21,23,25,26,27,28,29,31,33,35,37,39,41,42,47,49,51,52,53,55,57,58,59,60,61,62,106,109,153,156,159,161,163,165,168,170,173,174,175,178,179,180,181,182,183,186,187,189,191,193,195,199,201,202,203,204,206,210,212,214,215,216,217,218,220,221,222,232,233,234,246,258,259,260,263,266,267,270,271,274",
+                        "endColumns": "90,102,102,104,106,108,108,108,108,108,106,102,118,12,12,104,120,100,12,12,102,118,106,102,12,12,12,12,12,12,118,12,12,12,111,146,12,12,74,88,86,100,102,12,12,12,12,12,12,12,12,12,12,12,88,110,12,100,94,122,128,116,12,98,12,12,12,12,12,12,92,110,55,12,12,12,12,94,90,90,116,12,70,82,12,56,57,12,12,118,128,12,12,128,12,130,12",
+                        "endOffsets": "141,244,347,452,559,668,777,886,995,1104,1211,1314,1433,1588,1743,1848,1969,2070,2217,2358,2461,2580,2687,2790,2945,3116,3265,3430,3587,3738,3857,4229,4378,4527,4639,4786,4939,5086,5161,5250,5337,5438,5541,8609,8795,11875,12073,12273,12396,12519,12632,12815,12946,13147,13236,13347,13580,13681,13776,13899,14028,14145,14322,14421,14556,14699,14834,14953,15154,15273,15366,15477,15533,15640,15835,15946,16079,16174,16265,16356,16473,16612,16683,16766,17446,17503,17561,18255,18961,19080,19209,19380,19546,19675,19846,19977,20147"
                     },
                     "to": {
-                        "startLines": "281,284,288,292",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "20693,20861,21150,21446",
-                        "endLines": "283,286,290,294",
-                        "endColumns": "12,12,12,12",
-                        "endOffsets": "20856,21019,21313,21608"
+                        "startLines": "6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,23,24,25,26,28,30,31,32,33,34,36,38,40,42,44,46,47,52,54,56,57,58,60,62,63,64,65,66,67,111,114,158,161,164,166,168,170,173,175,178,179,180,183,184,185,186,187,188,191,192,194,196,198,200,204,206,207,208,209,211,215,217,219,220,221,222,223,225,226,227,237,238,239,251,263,264,265,268,271,272,275,276",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "354,445,548,651,756,863,972,1081,1190,1299,1408,1515,1618,1737,1892,2047,2152,2273,2374,2521,2662,2765,2884,2991,3094,3249,3420,3569,3734,3891,4042,4161,4533,4682,4831,4943,5090,5243,5390,5465,5554,5641,5742,5845,8913,9099,12179,12377,12577,12700,12823,12936,13119,13250,13451,13540,13651,13884,13985,14080,14203,14332,14449,14626,14725,14860,15003,15138,15257,15458,15577,15670,15781,15837,15944,16139,16250,16383,16478,16569,16660,16777,16916,16987,17070,17750,17807,17865,18559,19265,19384,19513,19684,19850,19979,20150,20281",
+                        "endLines": "6,7,8,9,10,11,12,13,14,15,16,17,18,20,22,23,24,25,27,29,30,31,32,33,35,37,39,41,43,45,46,51,53,55,56,57,59,61,62,63,64,65,66,110,113,157,160,163,165,167,169,172,174,177,178,179,182,183,184,185,186,187,190,191,193,195,197,199,203,205,206,207,208,210,214,216,218,219,220,221,222,224,225,226,236,237,238,250,262,263,264,267,270,271,274,275,278",
+                        "endColumns": "90,102,102,104,106,108,108,108,108,108,106,102,118,12,12,104,120,100,12,12,102,118,106,102,12,12,12,12,12,12,118,12,12,12,111,146,12,12,74,88,86,100,102,12,12,12,12,12,12,12,12,12,12,12,88,110,12,100,94,122,128,116,12,98,12,12,12,12,12,12,92,110,55,12,12,12,12,94,90,90,116,12,70,82,12,56,57,12,12,118,128,12,12,128,12,130,12",
+                        "endOffsets": "440,543,646,751,858,967,1076,1185,1294,1403,1510,1613,1732,1887,2042,2147,2268,2369,2516,2657,2760,2879,2986,3089,3244,3415,3564,3729,3886,4037,4156,4528,4677,4826,4938,5085,5238,5385,5460,5549,5636,5737,5840,8908,9094,12174,12372,12572,12695,12818,12931,13114,13245,13446,13535,13646,13879,13980,14075,14198,14327,14444,14621,14720,14855,14998,15133,15252,15453,15572,15665,15776,15832,15939,16134,16245,16378,16473,16564,16655,16772,16911,16982,17065,17745,17802,17860,18554,19260,19379,19508,19679,19845,19974,20145,20276,20446"
                     }
                 },
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/8308ffea15fe3f23710f1d044bcc2bd6/res/values-v21/values-v21.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/55a0351154f4c00790feb49de16951e3/res/values-v21/values-v21.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,13",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -1119,22 +1119,22 @@
                     }
                 },
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-v21/values-v21.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/3330b7f7d5c50fd17c6bef0e946b73c5/res/values-v21/values-v21.xml",
                     "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,17,19,20,21,22,24,26,27,28,29,30,32,34,36,38,40,42,43,48,50,52,53,54,56,58,59,60,61,62,63,107,110,154,157,160,162,164,166,169,171,174,175,176,179,180,181,182,183,184,187,188,190,192,194,196,200,202,203,204,205,207,211,213,215,216,217,218,219,221,222,223,233,234,235,247,259,260,261,264,267,268,271,272",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,146,249,352,457,564,673,782,891,1000,1109,1216,1319,1438,1593,1748,1853,1974,2075,2222,2363,2466,2585,2692,2795,2950,3121,3270,3435,3592,3743,3862,4234,4383,4532,4644,4791,4944,5091,5166,5255,5342,5443,5546,8614,8800,11880,12078,12278,12401,12524,12637,12820,12951,13152,13241,13352,13585,13686,13781,13904,14033,14150,14327,14426,14561,14704,14839,14958,15159,15278,15371,15482,15538,15645,15840,15951,16084,16179,16270,16361,16478,16617,16688,16771,17451,17508,17566,18260,18966,19085,19214,19385,19551,19680,19851,19982",
-                        "endLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,16,18,19,20,21,23,25,26,27,28,29,31,33,35,37,39,41,42,47,49,51,52,53,55,57,58,59,60,61,62,106,109,153,156,159,161,163,165,168,170,173,174,175,178,179,180,181,182,183,186,187,189,191,193,195,199,201,202,203,204,206,210,212,214,215,216,217,218,220,221,222,232,233,234,246,258,259,260,263,266,267,270,271,274",
-                        "endColumns": "90,102,102,104,106,108,108,108,108,108,106,102,118,12,12,104,120,100,12,12,102,118,106,102,12,12,12,12,12,12,118,12,12,12,111,146,12,12,74,88,86,100,102,12,12,12,12,12,12,12,12,12,12,12,88,110,12,100,94,122,128,116,12,98,12,12,12,12,12,12,92,110,55,12,12,12,12,94,90,90,116,12,70,82,12,56,57,12,12,118,128,12,12,128,12,130,12",
-                        "endOffsets": "141,244,347,452,559,668,777,886,995,1104,1211,1314,1433,1588,1743,1848,1969,2070,2217,2358,2461,2580,2687,2790,2945,3116,3265,3430,3587,3738,3857,4229,4378,4527,4639,4786,4939,5086,5161,5250,5337,5438,5541,8609,8795,11875,12073,12273,12396,12519,12632,12815,12946,13147,13236,13347,13580,13681,13776,13899,14028,14145,14322,14421,14556,14699,14834,14953,15154,15273,15366,15477,15533,15640,15835,15946,16079,16174,16265,16356,16473,16612,16683,16766,17446,17503,17561,18255,18961,19080,19209,19380,19546,19675,19846,19977,20147"
+                        "startLines": "2,5,8,11",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,223,386,554",
+                        "endLines": "4,7,10,13",
+                        "endColumns": "12,12,12,12",
+                        "endOffsets": "218,381,549,716"
                     },
                     "to": {
-                        "startLines": "6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,23,24,25,26,28,30,31,32,33,34,36,38,40,42,44,46,47,52,54,56,57,58,60,62,63,64,65,66,67,111,114,158,161,164,166,168,170,173,175,178,179,180,183,184,185,186,187,188,191,192,194,196,198,200,204,206,207,208,209,211,215,217,219,220,221,222,223,225,226,227,237,238,239,251,263,264,265,268,271,272,275,276",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "354,445,548,651,756,863,972,1081,1190,1299,1408,1515,1618,1737,1892,2047,2152,2273,2374,2521,2662,2765,2884,2991,3094,3249,3420,3569,3734,3891,4042,4161,4533,4682,4831,4943,5090,5243,5390,5465,5554,5641,5742,5845,8913,9099,12179,12377,12577,12700,12823,12936,13119,13250,13451,13540,13651,13884,13985,14080,14203,14332,14449,14626,14725,14860,15003,15138,15257,15458,15577,15670,15781,15837,15944,16139,16250,16383,16478,16569,16660,16777,16916,16987,17070,17750,17807,17865,18559,19265,19384,19513,19684,19850,19979,20150,20281",
-                        "endLines": "6,7,8,9,10,11,12,13,14,15,16,17,18,20,22,23,24,25,27,29,30,31,32,33,35,37,39,41,43,45,46,51,53,55,56,57,59,61,62,63,64,65,66,110,113,157,160,163,165,167,169,172,174,177,178,179,182,183,184,185,186,187,190,191,193,195,197,199,203,205,206,207,208,210,214,216,218,219,220,221,222,224,225,226,236,237,238,250,262,263,264,267,270,271,274,275,278",
-                        "endColumns": "90,102,102,104,106,108,108,108,108,108,106,102,118,12,12,104,120,100,12,12,102,118,106,102,12,12,12,12,12,12,118,12,12,12,111,146,12,12,74,88,86,100,102,12,12,12,12,12,12,12,12,12,12,12,88,110,12,100,94,122,128,116,12,98,12,12,12,12,12,12,92,110,55,12,12,12,12,94,90,90,116,12,70,82,12,56,57,12,12,118,128,12,12,128,12,130,12",
-                        "endOffsets": "440,543,646,751,858,967,1076,1185,1294,1403,1510,1613,1732,1887,2042,2147,2268,2369,2516,2657,2760,2879,2986,3089,3244,3415,3564,3729,3886,4037,4156,4528,4677,4826,4938,5085,5238,5385,5460,5549,5636,5737,5840,8908,9094,12174,12372,12572,12695,12818,12931,13114,13245,13446,13535,13646,13879,13980,14075,14198,14327,14444,14621,14720,14855,14998,15133,15252,15453,15572,15665,15776,15832,15939,16134,16245,16378,16473,16564,16655,16772,16911,16982,17065,17745,17802,17860,18554,19260,19379,19508,19679,19845,19974,20145,20276,20446"
+                        "startLines": "281,284,288,292",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "20693,20861,21150,21446",
+                        "endLines": "283,286,290,294",
+                        "endColumns": "12,12,12,12",
+                        "endOffsets": "20856,21019,21313,21608"
                     }
                 }
             ]
@@ -1143,7 +1143,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-et_values-et.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-et/values-et.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-et/values-et.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -1158,7 +1158,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-zh-rCN_values-zh-rCN.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-zh-rCN/values-zh-rCN.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-zh-rCN/values-zh-rCN.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -1173,7 +1173,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-hy_values-hy.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-hy/values-hy.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-hy/values-hy.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -1188,7 +1188,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-mn_values-mn.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-mn/values-mn.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-mn/values-mn.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -1203,7 +1203,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-el_values-el.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-el/values-el.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-el/values-el.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -1218,7 +1218,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-b+sr+Latn_values-b+sr+Latn.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-b+sr+Latn/values-b+sr+Latn.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-b+sr+Latn/values-b+sr+Latn.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -1233,7 +1233,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-hdpi-v4_values-hdpi-v4.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-hdpi-v4/values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -1249,7 +1249,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-bs_values-bs.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-bs/values-bs.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-bs/values-bs.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -1264,7 +1264,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-h720dp-v13_values-h720dp-v13.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-h720dp-v13/values-h720dp-v13.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-h720dp-v13/values-h720dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -1279,7 +1279,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-bg_values-bg.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-bg/values-bg.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-bg/values-bg.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -1294,7 +1294,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-hi_values-hi.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-hi/values-hi.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-hi/values-hi.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -1309,7 +1309,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-hr_values-hr.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-hr/values-hr.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-hr/values-hr.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -1324,94 +1324,83 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values_values.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/8308ffea15fe3f23710f1d044bcc2bd6/res/values/values.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/3330b7f7d5c50fd17c6bef0e946b73c5/res/values/values.xml",
                     "from": {
-                        "startLines": "2,3,6,15,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,53,54,58,59,60",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,124,319,880,1153,1223,1291,1363,1433,1494,1555,1616,1678,1742,1804,1865,1933,2033,2093,2159,2232,2301,2358,2410,2472,2544,2620,2655,2690,2724,2759,2794,2864,2935,3052,3253,3363,3564,3693,3765",
-                        "endLines": "2,3,14,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,52,53,57,58,59,60",
-                        "endColumns": "68,62,35,115,69,67,71,69,60,60,60,61,63,61,60,67,99,59,65,72,68,56,51,61,71,75,34,34,33,34,34,69,70,116,12,109,12,128,71,66",
-                        "endOffsets": "119,182,875,1148,1218,1286,1358,1428,1489,1550,1611,1673,1737,1799,1860,1928,2028,2088,2154,2227,2296,2353,2405,2467,2539,2615,2650,2685,2719,2754,2789,2859,2930,3047,3248,3358,3559,3688,3760,3827"
+                        "startLines": "-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1"
                     },
                     "to": {
-                        "startLines": "175,176,274,283,464,465,466,467,468,478,479,480,481,482,483,484,485,486,487,488,489,490,491,492,501,502,508,509,513,514,515,521,609,1877,1878,1883,1886,1891,2029,2030",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "9025,9094,29413,29974,44768,44838,44906,44978,45048,45893,45954,46015,46077,46141,46203,46264,46332,46432,46492,46558,46631,46700,46757,46809,47324,47396,47711,47746,47923,47957,47992,48302,54168,138217,138334,138601,138894,139161,150183,150255",
-                        "endLines": "175,176,282,286,464,465,466,467,468,478,479,480,481,482,483,484,485,486,487,488,489,490,491,492,501,502,508,509,513,514,515,521,609,1877,1881,1883,1889,1891,2029,2030",
-                        "endColumns": "68,62,35,115,69,67,71,69,60,60,60,61,63,61,60,67,99,59,65,72,68,56,51,61,71,75,34,34,33,34,34,69,70,116,12,109,12,128,71,66",
-                        "endOffsets": "9089,9152,29969,30242,44833,44901,44973,45043,45104,45949,46010,46072,46136,46198,46259,46327,46427,46487,46553,46626,46695,46752,46804,46866,47391,47467,47741,47776,47952,47987,48022,48367,54234,138329,138530,138706,139090,139285,150250,150317"
+                        "startLines": "177,1699,1701,1702,1707,1709",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "9124,108648,108824,108946,109208,109403",
+                        "endColumns": "88,65,121,60,65,66",
+                        "endOffsets": "9208,108709,108941,109002,109269,109465"
                     }
                 },
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/c247e24b8f08a36baa8d6fd3392f65ff/res/values/values.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/f758bc9bc198f5601bf9c1a59a1cae3b/res/values/values.xml",
                     "from": {
-                        "startLines": "2,3,11,12,13,14,15,19,20,21,22,25,26,29,32,33,34,35,36,39,42,43,44,45,50,53,56,57,58,63,64,65,68,71,72,75,78,81,84,85,88,91,92,97,98,103,106,109,110,111,112,113,114,115,116,117,118,127,128,129,130",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,116,407,455,507,568,614,741,802,862,932,1065,1133,1262,1388,1450,1515,1583,1650,1773,1898,1965,2030,2095,2276,2397,2518,2584,2651,2861,2930,2996,3121,3247,3314,3440,3567,3692,3819,3884,4010,4133,4198,4406,4473,4653,4773,4893,4958,5020,5082,5144,5203,5263,5324,5385,5444,5819,8395,8527,11791",
-                        "endLines": "2,10,11,12,13,14,18,19,20,21,24,25,28,31,32,33,34,35,38,41,42,43,44,49,52,55,56,57,62,63,64,67,70,71,74,77,80,83,84,87,90,91,96,97,102,105,108,109,110,111,112,113,114,115,116,117,126,127,128,129,130",
-                        "endColumns": "60,11,47,51,60,45,11,60,59,69,11,67,11,11,61,64,67,66,11,11,66,64,64,11,11,11,65,66,11,68,65,11,11,66,11,11,11,11,64,11,11,64,11,66,11,11,11,64,61,61,61,58,59,60,60,58,11,2575,131,3263,107",
-                        "endOffsets": "111,402,450,502,563,609,736,797,857,927,1060,1128,1257,1383,1445,1510,1578,1645,1768,1893,1960,2025,2090,2271,2392,2513,2579,2646,2856,2925,2991,3116,3242,3309,3435,3562,3687,3814,3879,4005,4128,4193,4401,4468,4648,4768,4888,4953,5015,5077,5139,5198,5258,5319,5380,5439,5814,8390,8522,11786,11894"
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"
                     },
                     "to": {
-                        "startLines": "2,3,11,12,13,14,16,22,23,24,25,28,29,32,35,36,37,38,39,42,45,46,47,48,53,56,59,60,61,66,67,68,71,74,75,78,81,84,87,88,91,94,95,100,101,106,109,112,113,114,115,116,117,118,119,120,121,270,271,272,287",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,116,407,455,507,568,669,890,951,1011,1081,1214,1282,1411,1537,1599,1664,1732,1799,1922,2047,2114,2179,2244,2425,2546,2667,2733,2800,3010,3079,3145,3270,3396,3463,3589,3716,3841,3968,4033,4159,4282,4347,4555,4622,4802,4922,5042,5107,5169,5231,5293,5352,5412,5473,5534,5593,23018,25594,25726,30247",
-                        "endLines": "2,10,11,12,13,14,19,22,23,24,27,28,31,34,35,36,37,38,41,44,45,46,47,52,55,58,59,60,65,66,67,70,73,74,77,80,83,86,87,90,93,94,99,100,105,108,111,112,113,114,115,116,117,118,119,120,129,270,271,272,287",
-                        "endColumns": "60,11,47,51,60,45,11,60,59,69,11,67,11,11,61,64,67,66,11,11,66,64,64,11,11,11,65,66,11,68,65,11,11,66,11,11,11,11,64,11,11,64,11,66,11,11,11,64,61,61,61,58,59,60,60,58,11,2575,131,3263,107",
-                        "endOffsets": "111,402,450,502,563,609,791,946,1006,1076,1209,1277,1406,1532,1594,1659,1727,1794,1917,2042,2109,2174,2239,2420,2541,2662,2728,2795,3005,3074,3140,3265,3391,3458,3584,3711,3836,3963,4028,4154,4277,4342,4550,4617,4797,4917,5037,5102,5164,5226,5288,5347,5407,5468,5529,5588,5963,25589,25721,28985,30350"
+                        "startLines": "2,3,11,12,13,14,16,22,23,24,25,28,29,32,35,36,37,38,39,42,45,46,47,48,53,56,59,60,61,66,67,68,71,74,75,78,81,84,87,88,91,94,95,100,101,106,109,112,113,114,115,116,117,118,119,120,121",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,116,407,455,507,568,669,890,951,1011,1081,1214,1282,1411,1537,1599,1664,1732,1799,1922,2047,2114,2179,2244,2425,2546,2667,2733,2800,3010,3079,3145,3270,3396,3463,3589,3716,3841,3968,4033,4159,4282,4347,4555,4622,4802,4922,5042,5107,5169,5231,5293,5352,5412,5473,5534,5593",
+                        "endLines": "2,10,11,12,13,14,19,22,23,24,27,28,31,34,35,36,37,38,41,44,45,46,47,52,55,58,59,60,65,66,67,70,73,74,77,80,83,86,87,90,93,94,99,100,105,108,111,112,113,114,115,116,117,118,119,120,129",
+                        "endColumns": "60,11,47,51,60,45,11,60,59,69,11,67,11,11,61,64,67,66,11,11,66,64,64,11,11,11,65,66,11,68,65,11,11,66,11,11,11,11,64,11,11,64,11,66,11,11,11,64,61,61,61,58,59,60,60,58,11",
+                        "endOffsets": "111,402,450,502,563,609,791,946,1006,1076,1209,1277,1406,1532,1594,1659,1727,1794,1917,2042,2109,2174,2239,2420,2541,2662,2728,2795,3005,3074,3140,3265,3391,3458,3584,3711,3836,3963,4028,4154,4277,4342,4550,4617,4797,4917,5037,5102,5164,5226,5288,5347,5407,5468,5529,5588,5930"
                     }
                 },
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values/values.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/55a0351154f4c00790feb49de16951e3/res/values/values.xml",
                     "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,86,87,88,89,90,91,92,104,118,119,125,128,129,130,142,143,149,150,151,152,191,192,193,194,195,196,197,224,225,231,232,244,245,246,247,248,249,250,251,252,253,254,255,256,257,258,259,260,261,262,263,264,265,266,267,268,269,270,271,272,273,274,275,276,277,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,294,295,296,297,298,299,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,315,316,317,318,319,320,321,322,323,324,325,326,327,328,329,330,331,332,333,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348,349,350,351,352,353,354,355,356,357,358,359,360,361,362,363,364,365,366,367,368,369,370,371,372,373,374,375,376,377,378,379,380,381,382,383,384,385,386,393,394,398,402,406,411,417,424,428,432,437,441,445,449,453,457,461,465,469,473,477,481,485,490,494,497,501,505,509,513,517,521,524,528,532,536,540,544,545,546,547,550,553,556,559,563,564,565,566,567,570,572,574,576,581,582,586,592,596,597,599,610,611,615,621,625,626,627,631,658,662,663,667,695,861,883,1049,1071,1098,1105,1110,1124,1146,1151,1156,1166,1175,1184,1188,1195,1203,1210,1211,1220,1223,1226,1230,1234,1238,1241,1242,1246,1250,1260,1265,1272,1278,1279,1282,1286,1291,1293,1295,1298,1301,1303,1307,1310,1317,1320,1323,1327,1329,1333,1335,1341,1343,1347,1355,1363,1375,1381,1390,1393,1404,1407,1412,1413,1418,1460,1503,1504,1514,1523,1524,1526,1530,1533,1536,1539,1542,1546,1549,1552,1555,1559,1562,1566,1570,1571,1572,1573,1574,1575,1576,1577,1578,1579,1580,1581,1582,1583,1584,1585,1586,1587,1588,1589,1590,1591,1595,1596,1597,1598,1599,1603,1604,1605,1606,1608,1610,1611,1612,1613,1614,1615,1616,1617,1619,1620,1622,1623,1625,1627,1628,1630,1631,1632,1633,1634,1635,1637,1638,1639,1640,1641,1642,1644,1646,1648,1649,1650,1651,1652,1653,1654,1655,1656,1657,1658,1659,1660,1662,1663,1664,1665,1666,1667,1669,1673,1677,1678,1679,1680,1681,1682,1683,1684,1686,1688,1690,1692,1694,1695,1696,1697,1699,1701,1703,1704,1705,1706,1707,1708,1709,1710,1711,1712,1713,1714,1717,1718,1719,1720,1722,1724,1725,1727,1728,1730,1732,1734,1735,1736,1737,1738,1739,1740,1741,1742,1743,1744,1745,1747,1748,1749,1750,1752,1753,1754,1755,1756,1758,1760,1762,1764,1765,1766,1767,1768,1769,1770,1771,1772,1773,1774,1775,1776,1777",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,110,155,204,245,300,358,420,488,566,647,708,783,859,936,1014,1099,1181,1257,1333,1410,1488,1594,1700,1779,1859,1916,1974,2048,2123,2188,2254,2309,2381,2454,2521,2589,2648,2707,2766,2825,2884,2938,2992,3045,3099,3153,3207,3261,3335,3414,3487,3561,3632,3704,3776,3849,3906,3964,4037,4111,4185,4260,4332,4405,4475,4546,4606,4667,6582,6686,6787,6834,7082,7274,7665,8169,8743,9063,9652,16288,16400,16561,17033,17456,18049,18270,18429,18688,20815,21254,21442,21570,21744,22525,22742,24073,24552,25925,26170,26660,26813,26882,26951,27021,27095,27171,27235,27312,27388,27465,27529,27594,27663,27740,27815,27884,27952,28029,28095,28192,28257,28326,28425,28496,28555,28613,28670,28729,28800,28872,28944,29016,29088,29155,29223,29291,29350,29413,29477,29567,29658,29718,29784,29851,29917,29987,30051,30104,30217,30275,30338,30403,30468,30543,30616,30688,30737,30798,30859,30920,30982,31046,31110,31174,31239,31302,31362,31423,31489,31548,31608,31670,31741,31801,31869,31955,32042,32132,32219,32307,32389,32472,32562,32653,32705,32763,32808,32874,32938,32995,33052,33106,33163,33211,33260,33311,33345,33392,33441,33487,33519,33583,33645,33705,33762,33836,33914,34007,34077,34155,34209,34279,34364,34412,34458,34529,34607,34685,34757,34831,34905,34979,35059,35132,35201,35273,35350,35402,35475,35549,35618,35693,35767,35841,35930,36000,36053,36131,36221,36309,36405,36495,36996,37085,37332,37613,37857,38142,38535,39012,39234,39456,39724,39951,40181,40411,40641,40871,41098,41337,41563,41808,42038,42286,42505,42788,42996,43127,43354,43600,43825,44072,44293,44538,44658,44934,45235,45559,45850,46164,46301,46432,46537,46779,46946,47150,47358,47629,47741,47853,47958,48075,48289,48435,48575,48661,49009,49097,49327,49745,49978,50060,50158,50775,50875,51111,51535,51774,51868,51957,52194,54246,54488,54590,54827,57011,67548,68799,79433,80696,82188,82724,83054,84115,85380,85636,85872,86419,86913,87518,87716,88296,88860,89235,89353,89891,90048,90244,90517,90773,90943,91084,91148,91430,91716,92392,92656,92994,93347,93441,93627,93933,94195,94320,94447,94686,94897,95016,95209,95386,95841,96022,96144,96403,96516,96703,96805,97249,97373,97648,98156,98652,99529,99823,100393,100542,101274,101446,101782,101874,102152,105338,108667,108729,109359,109973,110059,110172,110401,110561,110713,110884,111051,111294,111464,111637,111808,112082,112281,112486,112816,112900,112996,113092,113190,113290,113392,113494,113596,113698,113800,113900,113996,114108,114237,114360,114491,114622,114720,114834,114928,115048,115252,115321,115437,115565,115629,115833,115902,116034,116104,116244,116378,116474,116586,116686,116802,116898,117010,117110,117250,117386,117550,117680,117838,117988,118129,118273,118408,118520,118670,118798,118926,119062,119194,119324,119454,119566,119706,119852,119996,120134,120200,120290,120366,120470,120560,120662,120770,120878,120978,121058,121150,121248,121358,121436,121542,121634,121738,121848,121970,122133,122290,122370,122470,122560,122670,122764,122870,122962,123062,123174,123288,123404,123520,123614,123728,123840,123942,124062,124184,124266,124370,124490,124616,124714,124808,124896,125008,125124,125246,125358,125533,125649,125735,125827,125939,126063,126130,126256,126324,126452,126596,126724,126793,126888,127003,127116,127215,127324,127435,127546,127647,127752,127852,127982,128073,128196,128290,128402,128488,128592,128688,128776,128894,128998,129102,129228,129316,129424,129524,129614,129724,129808,129910,129994,130048,130112,130218,130328,130412",
-                        "endLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,85,86,87,88,89,90,91,103,117,118,124,127,128,129,141,142,148,149,150,151,190,191,192,193,194,195,196,223,224,230,231,243,244,245,246,247,248,249,250,251,252,253,254,255,256,257,258,259,260,261,262,263,264,265,266,267,268,269,270,271,272,273,274,275,276,277,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,294,295,296,297,298,299,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,315,316,317,318,319,320,321,322,323,324,325,326,327,328,329,330,331,332,333,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348,349,350,351,352,353,354,355,356,357,358,359,360,361,362,363,364,365,366,367,368,369,370,371,372,373,374,375,376,377,378,379,380,381,382,383,384,385,392,393,397,401,405,410,416,423,427,431,436,440,444,448,452,456,460,464,468,472,476,480,484,489,493,496,500,504,508,512,516,520,523,527,531,535,539,543,544,545,546,549,552,555,558,562,563,564,565,566,569,571,573,575,580,581,585,591,595,596,598,609,610,614,620,624,625,626,630,657,661,662,666,694,860,882,1048,1070,1097,1104,1109,1123,1145,1150,1155,1165,1174,1183,1187,1194,1202,1209,1210,1219,1222,1225,1229,1233,1237,1240,1241,1245,1249,1259,1264,1271,1277,1278,1281,1285,1290,1292,1294,1297,1300,1302,1306,1309,1316,1319,1322,1326,1328,1332,1334,1340,1342,1346,1354,1362,1374,1380,1389,1392,1403,1406,1411,1412,1417,1459,1502,1503,1513,1522,1523,1525,1529,1532,1535,1538,1541,1545,1548,1551,1554,1558,1561,1565,1569,1570,1571,1572,1573,1574,1575,1576,1577,1578,1579,1580,1581,1582,1583,1584,1585,1586,1587,1588,1589,1590,1594,1595,1596,1597,1598,1602,1603,1604,1605,1607,1609,1610,1611,1612,1613,1614,1615,1616,1618,1619,1621,1622,1624,1626,1627,1629,1630,1631,1632,1633,1634,1636,1637,1638,1639,1640,1641,1643,1645,1647,1648,1649,1650,1651,1652,1653,1654,1655,1656,1657,1658,1659,1661,1662,1663,1664,1665,1666,1668,1672,1676,1677,1678,1679,1680,1681,1682,1683,1685,1687,1689,1691,1693,1694,1695,1696,1698,1700,1702,1703,1704,1705,1706,1707,1708,1709,1710,1711,1712,1713,1716,1717,1718,1719,1721,1723,1724,1726,1727,1729,1731,1733,1734,1735,1736,1737,1738,1739,1740,1741,1742,1743,1744,1746,1747,1748,1749,1751,1752,1753,1754,1755,1757,1759,1761,1763,1764,1765,1766,1767,1768,1769,1770,1771,1772,1773,1774,1775,1776,1777",
-                        "endColumns": "54,44,48,40,54,57,61,67,77,80,60,74,75,76,77,84,81,75,75,76,77,105,105,78,79,56,57,73,74,64,65,54,71,72,66,67,58,58,58,58,58,53,53,52,53,53,53,53,73,78,72,73,70,71,71,72,56,57,72,73,73,74,71,72,69,70,59,60,1290,103,100,46,247,191,390,35,35,319,292,5296,111,160,35,422,83,220,158,258,35,438,187,127,173,780,216,375,478,458,244,35,152,68,68,69,73,75,63,76,75,76,63,64,68,76,74,68,67,76,65,96,64,68,98,70,58,57,56,58,70,71,71,71,71,66,67,67,58,62,63,89,90,59,65,66,65,69,63,52,112,57,62,64,64,74,72,71,48,60,60,60,61,63,63,63,64,62,59,60,65,58,59,61,70,59,67,85,86,89,86,87,81,82,89,90,51,57,44,65,63,56,56,53,56,47,48,50,33,46,48,45,31,63,61,59,56,73,77,92,69,77,53,69,84,47,45,70,77,77,71,73,73,73,79,72,68,71,76,51,72,73,68,74,73,73,88,69,52,77,89,87,95,89,12,88,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,136,130,104,12,12,12,12,12,111,111,104,116,12,12,12,12,12,87,12,12,12,81,12,12,99,12,12,12,93,88,12,12,12,101,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,117,12,12,12,12,12,12,12,63,12,12,12,12,12,12,93,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,91,12,12,12,61,12,12,85,12,12,12,12,12,12,12,12,12,12,12,12,12,12,83,95,95,97,99,101,101,101,101,101,99,95,111,128,122,130,130,97,113,93,119,12,68,115,127,63,12,68,131,69,12,12,95,111,99,115,95,111,99,12,135,12,129,12,12,140,12,134,111,149,127,127,12,131,129,129,111,139,12,12,12,65,89,75,103,89,101,107,107,99,79,91,97,12,77,105,91,103,109,12,12,12,79,99,89,109,93,105,91,12,12,12,12,12,93,113,111,12,12,12,81,103,119,125,97,93,87,111,115,121,111,12,115,85,91,12,12,66,12,67,12,12,12,68,94,114,112,98,108,110,110,100,104,99,12,90,122,93,12,85,103,95,87,12,12,12,12,87,107,99,89,109,83,101,83,53,63,105,109,83,119",
-                        "endOffsets": "105,150,199,240,295,353,415,483,561,642,703,778,854,931,1009,1094,1176,1252,1328,1405,1483,1589,1695,1774,1854,1911,1969,2043,2118,2183,2249,2304,2376,2449,2516,2584,2643,2702,2761,2820,2879,2933,2987,3040,3094,3148,3202,3256,3330,3409,3482,3556,3627,3699,3771,3844,3901,3959,4032,4106,4180,4255,4327,4400,4470,4541,4601,4662,6577,6681,6782,6829,7077,7269,7660,8164,8738,9058,9647,16283,16395,16556,17028,17451,18044,18265,18424,18683,20810,21249,21437,21565,21739,22520,22737,24068,24547,25920,26165,26655,26808,26877,26946,27016,27090,27166,27230,27307,27383,27460,27524,27589,27658,27735,27810,27879,27947,28024,28090,28187,28252,28321,28420,28491,28550,28608,28665,28724,28795,28867,28939,29011,29083,29150,29218,29286,29345,29408,29472,29562,29653,29713,29779,29846,29912,29982,30046,30099,30212,30270,30333,30398,30463,30538,30611,30683,30732,30793,30854,30915,30977,31041,31105,31169,31234,31297,31357,31418,31484,31543,31603,31665,31736,31796,31864,31950,32037,32127,32214,32302,32384,32467,32557,32648,32700,32758,32803,32869,32933,32990,33047,33101,33158,33206,33255,33306,33340,33387,33436,33482,33514,33578,33640,33700,33757,33831,33909,34002,34072,34150,34204,34274,34359,34407,34453,34524,34602,34680,34752,34826,34900,34974,35054,35127,35196,35268,35345,35397,35470,35544,35613,35688,35762,35836,35925,35995,36048,36126,36216,36304,36400,36490,36991,37080,37327,37608,37852,38137,38530,39007,39229,39451,39719,39946,40176,40406,40636,40866,41093,41332,41558,41803,42033,42281,42500,42783,42991,43122,43349,43595,43820,44067,44288,44533,44653,44929,45230,45554,45845,46159,46296,46427,46532,46774,46941,47145,47353,47624,47736,47848,47953,48070,48284,48430,48570,48656,49004,49092,49322,49740,49973,50055,50153,50770,50870,51106,51530,51769,51863,51952,52189,54241,54483,54585,54822,57006,67543,68794,79428,80691,82183,82719,83049,84110,85375,85631,85867,86414,86908,87513,87711,88291,88855,89230,89348,89886,90043,90239,90512,90768,90938,91079,91143,91425,91711,92387,92651,92989,93342,93436,93622,93928,94190,94315,94442,94681,94892,95011,95204,95381,95836,96017,96139,96398,96511,96698,96800,97244,97368,97643,98151,98647,99524,99818,100388,100537,101269,101441,101777,101869,102147,105333,108662,108724,109354,109968,110054,110167,110396,110556,110708,110879,111046,111289,111459,111632,111803,112077,112276,112481,112811,112895,112991,113087,113185,113285,113387,113489,113591,113693,113795,113895,113991,114103,114232,114355,114486,114617,114715,114829,114923,115043,115247,115316,115432,115560,115624,115828,115897,116029,116099,116239,116373,116469,116581,116681,116797,116893,117005,117105,117245,117381,117545,117675,117833,117983,118124,118268,118403,118515,118665,118793,118921,119057,119189,119319,119449,119561,119701,119847,119991,120129,120195,120285,120361,120465,120555,120657,120765,120873,120973,121053,121145,121243,121353,121431,121537,121629,121733,121843,121965,122128,122285,122365,122465,122555,122665,122759,122865,122957,123057,123169,123283,123399,123515,123609,123723,123835,123937,124057,124179,124261,124365,124485,124611,124709,124803,124891,125003,125119,125241,125353,125528,125644,125730,125822,125934,126058,126125,126251,126319,126447,126591,126719,126788,126883,126998,127111,127210,127319,127430,127541,127642,127747,127847,127977,128068,128191,128285,128397,128483,128587,128683,128771,128889,128993,129097,129223,129311,129419,129519,129609,129719,129803,129905,129989,130043,130107,130213,130323,130407,130527"
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"
                     },
                     "to": {
-                        "startLines": "15,20,21,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,214,215,216,217,218,219,220,232,246,247,253,256,257,258,273,288,294,295,296,297,336,337,338,339,340,341,342,369,370,376,377,389,390,391,392,393,394,395,396,397,398,399,400,401,402,403,404,405,406,407,408,409,410,411,412,413,414,415,416,417,418,419,420,421,422,423,424,425,426,427,428,429,430,431,432,433,434,435,436,437,438,439,440,441,442,443,444,445,446,447,448,449,450,451,452,453,454,455,456,457,458,459,460,461,462,463,469,470,471,472,473,474,475,476,477,493,494,495,496,497,498,499,500,503,504,505,506,507,510,511,512,516,517,518,519,520,522,523,524,525,526,527,528,529,530,531,532,533,534,535,536,537,538,539,540,541,542,543,544,545,546,547,548,549,550,551,552,604,616,617,618,619,620,621,628,629,633,637,641,646,652,659,663,667,672,676,680,684,688,692,696,700,704,708,712,716,720,725,729,732,736,740,744,748,752,756,759,763,767,771,775,779,780,781,782,785,788,791,794,798,799,800,801,802,805,807,809,811,816,817,821,827,831,832,834,845,846,850,856,860,861,862,866,893,897,898,902,930,1096,1118,1284,1306,1333,1340,1345,1359,1381,1386,1391,1401,1410,1419,1423,1430,1438,1445,1446,1455,1458,1461,1465,1469,1473,1476,1477,1481,1485,1495,1500,1507,1513,1514,1517,1521,1526,1528,1530,1533,1536,1538,1542,1545,1552,1555,1558,1562,1564,1568,1570,1576,1578,1582,1590,1598,1610,1616,1625,1628,1639,1642,1647,1648,1653,1695,1738,1739,1749,1758,1759,1761,1765,1768,1771,1774,1777,1781,1784,1787,1790,1794,1797,1801,1805,1806,1807,1808,1809,1810,1811,1812,1813,1814,1815,1816,1817,1818,1819,1820,1821,1822,1823,1824,1825,1826,1830,1831,1832,1833,1834,1838,1839,1840,1841,1843,1845,1846,1847,1848,1849,1850,1851,1852,1854,1855,1857,1858,1860,1862,1863,1865,1866,1867,1868,1869,1870,1872,1873,1874,1875,1876,1893,1895,1897,1899,1900,1901,1902,1903,1904,1905,1906,1907,1908,1909,1910,1911,1913,1914,1915,1916,1917,1918,1920,1924,1928,1929,1930,1931,1932,1933,1934,1935,1937,1939,1941,1943,1945,1946,1947,1948,1950,1952,1954,1955,1956,1957,1958,1959,1960,1961,1962,1963,1964,1965,1968,1969,1970,1971,1973,1975,1976,1978,1979,1981,1983,1985,1986,1987,1988,1989,1990,1991,1992,1993,1994,1995,1996,1998,1999,2000,2001,2003,2004,2005,2006,2007,2009,2011,2013,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026,2027,2028",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "614,796,841,5968,6009,6064,6122,6184,6252,6330,6411,6472,6547,6623,6700,6778,6863,6945,7021,7097,7174,7252,7358,7464,7543,7623,7680,7738,7812,7887,7952,8018,8073,8145,8218,8285,8353,8412,8471,8530,8589,8648,8702,8756,8809,8863,8917,8971,9246,9320,9399,9472,9546,9617,9689,9761,9834,9891,9949,10022,10096,10170,10245,10317,10390,10460,10531,10591,10652,12567,12671,12772,12819,13067,13259,13650,14154,14728,15048,15637,22273,22385,22546,28990,30355,30948,31169,31328,31587,33714,34153,34341,34469,34643,35424,35641,36972,37451,38824,39069,39559,39712,39781,39850,39920,39994,40070,40134,40211,40287,40364,40428,40493,40562,40639,40714,40783,40851,40928,40994,41091,41156,41225,41324,41395,41454,41512,41569,41628,41699,41771,41843,41915,41987,42054,42122,42190,42249,42312,42376,42466,42557,42617,42683,42750,42816,42886,42950,43003,43116,43174,43237,43302,43367,43442,43515,43587,43636,43697,43758,43819,43881,43945,44009,44073,44138,44201,44261,44322,44388,44447,44507,44569,44640,44700,45109,45195,45282,45372,45459,45547,45629,45712,45802,46871,46923,46981,47026,47092,47156,47213,47270,47472,47529,47577,47626,47677,47781,47828,47877,48027,48059,48123,48185,48245,48372,48446,48524,48617,48687,48765,48819,48889,48974,49022,49068,49139,49217,49295,49367,49441,49515,49589,49669,49742,49811,49883,49960,50012,50085,50159,50228,50303,50377,50451,50540,53902,54564,54642,54732,54820,54916,55006,55507,55596,55843,56124,56368,56653,57046,57523,57745,57967,58235,58462,58692,58922,59152,59382,59609,59848,60074,60319,60549,60797,61016,61299,61507,61638,61865,62111,62336,62583,62804,63049,63169,63445,63746,64070,64361,64675,64812,64943,65048,65290,65457,65661,65869,66140,66252,66364,66469,66586,66800,66946,67086,67172,67520,67608,67838,68256,68489,68571,68669,69286,69386,69622,70046,70285,70379,70468,70705,72757,72999,73101,73338,75522,86059,87310,97944,99207,100699,101235,101565,102626,103891,104147,104383,104930,105424,106029,106227,106807,107371,107746,107864,108402,108559,108755,109028,109284,109454,109595,109659,109941,110227,110903,111167,111505,111858,111952,112138,112444,112706,112831,112958,113197,113408,113527,113720,113897,114352,114533,114655,114914,115027,115214,115316,115760,115884,116159,116667,117163,118040,118334,118904,119053,119785,119957,120293,120385,120663,123849,127178,127240,127870,128484,128570,128683,128912,129072,129224,129395,129562,129805,129975,130148,130319,130593,130792,130997,131327,131411,131507,131603,131701,131801,131903,132005,132107,132209,132311,132411,132507,132619,132748,132871,133002,133133,133231,133345,133439,133559,133763,133832,133948,134076,134140,134344,134413,134545,134615,134755,134889,134985,135097,135197,135313,135409,135521,135621,135761,135897,136061,136191,136349,136499,136640,136784,136919,137031,137181,137309,137437,137573,137705,137835,137965,138077,139357,139503,139647,139785,139851,139941,140017,140121,140211,140313,140421,140529,140629,140709,140801,140899,141009,141087,141193,141285,141389,141499,141621,141784,141941,142021,142121,142211,142321,142415,142521,142613,142713,142825,142939,143055,143171,143265,143379,143491,143593,143713,143835,143917,144021,144141,144267,144365,144459,144547,144659,144775,144897,145009,145184,145300,145386,145478,145590,145714,145781,145907,145975,146103,146247,146375,146444,146539,146654,146767,146866,146975,147086,147197,147298,147403,147503,147633,147724,147847,147941,148053,148139,148243,148339,148427,148545,148649,148753,148879,148967,149075,149175,149265,149375,149459,149561,149645,149699,149763,149869,149979,150063",
-                        "endLines": "15,20,21,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,213,214,215,216,217,218,219,231,245,246,252,255,256,257,269,273,293,294,295,296,335,336,337,338,339,340,341,368,369,375,376,388,389,390,391,392,393,394,395,396,397,398,399,400,401,402,403,404,405,406,407,408,409,410,411,412,413,414,415,416,417,418,419,420,421,422,423,424,425,426,427,428,429,430,431,432,433,434,435,436,437,438,439,440,441,442,443,444,445,446,447,448,449,450,451,452,453,454,455,456,457,458,459,460,461,462,463,469,470,471,472,473,474,475,476,477,493,494,495,496,497,498,499,500,503,504,505,506,507,510,511,512,516,517,518,519,520,522,523,524,525,526,527,528,529,530,531,532,533,534,535,536,537,538,539,540,541,542,543,544,545,546,547,548,549,550,551,552,604,616,617,618,619,620,627,628,632,636,640,645,651,658,662,666,671,675,679,683,687,691,695,699,703,707,711,715,719,724,728,731,735,739,743,747,751,755,758,762,766,770,774,778,779,780,781,784,787,790,793,797,798,799,800,801,804,806,808,810,815,816,820,826,830,831,833,844,845,849,855,859,860,861,865,892,896,897,901,929,1095,1117,1283,1305,1332,1339,1344,1358,1380,1385,1390,1400,1409,1418,1422,1429,1437,1444,1445,1454,1457,1460,1464,1468,1472,1475,1476,1480,1484,1494,1499,1506,1512,1513,1516,1520,1525,1527,1529,1532,1535,1537,1541,1544,1551,1554,1557,1561,1563,1567,1569,1575,1577,1581,1589,1597,1609,1615,1624,1627,1638,1641,1646,1647,1652,1694,1737,1738,1748,1757,1758,1760,1764,1767,1770,1773,1776,1780,1783,1786,1789,1793,1796,1800,1804,1805,1806,1807,1808,1809,1810,1811,1812,1813,1814,1815,1816,1817,1818,1819,1820,1821,1822,1823,1824,1825,1829,1830,1831,1832,1833,1837,1838,1839,1840,1842,1844,1845,1846,1847,1848,1849,1850,1851,1853,1854,1856,1857,1859,1861,1862,1864,1865,1866,1867,1868,1869,1871,1872,1873,1874,1875,1876,1894,1896,1898,1899,1900,1901,1902,1903,1904,1905,1906,1907,1908,1909,1910,1912,1913,1914,1915,1916,1917,1919,1923,1927,1928,1929,1930,1931,1932,1933,1934,1936,1938,1940,1942,1944,1945,1946,1947,1949,1951,1953,1954,1955,1956,1957,1958,1959,1960,1961,1962,1963,1964,1967,1968,1969,1970,1972,1974,1975,1977,1978,1980,1982,1984,1985,1986,1987,1988,1989,1990,1991,1992,1993,1994,1995,1997,1998,1999,2000,2002,2003,2004,2005,2006,2008,2010,2012,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026,2027,2028",
-                        "endColumns": "54,44,48,40,54,57,61,67,77,80,60,74,75,76,77,84,81,75,75,76,77,105,105,78,79,56,57,73,74,64,65,54,71,72,66,67,58,58,58,58,58,53,53,52,53,53,53,53,73,78,72,73,70,71,71,72,56,57,72,73,73,74,71,72,69,70,59,60,1290,103,100,46,247,191,390,35,35,319,292,5296,111,160,35,422,83,220,158,258,35,438,187,127,173,780,216,375,478,458,244,35,152,68,68,69,73,75,63,76,75,76,63,64,68,76,74,68,67,76,65,96,64,68,98,70,58,57,56,58,70,71,71,71,71,66,67,67,58,62,63,89,90,59,65,66,65,69,63,52,112,57,62,64,64,74,72,71,48,60,60,60,61,63,63,63,64,62,59,60,65,58,59,61,70,59,67,85,86,89,86,87,81,82,89,90,51,57,44,65,63,56,56,53,56,47,48,50,33,46,48,45,31,63,61,59,56,73,77,92,69,77,53,69,84,47,45,70,77,77,71,73,73,73,79,72,68,71,76,51,72,73,68,74,73,73,88,69,52,77,89,87,95,89,12,88,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,136,130,104,12,12,12,12,12,111,111,104,116,12,12,12,12,12,87,12,12,12,81,12,12,99,12,12,12,93,88,12,12,12,101,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,117,12,12,12,12,12,12,12,63,12,12,12,12,12,12,93,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,91,12,12,12,61,12,12,85,12,12,12,12,12,12,12,12,12,12,12,12,12,12,83,95,95,97,99,101,101,101,101,101,99,95,111,128,122,130,130,97,113,93,119,12,68,115,127,63,12,68,131,69,12,12,95,111,99,115,95,111,99,12,135,12,129,12,12,140,12,134,111,149,127,127,12,131,129,129,111,139,12,12,12,65,89,75,103,89,101,107,107,99,79,91,97,12,77,105,91,103,109,12,12,12,79,99,89,109,93,105,91,12,12,12,12,12,93,113,111,12,12,12,81,103,119,125,97,93,87,111,115,121,111,12,115,85,91,12,12,66,12,67,12,12,12,68,94,114,112,98,108,110,110,100,104,99,12,90,122,93,12,85,103,95,87,12,12,12,12,87,107,99,89,109,83,101,83,53,63,105,109,83,119",
-                        "endOffsets": "664,836,885,6004,6059,6117,6179,6247,6325,6406,6467,6542,6618,6695,6773,6858,6940,7016,7092,7169,7247,7353,7459,7538,7618,7675,7733,7807,7882,7947,8013,8068,8140,8213,8280,8348,8407,8466,8525,8584,8643,8697,8751,8804,8858,8912,8966,9020,9315,9394,9467,9541,9612,9684,9756,9829,9886,9944,10017,10091,10165,10240,10312,10385,10455,10526,10586,10647,12562,12666,12767,12814,13062,13254,13645,14149,14723,15043,15632,22268,22380,22541,23013,29408,30943,31164,31323,31582,33709,34148,34336,34464,34638,35419,35636,36967,37446,38819,39064,39554,39707,39776,39845,39915,39989,40065,40129,40206,40282,40359,40423,40488,40557,40634,40709,40778,40846,40923,40989,41086,41151,41220,41319,41390,41449,41507,41564,41623,41694,41766,41838,41910,41982,42049,42117,42185,42244,42307,42371,42461,42552,42612,42678,42745,42811,42881,42945,42998,43111,43169,43232,43297,43362,43437,43510,43582,43631,43692,43753,43814,43876,43940,44004,44068,44133,44196,44256,44317,44383,44442,44502,44564,44635,44695,44763,45190,45277,45367,45454,45542,45624,45707,45797,45888,46918,46976,47021,47087,47151,47208,47265,47319,47524,47572,47621,47672,47706,47823,47872,47918,48054,48118,48180,48240,48297,48441,48519,48612,48682,48760,48814,48884,48969,49017,49063,49134,49212,49290,49362,49436,49510,49584,49664,49737,49806,49878,49955,50007,50080,50154,50223,50298,50372,50446,50535,50605,53950,54637,54727,54815,54911,55001,55502,55591,55838,56119,56363,56648,57041,57518,57740,57962,58230,58457,58687,58917,59147,59377,59604,59843,60069,60314,60544,60792,61011,61294,61502,61633,61860,62106,62331,62578,62799,63044,63164,63440,63741,64065,64356,64670,64807,64938,65043,65285,65452,65656,65864,66135,66247,66359,66464,66581,66795,66941,67081,67167,67515,67603,67833,68251,68484,68566,68664,69281,69381,69617,70041,70280,70374,70463,70700,72752,72994,73096,73333,75517,86054,87305,97939,99202,100694,101230,101560,102621,103886,104142,104378,104925,105419,106024,106222,106802,107366,107741,107859,108397,108554,108750,109023,109279,109449,109590,109654,109936,110222,110898,111162,111500,111853,111947,112133,112439,112701,112826,112953,113192,113403,113522,113715,113892,114347,114528,114650,114909,115022,115209,115311,115755,115879,116154,116662,117158,118035,118329,118899,119048,119780,119952,120288,120380,120658,123844,127173,127235,127865,128479,128565,128678,128907,129067,129219,129390,129557,129800,129970,130143,130314,130588,130787,130992,131322,131406,131502,131598,131696,131796,131898,132000,132102,132204,132306,132406,132502,132614,132743,132866,132997,133128,133226,133340,133434,133554,133758,133827,133943,134071,134135,134339,134408,134540,134610,134750,134884,134980,135092,135192,135308,135404,135516,135616,135756,135892,136056,136186,136344,136494,136635,136779,136914,137026,137176,137304,137432,137568,137700,137830,137960,138072,138212,139498,139642,139780,139846,139936,140012,140116,140206,140308,140416,140524,140624,140704,140796,140894,141004,141082,141188,141280,141384,141494,141616,141779,141936,142016,142116,142206,142316,142410,142516,142608,142708,142820,142934,143050,143166,143260,143374,143486,143588,143708,143830,143912,144016,144136,144262,144360,144454,144542,144654,144770,144892,145004,145179,145295,145381,145473,145585,145709,145776,145902,145970,146098,146242,146370,146439,146534,146649,146762,146861,146970,147081,147192,147293,147398,147498,147628,147719,147842,147936,148048,148134,148238,148334,148422,148540,148644,148748,148874,148962,149070,149170,149260,149370,149454,149556,149640,149694,149758,149864,149974,150058,150178"
+                        "startLines": "175,176,272,273,274,275,276,286,287,288,289,290,291,292,293,294,295,296,297,298,299,300,309,310,316,317,321,322,323,329,427,1694,1695,1700,1703,1708,1846,1847",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "8992,9061,15675,15745,15813,15885,15955,16800,16861,16922,16984,17048,17110,17171,17239,17339,17399,17465,17538,17607,17664,17716,18231,18303,18618,18653,18830,18864,18899,19209,25700,108330,108447,108714,109007,109274,120296,120368",
+                        "endLines": "175,176,272,273,274,275,276,286,287,288,289,290,291,292,293,294,295,296,297,298,299,300,309,310,316,317,321,322,323,329,427,1694,1698,1700,1706,1708,1846,1847",
+                        "endColumns": "68,62,69,67,71,69,60,60,60,61,63,61,60,67,99,59,65,72,68,56,51,61,71,75,34,34,33,34,34,69,70,116,12,109,12,128,71,66",
+                        "endOffsets": "9056,9119,15740,15808,15880,15950,16011,16856,16917,16979,17043,17105,17166,17234,17334,17394,17460,17533,17602,17659,17711,17773,18298,18374,18648,18683,18859,18894,18929,19274,25766,108442,108643,108819,109203,109398,120363,120430"
                     }
                 },
                 {
                     "source": "/home/toulain/AndroidStudioProjects/projet_integration/app/src/main/res/values/strings.xml",
                     "from": {
-                        "startLines": "46,45,60,2,3,7,10,12,11,19,16,20,28,24,15,27,26,51,62,33,67,66,65,64,68,53,32,57,75,4,42,40,43,41,36,39,37,9,14,18,6,52,47,48,49,35,73,34,44,58,29,54,50,63,56,23,22,61,59,55,72",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "2350,2298,3179,55,106,314,482,592,536,939,776,1003,1440,1200,723,1350,1256,2722,3279,1636,3625,3546,3462,3393,3702,2815,1542,3025,3842,165,2124,2014,2170,2060,1849,1962,1909,372,650,845,204,2762,2400,2490,2582,1740,3807,1677,2234,3065,1491,2865,2670,3335,2974,1138,1080,3235,3111,2917,3771",
-                        "endColumns": "49,51,55,50,58,56,53,56,55,63,67,75,50,54,52,89,93,39,55,40,76,78,83,68,65,49,93,39,55,37,45,45,63,63,59,51,51,109,72,93,109,52,89,91,87,108,33,62,63,45,48,51,51,57,50,61,57,43,67,56,35",
-                        "endOffsets": "2395,2345,3230,101,160,366,531,644,587,998,839,1074,1486,1250,771,1435,1345,2757,3330,1672,3697,3620,3541,3457,3763,2860,1631,3060,3893,198,2165,2055,2229,2119,1904,2009,1956,477,718,934,309,2810,2485,2577,2665,1844,3836,1735,2293,3106,1535,2912,2717,3388,3020,1195,1133,3274,3174,2969,3802"
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,32,30,-1,-1,-1,-1,-1,-1,-1,33,31,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,4,4,-1,-1,-1,-1,-1,-1,-1,4,4,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,1562,1442,-1,-1,-1,-1,-1,-1,-1,1618,1502,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "endColumns": "-1,-1,-1,-1,-1,-1,-1,55,59,-1,-1,-1,-1,-1,-1,-1,55,59,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "endOffsets": "-1,-1,-1,-1,-1,-1,-1,1613,1497,-1,-1,-1,-1,-1,-1,-1,1669,1557,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"
                     },
                     "to": {
-                        "startLines": "553,554,555,556,557,558,559,560,561,562,563,564,565,566,567,568,569,570,571,572,573,574,575,576,577,578,579,580,581,582,583,584,585,586,587,588,589,590,591,592,593,594,595,596,597,598,599,600,601,602,603,605,606,607,608,610,611,612,613,614,615",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "50610,50660,50712,50768,50819,50878,50935,50989,51046,51102,51166,51234,51310,51361,51416,51469,51559,51653,51693,51749,51790,51867,51946,52030,52099,52165,52215,52309,52349,52405,52443,52489,52535,52599,52663,52723,52775,52827,52937,53010,53104,53214,53267,53357,53449,53537,53646,53680,53743,53807,53853,53955,54007,54059,54117,54239,54301,54359,54403,54471,54528",
-                        "endColumns": "49,51,55,50,58,56,53,56,55,63,67,75,50,54,52,89,93,39,55,40,76,78,83,68,65,49,93,39,55,37,45,45,63,63,59,51,51,109,72,93,109,52,89,91,87,108,33,62,63,45,48,51,51,57,50,61,57,43,67,56,35",
-                        "endOffsets": "50655,50707,50763,50814,50873,50930,50984,51041,51097,51161,51229,51305,51356,51411,51464,51554,51648,51688,51744,51785,51862,51941,52025,52094,52160,52210,52304,52344,52400,52438,52484,52530,52594,52658,52718,52770,52822,52932,53005,53099,53209,53262,53352,53444,53532,53641,53675,53738,53802,53848,53897,54002,54054,54112,54163,54296,54354,54398,54466,54523,54559"
+                        "startLines": "361,362,363,364,365,366,367,368,369,370,371,372,373,374,375,376,377,378,379,380,381,382,383,384,385,386,387,388,389,390,391,392,393,394,395,396,397,398,399,400,401,402,403,404,405,406,407,408,409,410,411,412,413,414,415,416,417,418,419,420,421,423,424,425,426,428,429,430,431,432,433,434",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "21517,21567,21619,21675,21726,21785,21842,21896,21952,22012,22069,22125,22189,22257,22333,22384,22439,22495,22555,22597,22640,22723,22798,22851,22941,23035,23112,23152,23208,23249,23326,23405,23489,23558,23624,23674,23768,23808,23879,23917,23963,24009,24073,24137,24197,24249,24301,24411,24484,24578,24688,24741,24831,24923,25011,25120,25154,25217,25281,25327,25385,25487,25539,25591,25649,25771,25833,25891,25935,26003,26055,26112",
+                        "endColumns": "49,51,55,50,58,56,53,55,59,56,55,63,67,75,50,54,55,59,41,42,82,74,52,89,93,76,39,55,40,76,78,83,68,65,49,93,39,70,37,45,45,63,63,59,51,51,109,72,93,109,52,89,91,87,108,33,62,63,45,57,48,51,51,57,50,61,57,43,67,51,56,35",
+                        "endOffsets": "21562,21614,21670,21721,21780,21837,21891,21947,22007,22064,22120,22184,22252,22328,22379,22434,22490,22550,22592,22635,22718,22793,22846,22936,23030,23107,23147,23203,23244,23321,23400,23484,23553,23619,23669,23763,23803,23874,23912,23958,24004,24068,24132,24192,24244,24296,24406,24479,24573,24683,24736,24826,24918,25006,25115,25149,25212,25276,25322,25380,25429,25534,25586,25644,25695,25828,25886,25930,25998,26050,26107,26143"
                     }
                 },
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/fd0d531b7e793b86d879ed7570110a41/res/values/values.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values/values.xml",
                     "from": {
-                        "startLines": "2,6,7,8,9,10",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "55,348,414,536,597,663",
-                        "endColumns": "88,65,121,60,65,66",
-                        "endOffsets": "139,409,531,592,658,725"
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"
                     },
                     "to": {
-                        "startLines": "177,1882,1884,1885,1890,1892",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "9157,138535,138711,138833,139095,139290",
-                        "endColumns": "88,65,121,60,65,66",
-                        "endOffsets": "9241,138596,138828,138889,139156,139352"
+                        "startLines": "15,20,21,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,232,233,234,235,236,237,238,239,240,241,242,243,244,245,246,247,248,249,250,251,252,253,254,255,256,257,258,259,260,261,262,263,264,265,266,267,268,269,270,271,277,278,279,280,281,282,283,284,285,301,302,303,304,305,306,307,308,311,312,313,314,315,318,319,320,324,325,326,327,328,330,331,332,333,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348,349,350,351,352,353,354,355,356,357,358,359,360,422,435,436,437,438,439,440,447,448,452,456,460,465,471,478,482,486,491,495,499,503,507,511,515,519,523,527,531,535,539,544,548,551,555,559,563,567,571,575,578,582,586,590,594,598,599,600,601,604,607,610,613,617,618,619,620,621,624,626,628,630,635,636,640,646,650,651,653,664,665,669,675,679,680,681,685,712,716,717,721,749,914,936,1101,1123,1150,1157,1162,1176,1198,1203,1208,1218,1227,1236,1240,1247,1255,1262,1263,1272,1275,1278,1282,1286,1290,1293,1294,1298,1302,1312,1317,1324,1330,1331,1334,1338,1343,1345,1347,1350,1353,1355,1359,1362,1369,1372,1375,1379,1381,1385,1387,1393,1395,1399,1407,1415,1427,1433,1442,1445,1456,1459,1464,1465,1470,1512,1555,1556,1566,1575,1576,1578,1582,1585,1588,1591,1594,1598,1601,1604,1607,1611,1614,1618,1622,1623,1624,1625,1626,1627,1628,1629,1630,1631,1632,1633,1634,1635,1636,1637,1638,1639,1640,1641,1642,1643,1647,1648,1649,1650,1651,1655,1656,1657,1658,1660,1662,1663,1664,1665,1666,1667,1668,1669,1671,1672,1674,1675,1677,1679,1680,1682,1683,1684,1685,1686,1687,1689,1690,1691,1692,1693,1710,1712,1714,1716,1717,1718,1719,1720,1721,1722,1723,1724,1725,1726,1727,1728,1730,1731,1732,1733,1734,1735,1737,1741,1745,1746,1747,1748,1749,1750,1751,1752,1754,1756,1758,1760,1762,1763,1764,1765,1767,1769,1771,1772,1773,1774,1775,1776,1777,1778,1779,1780,1781,1782,1785,1786,1787,1788,1790,1792,1793,1795,1796,1798,1800,1802,1803,1804,1805,1806,1807,1808,1809,1810,1811,1812,1813,1815,1816,1817,1818,1820,1821,1822,1823,1824,1826,1828,1830,1832,1833,1834,1835,1836,1837,1838,1839,1840,1841,1842,1843,1844,1845",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "614,796,841,5935,5976,6031,6089,6151,6219,6297,6378,6439,6514,6590,6667,6745,6830,6912,6988,7064,7141,7219,7325,7431,7510,7590,7647,7705,7779,7854,7919,7985,8040,8112,8185,8252,8320,8379,8438,8497,8556,8615,8669,8723,8776,8830,8884,8938,9213,9287,9366,9439,9513,9584,9656,9728,9801,9858,9916,9989,10063,10137,10212,10284,10357,10427,10498,10558,10619,10688,10757,10827,10901,10977,11041,11118,11194,11271,11335,11400,11469,11546,11621,11690,11758,11835,11901,11998,12063,12132,12231,12302,12361,12419,12476,12535,12606,12678,12750,12822,12894,12961,13029,13097,13156,13219,13283,13373,13464,13524,13590,13657,13723,13793,13857,13910,14023,14081,14144,14209,14274,14349,14422,14494,14543,14604,14665,14726,14788,14852,14916,14980,15045,15108,15168,15229,15295,15354,15414,15476,15547,15607,16016,16102,16189,16279,16366,16454,16536,16619,16709,17778,17830,17888,17933,17999,18063,18120,18177,18379,18436,18484,18533,18584,18688,18735,18784,18934,18966,19030,19092,19152,19279,19353,19431,19524,19594,19672,19726,19796,19881,19929,19975,20046,20124,20202,20274,20348,20422,20496,20576,20649,20718,20790,20867,20919,20992,21066,21135,21210,21284,21358,21447,25434,26148,26226,26316,26404,26500,26590,27091,27180,27427,27708,27952,28237,28630,29107,29329,29551,29819,30046,30276,30506,30736,30966,31193,31432,31658,31903,32133,32381,32600,32883,33091,33222,33449,33695,33920,34167,34388,34633,34753,35029,35330,35654,35945,36259,36396,36527,36632,36874,37041,37245,37453,37724,37836,37948,38053,38170,38384,38530,38670,38756,39104,39192,39422,39840,40073,40155,40253,40845,40945,41181,41605,41844,41938,42027,42264,44288,44530,44632,44869,47025,56970,58221,68263,69526,71018,71554,71884,72945,74210,74466,74702,75249,75743,76348,76546,77126,77690,78065,78183,78721,78878,79074,79347,79603,79773,79914,79978,80260,80546,81222,81486,81824,82177,82271,82457,82763,83025,83150,83277,83516,83727,83846,84039,84216,84671,84852,84974,85233,85346,85533,85635,86079,86203,86478,86986,87482,88359,88653,89223,89372,90104,90276,90612,90704,90982,94106,97373,97435,98013,98597,98683,98796,99025,99185,99337,99508,99675,99918,100088,100261,100432,100706,100905,101110,101440,101524,101620,101716,101814,101914,102016,102118,102220,102322,102424,102524,102620,102732,102861,102984,103115,103246,103344,103458,103552,103672,103876,103945,104061,104189,104253,104457,104526,104658,104728,104868,105002,105098,105210,105310,105426,105522,105634,105734,105874,106010,106174,106304,106462,106612,106753,106897,107032,107144,107294,107422,107550,107686,107818,107948,108078,108190,109470,109616,109760,109898,109964,110054,110130,110234,110324,110426,110534,110642,110742,110822,110914,111012,111122,111200,111306,111398,111502,111612,111734,111897,112054,112134,112234,112324,112434,112528,112634,112726,112826,112938,113052,113168,113284,113378,113492,113604,113706,113826,113948,114030,114134,114254,114380,114478,114572,114660,114772,114888,115010,115122,115297,115413,115499,115591,115703,115827,115894,116020,116088,116216,116360,116488,116557,116652,116767,116880,116979,117088,117199,117310,117411,117516,117616,117746,117837,117960,118054,118166,118252,118356,118452,118540,118658,118762,118866,118992,119080,119188,119288,119378,119488,119572,119674,119758,119812,119876,119982,120092,120176",
+                        "endLines": "15,20,21,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,232,233,234,235,236,237,238,239,240,241,242,243,244,245,246,247,248,249,250,251,252,253,254,255,256,257,258,259,260,261,262,263,264,265,266,267,268,269,270,271,277,278,279,280,281,282,283,284,285,301,302,303,304,305,306,307,308,311,312,313,314,315,318,319,320,324,325,326,327,328,330,331,332,333,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348,349,350,351,352,353,354,355,356,357,358,359,360,422,435,436,437,438,439,446,447,451,455,459,464,470,477,481,485,490,494,498,502,506,510,514,518,522,526,530,534,538,543,547,550,554,558,562,566,570,574,577,581,585,589,593,597,598,599,600,603,606,609,612,616,617,618,619,620,623,625,627,629,634,635,639,645,649,650,652,663,664,668,674,678,679,680,684,711,715,716,720,748,913,935,1100,1122,1149,1156,1161,1175,1197,1202,1207,1217,1226,1235,1239,1246,1254,1261,1262,1271,1274,1277,1281,1285,1289,1292,1293,1297,1301,1311,1316,1323,1329,1330,1333,1337,1342,1344,1346,1349,1352,1354,1358,1361,1368,1371,1374,1378,1380,1384,1386,1392,1394,1398,1406,1414,1426,1432,1441,1444,1455,1458,1463,1464,1469,1511,1554,1555,1565,1574,1575,1577,1581,1584,1587,1590,1593,1597,1600,1603,1606,1610,1613,1617,1621,1622,1623,1624,1625,1626,1627,1628,1629,1630,1631,1632,1633,1634,1635,1636,1637,1638,1639,1640,1641,1642,1646,1647,1648,1649,1650,1654,1655,1656,1657,1659,1661,1662,1663,1664,1665,1666,1667,1668,1670,1671,1673,1674,1676,1678,1679,1681,1682,1683,1684,1685,1686,1688,1689,1690,1691,1692,1693,1711,1713,1715,1716,1717,1718,1719,1720,1721,1722,1723,1724,1725,1726,1727,1729,1730,1731,1732,1733,1734,1736,1740,1744,1745,1746,1747,1748,1749,1750,1751,1753,1755,1757,1759,1761,1762,1763,1764,1766,1768,1770,1771,1772,1773,1774,1775,1776,1777,1778,1779,1780,1781,1784,1785,1786,1787,1789,1791,1792,1794,1795,1797,1799,1801,1802,1803,1804,1805,1806,1807,1808,1809,1810,1811,1812,1814,1815,1816,1817,1819,1820,1821,1822,1823,1825,1827,1829,1831,1832,1833,1834,1835,1836,1837,1838,1839,1840,1841,1842,1843,1844,1845",
+                        "endColumns": "54,44,48,40,54,57,61,67,77,80,60,74,75,76,77,84,81,75,75,76,77,105,105,78,79,56,57,73,74,64,65,54,71,72,66,67,58,58,58,58,58,53,53,52,53,53,53,53,73,78,72,73,70,71,71,72,56,57,72,73,73,74,71,72,69,70,59,60,68,68,69,73,75,63,76,75,76,63,64,68,76,74,68,67,76,65,96,64,68,98,70,58,57,56,58,70,71,71,71,71,66,67,67,58,62,63,89,90,59,65,66,65,69,63,52,112,57,62,64,64,74,72,71,48,60,60,60,61,63,63,63,64,62,59,60,65,58,59,61,70,59,67,85,86,89,86,87,81,82,89,90,51,57,44,65,63,56,56,53,56,47,48,50,33,46,48,45,31,63,61,59,56,73,77,92,69,77,53,69,84,47,45,70,77,77,71,73,73,73,79,72,68,71,76,51,72,73,68,74,73,73,88,69,52,77,89,87,95,89,12,88,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,136,130,104,12,12,12,12,12,111,111,104,116,12,12,12,12,12,87,12,12,12,81,12,12,99,12,12,12,93,88,12,12,12,101,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,117,12,12,12,12,12,12,12,63,12,12,12,12,12,12,93,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,91,12,12,12,61,12,12,85,12,12,12,12,12,12,12,12,12,12,12,12,12,12,83,95,95,97,99,101,101,101,101,101,99,95,111,128,122,130,130,97,113,93,119,12,68,115,127,63,12,68,131,69,12,12,95,111,99,115,95,111,99,12,135,12,129,12,12,140,12,134,111,149,127,127,12,131,129,129,111,139,12,12,12,65,89,75,103,89,101,107,107,99,79,91,97,12,77,105,91,103,109,12,12,12,79,99,89,109,93,105,91,12,12,12,12,12,93,113,111,12,12,12,81,103,119,125,97,93,87,111,115,121,111,12,115,85,91,12,12,66,12,67,12,12,12,68,94,114,112,98,108,110,110,100,104,99,12,90,122,93,12,85,103,95,87,12,12,12,12,87,107,99,89,109,83,101,83,53,63,105,109,83,119",
+                        "endOffsets": "664,836,885,5971,6026,6084,6146,6214,6292,6373,6434,6509,6585,6662,6740,6825,6907,6983,7059,7136,7214,7320,7426,7505,7585,7642,7700,7774,7849,7914,7980,8035,8107,8180,8247,8315,8374,8433,8492,8551,8610,8664,8718,8771,8825,8879,8933,8987,9282,9361,9434,9508,9579,9651,9723,9796,9853,9911,9984,10058,10132,10207,10279,10352,10422,10493,10553,10614,10683,10752,10822,10896,10972,11036,11113,11189,11266,11330,11395,11464,11541,11616,11685,11753,11830,11896,11993,12058,12127,12226,12297,12356,12414,12471,12530,12601,12673,12745,12817,12889,12956,13024,13092,13151,13214,13278,13368,13459,13519,13585,13652,13718,13788,13852,13905,14018,14076,14139,14204,14269,14344,14417,14489,14538,14599,14660,14721,14783,14847,14911,14975,15040,15103,15163,15224,15290,15349,15409,15471,15542,15602,15670,16097,16184,16274,16361,16449,16531,16614,16704,16795,17825,17883,17928,17994,18058,18115,18172,18226,18431,18479,18528,18579,18613,18730,18779,18825,18961,19025,19087,19147,19204,19348,19426,19519,19589,19667,19721,19791,19876,19924,19970,20041,20119,20197,20269,20343,20417,20491,20571,20644,20713,20785,20862,20914,20987,21061,21130,21205,21279,21353,21442,21512,25482,26221,26311,26399,26495,26585,27086,27175,27422,27703,27947,28232,28625,29102,29324,29546,29814,30041,30271,30501,30731,30961,31188,31427,31653,31898,32128,32376,32595,32878,33086,33217,33444,33690,33915,34162,34383,34628,34748,35024,35325,35649,35940,36254,36391,36522,36627,36869,37036,37240,37448,37719,37831,37943,38048,38165,38379,38525,38665,38751,39099,39187,39417,39835,40068,40150,40248,40840,40940,41176,41600,41839,41933,42022,42259,44283,44525,44627,44864,47020,56965,58216,68258,69521,71013,71549,71879,72940,74205,74461,74697,75244,75738,76343,76541,77121,77685,78060,78178,78716,78873,79069,79342,79598,79768,79909,79973,80255,80541,81217,81481,81819,82172,82266,82452,82758,83020,83145,83272,83511,83722,83841,84034,84211,84666,84847,84969,85228,85341,85528,85630,86074,86198,86473,86981,87477,88354,88648,89218,89367,90099,90271,90607,90699,90977,94101,97368,97430,98008,98592,98678,98791,99020,99180,99332,99503,99670,99913,100083,100256,100427,100701,100900,101105,101435,101519,101615,101711,101809,101909,102011,102113,102215,102317,102419,102519,102615,102727,102856,102979,103110,103241,103339,103453,103547,103667,103871,103940,104056,104184,104248,104452,104521,104653,104723,104863,104997,105093,105205,105305,105421,105517,105629,105729,105869,106005,106169,106299,106457,106607,106748,106892,107027,107139,107289,107417,107545,107681,107813,107943,108073,108185,108325,109611,109755,109893,109959,110049,110125,110229,110319,110421,110529,110637,110737,110817,110909,111007,111117,111195,111301,111393,111497,111607,111729,111892,112049,112129,112229,112319,112429,112523,112629,112721,112821,112933,113047,113163,113279,113373,113487,113599,113701,113821,113943,114025,114129,114249,114375,114473,114567,114655,114767,114883,115005,115117,115292,115408,115494,115586,115698,115822,115889,116015,116083,116211,116355,116483,116552,116647,116762,116875,116974,117083,117194,117305,117406,117511,117611,117741,117832,117955,118049,118161,118247,118351,118447,118535,118653,118757,118861,118987,119075,119183,119283,119373,119483,119567,119669,119753,119807,119871,119977,120087,120171,120291"
                     }
                 }
             ]
@@ -1420,7 +1409,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-land_values-land.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-land/values-land.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -1435,7 +1424,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-sr_values-sr.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-sr/values-sr.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-sr/values-sr.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -1450,7 +1439,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-ta_values-ta.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-ta/values-ta.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-ta/values-ta.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -1465,7 +1454,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-v25_values-v25.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-v25/values-v25.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-v25/values-v25.xml",
                     "from": {
                         "startLines": "2,3,4,6",
                         "startColumns": "4,4,4,4",
@@ -1481,7 +1470,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-en-rIN_values-en-rIN.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-en-rIN/values-en-rIN.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-en-rIN/values-en-rIN.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -1496,7 +1485,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-ml_values-ml.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-ml/values-ml.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-ml/values-ml.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -1511,7 +1500,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-tl_values-tl.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-tl/values-tl.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-tl/values-tl.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -1526,7 +1515,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-fi_values-fi.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-fi/values-fi.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-fi/values-fi.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -1541,37 +1530,35 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-fr_values-fr.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-fr/values-fr.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-fr/values-fr.xml",
                     "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,166,274,397,512,623,705,811,941,1024,1104,1190,1300,1412,1515,1626,1733,1840,1962,2061,2147",
-                        "endColumns": "110,107,122,114,110,81,105,129,82,79,85,109,111,102,110,106,106,121,98,85,100",
-                        "endOffsets": "161,269,392,507,618,700,806,936,1019,1099,1185,1295,1407,1510,1621,1728,1835,1957,2056,2142,2243"
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"
                     },
                     "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,72,77",
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,82,87",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,166,274,397,512,623,705,811,941,1024,1104,1190,1300,1412,1515,1626,1733,1840,1962,5573,5904",
+                        "startOffsets": "55,166,274,397,512,623,705,811,941,1024,1104,1190,1300,1412,1515,1626,1733,1840,1962,6226,6557",
                         "endColumns": "110,107,122,114,110,81,105,129,82,79,85,109,111,102,110,106,106,121,98,85,100",
-                        "endOffsets": "161,269,392,507,618,700,806,936,1019,1099,1185,1295,1407,1510,1621,1728,1835,1957,2056,5654,6000"
+                        "endOffsets": "161,269,392,507,618,700,806,936,1019,1099,1185,1295,1407,1510,1621,1728,1835,1957,2056,6307,6653"
                     }
                 },
                 {
                     "source": "/home/toulain/AndroidStudioProjects/projet_integration/app/src/main/res/values-fr/strings.xml",
                     "from": {
-                        "startLines": "49,48,63,2,3,7,10,12,11,19,16,20,28,24,15,27,26,54,65,37,70,69,68,67,71,56,36,60,77,4,45,43,46,44,41,42,40,9,14,18,6,55,50,51,52,39,75,38,47,61,29,57,53,66,59,23,22,64,62,58,74",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "2490,2431,3403,55,106,322,508,620,561,988,817,1057,1503,1253,762,1409,1311,2893,3507,1707,3879,3800,3707,3629,3956,2995,1612,3239,4101,165,2247,2137,2293,2183,2016,2079,1959,379,679,890,204,2935,2546,2642,2741,1818,4065,1748,2357,3285,1556,3051,2834,3566,3176,1201,1139,3460,3335,3111,4029",
-                        "endColumns": "55,58,56,50,58,55,52,57,58,68,71,80,52,56,54,93,97,41,58,40,76,78,92,77,70,55,94,45,55,37,45,45,63,63,62,57,56,128,82,97,117,59,95,98,92,140,34,69,73,49,49,59,58,62,62,51,61,46,67,64,35",
-                        "endOffsets": "2541,2485,3455,101,160,373,556,673,615,1052,884,1133,1551,1305,812,1498,1404,2930,3561,1743,3951,3874,3795,3702,4022,3046,1702,3280,4152,198,2288,2178,2352,2242,2074,2132,2011,503,757,983,317,2990,2637,2736,2829,1954,4095,1813,2426,3330,1601,3106,2888,3624,3234,1248,1196,3502,3398,3171,4060"
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,31,29,-1,-1,-1,-1,-1,-1,-1,32,30,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,4,4,-1,-1,-1,-1,-1,-1,-1,4,4,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,1626,1505,-1,-1,-1,-1,-1,-1,-1,1682,1565,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "endColumns": "-1,-1,-1,-1,-1,-1,-1,55,59,-1,-1,-1,-1,-1,-1,-1,56,60,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "endOffsets": "-1,-1,-1,-1,-1,-1,-1,1677,1560,-1,-1,-1,-1,-1,-1,-1,1734,1621,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"
                     },
                     "to": {
-                        "startLines": "21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,73,74,75,76,78,79,80,81,82,83",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "2061,2117,2176,2233,2284,2343,2399,2452,2510,2569,2638,2710,2791,2844,2901,2956,3050,3148,3190,3249,3290,3367,3446,3539,3617,3688,3744,3839,3885,3941,3979,4025,4071,4135,4199,4262,4320,4377,4506,4589,4687,4805,4865,4961,5060,5153,5294,5329,5399,5473,5523,5659,5719,5778,5841,6005,6057,6119,6166,6234,6299",
-                        "endColumns": "55,58,56,50,58,55,52,57,58,68,71,80,52,56,54,93,97,41,58,40,76,78,92,77,70,55,94,45,55,37,45,45,63,63,62,57,56,128,82,97,117,59,95,98,92,140,34,69,73,49,49,59,58,62,62,51,61,46,67,64,35",
-                        "endOffsets": "2112,2171,2228,2279,2338,2394,2447,2505,2564,2633,2705,2786,2839,2896,2951,3045,3143,3185,3244,3285,3362,3441,3534,3612,3683,3739,3834,3880,3936,3974,4020,4066,4130,4194,4257,4315,4372,4501,4584,4682,4800,4860,4956,5055,5148,5289,5324,5394,5468,5518,5568,5714,5773,5836,5899,6052,6114,6161,6229,6294,6330"
+                        "startLines": "21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,83,84,85,86,88,89,90,91,92,93,94",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "2061,2117,2176,2233,2284,2343,2399,2452,2508,2568,2626,2685,2754,2826,2907,2960,3017,3074,3135,3178,3224,3306,3387,3442,3536,3634,3714,3756,3815,3856,3933,4012,4105,4183,4254,4310,4405,4451,4531,4569,4615,4661,4725,4789,4852,4910,4967,5097,5180,5278,5396,5456,5552,5651,5744,5885,5920,5990,6064,6114,6176,6312,6372,6431,6494,6658,6710,6772,6819,6887,6948,7013",
+                        "endColumns": "55,58,56,50,58,55,52,55,59,57,58,68,71,80,52,56,56,60,42,45,81,80,54,93,97,79,41,58,40,76,78,92,77,70,55,94,45,79,37,45,45,63,63,62,57,56,129,82,97,117,59,95,98,92,140,34,69,73,49,61,49,59,58,62,62,51,61,46,67,60,64,35",
+                        "endOffsets": "2112,2171,2228,2279,2338,2394,2447,2503,2563,2621,2680,2749,2821,2902,2955,3012,3069,3130,3173,3219,3301,3382,3437,3531,3629,3709,3751,3810,3851,3928,4007,4100,4178,4249,4305,4400,4446,4526,4564,4610,4656,4720,4784,4847,4905,4962,5092,5175,5273,5391,5451,5547,5646,5739,5880,5915,5985,6059,6109,6171,6221,6367,6426,6489,6552,6705,6767,6814,6882,6943,7008,7044"
                     }
                 }
             ]
@@ -1580,7 +1567,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-eu_values-eu.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-eu/values-eu.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-eu/values-eu.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -1595,7 +1582,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-es-rUS_values-es-rUS.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-es-rUS/values-es-rUS.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-es-rUS/values-es-rUS.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -1610,7 +1597,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-large-v4_values-large-v4.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-large-v4/values-large-v4.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-large-v4/values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
@@ -1625,7 +1612,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-si_values-si.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-si/values-si.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-si/values-si.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -1640,7 +1627,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-lo_values-lo.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-lo/values-lo.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-lo/values-lo.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -1655,7 +1642,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-sw_values-sw.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-sw/values-sw.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-sw/values-sw.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -1670,7 +1657,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-v17_values-v17.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-v17/values-v17.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-v17/values-v17.xml",
                     "from": {
                         "startLines": "2,5,9,12,15,18,22,26,29,32,35,39,42,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -1686,7 +1673,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-pt_values-pt.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-pt/values-pt.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-pt/values-pt.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -1701,7 +1688,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-ca_values-ca.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-ca/values-ca.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-ca/values-ca.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -1716,7 +1703,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-zh-rHK_values-zh-rHK.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-zh-rHK/values-zh-rHK.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-zh-rHK/values-zh-rHK.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -1731,7 +1718,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-gu_values-gu.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-gu/values-gu.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-gu/values-gu.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -1746,7 +1733,7 @@
             "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/res/merged/debug/values-pa_values-pa.arsc.flat",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/9e137a359e3e6a989c09c73df76811e8/res/values-pa/values-pa.xml",
+                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/res/values-pa/values-pa.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

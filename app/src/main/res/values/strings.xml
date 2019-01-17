@@ -24,8 +24,15 @@
     <string name="student_name">Last name First name</string>
     <string name="button_student_add">Confirm</string>
 
+
     <string name="date_start">Choose a beginning date and schedule for registrations</string>
     <string name="date_end">>Choose a ending date and schedule for registrations</string>
+
+    <string name="button_date_start">Starting date</string>
+    <string name="button_time_start">Starting hour</string>
+    <string name="button_date_end">Ending date</string>
+    <string name="button_time_end">Ending hour</string>
+
     <string name="button_search">Research</string>
     <string name="results">Your results</string>
 
@@ -68,11 +75,19 @@
     <string name="error_connection">Connection to server impossible</string>
     <string name="error_unknown_student">Unknown student</string>
 
-
-
     <string name="yes">Yes</string>
     <string name="no">No</string>
 
-    <string name="logoutDialogTitle">Attention</string>
+    <string name="logoutDialogTitle">Do you want to log out ?</string>
+    <string name="end_registeration">Complete the acquittance roll.</string>
+
+    <string name="confirm_registration">Confirm Acquittance Roll Complete</string>
+    <string name="confirm_registrationText">Enter your password :</string>
+
+    <string name="usernameTextEditHint">ID</string>
+    <string name="passwordTextEditHint">Password</string>
+    <string name="confirm">Submit</string>
+
+    <string name="cancel">Cancel</string>
 
 </resources>

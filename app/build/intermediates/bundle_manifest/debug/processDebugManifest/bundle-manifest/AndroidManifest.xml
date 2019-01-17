@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="se.anyro.nfc_reader"
+    android:installLocation="auto"
+    android:versionCode="15"
+    android:versionName="0.15" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="26" />
+    <!-- <uses-sdk android:targetSdkVersion="23" /> -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.NFC" />
+
+    <uses-feature android:name="android.hardware.nfc" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:testOnly="true" >
+        <activity android:name="se.anyro.nfc_reader.VisualizeActivity" />
+        <activity
+            android:name="se.anyro.nfc_reader.TagViewer"
+            android:alwaysRetainTaskState="true"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:screenOrientation="nosensor" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+            <intent-filter>
+                <action android:name="android.nfc.action.TAG_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="se.anyro.nfc_reader.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="se.anyro.nfc_reader.admin.AdminActivity" />
+        <activity android:name="se.anyro.nfc_reader.ProfActivity" />
+        <activity android:name="se.anyro.nfc_reader.admin.FiliereCreationActivity" />
+        <activity android:name="se.anyro.nfc_reader.admin.GroupeCreationActivity" />
+        <activity android:name="se.anyro.nfc_reader.LoginProf" />
+        <activity android:name="se.anyro.nfc_reader.TeacherMenuActivity" />
+        <activity android:name="se.anyro.nfc_reader.CardForgottenActivity" />
+
+        <meta-data
+            android:name="android.support.VERSION"
+            android:value="26.1.0" />
+        <meta-data
+            android:name="android.arch.lifecycle.VERSION"
+            android:value="27.0.0-SNAPSHOT" />
+    </application>
+
+</manifest>

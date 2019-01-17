@@ -1,6 +1,5 @@
 package se.anyro.nfc_reader;
 
-
 import android.app.Activity;
 import android.app.DialogFragment;
 import android.content.Intent;
@@ -27,17 +26,17 @@ import se.anyro.nfc_reader.database.SpinnerProfQuery;
  * permet de selectionner le cours et le groupe dont on va faire l'appel
  *
  */
-public class ProfActivity extends Activity implements DialogInterface {
+public class ProfActivity extends Activity {
 
     private Button mValiderButton;
+    private Button mDisconnectButton;
     private Spinner mSpinnerCours;
     private EditText meditTextGroupe;
     private TextView mselectClassTextView;
-    private String classFile = "class.txt";
-    private String teacherFile = "teacher.txt";
-    private String teacher=null;
-    private DialogFragment logOutDialog;
-    private String TAG="ProfActivityLog";
+    private String classFile;
+    private String teacherFile;
+    private String teacher;
+    private String TAG;
 
 
     @Override
@@ -48,6 +47,11 @@ public class ProfActivity extends Activity implements DialogInterface {
         mValiderButton = findViewById(R.id.validerButton);
         mSpinnerCours = findViewById(R.id.spinnerCours);
         mselectClassTextView=findViewById(R.id.selectClassTextView);
+
+        classFile = "class.txt";
+        teacherFile = "teacher.txt";
+        teacher=null;
+        TAG="ProfActivityLog";
 
         this.teacher=readData(teacherFile);
         //for some reason, we have to delete the last character
@@ -64,8 +68,8 @@ public class ProfActivity extends Activity implements DialogInterface {
 
         new SpinnerProfQuery(this,classList).execute(type,teacher);
 
-
-        ArrayAdapter adapterClass = new ArrayAdapter(this, android.R.layout.simple_spinner_item, classList);
+        // This line is invoking a Warning, stipulating that is uses unchecked or unsafe operations
+        ArrayAdapter<String> adapterClass = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, classList);
 
         adapterClass.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
@@ -74,16 +78,16 @@ public class ProfActivity extends Activity implements DialogInterface {
         mValiderButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(mSpinnerCours.getSelectedItem().toString().equals(getString(R.string.select_class))){
-                    incompletFieldMessage();
-                }
-                else{
-                    String course=mSpinnerCours.getSelectedItem().toString();
-                    saveData(course);
+            if(mSpinnerCours.getSelectedItem().toString().equals(getString(R.string.select_class))){
+                incompletFieldMessage();
+            }
+            else{
+                String course=mSpinnerCours.getSelectedItem().toString();
+                saveData(course);
 
-                    Intent tagViewer = new Intent(ProfActivity.this, TagViewer.class);
-                    startActivity(tagViewer);
-                }
+                Intent tagViewer = new Intent(ProfActivity.this, TagViewer.class);
+                startActivity(tagViewer);
+            }
             }
         });
     }
@@ -116,69 +120,5 @@ public class ProfActivity extends Activity implements DialogInterface {
             Toast.makeText(this,R.string.error+ e.getMessage(),Toast.LENGTH_SHORT).show();
         }
         return null;
-    }
-
-    DialogInterface closeListener = new DialogInterface() {
-
-        @Override
-        public void handleDialogClose(DialogInterface dialog) {
-            //do here whatever you want to do on Dialog dismiss
-            if ( ((DialogManager) logOutDialog).getUserChose() == true ) {
-                if ( ((DialogManager) logOutDialog).getUserLogingOut() == true ) {
-                    Intent mainIntent = new Intent(getBaseContext(), MainActivity.class);
-                    Log.d(TAG, "goingToStartActivity");
-                    startActivity(mainIntent);
-                    finish();
-                } else {
-                    Log.d(TAG, "goingToStayOnThisActivity");
-                }
-            }
-        }
-    };
-
-    public void handleDialogClose(DialogInterface dialog) {
-        //do here whatever you want to do on Dialog dismiss
-    }
-
-    // SOURCE => https://stackoverflow.com/questions/3141996/android-how-to-override-the-back-button-so-it-doesnt-finish-my-activity
-    @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event)  {
-        // If we're pressing on the Back button of the phone
-        if (Integer.parseInt(android.os.Build.VERSION.SDK) > 5 && keyCode == KeyEvent.KEYCODE_BACK && event.getRepeatCount() == 0) {
-            Log.d(TAG, "onKeyDown Called");
-            // Call the onBackPressed method defined just after this onKeyDown event callback method
-            onBackPressed();
-            // Return true for whatever reason that I don't understand right at the moment as of Thursday 10th of January 5:37 PM.
-            return true;
-        }
-
-        // Doon't know what it does.
-        return super.onKeyDown(keyCode, event);
-    }
-
-    @Override
-    public void onBackPressed() {
-        Log.d(TAG, "onBackPressed Called");
-        this.logOutDialog = new DialogManager();
-        logOutDialog.show(getFragmentManager(), "logOutDialog");
-        ((DialogManager)logOutDialog).onDismissListener(this.closeListener);
-        /*
-        if ( ((DialogManager) logOutDialog).getUserChose() == true ) {
-            if ( ((DialogManager) logOutDialog).getUserLogingOut() == true ) {
-                Intent mainIntent = new Intent(this, MainActivity.class);
-                Log.d(TAG, "goingToStartActivity");
-                startActivity(mainIntent);
-                finish();
-            } else {
-                Log.d(TAG, "goingToStayOnThisActivity");
-            }
-        }
-        */
-        /*
-        Intent setIntent = new Intent(Intent.ACTION_MAIN);
-        setIntent.addCategory(Intent.CATEGORY_HOME);
-        setIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(setIntent);
-        */
     }
 }
