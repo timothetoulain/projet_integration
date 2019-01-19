@@ -2,20 +2,14 @@ package se.anyro.nfc_reader;
 
 import android.app.Activity;
 import android.app.DatePickerDialog;
-import android.app.Dialog;
-import android.app.DialogFragment;
 import android.app.TimePickerDialog;
-import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.format.DateFormat;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
@@ -23,16 +17,12 @@ import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.InputStreamReader;
-import java.text.DecimalFormat;
-import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.GregorianCalendar;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 
-import se.anyro.nfc_reader.database.AppelQuery;
-import se.anyro.nfc_reader.database.SpinnerProfQuery;
+import se.anyro.nfc_reader.database.SpinnerTeacherQuery;
 import se.anyro.nfc_reader.database.VisualizeQuery;
 
 public class VisualizeActivity extends Activity implements
@@ -90,7 +80,7 @@ public class VisualizeActivity extends Activity implements
         classList.add(getString(R.string.select_class));
 
         String type="getCourses";
-        new SpinnerProfQuery(this,classList).execute(type,teacher);
+        new SpinnerTeacherQuery(this,classList).execute(type,teacher);
 
         // This line is invoking a Warning, stipulating that is uses unchecked or unsafe operations
         ArrayAdapter<String> adapterClass = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, classList);
@@ -298,7 +288,7 @@ public class VisualizeActivity extends Activity implements
 
 
                 /*saveData(course,classFile);
-                Intent tagViewer = new Intent(ProfActivity.this, TagViewer.class);
+                Intent tagViewer = new Intent(ClassSelectionActivity.this, TagViewer.class);
                 startActivity(tagViewer);*/
             }
         }

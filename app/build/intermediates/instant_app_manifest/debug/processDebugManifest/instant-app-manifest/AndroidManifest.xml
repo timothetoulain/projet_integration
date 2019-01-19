@@ -50,10 +50,10 @@
             </intent-filter>
         </activity>
         <activity android:name="se.anyro.nfc_reader.admin.AdminActivity" />
-        <activity android:name="se.anyro.nfc_reader.ProfActivity" />
+        <activity android:name="se.anyro.nfc_reader.ClassSelectionActivity" />
         <activity android:name="se.anyro.nfc_reader.admin.FiliereCreationActivity" />
         <activity android:name="se.anyro.nfc_reader.admin.GroupeCreationActivity" />
-        <activity android:name="se.anyro.nfc_reader.LoginProf" />
+        <activity android:name="se.anyro.nfc_reader.LoginTeacher" />
         <activity android:name="se.anyro.nfc_reader.TeacherMenuActivity" />
         <activity android:name="se.anyro.nfc_reader.CardForgottenActivity" />
 

@@ -6,8 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import java.io.File;
-
 public class MainActivity extends Activity {
 
    // private Button mAdminButton;
@@ -34,7 +32,7 @@ public class MainActivity extends Activity {
         mProfButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent loginProf = new Intent(MainActivity.this, LoginProf.class);
+                Intent loginProf = new Intent(MainActivity.this, LoginTeacher.class);
                 startActivity(loginProf);
             }
         });

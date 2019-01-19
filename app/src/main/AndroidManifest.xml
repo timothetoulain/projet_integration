@@ -43,10 +43,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".admin.AdminActivity" />
-        <activity android:name=".ProfActivity" />
+        <activity android:name=".ClassSelectionActivity" />
         <activity android:name=".admin.FiliereCreationActivity" />
         <activity android:name=".admin.GroupeCreationActivity" />
-        <activity android:name=".LoginProf" />
+        <activity android:name=".LoginTeacher" />
         <activity android:name=".TeacherMenuActivity" />
         <activity android:name=".CardForgottenActivity" />
     </application>

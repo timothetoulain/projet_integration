@@ -18,7 +18,7 @@ package se.anyro.nfc_reader.record;
 import java.util.Arrays;
 import java.util.NoSuchElementException;
 
-import se.anyro.nfc_reader.NdefMessageParser;
+import se.anyro.nfc_reader.setup.NdefMessageParser;
 import se.anyro.nfc_reader.R;
 import android.app.Activity;
 import android.nfc.FormatException;

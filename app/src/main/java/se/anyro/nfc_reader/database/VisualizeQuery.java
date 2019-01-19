@@ -15,6 +15,9 @@ import java.net.MalformedURLException;
 import java.net.ProtocolException;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class VisualizeQuery extends AsyncTask<String, Void, String> {
 
@@ -36,11 +39,11 @@ public class VisualizeQuery extends AsyncTask<String, Void, String> {
             String course=params[1];
             String dateStart=params[2];
             String dateEnd=params[3];
+
             System.out.println("type:"+type);
             System.out.println("course:"+course);
             System.out.println("date start:"+dateStart);
             System.out.println("date end:"+dateEnd);
-
 
             try{
                 URL url=new URL(my_url);
@@ -98,7 +101,7 @@ public class VisualizeQuery extends AsyncTask<String, Void, String> {
         @Override
         protected void onPostExecute(String result) {
             super.onPostExecute(result);
-            //va renvoyer le nom de l'etudier a l'activité TagViewer
+
         }
     }
 

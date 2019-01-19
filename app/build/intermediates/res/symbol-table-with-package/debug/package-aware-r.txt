@@ -716,7 +716,6 @@ id list_item
 id media_actions
 id menuTextView
 id menu_main_clear
-id menu_main_end
 id message
 id middle
 id multiply
@@ -763,7 +762,6 @@ id showCustom
 id showHome
 id showTitle
 id spacer
-id spinnerCours
 id spinnerCourse
 id spinnerFiliere
 id spinnerGroupe
@@ -805,6 +803,7 @@ id ucp_textView
 id uniform
 id up
 id useLogo
+id validateButton
 id validerButton
 id visualizeButton
 id withText
@@ -844,11 +843,11 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout activity_admin
 layout activity_card_forgotten
+layout activity_class_selection
 layout activity_filiere_creation
 layout activity_groupe_creation
-layout activity_login_prof
+layout activity_login_teacher
 layout activity_main
-layout activity_prof
 layout activity_teacher_menu
 layout activity_visualize
 layout dialog_signin

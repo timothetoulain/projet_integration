@@ -10,6 +10,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import se.anyro.nfc_reader.setup.DialogInterface;
+import se.anyro.nfc_reader.setup.DialogManager;
+
 
 public class TeacherMenuActivity extends Activity {
 
@@ -34,7 +37,7 @@ public class TeacherMenuActivity extends Activity {
         mcreateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent profActivity = new Intent(TeacherMenuActivity.this, ProfActivity.class);
+                Intent profActivity = new Intent(TeacherMenuActivity.this, ClassSelectionActivity.class);
                 startActivity(profActivity);
             }
         });

@@ -2,10 +2,8 @@ package se.anyro.nfc_reader;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.InputStreamReader;
-import java.io.PrintWriter;
 import java.nio.charset.Charset;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -15,8 +13,11 @@ import java.util.List;
 import java.util.Locale;
 import java.util.concurrent.ExecutionException;
 
-import se.anyro.nfc_reader.database.AppelQuery;
+import se.anyro.nfc_reader.database.PresenceQuery;
 import se.anyro.nfc_reader.record.ParsedNdefRecord;
+import se.anyro.nfc_reader.setup.DialogManager;
+import se.anyro.nfc_reader.setup.NdefMessageParser;
+
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.DialogFragment;
@@ -25,7 +26,6 @@ import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.nfc.FormatException;
 import android.nfc.NdefMessage;
 import android.nfc.NdefRecord;
 import android.nfc.NfcAdapter;
@@ -242,8 +242,8 @@ public class TagViewer extends Activity {
        // byte[] bytes = studentName.getBytes();
         NdefMessage[] msgs;
         byte[] empty = new byte[0];
-        byte[] id = null;//previously with intent
-        Tag tag = null;//previously with intent
+        byte[] id = null;
+        Tag tag = null;
         byte[] payload = studentName.getBytes();
 
         NdefRecord record = new NdefRecord(NdefRecord.TNF_UNKNOWN, empty, id, payload);
@@ -280,8 +280,6 @@ public class TagViewer extends Activity {
                 NdefMessage msg = new NdefMessage(new NdefRecord[] { record });
                 msgs = new NdefMessage[] { msg };
                 mTags.add(tag);
-
-
             }
             Log.i(TAG,"msgs: "+msgs);
             // Setup the views
@@ -364,11 +362,11 @@ public class TagViewer extends Activity {
                 sb.append(type);
             }
         }
-        String nomEtu;
-        nomEtu=appel(sb.toString());
+        String studentName;
+        studentName=presence(sb.toString());
         //sb.append(nomEtu);
         //return sb.toString();
-        return nomEtu;
+        return studentName;
     }
 
     private Tag cleanupTag(Tag oTag) {
@@ -549,11 +547,10 @@ public class TagViewer extends Activity {
         case R.id.menu_main_clear:
             clearTags();
             return true;
+            /*
         case R.id.menu_main_end:
-            //TODO
             return true;
-
-        /*case R.id.menu_copy_hex:
+        case R.id.menu_copy_hex:
             copyIds(getIdsHex());
             return true;
         case R.id.menu_copy_reversed_hex:
@@ -633,22 +630,20 @@ public class TagViewer extends Activity {
         setIntent(intent);
         resolveIntent(intent);
     }
-    public String appel(String sb){
-        String nomEtu=null;
+    public String presence(String sb){
+        String studentName=null;
         String type="addPresent";
 
-
         try {
-            //sb contient le numero nfc decimal
-            //nomEtu=new AppelQuery(this).execute(type,sb,prof,course).get();
-            nomEtu=new AppelQuery(this).execute(type,course,sb).get();
+            //sb contains the nfc decimal value
+            studentName=new PresenceQuery(this).execute(type,course,sb).get();
 
         } catch (InterruptedException e) {
             e.printStackTrace();
         } catch (ExecutionException e) {
             e.printStackTrace();
         }
-        return nomEtu;
+        return studentName;
     }
     private String readData(String file) {
         try {
@@ -701,10 +696,10 @@ public class TagViewer extends Activity {
         Toast.makeText(this,R.string.end_registeration,Toast.LENGTH_SHORT).show();
     }
 
-    se.anyro.nfc_reader.DialogInterface closeListener = new se.anyro.nfc_reader.DialogInterface() {
+    se.anyro.nfc_reader.setup.DialogInterface closeListener = new se.anyro.nfc_reader.setup.DialogInterface() {
 
         @Override
-        public void handleDialogClose(se.anyro.nfc_reader.DialogInterface dialog) {
+        public void handleDialogClose(se.anyro.nfc_reader.setup.DialogInterface dialog) {
             //do here whatever you want to do on Dialog dismiss
             if ( ((DialogManager) confirmAcquittanceDialog).getUserChose() == true ) {
                 if ( ((DialogManager) confirmAcquittanceDialog).getUserConfirm() == true ) {

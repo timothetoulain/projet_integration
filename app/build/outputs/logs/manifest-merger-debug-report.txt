@@ -120,10 +120,10 @@ activity#se.anyro.nfc_reader.admin.AdminActivity
 ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:45:9-57
 	android:name
 		ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:45:19-54
-activity#se.anyro.nfc_reader.ProfActivity
-ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:46:9-50
+activity#se.anyro.nfc_reader.ClassSelectionActivity
+ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:46:9-60
 	android:name
-		ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:46:19-47
+		ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:46:19-57
 activity#se.anyro.nfc_reader.admin.FiliereCreationActivity
 ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:47:9-67
 	android:name
@@ -132,10 +132,10 @@ activity#se.anyro.nfc_reader.admin.GroupeCreationActivity
 ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:48:9-66
 	android:name
 		ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:48:19-63
-activity#se.anyro.nfc_reader.LoginProf
-ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:49:9-47
+activity#se.anyro.nfc_reader.LoginTeacher
+ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:49:9-50
 	android:name
-		ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:49:19-44
+		ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:49:19-47
 activity#se.anyro.nfc_reader.TeacherMenuActivity
 ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:50:9-57
 	android:name
