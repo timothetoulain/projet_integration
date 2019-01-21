@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
@@ -25,7 +26,7 @@ import java.util.concurrent.ExecutionException;
 import se.anyro.nfc_reader.database.SpinnerTeacherQuery;
 import se.anyro.nfc_reader.database.VisualizeQuery;
 
-public class VisualizeActivity extends Activity implements
+public class SelectVisualizeActivity extends Activity implements
         View.OnClickListener {
 
     private Button mResearchButton;
@@ -36,7 +37,7 @@ public class VisualizeActivity extends Activity implements
     private String  studentFile = "student.txt";
     /************/
     Button mStartDateButton,mEndDateButton, mStartTimePickerButton, mEndTimePickerButton;
-   private EditText mStartDateEditText,mEndDateEditText, mStartTimeEditText, mEndTimeEditText;
+   private TextView mStartDateEditText,mEndDateEditText, mStartTimeEditText, mEndTimeEditText;
     private int mYear, mMonth, mDay, mHour, mMinute;
     /**********/
 
@@ -267,7 +268,7 @@ public class VisualizeActivity extends Activity implements
                     mStartDateEditText.getText().length()==0 || mEndDateEditText.getText().length()==0 ||
                     mStartTimeEditText.getText().length()==0 || mEndTimeEditText.getText().length()==0)
             {
-                incompletFieldMessage();
+                incompleteFieldMessage();
             }
             else{
                 String type="getPresentStudents";
@@ -319,7 +320,7 @@ public class VisualizeActivity extends Activity implements
         }
         return null;
     }
-    private void incompletFieldMessage(){
+    private void incompleteFieldMessage(){
         Toast.makeText(this,R.string.error_incomplete,Toast.LENGTH_SHORT).show();
     }
 }

@@ -45,7 +45,7 @@ public class TeacherMenuActivity extends Activity {
         mvisualizeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent visualizeActivity = new Intent(TeacherMenuActivity.this, VisualizeActivity.class);
+                Intent visualizeActivity = new Intent(TeacherMenuActivity.this, SelectVisualizeActivity.class);
                 startActivity(visualizeActivity);
             }
         });

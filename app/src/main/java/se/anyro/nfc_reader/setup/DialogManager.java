@@ -62,6 +62,7 @@ public class DialogManager extends DialogFragment {
                             // sign in the user ...
                             userChose = true;
                             userConfirm = true;
+
                         }
                     })
                     .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {

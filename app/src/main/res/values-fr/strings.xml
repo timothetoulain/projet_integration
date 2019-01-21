@@ -38,9 +38,6 @@
 
 
 
-
-
-    <string name="intro_message">Présentez votre carte étudiant au dos de l\'appareil</string>
     <string name="error">Erreur</string>
     <string name="no_nfc">Pas de NFC trouvé sur cet appareil</string>
     <string name="nfc_disabled">Le NFC n\'est pas activé. Allez dans les paramètres de connexion de votre appareil pour l\'activer.</string>
@@ -83,7 +80,7 @@
 
     <string name="logoutDialogTitle">Souhaitez-vous vous déconnecter ?</string>
 
-    <string name="end_registeration">Veuillez compléter l\'émargement.</string>
+    <string name="end_registration">Veuillez compléter l\'émargement.</string>
 
     <string name="confirm_registration">Veuillez confirmer l\'émargement</string>
     <string name="confirm_registrationText">Entrez votre mot de passe :</string>

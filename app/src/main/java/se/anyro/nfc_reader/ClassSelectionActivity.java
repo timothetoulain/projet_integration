@@ -43,7 +43,9 @@ public class ClassSelectionActivity extends Activity {
         //meditTextGroupe= findViewById(R.id.editTextGroupe);
         mValidateButton = findViewById(R.id.validateButton);
         mSpinnerCourse = findViewById(R.id.spinnerCourse);
-        mselectClassTextView=findViewById(R.id.selectClassTextView);
+        mSpinnerCourse.setVisibility(View.VISIBLE);
+
+        //mselectClassTextView=findViewById(R.id.newListTextView);
 
         classFile = "class.txt";
         teacherFile = "teacher.txt";
@@ -59,7 +61,7 @@ public class ClassSelectionActivity extends Activity {
 
         List classList=new ArrayList();
 
-        classList.add(getString(R.string.select_class));
+        classList.add(getString(R.string.course));
 
         String type="getCourses";
 
@@ -75,8 +77,8 @@ public class ClassSelectionActivity extends Activity {
         mValidateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            if(mSpinnerCourse.getSelectedItem().toString().equals(getString(R.string.select_class))){
-                incompletFieldMessage();
+            if(mSpinnerCourse.getSelectedItem().toString().equals(getString(R.string.course))){
+                incompleteFieldMessage();
             }
             else{
                 String course=mSpinnerCourse.getSelectedItem().toString();
@@ -88,7 +90,7 @@ public class ClassSelectionActivity extends Activity {
             }
         });
     }
-    private void incompletFieldMessage(){
+    private void incompleteFieldMessage(){
         Toast.makeText(this,R.string.error_select_class,Toast.LENGTH_SHORT).show();
     }
     private void saveData(String course) {

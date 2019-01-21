@@ -32,7 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="11dp"
         android:padding="6dp"
-        android:text="@string/intro_message"
+        android:text="@string/message_scan"
         android:textAppearance="?android:attr/textAppearanceMedium"
         app:layout_constraintBottom_toTopOf="@+id/scrollView2"
         app:layout_constraintEnd_toEndOf="parent"

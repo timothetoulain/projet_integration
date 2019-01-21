@@ -1586,7 +1586,7 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td>direct, barriers, chains</td></tr>
+     * <tr><td>direct</td><td>1</td><td></td></tr>
      * <tr><td>groups</td><td>20</td><td></td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
      * <tr><td>standard</td><td>7</td><td></td></tr>
@@ -3131,7 +3131,7 @@ public final class R {
     public static final int course=0x7f0b0035;
     public static final int date_end=0x7f0b0036;
     public static final int date_start=0x7f0b0037;
-    public static final int end_registeration=0x7f0b0038;
+    public static final int end_registration=0x7f0b0038;
     public static final int enter=0x7f0b0039;
     public static final int enter_group=0x7f0b003a;
     public static final int error=0x7f0b003b;
@@ -3141,45 +3141,44 @@ public final class R {
     public static final int error_select_class=0x7f0b003f;
     public static final int error_unknown_student=0x7f0b0040;
     public static final int group_add=0x7f0b0041;
-    public static final int intro_message=0x7f0b0042;
-    public static final int login=0x7f0b0043;
-    public static final int logoutDialogTitle=0x7f0b0044;
-    public static final int menu=0x7f0b0045;
-    public static final int menu_copy_dec=0x7f0b0046;
-    public static final int menu_copy_hex=0x7f0b0047;
-    public static final int menu_copy_reversed_dec=0x7f0b0048;
-    public static final int menu_copy_reversed_hex=0x7f0b0049;
-    public static final int menu_main_clear_title=0x7f0b004a;
-    public static final int menu_main_copy=0x7f0b004b;
-    public static final int menu_main_end_title=0x7f0b004c;
-    public static final int message_account=0x7f0b004d;
-    public static final int message_new_list=0x7f0b004e;
-    public static final int message_scan=0x7f0b004f;
-    public static final int message_welcome=0x7f0b0050;
-    public static final int new_group=0x7f0b0051;
-    public static final int new_sector_id=0x7f0b0052;
-    public static final int new_sector_name=0x7f0b0053;
-    public static final int new_sector_year=0x7f0b0054;
-    public static final int nfc_disabled=0x7f0b0055;
-    public static final int no=0x7f0b0056;
-    public static final int no_nfc=0x7f0b0057;
-    public static final int nothing_scanned=0x7f0b0058;
-    public static final int password=0x7f0b0059;
-    public static final int passwordTextEditHint=0x7f0b005a;
-    public static final int results=0x7f0b005b;
-    public static final int search_menu_title=0x7f0b005c;
-    public static final int sector=0x7f0b005d;
-    public static final int sector_add=0x7f0b005e;
-    public static final int select_class=0x7f0b005f;
-    public static final int sign_in=0x7f0b0060;
-    public static final int status_bar_notification_info_overflow=0x7f0b0061;
-    public static final int student_name=0x7f0b0062;
-    public static final int student_number=0x7f0b0063;
-    public static final int teacher=0x7f0b0064;
-    public static final int university=0x7f0b0065;
-    public static final int usernameTextEditHint=0x7f0b0066;
-    public static final int year=0x7f0b0067;
-    public static final int yes=0x7f0b0068;
+    public static final int login=0x7f0b0042;
+    public static final int logoutDialogTitle=0x7f0b0043;
+    public static final int menu=0x7f0b0044;
+    public static final int menu_copy_dec=0x7f0b0045;
+    public static final int menu_copy_hex=0x7f0b0046;
+    public static final int menu_copy_reversed_dec=0x7f0b0047;
+    public static final int menu_copy_reversed_hex=0x7f0b0048;
+    public static final int menu_main_clear_title=0x7f0b0049;
+    public static final int menu_main_copy=0x7f0b004a;
+    public static final int menu_main_end_title=0x7f0b004b;
+    public static final int message_account=0x7f0b004c;
+    public static final int message_new_list=0x7f0b004d;
+    public static final int message_scan=0x7f0b004e;
+    public static final int message_welcome=0x7f0b004f;
+    public static final int new_group=0x7f0b0050;
+    public static final int new_sector_id=0x7f0b0051;
+    public static final int new_sector_name=0x7f0b0052;
+    public static final int new_sector_year=0x7f0b0053;
+    public static final int nfc_disabled=0x7f0b0054;
+    public static final int no=0x7f0b0055;
+    public static final int no_nfc=0x7f0b0056;
+    public static final int nothing_scanned=0x7f0b0057;
+    public static final int password=0x7f0b0058;
+    public static final int passwordTextEditHint=0x7f0b0059;
+    public static final int results=0x7f0b005a;
+    public static final int search_menu_title=0x7f0b005b;
+    public static final int sector=0x7f0b005c;
+    public static final int sector_add=0x7f0b005d;
+    public static final int select_class=0x7f0b005e;
+    public static final int sign_in=0x7f0b005f;
+    public static final int status_bar_notification_info_overflow=0x7f0b0060;
+    public static final int student_name=0x7f0b0061;
+    public static final int student_number=0x7f0b0062;
+    public static final int teacher=0x7f0b0063;
+    public static final int university=0x7f0b0064;
+    public static final int usernameTextEditHint=0x7f0b0065;
+    public static final int year=0x7f0b0066;
+    public static final int yes=0x7f0b0067;
   }
   public static final class style {
     public static final int AlertDialog_AppCompat=0x7f0c0000;
@@ -7627,7 +7626,7 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td>direct, barriers, chains</td></tr>
+     * <tr><td>direct</td><td>1</td><td></td></tr>
      * <tr><td>groups</td><td>20</td><td></td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
      * <tr><td>standard</td><td>7</td><td></td></tr>

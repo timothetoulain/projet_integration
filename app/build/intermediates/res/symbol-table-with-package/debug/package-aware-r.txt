@@ -931,7 +931,7 @@ string confirm_registrationText
 string course
 string date_end
 string date_start
-string end_registeration
+string end_registration
 string enter
 string enter_group
 string error
@@ -941,7 +941,6 @@ string error_login_password
 string error_select_class
 string error_unknown_student
 string group_add
-string intro_message
 string login
 string logoutDialogTitle
 string menu

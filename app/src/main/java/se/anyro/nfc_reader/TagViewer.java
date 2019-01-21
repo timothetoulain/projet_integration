@@ -578,52 +578,6 @@ public class TagViewer extends Activity {
         }
     }
 
-    private void copyIds(String text) {
-        ClipboardManager clipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
-        ClipData clipData = ClipData.newPlainText("NFC IDs", text);
-        clipboard.setPrimaryClip(clipData);
-        Toast.makeText(this, mTags.size() + " IDs copied", Toast.LENGTH_SHORT).show();
-    }
-
-    private String getIdsHex() {
-        StringBuilder builder = new StringBuilder();
-        for (Tag tag : mTags) {
-            builder.append(toHex(tag.getId()));
-            builder.append('\n');
-        }
-        builder.setLength(builder.length() - 1); // Remove last new line
-        return builder.toString().replace(" ", "");
-    }
-
-    private String getIdsReversedHex() {
-        StringBuilder builder = new StringBuilder();
-        for (Tag tag : mTags) {
-            builder.append(toReversedHex(tag.getId()));
-            builder.append('\n');
-        }
-        builder.setLength(builder.length() - 1); // Remove last new line
-        return builder.toString().replace(" ", "");
-    }
-
-    private String getIdsDec() {
-        StringBuilder builder = new StringBuilder();
-        for (Tag tag : mTags) {
-            builder.append(toDec(tag.getId()));
-            builder.append('\n');
-        }
-        builder.setLength(builder.length() - 1); // Remove last new line
-        return builder.toString();
-    }
-
-    private String getIdsReversedDec() {
-        StringBuilder builder = new StringBuilder();
-        for (Tag tag : mTags) {
-            builder.append(toReversedDec(tag.getId()));
-            builder.append('\n');
-        }
-        builder.setLength(builder.length() - 1); // Remove last new line
-        return builder.toString();
-    }
 
     @Override
     public void onNewIntent(Intent intent) {
@@ -693,7 +647,7 @@ public class TagViewer extends Activity {
     @Override
     public void onBackPressed() {
         Log.d(TAG, "onBackPressed Called");
-        Toast.makeText(this,R.string.end_registeration,Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,R.string.end_registration,Toast.LENGTH_SHORT).show();
     }
 
     se.anyro.nfc_reader.setup.DialogInterface closeListener = new se.anyro.nfc_reader.setup.DialogInterface() {
