@@ -3,12 +3,12 @@ package se.anyro.nfc_reader;
 import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
-import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.TimePicker;
@@ -35,22 +35,21 @@ public class SelectVisualizeActivity extends Activity implements
     private String teacherFile="teacher.txt";
     private String classFile = "class.txt";
     private String  studentFile = "student.txt";
-    /************/
-    Button mStartDateButton,mEndDateButton, mStartTimePickerButton, mEndTimePickerButton;
-   private TextView mStartDateEditText,mEndDateEditText, mStartTimeEditText, mEndTimeEditText;
+    private String  resultFile = "result.csv";
+
+    private Button mStartDateButton,mEndDateButton, mStartTimePickerButton, mEndTimePickerButton;
+    private TextView mStartDateEditText,mEndDateEditText, mStartTimeEditText, mEndTimeEditText;
     private int mYear, mMonth, mDay, mHour, mMinute;
-    /**********/
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_visualize);
+        setContentView(R.layout.activity_select_visualize);
 
         mSpinnerCourse = findViewById(R.id.spinnerCourse);
+
         mResearchButton = findViewById(R.id.researchButton);
-
-        /*************/
-
         mStartDateButton=findViewById(R.id.startDateButton);
         mEndDateButton=findViewById(R.id.endDateButton);
         mStartTimePickerButton=findViewById(R.id.startTimeButton);
@@ -61,14 +60,11 @@ public class SelectVisualizeActivity extends Activity implements
         mStartTimeEditText=findViewById(R.id.startTimeEditText);
         mEndTimeEditText=findViewById(R.id.endTimeEditText);
 
-
-        mStartDateButton.setOnClickListener((View.OnClickListener) this);
-        mEndDateButton.setOnClickListener((View.OnClickListener) this);
-        mStartTimePickerButton.setOnClickListener((View.OnClickListener) this);
-        mEndTimePickerButton.setOnClickListener((View.OnClickListener) this);
-        mResearchButton.setOnClickListener((View.OnClickListener) this);
-
-        /*****************/
+        mStartDateButton.setOnClickListener(this);
+        mEndDateButton.setOnClickListener(this);
+        mStartTimePickerButton.setOnClickListener(this);
+        mEndTimePickerButton.setOnClickListener(this);
+        mResearchButton.setOnClickListener(this);
 
 
         this.teacher=readData(teacherFile);
@@ -83,25 +79,20 @@ public class SelectVisualizeActivity extends Activity implements
         String type="getCourses";
         new SpinnerTeacherQuery(this,classList).execute(type,teacher);
 
-        // This line is invoking a Warning, stipulating that is uses unchecked or unsafe operations
         ArrayAdapter<String> adapterClass = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, classList);
         adapterClass.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
         mSpinnerCourse.setAdapter(adapterClass);
-
     }
 
     @Override
     public void onClick(View v) {
 
         if (v == mStartDateButton) {
-
             // Get Current Date
             final Calendar c = Calendar.getInstance();
             mYear = c.get(Calendar.YEAR);
             mMonth = c.get(Calendar.MONTH);
             mDay = c.get(Calendar.DAY_OF_MONTH);
-
 
             DatePickerDialog datePickerDialog = new DatePickerDialog(this,
                     new DatePickerDialog.OnDateSetListener() {
@@ -133,19 +124,16 @@ public class SelectVisualizeActivity extends Activity implements
                             else{
                                 mStartDateEditText.setText(year +"-"+ (monthOfYear) + "-" + dayOfMonth);
                             }
-
                         }
                     }, mYear, mMonth, mDay);
             datePickerDialog.show();
         }
         if (v == mEndDateButton) {
-
             // Get Current Date
             final Calendar c = Calendar.getInstance();
             mYear = c.get(Calendar.YEAR);
             mMonth = c.get(Calendar.MONTH);
             mDay = c.get(Calendar.DAY_OF_MONTH);
-
 
             DatePickerDialog datePickerDialog = new DatePickerDialog(this,
                     new DatePickerDialog.OnDateSetListener() {
@@ -182,7 +170,6 @@ public class SelectVisualizeActivity extends Activity implements
             datePickerDialog.show();
         }
         if (v == mStartTimePickerButton) {
-
             // Get Current Time
             final Calendar c = Calendar.getInstance();
             mHour = c.get(Calendar.HOUR_OF_DAY);
@@ -223,7 +210,6 @@ public class SelectVisualizeActivity extends Activity implements
             timePickerDialog.show();
         }
         if (v == mEndTimePickerButton) {
-
             // Get Current Time
             final Calendar c = Calendar.getInstance();
             mHour = c.get(Calendar.HOUR_OF_DAY);
@@ -276,11 +262,12 @@ public class SelectVisualizeActivity extends Activity implements
                 String dateStart=mStartDateEditText.getText().toString()+" "+mStartTimeEditText.getText().toString();
                 String dateEnd=mEndDateEditText.getText().toString()+" "+mEndTimeEditText.getText().toString();
                 System.out.println("course= "+course+" date start= "+dateStart+" date end= "+dateEnd);
-
-                //TODO convertir les dates en timestamp pour sql?
                 try {
                     String result=new VisualizeQuery(this).execute(type,course,dateStart,dateEnd).get();
                     System.out.println("result visualize query: "+result);
+                    saveData(result,resultFile);
+                    Intent visualize = new Intent(SelectVisualizeActivity.this, VisualizeActivity.class);
+                    startActivity(visualize);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 } catch (ExecutionException e) {
@@ -314,7 +301,6 @@ public class SelectVisualizeActivity extends Activity implements
                 sb.append(s).append("\n");
             }
             return sb.toString();
-            // this.mTextView.setText(sb.toString());
         } catch (Exception e) {
             Toast.makeText(this,R.string.error+ e.getMessage(),Toast.LENGTH_SHORT).show();
         }

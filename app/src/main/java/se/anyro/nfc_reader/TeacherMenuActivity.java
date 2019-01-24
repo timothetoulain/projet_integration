@@ -70,7 +70,7 @@ public class TeacherMenuActivity extends Activity {
         public void handleDialogClose(DialogInterface dialog) {
             //do here whatever you want to do on Dialog dismiss
             if ( ((DialogManager) logOutDialog).getUserChose() == true ) {
-                if ( ((DialogManager) logOutDialog).getUserLogingOut() == true ) {
+                if ( ((DialogManager) logOutDialog).getUserLoggingOut() == true ) {
                     Intent mainIntent = new Intent(getBaseContext(), MainActivity.class);
                     Log.d(TAG, "goingToStartActivity");
                     startActivity(mainIntent);

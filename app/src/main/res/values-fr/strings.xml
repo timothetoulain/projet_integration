@@ -35,6 +35,10 @@
     <string name="button_search">Rechercher</string>
     <string name="results">Vos résultats</string>
 
+    <string name="manual_adding">Ajouter un étudiant manuellement</string>
+    <string name="button_manual_adding">Ajout manuel</string>
+
+    <string name="error_password">Mot de passe incorrect</string>
 
 
 

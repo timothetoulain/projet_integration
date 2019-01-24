@@ -15,6 +15,9 @@ import java.net.MalformedURLException;
 import java.net.ProtocolException;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.util.ArrayList;
+
+import se.anyro.nfc_reader.setup.EncodingManager;
 
 public class VisualizeQuery extends AsyncTask<String, Void, String> {
 
@@ -63,6 +66,7 @@ public class VisualizeQuery extends AsyncTask<String, Void, String> {
                 BufferedReader reader = new BufferedReader(new
                         InputStreamReader(httpURLConnection.getInputStream()));
 
+                ArrayList al = new ArrayList();
                 String line = null;
                 String sb="";
                 // Read Server Response
@@ -70,14 +74,38 @@ public class VisualizeQuery extends AsyncTask<String, Void, String> {
                     sb+=line;
                     // break;
                 }
-                //sb= sb.substring(1, sb.length()-1);
-                System.out.println(sb);
+                sb=EncodingManager.convert(sb);
+                sb=sb.replace("[","");
+                sb=sb.replace("{","");
+                sb=sb.replace("]","");
+                sb=sb.replace("}","");
+                sb=sb.replace("\"","");
+                sb=sb.replace(",",":");
+                String tab[];
+                tab=sb.split(":");
+                for(int i=0;i<tab.length;i++){
+                    al.add(tab[i]);
+                }
+                for(int i = 0; i < al.size(); i++){
+                    if(al.get(i).equals("date_presence")||al.get(i).equals("number_student")||
+                            al.get(i).equals("name_course")||al.get(i).equals("name_student"))
+                    {
+                        al.remove(i);
+                    }
+                }
+                String result="";
+                for(int i = 0; i < al.size(); i++){
+                    result+=al.get(i)+":";
+                }
+                result= result.substring(0, result.length()-1);
+                System.out.println(result);
 
                 outputStream.close();
                 InputStream inputStream=httpURLConnection.getInputStream();
                 inputStream.close();
                 httpURLConnection.disconnect();
-                return(sb);
+                return(result);
+
             } catch (UnsupportedEncodingException e) {
                 e.printStackTrace();
             } catch (ProtocolException e) {

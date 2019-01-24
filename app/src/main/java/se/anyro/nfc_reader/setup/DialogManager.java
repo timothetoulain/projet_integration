@@ -3,24 +3,40 @@ package se.anyro.nfc_reader.setup;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+import java.util.concurrent.ExecutionException;
 
 import se.anyro.nfc_reader.R;
+import se.anyro.nfc_reader.database.LoginTeacherQuery;
 
 public class DialogManager extends DialogFragment {
     // I'm using these attributes as a temporary mean to store these variable.
-    private Boolean userLogingOut;
+    private Boolean userLoggingOut;
     private Boolean userChose;
     private Boolean userConfirm;
+    private Boolean exitTagViewer;
+    private Boolean goToManualAdd;
+
     private se.anyro.nfc_reader.setup.DialogInterface closeListener;
     private String dialogToDisplay;
+    private String teacherLogin;
 
     public DialogManager() {
-        this.userLogingOut = false;
+        this.userLoggingOut = false;
         this.userChose = false;
         this.userConfirm = false;
+        this.exitTagViewer=false;
+        this.goToManualAdd=false;
         this.dialogToDisplay = "disconnectDialog";
     }
 
@@ -35,13 +51,13 @@ public class DialogManager extends DialogFragment {
                     .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int id) {
                             userChose = true;
-                            userLogingOut = true;
+                            userLoggingOut = true;
                         }
                     })
                     .setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int id) {
                             userChose = true;
-                            userLogingOut = false;
+                            userLoggingOut = false;
                         }
                     });
             // Create the AlertDialog object and return it
@@ -59,10 +75,29 @@ public class DialogManager extends DialogFragment {
                     .setPositiveButton(R.string.confirm, new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int id) {
-                            // sign in the user ...
-                            userChose = true;
-                            userConfirm = true;
-
+                            //query to check if the password is correct
+                            EditText passwordEditText = (EditText) getDialog().findViewById(R.id.password);
+                            String resultLogin=null;
+                            String login=teacherLogin;
+                            String password=passwordEditText.getText().toString();
+                            System.out.println("password: "+password);
+                            String type="checkAccount";
+                            Context context=getActivity();
+                            try {
+                                resultLogin=new LoginTeacherQuery(context).execute(type,login,password).get();
+                            } catch (InterruptedException e) {
+                                e.printStackTrace();
+                            } catch (ExecutionException e) {
+                                e.printStackTrace();
+                            }
+                            if((resultLogin==null) || (resultLogin=="")){
+                                Toast.makeText(context,R.string.error_password,Toast.LENGTH_SHORT).show();
+                               // userChose = true;
+                            }
+                            else {
+                                userChose = true;
+                                userConfirm = true;
+                            }
                         }
                     })
                     .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
@@ -91,12 +126,12 @@ public class DialogManager extends DialogFragment {
 
     }
 
-    public Boolean getUserLogingOut() {
-        return this.userLogingOut;
+    public Boolean getUserLoggingOut() {
+        return this.userLoggingOut;
     }
 
     public void setUserLogingOut(Boolean param) {
-        this.userLogingOut = param;
+        this.userLoggingOut = param;
     }
 
     public Boolean getUserChose() {
@@ -118,4 +153,19 @@ public class DialogManager extends DialogFragment {
     public void setDialogToDisplay(String param) {
         this.dialogToDisplay = param;
     }
+   public Boolean getGoToManualAdd(){
+        return this.goToManualAdd;
+    }
+    public Boolean getExitTagViewer(){
+        return this.exitTagViewer;
+    }
+    public void setGoToManualAdd(Boolean param) {
+        this.goToManualAdd = param;
+    }
+    public void setExitTagViewer(Boolean param) {
+        this.exitTagViewer = param;
+    }
+
+    public void setTeacherLogin(String param){this.teacherLogin=param;}
+
 }

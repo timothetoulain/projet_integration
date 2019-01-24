@@ -75,9 +75,10 @@ public class TagViewer extends Activity {
     private String teacherFile = "teacher.txt";
     private String classFile = "class.txt";
     private String  studentFile = "student.txt";
+    private String loginFile = "login.txt";
 
-    private Button mforgottenCardButton;
-    private Button mfinishButton;
+
+    private Button mforgottenCardButton,mfinishButton, mmanualAddingButton;
 
     // Attribute used for storing a tag used for debugging purpose. When using Log.i(TAG, "Something"), it will be easier to track these messages in the logcat.
     private String TAG;
@@ -95,11 +96,8 @@ public class TagViewer extends Activity {
 
         mforgottenCardButton = findViewById(R.id.forgottenCardButton);
         mfinishButton = findViewById(R.id.finishButton);
+        //mmanualAddingButton=findViewById(R.id.manualAddingButton);
         mTagContent = findViewById(R.id.list);
-
-        /*teacherFile = "teacher.txt";
-        classFile = "class.txt";
-        studentFile = "student.txt";*/
 
         teacher=null;
         course=null;
@@ -137,7 +135,6 @@ public class TagViewer extends Activity {
         mforgottenCardButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               // deleteLastStudentNameFromFile(studentFile);
                 Intent cardForgotten = new Intent(TagViewer.this, CardForgottenActivity.class);
                 startActivity(cardForgotten);
             }
@@ -145,20 +142,41 @@ public class TagViewer extends Activity {
         mfinishButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //TODO afficher pop up demandant login/psw du prof avant de pouvoir quitter
-                /*
-                Intent teacherMenu = new Intent(TagViewer.this, TeacherMenuActivity.class);
-                startActivity(teacherMenu);
-                */
+                String teacherLogin=readData(loginFile);
+                teacherLogin= teacherLogin.substring(0, teacherLogin.length()-1);
+                System.out.println("teacher login:"+teacherLogin+":");
+
                 Log.d(TAG, "Finish button pressed");
                 confirmAcquittanceDialog = new DialogManager();
                 ((DialogManager) confirmAcquittanceDialog).setDialogToDisplay("acquittanceConfirmationDialog");
+                ((DialogManager) confirmAcquittanceDialog).setTeacherLogin(teacherLogin);
+                ((DialogManager) confirmAcquittanceDialog).setExitTagViewer(true);
+
                 // This functions calls whatever is implemented into the DialogManager onCreateDialog method
                 confirmAcquittanceDialog.show(getFragmentManager(), "ConfirmDialog");
                 ((DialogManager)confirmAcquittanceDialog).onDismissListener(closeListener);
             }
         });
+       /* mmanualAddingButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            String teacherLogin=readData(loginFile);
+                teacherLogin= teacherLogin.substring(0, teacherLogin.length()-1);
+                System.out.println("teacher login:"+teacherLogin+":");
 
+                Log.d(TAG, "Finish button pressed");
+                confirmAcquittanceDialog = new DialogManager();
+                ((DialogManager) confirmAcquittanceDialog).setDialogToDisplay("acquittanceConfirmationDialog");
+                ((DialogManager) confirmAcquittanceDialog).setTeacherLogin(teacherLogin);
+                ((DialogManager) confirmAcquittanceDialog).setGoToManualAdd(true);
+
+                // This functions calls whatever is implemented into the DialogManager onCreateDialog method
+                confirmAcquittanceDialog.show(getFragmentManager(), "ConfirmDialog");
+                ((DialogManager)confirmAcquittanceDialog).onDismissListener(closeListener);
+                Intent studentManualAdding = new Intent(TagViewer.this, StudentManualAddingActivity.class);
+                startActivity(studentManualAdding);
+            }
+        });*/
     }
 
     private void showMessage(int title, int message) {
@@ -656,12 +674,23 @@ public class TagViewer extends Activity {
         public void handleDialogClose(se.anyro.nfc_reader.setup.DialogInterface dialog) {
             //do here whatever you want to do on Dialog dismiss
             if ( ((DialogManager) confirmAcquittanceDialog).getUserChose() == true ) {
-                if ( ((DialogManager) confirmAcquittanceDialog).getUserConfirm() == true ) {
+                if ( ((DialogManager) confirmAcquittanceDialog).getUserConfirm() == true &&
+                        ((DialogManager) confirmAcquittanceDialog).getExitTagViewer() == true ) {
                     Intent mainIntent = new Intent(getBaseContext(), TeacherMenuActivity.class);
                     Log.d(TAG, "goingToStartActivity");
                     startActivity(mainIntent);
                     finish();
-                } else {
+                    System.out.println("exit tag view");
+                }
+               /* else if ( ((DialogManager) confirmAcquittanceDialog).getUserConfirm() == true &&
+                        ((DialogManager) confirmAcquittanceDialog).getGoToManualAdd() == true) {
+                    Intent mainIntent = new Intent(getBaseContext(), StudentManualAddingActivity.class);
+                    Log.d(TAG, "goingToStartActivity");
+                    startActivity(mainIntent);
+                    finish();
+                    System.out.println("go to manual adding");
+                }*/
+                else {
                     Log.d(TAG, "goingToStayOnThisActivity");
                 }
             }

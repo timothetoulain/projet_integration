@@ -8,14 +8,14 @@ import android.widget.Button;
 
 public class MainActivity extends Activity {
 
-   // private Button mAdminButton;
+    // private Button mAdminButton;
     private Button mProfButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-       // mAdminButton = findViewById(R.id.admin_button);
+        // mAdminButton = findViewById(R.id.admin_button);
         //mAdminButton.setEnabled(true);
 
         mProfButton = findViewById(R.id.prof_button);
@@ -37,5 +37,11 @@ public class MainActivity extends Activity {
             }
         });
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        finish();
+        moveTaskToBack(true);
     }
 }

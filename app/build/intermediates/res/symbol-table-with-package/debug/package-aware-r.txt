@@ -664,6 +664,8 @@ id checkbox
 id chronometer
 id collapseActionView
 id confirmButton
+id constraintLayout
+id constraintLayout2
 id contentPanel
 id courseTextView
 id createButton
@@ -710,9 +712,11 @@ id italic
 id left
 id line1
 id line3
+id linearLayout
 id list
 id listMode
 id list_item
+id manualAddingTextView
 id media_actions
 id menuTextView
 id menu_main_clear
@@ -745,6 +749,7 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollView2
+id scrollView3
 id search_badge
 id search_bar
 id search_button
@@ -809,6 +814,7 @@ id visualizeButton
 id withText
 id wrap
 id wrap_content
+id yourResultsTextView
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
 integer cancel_button_image_alpha
@@ -848,6 +854,8 @@ layout activity_filiere_creation
 layout activity_groupe_creation
 layout activity_login_teacher
 layout activity_main
+layout activity_select_visualize
+layout activity_student_manual_adding
 layout activity_teacher_menu
 layout activity_visualize
 layout dialog_signin
@@ -918,6 +926,7 @@ string button_date_start
 string button_disconnect
 string button_display_list
 string button_forget_card
+string button_manual_adding
 string button_registration
 string button_registration_finish
 string button_search
@@ -938,11 +947,13 @@ string error
 string error_connection
 string error_incomplete
 string error_login_password
+string error_password
 string error_select_class
 string error_unknown_student
 string group_add
 string login
 string logoutDialogTitle
+string manual_adding
 string menu
 string menu_copy_dec
 string menu_copy_hex

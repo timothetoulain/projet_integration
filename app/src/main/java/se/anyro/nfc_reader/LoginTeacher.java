@@ -18,6 +18,7 @@ public class LoginTeacher extends Activity {
     private EditText meditTextIdentifiant;
     private EditText meditTextMdp;
     private String teacherFile = "teacher.txt";
+    private String loginFile = "login.txt";
     private String login;
 
     @Override
@@ -43,11 +44,10 @@ public class LoginTeacher extends Activity {
                         else{
                             //on stocke le nom du prof qui vient de se connecter pour les requetes suivantes
                             System.out.println("apres query");
-                            saveData(teacherName);
+                            saveData(meditTextIdentifiant.getText().toString(),loginFile);
+                            saveData(teacherName,teacherFile);
                             Intent teacherMenuActivity = new Intent(LoginTeacher.this, TeacherMenuActivity.class);
                             startActivity(teacherMenuActivity);
-                            /*Intent profActivity = new Intent(LoginTeacher.this, ClassSelectionActivity.class);
-                            startActivity(profActivity);*/
                         }
                     }
                     else{
@@ -82,9 +82,9 @@ public class LoginTeacher extends Activity {
     private void connectionErrorMessage(){
         Toast.makeText(this,R.string.error_connection,Toast.LENGTH_SHORT).show();
     }
-    private void saveData(String nomProf) {
+    private void saveData(String nomProf,String file) {
         try {
-            FileOutputStream out = this.openFileOutput(teacherFile, MODE_PRIVATE);
+            FileOutputStream out = this.openFileOutput(file, MODE_PRIVATE);
             out.write(nomProf.getBytes());
             out.close();
         } catch (Exception e) {
