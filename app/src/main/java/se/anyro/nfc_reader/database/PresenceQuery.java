@@ -18,7 +18,7 @@ import java.net.URL;
 import java.net.URLEncoder;
 
 /**
- * permet d'indiquer un etudiant comme present au cours dans la bd
+ * add a student to the presence list
  */
 public class PresenceQuery extends AsyncTask<String, Void, String>{
     private Context context;
@@ -96,6 +96,6 @@ public class PresenceQuery extends AsyncTask<String, Void, String>{
     @Override
     protected void onPostExecute(String result) {
         super.onPostExecute(result);
-        //va renvoyer le nom de l'etudier a l'activité TagViewer
+        //return the name of the student to TagViewer so it can be displayed
     }
 }

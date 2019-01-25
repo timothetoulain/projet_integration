@@ -677,10 +677,6 @@ id dimensions
 id direct
 id disableHome
 id disconnectionButton
-id editTextFiliere
-id editTextFiliere2
-id editTextFiliere3
-id editTextGroupe
 id editTextIdentifiant
 id editTextMdp
 id edit_query
@@ -693,12 +689,10 @@ id endTimeEditText
 id end_padder
 id expand_activities_button
 id expanded_menu
-id filiereButton
 id finishButton
 id forever
 id forgottenCardButton
 id gone
-id groupeButton
 id groups
 id home
 id homeAsUp
@@ -740,6 +734,7 @@ id prof_button
 id progress_circular
 id progress_horizontal
 id radio
+id registrationTextView
 id researchButton
 id right
 id right_icon
@@ -768,8 +763,6 @@ id showHome
 id showTitle
 id spacer
 id spinnerCourse
-id spinnerFiliere
-id spinnerGroupe
 id split_action_bar
 id spread
 id spread_inside
@@ -793,11 +786,7 @@ id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
-id textViewAnnee
 id textViewAuthentification
-id textViewFiliere
-id textViewGroupe
-id textViewInfo
 id time
 id title
 id titleDividerNoCustom
@@ -809,7 +798,6 @@ id uniform
 id up
 id useLogo
 id validateButton
-id validerButton
 id visualizeButton
 id withText
 id wrap
@@ -847,15 +835,13 @@ layout abc_screen_toolbar
 layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
-layout activity_admin
 layout activity_card_forgotten
 layout activity_class_selection
-layout activity_filiere_creation
-layout activity_groupe_creation
 layout activity_login_teacher
 layout activity_main
 layout activity_select_visualize
 layout activity_student_manual_adding
+layout activity_student_registration
 layout activity_teacher_menu
 layout activity_visualize
 layout dialog_signin
@@ -964,6 +950,7 @@ string menu_main_copy
 string menu_main_end_title
 string message_account
 string message_new_list
+string message_registration
 string message_scan
 string message_welcome
 string new_group

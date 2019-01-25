@@ -39,8 +39,7 @@
     <string name="manual_adding">Add a student manually</string>
     <string name="button_manual_adding">Manual adding</string>
     <string name="error_password">Password incorrect</string>
-
-
+    <string name="message_registration">Enter your information to register.</string>
 
     <string name="error">Error:</string>
     <string name="no_nfc">No NFC found on this device</string>

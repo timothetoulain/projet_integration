@@ -42,9 +42,11 @@ public class StudentManualAddingActivity extends AppCompatActivity {
                     incompleteFieldMessage();
                 }
                 else {
-                    String nameRetrieved=query();
+                    String nameRetrieved=queryGetStudents();
                     if(nameRetrieved != null && !nameRetrieved.equals("")){
                         System.out.println("name retrieved: "+nameRetrieved);
+                        //TODO display the result on this activity and find a way to get the choice of the user
+                        //TODO call method queryAddPresent
 
                         //we save the student name to display it on the TagViewer activity
                         saveData(nameRetrieved,studentFile);
@@ -52,7 +54,7 @@ public class StudentManualAddingActivity extends AppCompatActivity {
                         startActivity(tagViewer);
                     }
                     else{
-                        System.out.println("unknown student");
+                        System.out.println("No student found");
                         unknownStudentMessage();
                         String unknownStudent="unknown student";
                         saveData(unknownStudent,studentFile);
@@ -60,19 +62,34 @@ public class StudentManualAddingActivity extends AppCompatActivity {
                         startActivity(tagViewer);
                     }
                 }
-
             }
         });
     }
 
 
-    public String query(){
-        String type="addPresent";
+    public String queryGetStudents(){
+        String type="getStudents";
         String nameStudent=mNameEditText.getText().toString();
-        String course=readData(classFile);
+        String studentData=null;
         try {
-            //TODO see the actual call after php edit
-            nameStudent=new StudentManualAddingQuery(this).execute(type,course,nameStudent).get();
+            studentData=new StudentManualAddingQuery(this).execute(type,nameStudent).get();
+            System.out.println("student retrieved "+studentData);
+        }
+        catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+        return studentData;
+    }
+   /* public String queryAddPresent(){
+        String type="addPresent";
+       // String numberStudent=studentNumberEditText.getText().toString();
+        //String nameStudent=nameEditText.getText().toString();
+        String course=readData(classFile);
+
+        try {
+            nameStudent=new CardForgottenQuery(this).execute(type,course,numberStudent,nameStudent).get();
         }
         catch (InterruptedException e) {
             e.printStackTrace();
@@ -80,7 +97,8 @@ public class StudentManualAddingActivity extends AppCompatActivity {
             e.printStackTrace();
         }
         return nameStudent;
-    }
+    }*/
+
 
     private String readData(String file) {
         try {

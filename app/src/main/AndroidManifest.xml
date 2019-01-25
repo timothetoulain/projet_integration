@@ -14,7 +14,8 @@
         android:allowBackup="true"
         android:icon="@drawable/icon"
         android:label="@string/app_name">
-        <activity android:name=".StudentManualAddingActivity"></activity>
+        <activity android:name=".StudentRegistrationActivity"></activity>
+        <activity android:name=".StudentManualAddingActivity" />
         <activity android:name=".VisualizeActivity" />
         <activity android:name=".SelectVisualizeActivity" />
         <activity
@@ -44,10 +45,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".admin.AdminActivity" />
         <activity android:name=".ClassSelectionActivity" />
-        <activity android:name=".admin.FiliereCreationActivity" />
-        <activity android:name=".admin.GroupeCreationActivity" />
         <activity android:name=".LoginTeacher" />
         <activity android:name=".TeacherMenuActivity" />
         <activity android:name=".CardForgottenActivity" />

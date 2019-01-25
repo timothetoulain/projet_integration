@@ -1,24 +1,23 @@
 package se.anyro.nfc_reader.database;
 
-        import android.content.Context;
-        import android.os.AsyncTask;
-
-        import java.io.BufferedReader;
-        import java.io.BufferedWriter;
-        import java.io.IOException;
-        import java.io.InputStream;
-        import java.io.InputStreamReader;
-        import java.io.OutputStream;
-        import java.io.OutputStreamWriter;
-        import java.io.UnsupportedEncodingException;
-        import java.net.HttpURLConnection;
-        import java.net.MalformedURLException;
-        import java.net.ProtocolException;
-        import java.net.URL;
-        import java.net.URLEncoder;
+import android.content.Context;
+import android.os.AsyncTask;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.io.UnsupportedEncodingException;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.ProtocolException;
+import java.net.URL;
+import java.net.URLEncoder;
 
 /**
- * permet d'indiquer un etudiant comme present au cours dans la bd
+ * get all the student with the indicated name
  */
 public class StudentManualAddingQuery extends AsyncTask<String, Void, String> {
     private Context context;
@@ -36,12 +35,9 @@ public class StudentManualAddingQuery extends AsyncTask<String, Void, String> {
     @Override
     protected String doInBackground(String... params)  {
         String type=params[0];
-        String course=params[1];
-        String nameStudent=params[2];
-        course= course.substring(0, course.length()-1);
+        String nameStudent=params[1];
 
         System.out.println("type:"+type);
-        System.out.println("course:"+course);
         System.out.println("nameStudent:"+nameStudent);
 
         try{
@@ -52,8 +48,6 @@ public class StudentManualAddingQuery extends AsyncTask<String, Void, String> {
             OutputStream outputStream=httpURLConnection.getOutputStream();
             BufferedWriter bw=new BufferedWriter(new OutputStreamWriter(outputStream,"UTF-8"));
             String my_data= URLEncoder.encode("type","UTF-8")+"="+URLEncoder.encode(type,"UTF-8");
-            my_data += "&" + URLEncoder.encode("course", "UTF-8") + "=" +
-                    URLEncoder.encode(course, "UTF-8");
             my_data += "&" + URLEncoder.encode("nameStudent", "UTF-8") + "=" +
                     URLEncoder.encode(nameStudent, "UTF-8");
             bw.write(my_data);
@@ -98,6 +92,6 @@ public class StudentManualAddingQuery extends AsyncTask<String, Void, String> {
     @Override
     protected void onPostExecute(String result) {
         super.onPostExecute(result);
-        //va renvoyer le nom de l'etudier a l'activité TagViewer
+        //return the data about the student(s)
     }
 }

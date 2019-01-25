@@ -39,7 +39,7 @@
     <string name="button_manual_adding">Ajout manuel</string>
 
     <string name="error_password">Mot de passe incorrect</string>
-
+    <string name="message_registration">Entrez vos informations pour vous enregistrer.</string>
 
 
     <string name="error">Erreur</string>

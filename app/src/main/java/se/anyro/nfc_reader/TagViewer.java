@@ -76,6 +76,7 @@ public class TagViewer extends Activity {
     private String classFile = "class.txt";
     private String  studentFile = "student.txt";
     private String loginFile = "login.txt";
+    private String nfcFile = "nfc.txt";
 
 
     private Button mforgottenCardButton,mfinishButton, mmanualAddingButton;
@@ -330,7 +331,6 @@ public class TagViewer extends Activity {
                     try {
                         mifareTag = MifareClassic.get(tag);
                     } catch (Exception e) {
-                        // Fix for Sony Xperia Z3/Z5 phones
                         tag = cleanupTag(tag);
                         mifareTag = MifareClassic.get(tag);
                     }
@@ -382,8 +382,6 @@ public class TagViewer extends Activity {
         }
         String studentName;
         studentName=presence(sb.toString());
-        //sb.append(nomEtu);
-        //return sb.toString();
         return studentName;
     }
 
@@ -605,15 +603,24 @@ public class TagViewer extends Activity {
     public String presence(String sb){
         String studentName=null;
         String type="addPresent";
-
         try {
             //sb contains the nfc decimal value
+            saveData(sb,nfcFile);
             studentName=new PresenceQuery(this).execute(type,course,sb).get();
 
         } catch (InterruptedException e) {
             e.printStackTrace();
         } catch (ExecutionException e) {
             e.printStackTrace();
+        }
+        System.out.println("student before error: "+studentName);
+        if(studentName.contains("ERROR")){
+            System.out.println(" error detected");
+            Toast.makeText(this,R.string.error_unknown_student,Toast.LENGTH_SHORT).show();
+            Intent studentRegistration = new Intent(TagViewer.this, StudentRegistrationActivity.class);
+            startActivity(studentRegistration);
+            //TODO read data bc student name will be stored there(studentFile)
+            //not sure it's still necessary though
         }
         return studentName;
     }
@@ -658,7 +665,7 @@ public class TagViewer extends Activity {
             return true;
         }
 
-        // Doon't know what it does.
+        // Don't know what it does.
         return super.onKeyDown(keyCode, event);
     }
 
@@ -696,6 +703,15 @@ public class TagViewer extends Activity {
             }
         }
     };
+    private void saveData(String nameStudent,String file) {
+        try {
+            FileOutputStream out = this.openFileOutput(file, MODE_PRIVATE);
+            out.write(nameStudent.getBytes());
+            out.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
     public void handleDialogClose(DialogInterface dialog) {
         //do here whatever you want to do on Dialog dismiss
