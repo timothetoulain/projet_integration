@@ -27,18 +27,8 @@
     <string name="date_start">Choisissez une date et une heure de début des inscriptions</string>
     <string name="date_end">Choisissez une date et une heure de fin des inscriptions</string>
 
-    <string name="button_date_start">Date de début</string>
-    <string name="button_time_start">Heure de début</string>
-    <string name="button_date_end">Date de fin</string>
-    <string name="button_time_end">Heure de fin</string>
-
     <string name="button_search">Rechercher</string>
     <string name="results">Vos résultats</string>
-
-    <string name="manual_adding">Ajouter un étudiant manuellement</string>
-    <string name="button_manual_adding">Ajout manuel</string>
-
-    <string name="error_password">Mot de passe incorrect</string>
     <string name="message_registration">Entrez vos informations pour vous enregistrer.</string>
 
 
@@ -84,8 +74,6 @@
 
     <string name="logoutDialogTitle">Souhaitez-vous vous déconnecter ?</string>
 
-    <string name="end_registration">Veuillez compléter l\'émargement.</string>
-
     <string name="confirm_registration">Veuillez confirmer l\'émargement</string>
     <string name="confirm_registrationText">Entrez votre mot de passe :</string>
 
@@ -93,4 +81,12 @@
     <string name="passwordTextEditHint">Mot de passe</string>
     <string name="confirm">Confirmer</string>
     <string name="cancel">Annuler</string>
+    <string name="manual_adding">Ajouter un étudiant manuellement</string>
+    <string name="error_password">Incorrect Password.</string>
+    <string name="end_registration">Veuillez compléter l\'émargement.</string>
+    <string name="button_time_start">Heure de début.</string>
+    <string name="button_time_end">Heure de fin.</string>
+    <string name="button_manual_adding">Ajout manuel.</string>
+    <string name="button_date_start">Date de début.</string>
+    <string name="button_date_end">Date de fin</string>
 </resources>

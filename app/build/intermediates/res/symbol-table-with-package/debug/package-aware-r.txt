@@ -710,6 +710,7 @@ id linearLayout
 id list
 id listMode
 id list_item
+id manualAddingButton
 id manualAddingTextView
 id media_actions
 id menuTextView
@@ -744,7 +745,6 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollView2
-id scrollView3
 id search_badge
 id search_bar
 id search_button

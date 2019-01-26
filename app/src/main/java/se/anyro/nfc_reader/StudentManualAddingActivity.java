@@ -1,5 +1,6 @@
 package se.anyro.nfc_reader;
 
+import android.app.Activity;
 import android.app.DialogFragment;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -20,7 +21,7 @@ import se.anyro.nfc_reader.database.CardForgottenQuery;
 import se.anyro.nfc_reader.database.StudentManualAddingQuery;
 import se.anyro.nfc_reader.setup.DialogManager;
 
-public class StudentManualAddingActivity extends AppCompatActivity {
+public class StudentManualAddingActivity extends Activity {
     private Button mConfirmButton;
     private EditText mNameEditText;
     private String classFile = "class.txt";
@@ -48,13 +49,16 @@ public class StudentManualAddingActivity extends AppCompatActivity {
                         //TODO display the result on this activity and find a way to get the choice of the user
                         //TODO call method queryAddPresent
 
+                        Log.i("StudentManualLog", nameRetrieved);
+                        // Toast.makeText(this,R.string.error_incomplete+nameRetrieved,Toast.LENGTH_SHORT).show();
                         //we save the student name to display it on the TagViewer activity
                         saveData(nameRetrieved,studentFile);
                         Intent tagViewer = new Intent(StudentManualAddingActivity.this, TagViewer.class);
-                        startActivity(tagViewer);
+                        // startActivity(tagViewer);
                     }
                     else{
                         System.out.println("No student found");
+                        Log.i("StudentManualLog", "No Student FOund.");
                         unknownStudentMessage();
                         String unknownStudent="unknown student";
                         saveData(unknownStudent,studentFile);
@@ -82,6 +86,7 @@ public class StudentManualAddingActivity extends AppCompatActivity {
         }
         return studentData;
     }
+
    /* public String queryAddPresent(){
         String type="addPresent";
        // String numberStudent=studentNumberEditText.getText().toString();

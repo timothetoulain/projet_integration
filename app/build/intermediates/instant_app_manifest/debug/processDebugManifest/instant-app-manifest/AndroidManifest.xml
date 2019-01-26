@@ -52,10 +52,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="se.anyro.nfc_reader.admin.AdminActivity" />
         <activity android:name="se.anyro.nfc_reader.ClassSelectionActivity" />
-        <activity android:name="se.anyro.nfc_reader.admin.FiliereCreationActivity" />
-        <activity android:name="se.anyro.nfc_reader.admin.GroupeCreationActivity" />
         <activity android:name="se.anyro.nfc_reader.LoginTeacher" />
         <activity android:name="se.anyro.nfc_reader.TeacherMenuActivity" />
         <activity android:name="se.anyro.nfc_reader.CardForgottenActivity" />

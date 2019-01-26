@@ -1586,7 +1586,7 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td></td></tr>
+     * <tr><td>direct</td><td>1</td><td>direct, barriers, chains</td></tr>
      * <tr><td>groups</td><td>20</td><td></td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
      * <tr><td>standard</td><td>7</td><td></td></tr>
@@ -2902,41 +2902,41 @@ public final class R {
     public static final int list=0x7f070056;
     public static final int listMode=0x7f070057;
     public static final int list_item=0x7f070058;
-    public static final int manualAddingTextView=0x7f070059;
-    public static final int media_actions=0x7f07005a;
-    public static final int menuTextView=0x7f07005b;
-    public static final int menu_main_clear=0x7f07005c;
-    public static final int message=0x7f07005d;
-    public static final int middle=0x7f07005e;
-    public static final int multiply=0x7f07005f;
-    public static final int nameEditText=0x7f070060;
-    public static final int nameTextView=0x7f070061;
-    public static final int never=0x7f070062;
-    public static final int none=0x7f070063;
-    public static final int normal=0x7f070064;
-    public static final int notification_background=0x7f070065;
-    public static final int notification_main_column=0x7f070066;
-    public static final int notification_main_column_container=0x7f070067;
-    public static final int packed=0x7f070068;
-    public static final int parent=0x7f070069;
-    public static final int parentPanel=0x7f07006a;
-    public static final int password=0x7f07006b;
-    public static final int percent=0x7f07006c;
-    public static final int prof_button=0x7f07006d;
-    public static final int progress_circular=0x7f07006e;
-    public static final int progress_horizontal=0x7f07006f;
-    public static final int radio=0x7f070070;
-    public static final int registrationTextView=0x7f070071;
-    public static final int researchButton=0x7f070072;
-    public static final int right=0x7f070073;
-    public static final int right_icon=0x7f070074;
-    public static final int right_side=0x7f070075;
-    public static final int screen=0x7f070076;
-    public static final int scrollIndicatorDown=0x7f070077;
-    public static final int scrollIndicatorUp=0x7f070078;
-    public static final int scrollView=0x7f070079;
-    public static final int scrollView2=0x7f07007a;
-    public static final int scrollView3=0x7f07007b;
+    public static final int manualAddingButton=0x7f070059;
+    public static final int manualAddingTextView=0x7f07005a;
+    public static final int media_actions=0x7f07005b;
+    public static final int menuTextView=0x7f07005c;
+    public static final int menu_main_clear=0x7f07005d;
+    public static final int message=0x7f07005e;
+    public static final int middle=0x7f07005f;
+    public static final int multiply=0x7f070060;
+    public static final int nameEditText=0x7f070061;
+    public static final int nameTextView=0x7f070062;
+    public static final int never=0x7f070063;
+    public static final int none=0x7f070064;
+    public static final int normal=0x7f070065;
+    public static final int notification_background=0x7f070066;
+    public static final int notification_main_column=0x7f070067;
+    public static final int notification_main_column_container=0x7f070068;
+    public static final int packed=0x7f070069;
+    public static final int parent=0x7f07006a;
+    public static final int parentPanel=0x7f07006b;
+    public static final int password=0x7f07006c;
+    public static final int percent=0x7f07006d;
+    public static final int prof_button=0x7f07006e;
+    public static final int progress_circular=0x7f07006f;
+    public static final int progress_horizontal=0x7f070070;
+    public static final int radio=0x7f070071;
+    public static final int registrationTextView=0x7f070072;
+    public static final int researchButton=0x7f070073;
+    public static final int right=0x7f070074;
+    public static final int right_icon=0x7f070075;
+    public static final int right_side=0x7f070076;
+    public static final int screen=0x7f070077;
+    public static final int scrollIndicatorDown=0x7f070078;
+    public static final int scrollIndicatorUp=0x7f070079;
+    public static final int scrollView=0x7f07007a;
+    public static final int scrollView2=0x7f07007b;
     public static final int search_badge=0x7f07007c;
     public static final int search_bar=0x7f07007d;
     public static final int search_button=0x7f07007e;
@@ -7624,7 +7624,7 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td></td></tr>
+     * <tr><td>direct</td><td>1</td><td>direct, barriers, chains</td></tr>
      * <tr><td>groups</td><td>20</td><td></td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
      * <tr><td>standard</td><td>7</td><td></td></tr>

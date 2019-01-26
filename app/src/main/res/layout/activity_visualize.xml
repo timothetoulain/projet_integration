@@ -21,38 +21,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ScrollView
-            android:id="@+id/scrollView3"
-            android:layout_width="0dp"
-            android:layout_height="617dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/yourResultsTextView">
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
 
             <LinearLayout
                 android:id="@+id/linearLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" />
-        </ScrollView>
-
-        <TextView
-            android:id="@+id/yourResultsTextView"
-            android:layout_width="86dp"
-            android:layout_height="39dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="45dp"
-            android:text="@string/results"
-            app:layout_constraintBottom_toTopOf="@+id/scrollView3"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="8dp" />
+        </android.support.v4.widget.NestedScrollView>
 
     </android.support.constraint.ConstraintLayout>
 </android.support.constraint.ConstraintLayout>

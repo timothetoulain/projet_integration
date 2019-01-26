@@ -97,7 +97,7 @@ public class TagViewer extends Activity {
 
         mforgottenCardButton = findViewById(R.id.forgottenCardButton);
         mfinishButton = findViewById(R.id.finishButton);
-        //mmanualAddingButton=findViewById(R.id.manualAddingButton);
+        mmanualAddingButton=findViewById(R.id.manualAddingButton);
         mTagContent = findViewById(R.id.list);
 
         teacher=null;
@@ -158,7 +158,7 @@ public class TagViewer extends Activity {
                 ((DialogManager)confirmAcquittanceDialog).onDismissListener(closeListener);
             }
         });
-       /* mmanualAddingButton.setOnClickListener(new View.OnClickListener() {
+       mmanualAddingButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
             String teacherLogin=readData(loginFile);
@@ -177,7 +177,7 @@ public class TagViewer extends Activity {
                 Intent studentManualAdding = new Intent(TagViewer.this, StudentManualAddingActivity.class);
                 startActivity(studentManualAdding);
             }
-        });*/
+        });
     }
 
     private void showMessage(int title, int message) {
