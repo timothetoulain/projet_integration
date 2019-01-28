@@ -26,6 +26,7 @@ public class StudentManualAddingActivity extends Activity {
     private EditText mNameEditText;
     private String classFile = "class.txt";
     private String studentFile = "student.txt";
+    private String  resultFile = "result.csv";
 
 
     @Override
@@ -43,18 +44,19 @@ public class StudentManualAddingActivity extends Activity {
                     incompleteFieldMessage();
                 }
                 else {
-                    String nameRetrieved=queryGetStudents();
-                    if(nameRetrieved != null && !nameRetrieved.equals("")){
-                        System.out.println("name retrieved: "+nameRetrieved);
+                    String result=queryGetStudents();
+                    if(result != null && !result.equals("")){
+                        System.out.println("name retrieved: "+result);
+                        saveData(result,resultFile);
+
                         //TODO display the result on this activity and find a way to get the choice of the user
                         //TODO call method queryAddPresent
 
-                        Log.i("StudentManualLog", nameRetrieved);
+                        Log.i("StudentManualLog", result);
                         // Toast.makeText(this,R.string.error_incomplete+nameRetrieved,Toast.LENGTH_SHORT).show();
-                        //we save the student name to display it on the TagViewer activity
-                        saveData(nameRetrieved,studentFile);
-                        Intent tagViewer = new Intent(StudentManualAddingActivity.this, TagViewer.class);
-                        // startActivity(tagViewer);
+                        saveData(result,studentFile);
+                        Intent resultView = new Intent(StudentManualAddingActivity.this, ResultManualAddingActivity.class);
+                        startActivity(resultView);
                     }
                     else{
                         System.out.println("No student found");

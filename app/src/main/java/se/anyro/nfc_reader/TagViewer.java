@@ -174,8 +174,8 @@ public class TagViewer extends Activity {
                 // This functions calls whatever is implemented into the DialogManager onCreateDialog method
                 confirmAcquittanceDialog.show(getFragmentManager(), "ConfirmDialog");
                 ((DialogManager)confirmAcquittanceDialog).onDismissListener(closeListener);
-                Intent studentManualAdding = new Intent(TagViewer.this, StudentManualAddingActivity.class);
-                startActivity(studentManualAdding);
+                /*Intent studentManualAdding = new Intent(TagViewer.this, StudentManualAddingActivity.class);
+                startActivity(studentManualAdding);*/
             }
         });
     }
@@ -689,14 +689,14 @@ public class TagViewer extends Activity {
                     finish();
                     System.out.println("exit tag view");
                 }
-               /* else if ( ((DialogManager) confirmAcquittanceDialog).getUserConfirm() == true &&
+                else if ( ((DialogManager) confirmAcquittanceDialog).getUserConfirm() == true &&
                         ((DialogManager) confirmAcquittanceDialog).getGoToManualAdd() == true) {
                     Intent mainIntent = new Intent(getBaseContext(), StudentManualAddingActivity.class);
                     Log.d(TAG, "goingToStartActivity");
                     startActivity(mainIntent);
                     finish();
                     System.out.println("go to manual adding");
-                }*/
+                }
                 else {
                     Log.d(TAG, "goingToStayOnThisActivity");
                 }

@@ -19,4 +19,22 @@ public class EncodingManager {
         }
         return sb;
     }
+    public static String deleteAccent(String sb) {
+        if(sb.contains(("é"))) {
+            sb=sb.replace("é","e");
+        }
+        if(sb.contains(("è"))) {
+            sb=sb.replace("ê","e");
+        }
+        if(sb.contains(("è"))) {
+            sb=sb.replace("è","e");
+        }
+        if(sb.contains(("é"))) {
+            sb=sb.replace("à","a");
+        }
+        if(sb.contains(("é"))) {
+            sb=sb.replace("ç","c");
+        }
+        return sb;
+    }
 }

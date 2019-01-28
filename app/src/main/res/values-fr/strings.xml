@@ -82,7 +82,7 @@
     <string name="confirm">Confirmer</string>
     <string name="cancel">Annuler</string>
     <string name="manual_adding">Ajouter un étudiant manuellement</string>
-    <string name="error_password">Incorrect Password.</string>
+    <string name="error_password">Mot de passe incorrect</string>
     <string name="end_registration">Veuillez compléter l\'émargement.</string>
     <string name="button_time_start">Heure de début.</string>
     <string name="button_time_end">Heure de fin.</string>

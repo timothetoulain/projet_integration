@@ -802,7 +802,6 @@ id visualizeButton
 id withText
 id wrap
 id wrap_content
-id yourResultsTextView
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
 integer cancel_button_image_alpha
@@ -839,6 +838,7 @@ layout activity_card_forgotten
 layout activity_class_selection
 layout activity_login_teacher
 layout activity_main
+layout activity_result_manual_adding
 layout activity_select_visualize
 layout activity_student_manual_adding
 layout activity_student_registration

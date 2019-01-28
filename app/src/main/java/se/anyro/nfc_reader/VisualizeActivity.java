@@ -34,12 +34,10 @@ public class VisualizeActivity extends Activity {
         ArrayList al = new ArrayList();
         al=readData(resultFile);
         if(al.isEmpty()){
-            //TODO display textview
             Log.i(TAG,"empty");
         }
         else {
             for (int i = 0; i < al.size(); i+=3) {
-                //TODO display info on scrollable view. i=0=>date;i=1=>student_number;i=2=>name; i=3=>date...etc
                 // System.out.println("donnée à l'indice " + i + " = " + al.get(i));
                 Log.i(TAG,"donnée à l'indice " + i + " = " + al.get(i));
                 Log.i(TAG,"Eleve n° " + i + " : " + al.get(i+2)+ "\n" + "\tprésent le " + al.get(i) + "\n" + "\tidentifiant hexadecimal : " + al.get(i+1) + "\n");

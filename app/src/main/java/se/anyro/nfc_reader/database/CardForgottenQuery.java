@@ -17,6 +17,10 @@ import java.net.ProtocolException;
 import java.net.URL;
 import java.net.URLEncoder;
 
+import se.anyro.nfc_reader.setup.EncodingManager;
+
+import static se.anyro.nfc_reader.setup.EncodingManager.deleteAccent;
+
 /**
  * add a student who forgot his student card to the presence list
  */
@@ -45,6 +49,8 @@ public class CardForgottenQuery extends AsyncTask<String, Void, String>{
         System.out.println("course:"+course);
         System.out.println("numberStudent:"+numberStudent);
         System.out.println("nameStudent:"+nameStudent);
+        nameStudent=deleteAccent(nameStudent);
+        System.out.println("nameStudent after conversion:"+nameStudent);
 
         try{
             URL url=new URL(my_url);
@@ -74,6 +80,8 @@ public class CardForgottenQuery extends AsyncTask<String, Void, String>{
                 sb+=line;
                 break;
             }
+            sb= EncodingManager.convert(sb);
+
             //sb= sb.substring(1, sb.length()-1);
             System.out.println("sb= "+sb);
 
