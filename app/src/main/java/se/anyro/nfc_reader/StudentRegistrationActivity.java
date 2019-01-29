@@ -102,4 +102,9 @@ public class StudentRegistrationActivity extends Activity {
         }
         return null;
     }
+    @Override
+    public void onBackPressed() {
+        Intent tagViewer = new Intent(StudentRegistrationActivity.this, TagViewer.class);
+        startActivity(tagViewer);
+    }
 }

@@ -614,13 +614,12 @@ public class TagViewer extends Activity {
             e.printStackTrace();
         }
         System.out.println("student before error: "+studentName);
+        //TODO determine if the card is not recognised or if the student is registered twice
         if(studentName.contains("ERROR")){
             System.out.println(" error detected");
             Toast.makeText(this,R.string.error_unknown_student,Toast.LENGTH_SHORT).show();
             Intent studentRegistration = new Intent(TagViewer.this, StudentRegistrationActivity.class);
             startActivity(studentRegistration);
-            //TODO read data bc student name will be stored there(studentFile)
-            //not sure it's still necessary though
         }
         return studentName;
     }
