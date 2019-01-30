@@ -93,6 +93,8 @@
     <string name="button_date_end">Ending date</string>
     <string name="button_time_end">Ending hour</string>
 
+    <string name="please_check">Select one of the students before submitting</string>
+
     <!--
     <string name="intro_message">Scan you card from the device\'s back.</string>
 -->

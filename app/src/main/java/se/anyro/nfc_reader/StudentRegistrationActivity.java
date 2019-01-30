@@ -2,11 +2,13 @@ package se.anyro.nfc_reader;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.support.constraint.solver.widgets.ConstraintHorizontalLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import java.io.BufferedReader;
@@ -36,7 +38,6 @@ public class StudentRegistrationActivity extends Activity {
         mconfirmButton = findViewById(R.id.confirmButton);
         studentNumberEditText = findViewById(R.id.studentNumberEditText);
         nameEditText = findViewById(R.id.nameEditText);
-
 
         mconfirmButton.setOnClickListener(new View.OnClickListener() {
             @Override

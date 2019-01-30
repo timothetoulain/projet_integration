@@ -89,4 +89,6 @@
     <string name="button_manual_adding">Ajout manuel.</string>
     <string name="button_date_start">Date de début.</string>
     <string name="button_date_end">Date de fin</string>
+
+    <string name="please_check">Veuillez sélectionner l\'un des étudiants ci-dessus</string>
 </resources>

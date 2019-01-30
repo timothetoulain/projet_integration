@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import java.io.BufferedReader;
@@ -36,7 +37,6 @@ public class StudentManualAddingActivity extends Activity {
         mConfirmButton = findViewById(R.id.confirmButton);
         mNameEditText=findViewById(R.id.nameEditText);
 
-
         mConfirmButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -54,6 +54,7 @@ public class StudentManualAddingActivity extends Activity {
 
                         Log.i("StudentManualLog", result);
                         // Toast.makeText(this,R.string.error_incomplete+nameRetrieved,Toast.LENGTH_SHORT).show();
+
                         saveData(result,studentFile);
                         Intent resultView = new Intent(StudentManualAddingActivity.this, ResultManualAddingActivity.class);
                         startActivity(resultView);

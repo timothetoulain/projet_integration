@@ -658,6 +658,7 @@ id blocking
 id bottom
 id buttonPanel
 id buttonValider
+id cancelButton
 id cancel_action
 id chains
 id checkbox
@@ -696,6 +697,7 @@ id gone
 id groups
 id home
 id homeAsUp
+id horizontalButtonsLayout
 id icon
 id icon_group
 id ifRoom
@@ -779,6 +781,7 @@ id startTimeEditText
 id status_bar_latest_event_content
 id studentNumberEditText
 id submenuarrow
+id submitButton
 id submit_area
 id tabMode
 id tag_viewer_text
@@ -798,6 +801,7 @@ id uniform
 id up
 id useLogo
 id validateButton
+id verticalCheckBoxLayout
 id visualizeButton
 id withText
 id wrap
@@ -963,6 +967,7 @@ string no_nfc
 string nothing_scanned
 string password
 string passwordTextEditHint
+string please_check
 string results
 string search_menu_title
 string sector

@@ -1,216 +1,216 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:2:1-55:12
-INJECTED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:2:1-55:12
-INJECTED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:2:1-55:12
-INJECTED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:2:1-55:12
-MERGED from [com.android.support:appcompat-v7:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-v4:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/6690429d322d6bd7de2a65217c62cc94/AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/toulain/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/f758bc9bc198f5601bf9c1a59a1cae3b/AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/a2a290380803bde23b6d2b1f1a8ae74f/AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/72e7ffb247b651279dae9b25c523bbdc/AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-media-compat:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/3330b7f7d5c50fd17c6bef0e946b73c5/AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-fragment:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/fe8a4178bb21ac050c5d4cb13281f19c/AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-core-utils:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/ad06c5e2e8638159e970b983fa8e9090/AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-core-ui:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/8bf5edf8ebe19a1ed8908ed11d9a5bc2/AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-compat:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/55a0351154f4c00790feb49de16951e3/AndroidManifest.xml:17:1-31:12
-MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/7486da08869169c69dfcf468af68b2db/AndroidManifest.xml:17:1-30:12
-INJECTED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:2:1-55:12
-INJECTED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:2:1-55:12
-INJECTED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:2:1-55:12
+ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:2:1-55:12
+INJECTED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:2:1-55:12
+INJECTED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:2:1-55:12
+INJECTED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:2:1-55:12
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\59f237ab07962392801a66d489e17c39\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\f4f8faddf9228f346637a6413f58c71c\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\163a5168fb1a06c6ed89ae1e7fdbe741\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\d4b8f65cf104f1aa360beed4ce9f9d20\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\0681d06b09574f2773f221840ba2b613\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\2292cf4e2dbeb8fdeddb4db250aa3ead\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\e55f21f77682deffe117117d7d4b2a95\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\cbbbcd9396b74615aa57aa70a533512e\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\569dc2422b96b0824fae1907539ffeaf\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\bdd5fbd4d9ced065f9650e7745183bf0\AndroidManifest.xml:17:1-31:12
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\bd03170df472c30695a3c0751dddc13e\AndroidManifest.xml:17:1-30:12
+INJECTED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:2:1-55:12
+INJECTED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:2:1-55:12
+INJECTED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:2:1-55:12
 	package
-		ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:3:5-34
-		INJECTED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml
-		INJECTED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:3:5-34
+		INJECTED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml
 	android:versionName
-		ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:6:5-31
-		INJECTED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml
-		INJECTED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:6:5-31
+		INJECTED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
-		ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:5:5-29
-		INJECTED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml
-		INJECTED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:5:5-29
+		INJECTED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml
 	android:installLocation
-		ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:4:5-35
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:4:5-35
 uses-permission#android.permission.INTERNET
-ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:8:5-67
+ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:8:5-67
 	android:name
-		ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:8:22-64
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:8:22-64
 uses-permission#android.permission.NFC
-ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:9:5-62
+ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:9:5-62
 	android:name
-		ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:9:22-59
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:9:22-59
 uses-feature#android.hardware.nfc
-ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:11:5-57
+ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:11:5-57
 	android:name
-		ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:11:19-54
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:11:19-54
 application
-ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:13:5-53:19
-MERGED from [com.android.support:appcompat-v7:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:appcompat-v7:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-v4:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/6690429d322d6bd7de2a65217c62cc94/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-v4:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/6690429d322d6bd7de2a65217c62cc94/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/toulain/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/f758bc9bc198f5601bf9c1a59a1cae3b/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/toulain/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/f758bc9bc198f5601bf9c1a59a1cae3b/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/a2a290380803bde23b6d2b1f1a8ae74f/AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/a2a290380803bde23b6d2b1f1a8ae74f/AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/72e7ffb247b651279dae9b25c523bbdc/AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/72e7ffb247b651279dae9b25c523bbdc/AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-media-compat:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/3330b7f7d5c50fd17c6bef0e946b73c5/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-media-compat:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/3330b7f7d5c50fd17c6bef0e946b73c5/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-fragment:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/fe8a4178bb21ac050c5d4cb13281f19c/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-fragment:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/fe8a4178bb21ac050c5d4cb13281f19c/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-utils:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/ad06c5e2e8638159e970b983fa8e9090/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-utils:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/ad06c5e2e8638159e970b983fa8e9090/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-ui:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/8bf5edf8ebe19a1ed8908ed11d9a5bc2/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-ui:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/8bf5edf8ebe19a1ed8908ed11d9a5bc2/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-compat:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/55a0351154f4c00790feb49de16951e3/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-compat:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/55a0351154f4c00790feb49de16951e3/AndroidManifest.xml:25:5-29:19
-MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/7486da08869169c69dfcf468af68b2db/AndroidManifest.xml:24:5-28:19
-MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/7486da08869169c69dfcf468af68b2db/AndroidManifest.xml:24:5-28:19
+ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:13:5-53:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\59f237ab07962392801a66d489e17c39\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\59f237ab07962392801a66d489e17c39\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\f4f8faddf9228f346637a6413f58c71c\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\f4f8faddf9228f346637a6413f58c71c\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\163a5168fb1a06c6ed89ae1e7fdbe741\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\163a5168fb1a06c6ed89ae1e7fdbe741\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\d4b8f65cf104f1aa360beed4ce9f9d20\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\d4b8f65cf104f1aa360beed4ce9f9d20\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\0681d06b09574f2773f221840ba2b613\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\0681d06b09574f2773f221840ba2b613\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\2292cf4e2dbeb8fdeddb4db250aa3ead\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\2292cf4e2dbeb8fdeddb4db250aa3ead\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\e55f21f77682deffe117117d7d4b2a95\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\e55f21f77682deffe117117d7d4b2a95\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\cbbbcd9396b74615aa57aa70a533512e\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\cbbbcd9396b74615aa57aa70a533512e\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\569dc2422b96b0824fae1907539ffeaf\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\569dc2422b96b0824fae1907539ffeaf\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\bdd5fbd4d9ced065f9650e7745183bf0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\bdd5fbd4d9ced065f9650e7745183bf0\AndroidManifest.xml:25:5-29:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\bd03170df472c30695a3c0751dddc13e\AndroidManifest.xml:24:5-28:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\bd03170df472c30695a3c0751dddc13e\AndroidManifest.xml:24:5-28:19
 	android:label
-		ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:16:9-41
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:16:9-41
 	android:icon
-		ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:15:9-38
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:15:9-38
 	android:allowBackup
-		ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:14:9-35
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:14:9-35
 activity#se.anyro.nfc_reader.ResultManualAddingActivity
-ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:17:9-73
+ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:17:9-73
 	android:name
-		ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:17:19-61
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:17:19-61
 activity#se.anyro.nfc_reader.StudentRegistrationActivity
-ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:18:9-65
+ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:18:9-65
 	android:name
-		ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:18:19-62
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:18:19-62
 activity#se.anyro.nfc_reader.StudentManualAddingActivity
-ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:19:9-65
+ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:19:9-65
 	android:name
-		ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:19:19-62
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:19:19-62
 activity#se.anyro.nfc_reader.VisualizeActivity
-ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:20:9-55
+ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:20:9-55
 	android:name
-		ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:20:19-52
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:20:19-52
 activity#se.anyro.nfc_reader.SelectVisualizeActivity
-ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:21:9-61
+ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:21:9-61
 	android:name
-		ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:21:19-58
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:21:19-58
 activity#se.anyro.nfc_reader.TagViewer
-ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:22:9-41:20
+ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:22:9-41:20
 	android:screenOrientation
-		ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:27:13-49
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:27:13-49
 	android:label
-		ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:25:13-45
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:25:13-45
 	android:launchMode
-		ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:26:13-48
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:26:13-48
 	android:alwaysRetainTaskState
-		ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:24:13-49
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:24:13-49
 	android:name
-		ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:23:13-38
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:23:13-38
 intent-filter#action:name:android.nfc.action.TAG_DISCOVERED+category:name:android.intent.category.DEFAULT
-ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:36:13-40:29
+ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:36:13-40:29
 action#android.nfc.action.TAG_DISCOVERED
-ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:37:17-76
+ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:37:17-76
 	android:name
-		ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:37:25-73
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:37:25-73
 category#android.intent.category.DEFAULT
-ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:39:17-76
+ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:39:17-76
 	android:name
-		ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:39:27-73
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:39:27-73
 activity#se.anyro.nfc_reader.MainActivity
-ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:42:9-48:20
+ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:42:9-48:20
 	android:name
-		ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:42:19-47
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:42:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:43:13-47:29
+ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:43:13-47:29
 action#android.intent.action.MAIN
-ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:44:17-69
+ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:44:17-69
 	android:name
-		ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:44:25-66
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:44:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:46:17-77
+ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:46:17-77
 	android:name
-		ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:46:27-74
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:46:27-74
 activity#se.anyro.nfc_reader.ClassSelectionActivity
-ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:49:9-60
+ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:49:9-60
 	android:name
-		ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:49:19-57
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:49:19-57
 activity#se.anyro.nfc_reader.LoginTeacher
-ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:50:9-50
+ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:50:9-50
 	android:name
-		ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:50:19-47
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:50:19-47
 activity#se.anyro.nfc_reader.TeacherMenuActivity
-ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:51:9-57
+ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:51:9-57
 	android:name
-		ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:51:19-54
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:51:19-54
 activity#se.anyro.nfc_reader.CardForgottenActivity
-ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:52:9-59
+ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:52:9-59
 	android:name
-		ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml:52:19-56
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:52:19-56
 uses-sdk
-INJECTED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml
-INJECTED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml
-MERGED from [com.android.support:appcompat-v7:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:appcompat-v7:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:support-v4:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/6690429d322d6bd7de2a65217c62cc94/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/6690429d322d6bd7de2a65217c62cc94/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/toulain/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/f758bc9bc198f5601bf9c1a59a1cae3b/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/toulain/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/f758bc9bc198f5601bf9c1a59a1cae3b/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/a2a290380803bde23b6d2b1f1a8ae74f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/a2a290380803bde23b6d2b1f1a8ae74f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/72e7ffb247b651279dae9b25c523bbdc/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/72e7ffb247b651279dae9b25c523bbdc/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/3330b7f7d5c50fd17c6bef0e946b73c5/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-media-compat:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/3330b7f7d5c50fd17c6bef0e946b73c5/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-fragment:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/fe8a4178bb21ac050c5d4cb13281f19c/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-fragment:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/fe8a4178bb21ac050c5d4cb13281f19c/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-core-utils:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/ad06c5e2e8638159e970b983fa8e9090/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-utils:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/ad06c5e2e8638159e970b983fa8e9090/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-ui:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/8bf5edf8ebe19a1ed8908ed11d9a5bc2/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-ui:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/8bf5edf8ebe19a1ed8908ed11d9a5bc2/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/55a0351154f4c00790feb49de16951e3/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/55a0351154f4c00790feb49de16951e3/AndroidManifest.xml:21:5-23:58
-MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/7486da08869169c69dfcf468af68b2db/AndroidManifest.xml:20:5-22:41
-MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/7486da08869169c69dfcf468af68b2db/AndroidManifest.xml:20:5-22:41
-INJECTED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml
-INJECTED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml
+INJECTED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\59f237ab07962392801a66d489e17c39\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\59f237ab07962392801a66d489e17c39\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\f4f8faddf9228f346637a6413f58c71c\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\f4f8faddf9228f346637a6413f58c71c\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\163a5168fb1a06c6ed89ae1e7fdbe741\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\163a5168fb1a06c6ed89ae1e7fdbe741\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\d4b8f65cf104f1aa360beed4ce9f9d20\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\d4b8f65cf104f1aa360beed4ce9f9d20\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\0681d06b09574f2773f221840ba2b613\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\0681d06b09574f2773f221840ba2b613\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\2292cf4e2dbeb8fdeddb4db250aa3ead\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\2292cf4e2dbeb8fdeddb4db250aa3ead\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\e55f21f77682deffe117117d7d4b2a95\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\e55f21f77682deffe117117d7d4b2a95\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\cbbbcd9396b74615aa57aa70a533512e\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\cbbbcd9396b74615aa57aa70a533512e\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\569dc2422b96b0824fae1907539ffeaf\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\569dc2422b96b0824fae1907539ffeaf\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\bdd5fbd4d9ced065f9650e7745183bf0\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\bdd5fbd4d9ced065f9650e7745183bf0\AndroidManifest.xml:21:5-23:58
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\bd03170df472c30695a3c0751dddc13e\AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\bd03170df472c30695a3c0751dddc13e\AndroidManifest.xml:20:5-22:41
+INJECTED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\59f237ab07962392801a66d489e17c39\AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
-		INJECTED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml
-		ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml
-		INJECTED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml
-		ADDED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml
-		INJECTED from /home/toulain/AndroidStudioProjects/projet_integration/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml
 meta-data#android.support.VERSION
-ADDED from [com.android.support:appcompat-v7:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-v4:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/6690429d322d6bd7de2a65217c62cc94/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-v4:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/6690429d322d6bd7de2a65217c62cc94/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/a2a290380803bde23b6d2b1f1a8ae74f/AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/a2a290380803bde23b6d2b1f1a8ae74f/AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/72e7ffb247b651279dae9b25c523bbdc/AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-vector-drawable:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/72e7ffb247b651279dae9b25c523bbdc/AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-media-compat:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/3330b7f7d5c50fd17c6bef0e946b73c5/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-media-compat:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/3330b7f7d5c50fd17c6bef0e946b73c5/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-fragment:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/fe8a4178bb21ac050c5d4cb13281f19c/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-fragment:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/fe8a4178bb21ac050c5d4cb13281f19c/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-utils:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/ad06c5e2e8638159e970b983fa8e9090/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-utils:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/ad06c5e2e8638159e970b983fa8e9090/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-ui:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/8bf5edf8ebe19a1ed8908ed11d9a5bc2/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-ui:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/8bf5edf8ebe19a1ed8908ed11d9a5bc2/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-compat:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/55a0351154f4c00790feb49de16951e3/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-compat:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/55a0351154f4c00790feb49de16951e3/AndroidManifest.xml:26:9-28:38
+ADDED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\59f237ab07962392801a66d489e17c39\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\f4f8faddf9228f346637a6413f58c71c\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\f4f8faddf9228f346637a6413f58c71c\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\d4b8f65cf104f1aa360beed4ce9f9d20\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\d4b8f65cf104f1aa360beed4ce9f9d20\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\0681d06b09574f2773f221840ba2b613\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.1.0.aar\0681d06b09574f2773f221840ba2b613\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\2292cf4e2dbeb8fdeddb4db250aa3ead\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.1.0.aar\2292cf4e2dbeb8fdeddb4db250aa3ead\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\e55f21f77682deffe117117d7d4b2a95\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-fragment-26.1.0.aar\e55f21f77682deffe117117d7d4b2a95\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\cbbbcd9396b74615aa57aa70a533512e\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.1.0.aar\cbbbcd9396b74615aa57aa70a533512e\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\569dc2422b96b0824fae1907539ffeaf\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\569dc2422b96b0824fae1907539ffeaf\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\bdd5fbd4d9ced065f9650e7745183bf0\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\bdd5fbd4d9ced065f9650e7745183bf0\AndroidManifest.xml:26:9-28:38
 	android:value
-		ADDED from [com.android.support:appcompat-v7:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/AndroidManifest.xml:28:13-35
+		ADDED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\59f237ab07962392801a66d489e17c39\AndroidManifest.xml:28:13-35
 	android:name
-		ADDED from [com.android.support:appcompat-v7:26.1.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/85e33e04fee99e6cd1280c51c6d4098d/AndroidManifest.xml:27:13-51
+		ADDED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\59f237ab07962392801a66d489e17c39\AndroidManifest.xml:27:13-51
 meta-data#android.arch.lifecycle.VERSION
-ADDED from [android.arch.lifecycle:runtime:1.0.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/7486da08869169c69dfcf468af68b2db/AndroidManifest.xml:25:9-27:47
+ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\bd03170df472c30695a3c0751dddc13e\AndroidManifest.xml:25:9-27:47
 	android:value
-		ADDED from [android.arch.lifecycle:runtime:1.0.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/7486da08869169c69dfcf468af68b2db/AndroidManifest.xml:27:13-44
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\bd03170df472c30695a3c0751dddc13e\AndroidManifest.xml:27:13-44
 	android:name
-		ADDED from [android.arch.lifecycle:runtime:1.0.0] /home/toulain/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/7486da08869169c69dfcf468af68b2db/AndroidManifest.xml:26:13-58
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\bd03170df472c30695a3c0751dddc13e\AndroidManifest.xml:26:13-58
