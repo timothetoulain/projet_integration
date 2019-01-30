@@ -310,18 +310,7 @@ public class TagViewer extends Activity {
         StringBuilder sb = new StringBuilder();
         byte[] id = tag.getId();
         sb.append(toDec(id));
-        /*sb.append("ID (hex): ").append(toHex(id)).append('\n');
-        sb.append("ID (reversed hex): ").append(toReversedHex(id)).append('\n');
-        sb.append("ID (dec): ").append(toDec(id)).append('\n');
-        sb.append("ID (reversed dec): ").append(toReversedDec(id)).append('\n');
-        String prefix = "android.nfc.tech.";
-        sb.append("Technologies: ");
-        for (String tech : tag.getTechList()) {
-            sb.append(tech.substring(prefix.length()));
-            sb.append(", ");
-        }
-        sb.delete(sb.length() - 2, sb.length());
-        */
+
         for (String tech : tag.getTechList()) {
             if (tech.equals(MifareClassic.class.getName())) {
                 sb.append('\n');
@@ -473,50 +462,11 @@ public class TagViewer extends Activity {
         return nTag;
     }
 
-    private String toHex(byte[] bytes) {
-        StringBuilder sb = new StringBuilder();
-        for (int i = bytes.length - 1; i >= 0; --i) {
-            int b = bytes[i] & 0xff;
-            if (b < 0x10)
-                sb.append('0');
-            sb.append(Integer.toHexString(b));
-            if (i > 0) {
-                sb.append(" ");
-            }
-        }
-        return sb.toString();
-    }
-
-    private String toReversedHex(byte[] bytes) {
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < bytes.length; ++i) {
-            if (i > 0) {
-                sb.append(" ");
-            }
-            int b = bytes[i] & 0xff;
-            if (b < 0x10)
-                sb.append('0');
-            sb.append(Integer.toHexString(b));
-        }
-        return sb.toString();
-    }
-
     private long toDec(byte[] bytes) {
         long result = 0;
         long factor = 1;
         for (byte aByte : bytes) {
             long value = aByte & 0xffL;
-            result += value * factor;
-            factor *= 256L;
-        }
-        return result;
-    }
-
-    private long toReversedDec(byte[] bytes) {
-        long result = 0;
-        long factor = 1;
-        for (int i = bytes.length - 1; i >= 0; --i) {
-            long value = bytes[i] & 0xffL;
             result += value * factor;
             factor *= 256L;
         }
@@ -563,21 +513,6 @@ public class TagViewer extends Activity {
         case R.id.menu_main_clear:
             clearTags();
             return true;
-            /*
-        case R.id.menu_main_end:
-            return true;
-        case R.id.menu_copy_hex:
-            copyIds(getIdsHex());
-            return true;
-        case R.id.menu_copy_reversed_hex:
-            copyIds(getIdsReversedHex());
-            return true;
-        case R.id.menu_copy_dec:
-            copyIds(getIdsDec());
-            return true;
-        case R.id.menu_copy_reversed_dec:
-            copyIds(getIdsReversedDec());
-            return true;*/
 
         default:
             return super.onOptionsItemSelected(item);
@@ -613,8 +548,8 @@ public class TagViewer extends Activity {
         } catch (ExecutionException e) {
             e.printStackTrace();
         }
-        System.out.println("student before error: "+studentName);
-        //TODO determine if the card is not recognised or if the student is registered twice
+        System.out.println("student before error:"+studentName+":");
+        //TODO determine if the card is not recognized or if the student is registered twice
         if(studentName.contains("ERROR")){
             System.out.println(" error detected");
             Toast.makeText(this,R.string.error_unknown_student,Toast.LENGTH_SHORT).show();
@@ -635,7 +570,6 @@ public class TagViewer extends Activity {
             br.close();
             in.close();
             return sb.toString();
-            // this.mTextView.setText(sb.toString());
         } catch (Exception e) {
             Toast.makeText(this,"Error:"+ e.getMessage(),Toast.LENGTH_SHORT).show();
         }
