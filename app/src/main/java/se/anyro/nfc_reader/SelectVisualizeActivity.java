@@ -14,10 +14,8 @@ import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
-import java.io.BufferedReader;
-import java.io.FileInputStream;
+
 import java.io.FileOutputStream;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
@@ -25,6 +23,7 @@ import java.util.concurrent.ExecutionException;
 
 import se.anyro.nfc_reader.database.SpinnerTeacherQuery;
 import se.anyro.nfc_reader.database.VisualizeQuery;
+import se.anyro.nfc_reader.setup.VariableRepository;
 
 public class SelectVisualizeActivity extends Activity implements
         View.OnClickListener {
@@ -32,11 +31,7 @@ public class SelectVisualizeActivity extends Activity implements
     private Button mResearchButton;
     private Spinner mSpinnerCourse;
     private String teacher;
-    private String teacherFile="teacher.txt";
-    private String classFile = "class.txt";
-    private String  studentFile = "student.txt";
     private String  resultFile = "result.csv";
-
     private Button mStartDateButton,mEndDateButton, mStartTimePickerButton, mEndTimePickerButton;
     private TextView mStartDateEditText,mEndDateEditText, mStartTimeEditText, mEndTimeEditText;
     private int mYear, mMonth, mDay, mHour, mMinute;
@@ -67,10 +62,7 @@ public class SelectVisualizeActivity extends Activity implements
         mResearchButton.setOnClickListener(this);
 
 
-        this.teacher=readData(teacherFile);
-        //for some reason, we have to delete the last character
-        teacher= teacher.substring(0, teacher.length()-1);
-
+        teacher=VariableRepository.getInstance().getTeacherName();
         System.out.println("teacher visualize= "+teacher);
 
         List classList=new ArrayList();
@@ -273,11 +265,6 @@ public class SelectVisualizeActivity extends Activity implements
                 } catch (ExecutionException e) {
                     e.printStackTrace();
                 }
-
-
-                /*saveData(course,classFile);
-                Intent tagViewer = new Intent(ClassSelectionActivity.this, TagViewer.class);
-                startActivity(tagViewer);*/
             }
         }
     }
@@ -290,21 +277,6 @@ public class SelectVisualizeActivity extends Activity implements
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }
-    private String readData(String file) {
-        try {
-            FileInputStream in = this.openFileInput(file);
-            BufferedReader br= new BufferedReader(new InputStreamReader(in));
-            StringBuilder sb= new StringBuilder();
-            String s= null;
-            while((s= br.readLine())!= null)  {
-                sb.append(s).append("\n");
-            }
-            return sb.toString();
-        } catch (Exception e) {
-            Toast.makeText(this,R.string.error+ e.getMessage(),Toast.LENGTH_SHORT).show();
-        }
-        return null;
     }
     private void incompleteFieldMessage(){
         Toast.makeText(this,R.string.error_incomplete,Toast.LENGTH_SHORT).show();

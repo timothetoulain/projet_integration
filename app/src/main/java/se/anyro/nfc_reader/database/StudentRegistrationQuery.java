@@ -42,9 +42,9 @@ import java.net.URLEncoder;
             String numberStudent=params[2];
             String nameStudent=params[3];
             String nfc=params[4];
-            nfc= nfc.substring(0, nfc.length()-1);
+           // nfc= nfc.substring(0, nfc.length()-1);
 
-            course= course.substring(0, course.length()-1);
+            //course= course.substring(0, course.length()-1);
 
             System.out.println("type:"+type);
             System.out.println("course:"+course);

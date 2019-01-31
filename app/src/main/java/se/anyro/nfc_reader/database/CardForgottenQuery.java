@@ -43,7 +43,6 @@ public class CardForgottenQuery extends AsyncTask<String, Void, String>{
         String course=params[1];
         String numberStudent=params[2];
         String nameStudent=params[3];
-        course= course.substring(0, course.length()-1);
 
         System.out.println("type:"+type);
         System.out.println("course:"+course);
@@ -82,7 +81,6 @@ public class CardForgottenQuery extends AsyncTask<String, Void, String>{
             }
             sb= EncodingManager.convert(sb);
 
-            //sb= sb.substring(1, sb.length()-1);
             System.out.println("sb= "+sb);
 
             outputStream.close();

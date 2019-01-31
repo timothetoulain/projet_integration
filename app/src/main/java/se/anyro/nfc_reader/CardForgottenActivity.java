@@ -9,37 +9,28 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.InputStreamReader;
 import java.util.concurrent.ExecutionException;
 
 import se.anyro.nfc_reader.database.CardForgottenQuery;
+import se.anyro.nfc_reader.setup.VariableRepository;
 
 public class CardForgottenActivity extends Activity {
-    private Button mconfirmButton;
+    private Button mConfirmButton;
     private EditText studentNumberEditText;
     private EditText nameEditText;
-
-    private String classFile = "class.txt";
-    private String studentFile = "student.txt";
-
     private String TAG;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_card_forgotten);
-        mconfirmButton = findViewById(R.id.confirmButton);
+        mConfirmButton = findViewById(R.id.confirmButton);
         studentNumberEditText = findViewById(R.id.studentNumberEditText);
         nameEditText = findViewById(R.id.nameEditText);
 
         TAG = "CardForgottenActivityLog";
 
-        mconfirmButton.setOnClickListener(new View.OnClickListener() {
+        mConfirmButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (studentNumberEditText.getText().length()==0 || nameEditText.getText().length()==0){
@@ -50,15 +41,14 @@ public class CardForgottenActivity extends Activity {
                         System.out.println("name retrieved: "+nameRetrieved);
 
                         //we save the student name to display it on the TagViewer activity
-                        saveData(nameRetrieved,studentFile);
+                        VariableRepository.getInstance().setStudentName(nameRetrieved);
                         Intent tagViewer = new Intent(CardForgottenActivity.this, TagViewer.class);
                         startActivity(tagViewer);
                     }
                     else{
                         System.out.println("unknown student");
                         unknownStudentMessage();
-                        String unknownStudent="unknown student";
-                        saveData(unknownStudent,studentFile);
+                        VariableRepository.getInstance().setStudentName("");
                         Intent tagViewer = new Intent(CardForgottenActivity.this, TagViewer.class);
                         startActivity(tagViewer);
                     }
@@ -77,8 +67,7 @@ public class CardForgottenActivity extends Activity {
         String type="addPresent";
         String numberStudent=studentNumberEditText.getText().toString();
         String nameStudent=nameEditText.getText().toString();
-        String course=readData(classFile);
-
+        String course=VariableRepository.getInstance().getCourseName();
         try {
             nameStudent=new CardForgottenQuery(this).execute(type,course,numberStudent,nameStudent).get();
         }
@@ -89,33 +78,6 @@ public class CardForgottenActivity extends Activity {
         }
         return nameStudent;
     }
-    private String readData(String file) {
-        try {
-            FileInputStream in = this.openFileInput(file);
-            BufferedReader br= new BufferedReader(new InputStreamReader(in));
-            StringBuilder sb= new StringBuilder();
-            String s= null;
-            while((s= br.readLine())!= null)  {
-                sb.append(s).append("\n");
-            }
-            br.close();
-            in.close();
-            return sb.toString();
-        } catch (Exception e) {
-            Toast.makeText(this,"Error:"+ e.getMessage(),Toast.LENGTH_SHORT).show();
-        }
-        return null;
-    }
-    private void saveData(String nameStudent,String file) {
-        try {
-            FileOutputStream out = this.openFileOutput(file, MODE_PRIVATE);
-            out.write(nameStudent.getBytes());
-            out.close();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
 
     // SOURCE => https://stackoverflow.com/questions/3141996/android-how-to-override-the-back-button-so-it-doesnt-finish-my-activity
     @Override
@@ -129,7 +91,7 @@ public class CardForgottenActivity extends Activity {
             return true;
         }
 
-        // Doon't know what it does.
+        // Don't know what it does.
         return super.onKeyDown(keyCode, event);
     }
 

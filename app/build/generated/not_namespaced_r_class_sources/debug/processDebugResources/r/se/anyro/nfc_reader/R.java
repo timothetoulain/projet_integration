@@ -1586,7 +1586,7 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td></td></tr>
+     * <tr><td>direct</td><td>1</td><td>direct, barriers, chains</td></tr>
      * <tr><td>groups</td><td>20</td><td></td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
      * <tr><td>standard</td><td>7</td><td></td></tr>
@@ -2849,7 +2849,7 @@ public final class R {
     public static final int blocking=0x7f070021;
     public static final int bottom=0x7f070022;
     public static final int buttonPanel=0x7f070023;
-    public static final int buttonValider=0x7f070024;
+    public static final int buttonValidate=0x7f070024;
     public static final int cancelButton=0x7f070025;
     public static final int cancel_action=0x7f070026;
     public static final int chains=0x7f070027;
@@ -2870,8 +2870,8 @@ public final class R {
     public static final int direct=0x7f070036;
     public static final int disableHome=0x7f070037;
     public static final int disconnectionButton=0x7f070038;
-    public static final int editTextIdentifiant=0x7f070039;
-    public static final int editTextMdp=0x7f07003a;
+    public static final int editTextIdentifier=0x7f070039;
+    public static final int editTextPsw=0x7f07003a;
     public static final int edit_query=0x7f07003b;
     public static final int end=0x7f07003c;
     public static final int endDateButton=0x7f07003d;
@@ -2925,63 +2925,63 @@ public final class R {
     public static final int parentPanel=0x7f07006d;
     public static final int password=0x7f07006e;
     public static final int percent=0x7f07006f;
-    public static final int prof_button=0x7f070070;
-    public static final int progress_circular=0x7f070071;
-    public static final int progress_horizontal=0x7f070072;
-    public static final int radio=0x7f070073;
-    public static final int registrationTextView=0x7f070074;
-    public static final int researchButton=0x7f070075;
-    public static final int right=0x7f070076;
-    public static final int right_icon=0x7f070077;
-    public static final int right_side=0x7f070078;
-    public static final int screen=0x7f070079;
-    public static final int scrollIndicatorDown=0x7f07007a;
-    public static final int scrollIndicatorUp=0x7f07007b;
-    public static final int scrollView=0x7f07007c;
-    public static final int scrollView2=0x7f07007d;
-    public static final int search_badge=0x7f07007e;
-    public static final int search_bar=0x7f07007f;
-    public static final int search_button=0x7f070080;
-    public static final int search_close_btn=0x7f070081;
-    public static final int search_edit_frame=0x7f070082;
-    public static final int search_go_btn=0x7f070083;
-    public static final int search_mag_icon=0x7f070084;
-    public static final int search_plate=0x7f070085;
-    public static final int search_src_text=0x7f070086;
-    public static final int search_voice_btn=0x7f070087;
-    public static final int selectClassTextView=0x7f070088;
-    public static final int select_dialog_listview=0x7f070089;
-    public static final int shortcut=0x7f07008a;
-    public static final int showCustom=0x7f07008b;
-    public static final int showHome=0x7f07008c;
-    public static final int showTitle=0x7f07008d;
-    public static final int spacer=0x7f07008e;
-    public static final int spinnerCourse=0x7f07008f;
-    public static final int split_action_bar=0x7f070090;
-    public static final int spread=0x7f070091;
-    public static final int spread_inside=0x7f070092;
-    public static final int src_atop=0x7f070093;
-    public static final int src_in=0x7f070094;
-    public static final int src_over=0x7f070095;
-    public static final int standard=0x7f070096;
-    public static final int start=0x7f070097;
-    public static final int startDateButton=0x7f070098;
-    public static final int startDateEditText=0x7f070099;
-    public static final int startTextView=0x7f07009a;
-    public static final int startTimeButton=0x7f07009b;
-    public static final int startTimeEditText=0x7f07009c;
-    public static final int status_bar_latest_event_content=0x7f07009d;
-    public static final int studentNumberEditText=0x7f07009e;
-    public static final int submenuarrow=0x7f07009f;
-    public static final int submitButton=0x7f0700a0;
-    public static final int submit_area=0x7f0700a1;
-    public static final int tabMode=0x7f0700a2;
-    public static final int tag_viewer_text=0x7f0700a3;
+    public static final int progress_circular=0x7f070070;
+    public static final int progress_horizontal=0x7f070071;
+    public static final int radio=0x7f070072;
+    public static final int registrationTextView=0x7f070073;
+    public static final int researchButton=0x7f070074;
+    public static final int right=0x7f070075;
+    public static final int right_icon=0x7f070076;
+    public static final int right_side=0x7f070077;
+    public static final int screen=0x7f070078;
+    public static final int scrollIndicatorDown=0x7f070079;
+    public static final int scrollIndicatorUp=0x7f07007a;
+    public static final int scrollView=0x7f07007b;
+    public static final int scrollView2=0x7f07007c;
+    public static final int search_badge=0x7f07007d;
+    public static final int search_bar=0x7f07007e;
+    public static final int search_button=0x7f07007f;
+    public static final int search_close_btn=0x7f070080;
+    public static final int search_edit_frame=0x7f070081;
+    public static final int search_go_btn=0x7f070082;
+    public static final int search_mag_icon=0x7f070083;
+    public static final int search_plate=0x7f070084;
+    public static final int search_src_text=0x7f070085;
+    public static final int search_voice_btn=0x7f070086;
+    public static final int selectClassTextView=0x7f070087;
+    public static final int select_dialog_listview=0x7f070088;
+    public static final int shortcut=0x7f070089;
+    public static final int showCustom=0x7f07008a;
+    public static final int showHome=0x7f07008b;
+    public static final int showTitle=0x7f07008c;
+    public static final int spacer=0x7f07008d;
+    public static final int spinnerCourse=0x7f07008e;
+    public static final int split_action_bar=0x7f07008f;
+    public static final int spread=0x7f070090;
+    public static final int spread_inside=0x7f070091;
+    public static final int src_atop=0x7f070092;
+    public static final int src_in=0x7f070093;
+    public static final int src_over=0x7f070094;
+    public static final int standard=0x7f070095;
+    public static final int start=0x7f070096;
+    public static final int startDateButton=0x7f070097;
+    public static final int startDateEditText=0x7f070098;
+    public static final int startTextView=0x7f070099;
+    public static final int startTimeButton=0x7f07009a;
+    public static final int startTimeEditText=0x7f07009b;
+    public static final int status_bar_latest_event_content=0x7f07009c;
+    public static final int studentNumberEditText=0x7f07009d;
+    public static final int submenuarrow=0x7f07009e;
+    public static final int submitButton=0x7f07009f;
+    public static final int submit_area=0x7f0700a0;
+    public static final int tabMode=0x7f0700a1;
+    public static final int tag_viewer_text=0x7f0700a2;
+    public static final int teacher_button=0x7f0700a3;
     public static final int text=0x7f0700a4;
     public static final int text2=0x7f0700a5;
     public static final int textSpacerNoButtons=0x7f0700a6;
     public static final int textSpacerNoTitle=0x7f0700a7;
-    public static final int textViewAuthentification=0x7f0700a8;
+    public static final int textViewSignIn=0x7f0700a8;
     public static final int time=0x7f0700a9;
     public static final int title=0x7f0700aa;
     public static final int titleDividerNoCustom=0x7f0700ab;
@@ -7629,7 +7629,7 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td></td></tr>
+     * <tr><td>direct</td><td>1</td><td>direct, barriers, chains</td></tr>
      * <tr><td>groups</td><td>20</td><td></td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
      * <tr><td>standard</td><td>7</td><td></td></tr>

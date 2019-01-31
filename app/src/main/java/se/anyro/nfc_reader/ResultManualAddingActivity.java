@@ -2,12 +2,10 @@ package se.anyro.nfc_reader;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -18,7 +16,10 @@ import java.io.FileInputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
+import java.util.concurrent.ExecutionException;
+
+import se.anyro.nfc_reader.database.CardForgottenQuery;
+import se.anyro.nfc_reader.setup.VariableRepository;
 
 public class ResultManualAddingActivity extends Activity {
 
@@ -26,14 +27,15 @@ public class ResultManualAddingActivity extends Activity {
     private String TAG;
     private HashMap<Integer,String> checkBoxMap;
     private Boolean radioButtonIsChecked;
-    //private CheckBox scopeCheckBox;
+    private String studentName;
+    private String studentID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result_manual_adding);
 
-        LinearLayout verticalCheckBoxLayout = (LinearLayout)findViewById(R.id.verticalCheckBoxLayout);
+        LinearLayout verticalCheckBoxLayout = findViewById(R.id.verticalCheckBoxLayout);
 
         radioButtonIsChecked = false;
         TAG = "ResultManualLOG";
@@ -45,21 +47,12 @@ public class ResultManualAddingActivity extends Activity {
 
         verticalCheckBoxLayout.addView(radioGroupStudent);
         checkBoxMap = new HashMap<Integer,String>();
-        /*
-        for (CheckBox item : items){
-            if(item.isChecked())
-                String text=item.getText().toString();
-        }
-        */
+
         if (al.isEmpty()) {
             Log.i(TAG, "empty");
         } else {
             for (int i = 0; i < al.size(); i+=2) {
-                //TODO i%2==0 ->num étu  i%2!=0 ->nom étu
-                //System.out.println("donnée à l'indice " + i + " = " + al.get(i));
-                // Log.i(TAG,"donnée à l'indice " + i + " = " + al.get(i));
-                // CheckBox studentCheckBox = new CheckBox(this);
-                // studentCheckBox.setOnCheckedChangeListener(this.getContext);
+
                 StringBuffer dataBuffer = new StringBuffer();
                 dataBuffer.append(al.get(i+1).toString() + " " + al.get(i).toString());
 
@@ -74,33 +67,31 @@ public class ResultManualAddingActivity extends Activity {
                 radioButtonStudent.setOnClickListener(new View.OnClickListener(){
                     @Override
                     public void onClick(View v) {
-                        onradioButtonClicked(v);
+                        onRadioButtonClicked(v);
                     }
                 });
 
                 radioGroupStudent.addView(radioButtonStudent);
 
-                Log.i(TAG,"Eleve n° " + i + " " + al.get(i+1).toString() + " " + al.get(i).toString() + "\n");
-                /*
-                        CheckBox checkBox = new CheckBox(this);
-                        checkBox.setOnCheckedChangeListener(this);
-                        checkBox.setId(i);
-                        checkBox.setText(Str_Array[i]);
-                        row.addView(checkBox);
-                        my_layout.addView(row);
-                        */
-
+                Log.i(TAG,"Student n° " + i + " " + al.get(i+1).toString() + " " + al.get(i).toString() + "\n");
             }
         }
-        Button submitButton = (Button)findViewById(R.id.submitButton);
+        Button submitButton = findViewById(R.id.submitButton);
         submitButton.setOnClickListener(new View.OnClickListener() {
             // Called when the SUBMIT button is clicked
             // Add the choosen student to the acquittance roll list then bring back to the StudentManualAddingActivity
             @Override
             public void onClick(View v) {
-                // Toast.makeText(Re.this,"YOUR MESSAGE",Toast.LENGTH_LONG).show();
+                //Toast.makeText(Re.this,"YOUR MESSAGE",Toast.LENGTH_LONG).show();
+
                 if ( radioButtonIsChecked ) {
-                    Intent resultView = new Intent(ResultManualAddingActivity.this, StudentManualAddingActivity.class);
+                    VariableRepository.getInstance().setStudentName(studentName);
+                    VariableRepository.getInstance().setStudentId(studentID);
+                    String result=queryAddPresent();
+                    VariableRepository.getInstance().setStudentName("");
+                    VariableRepository.getInstance().setStudentName(result);
+                    //TODO maybe add a toast here, if result="" => error, else student successfully added
+                    Intent resultView = new Intent(ResultManualAddingActivity.this, TagViewer.class);
                     startActivity(resultView);
                 } else {
                     Toast.makeText(getApplicationContext(),R.string.please_check,Toast.LENGTH_SHORT).show();
@@ -108,23 +99,20 @@ public class ResultManualAddingActivity extends Activity {
             }
         });
 
-        Button cancelButton = (Button)findViewById(R.id.cancelButton);
+        Button cancelButton = findViewById(R.id.cancelButton);
         cancelButton.setOnClickListener(new View.OnClickListener() {
             // Called when the CANCEL button is clicked
             // Bring back to the StudentManualAddingActivity
             @Override
             public void onClick(View v) {
-                // Toast.makeText(MainActivity.this,"YOUR MESSAGE",Toast.LENGTH_LONG).show();
                 Intent resultView = new Intent(ResultManualAddingActivity.this, StudentManualAddingActivity.class);
                 startActivity(resultView);
             }
         });
-
     }
 
-    public void onradioButtonClicked(View view) {
+    public void onRadioButtonClicked(View view) {
         // Is the view now checked?
-        // boolean checked = ((CheckBox) view).isChecked();
         if (((RadioButton) view).isChecked()) {
             radioButtonIsChecked = true;
             int checkBoxId= view.getId();
@@ -134,52 +122,13 @@ public class ResultManualAddingActivity extends Activity {
                 Log.i(TAG,checkBoxText);
 
                 // Parsing the text of the checkBox by using "space" as separator
-                String[] splited = checkBoxText.split("\\s+");
-                // Creating Bundle object
-                Bundle b = new Bundle();
-
-                // Storing data into bundle
-                // Bundle are used to store Data between activities ok ?
-                b.putString("studentFirstName", splited[0]);
-                b.putString("studentFamilyName", splited[1]);
-                b.putString("studentID", splited[2]);
-
-                // Timothé, to get the data that I stored earlier, you have to do something like that
-                // get the Intent that started this Activity so as to get the Bundle used in this activity back
-                // => Intent in = getIntent();
-
-                // Declare a Bundle object after initiating the Bundle
-                // => Bundle b = in.getExtras();
-
-                // getting data from bundle
-                // there are some other methods like getLong, getDouble ...
-                // But here, it's getString, obviously :)
-                // => String nameString = b.getString("fullname");
-
-                // Creating Intent object to go towards StudentManuelAddingActivity
-                // Intent in = new Intent(ResultManualAddingActivity.this, StudentManualAddingActivity.class);
+                String[] split = checkBoxText.split("\\s+");
+                studentID=split[2];
+                System.out.println("id:"+studentID);
+                studentName=split[0]+" "+split[1];
+                System.out.println("studentName:"+studentName);
             }
         }
-        // Check which checkbox was clicked
-        /*
-        switch(view.getId()) {
-            case R.id.checkbox_meat:
-                if (checked) {
-
-                } else {
-
-                }
-                break;
-            case R.id.checkbox_cheese:
-                if (checked) {
-
-                } else {
-
-                }
-                break;
-
-        }
-        */
     }
 
     private ArrayList readData(String file) {
@@ -216,5 +165,26 @@ public class ResultManualAddingActivity extends Activity {
             Toast.makeText(this,R.string.error+ e.getMessage(),Toast.LENGTH_SHORT).show();
         }
         return null;
+    }
+    @Override
+    public void onBackPressed() {
+        Log.d(TAG, "onBackPressed Called");
+        Intent manualAdding = new Intent(this, StudentManualAddingActivity.class);
+        startActivity(manualAdding);
+    }
+    public String queryAddPresent(){
+        String type="addPresent";
+        String course=VariableRepository.getInstance().getCourseName();
+        String numberStudent=VariableRepository.getInstance().getStudentId();
+        String nameStudent=VariableRepository.getInstance().getStudentName();
+        try {
+            nameStudent=new CardForgottenQuery(this).execute(type,course,numberStudent,nameStudent).get();
+        }
+        catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+        return nameStudent;
     }
 }

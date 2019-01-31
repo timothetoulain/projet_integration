@@ -1,7 +1,6 @@
 package se.anyro.nfc_reader;
 
 import android.app.Activity;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.LinearLayout;
@@ -24,11 +23,7 @@ public class VisualizeActivity extends Activity {
         setContentView(R.layout.activity_visualize);
 
         TAG = "VisualizeActivityLog";
-        // TextView text=new TextView(this);
         layout = findViewById(R.id.linearLayout);
-
-        // text.setText("test1");
-        // layout.addView(text);
 
 
         ArrayList al = new ArrayList();
@@ -38,7 +33,6 @@ public class VisualizeActivity extends Activity {
         }
         else {
             for (int i = 0; i < al.size(); i+=3) {
-                // System.out.println("donnée à l'indice " + i + " = " + al.get(i));
                 Log.i(TAG,"donnée à l'indice " + i + " = " + al.get(i));
                 Log.i(TAG,"Eleve n° " + i + " : " + al.get(i+2)+ "\n" + "\tprésent le " + al.get(i) + "\n" + "\tidentifiant hexadecimal : " + al.get(i+1) + "\n");
 
@@ -48,11 +42,6 @@ public class VisualizeActivity extends Activity {
                 TextView textViewData = new TextView(this);
                 textViewData.setText(dataBuffer.toString());
                 layout.addView(textViewData);
-                /*
-                    TextView textView = new TextView(this);
-                    textView.setText(textArray[i]);
-                    linearLayout.addView(textView);
-                 */
             }
         }
     }
@@ -89,9 +78,6 @@ public class VisualizeActivity extends Activity {
             else{
                 return null;
             }
-
-            //return sb.toString();
-            // this.mTextView.setText(sb.toString());
         } catch (Exception e) {
             Toast.makeText(this,R.string.error+ e.getMessage(),Toast.LENGTH_SHORT).show();
         }

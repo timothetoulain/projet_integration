@@ -8,21 +8,20 @@ import android.widget.Button;
 
 public class MainActivity extends Activity {
 
-    private Button mProfButton;
+    private Button mTeacherButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mTeacherButton = findViewById(R.id.teacher_button);
+        mTeacherButton.setEnabled(true);
 
-        mProfButton = findViewById(R.id.prof_button);
-        mProfButton.setEnabled(true);
-
-        mProfButton.setOnClickListener(new View.OnClickListener() {
+        mTeacherButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent loginProf = new Intent(MainActivity.this, LoginTeacher.class);
-                startActivity(loginProf);
+                Intent loginTeacher = new Intent(MainActivity.this, LoginTeacher.class);
+                startActivity(loginTeacher);
             }
         });
     }

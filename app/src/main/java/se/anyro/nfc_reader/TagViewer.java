@@ -1,9 +1,6 @@
 package se.anyro.nfc_reader;
 
-import java.io.BufferedReader;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.InputStreamReader;
+
 import java.nio.charset.Charset;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -17,13 +14,12 @@ import se.anyro.nfc_reader.database.PresenceQuery;
 import se.anyro.nfc_reader.record.ParsedNdefRecord;
 import se.anyro.nfc_reader.setup.DialogManager;
 import se.anyro.nfc_reader.setup.NdefMessageParser;
+import se.anyro.nfc_reader.setup.VariableRepository;
 
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.DialogFragment;
 import android.app.PendingIntent;
-import android.content.ClipData;
-import android.content.ClipboardManager;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.nfc.NdefMessage;
@@ -64,22 +60,12 @@ public class TagViewer extends Activity {
     private AlertDialog mDialog;
 
     private List<Tag> mTags = new ArrayList<>();
-    /*private String teacherFile;
-    private String classFile;
-    private String studentFile;*/
 
     private String teacher;
     private String course;
     private String student;
 
-    private String teacherFile = "teacher.txt";
-    private String classFile = "class.txt";
-    private String  studentFile = "student.txt";
-    private String loginFile = "login.txt";
-    private String nfcFile = "nfc.txt";
-
-
-    private Button mforgottenCardButton,mfinishButton, mmanualAddingButton;
+    private Button mForgottenCardButton,mFinishButton, mManualAddingButton;
 
     // Attribute used for storing a tag used for debugging purpose. When using Log.i(TAG, "Something"), it will be easier to track these messages in the logcat.
     private String TAG;
@@ -93,29 +79,21 @@ public class TagViewer extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tag_viewer);
 
-        deleteLastStudentNameFromFile(studentFile);
+        VariableRepository.getInstance().setStudentName("");
 
-        mforgottenCardButton = findViewById(R.id.forgottenCardButton);
-        mfinishButton = findViewById(R.id.finishButton);
-        mmanualAddingButton=findViewById(R.id.manualAddingButton);
+        mForgottenCardButton = findViewById(R.id.forgottenCardButton);
+        mFinishButton = findViewById(R.id.finishButton);
+        mManualAddingButton=findViewById(R.id.manualAddingButton);
         mTagContent = findViewById(R.id.list);
 
-        teacher=null;
-        course=null;
         student=null;
 
-        this.teacher=readData(teacherFile);
-        this.course=readData(classFile);
-        //this.student=readData(studentFile);
-
-        teacher= teacher.substring(0, teacher.length()-1);
-        course= course.substring(0, course.length()-1);
+        this.teacher= VariableRepository.getInstance().getTeacherName();
+        this.course=VariableRepository.getInstance().getCourseName();
 
         this.TAG = "ViewerActivityLog";
         Log.i(TAG,"teacher:"+teacher);
         Log.i(TAG,"course:"+course);
-       // System.out.println("student:"+student);
-
 
         resolveIntent(getIntent());
 
@@ -133,18 +111,18 @@ public class TagViewer extends Activity {
         mNdefPushMessage = new NdefMessage(new NdefRecord[] { newTextRecord(
                 "Message from NFC Reader :-)", Locale.ENGLISH, true) });
 
-        mforgottenCardButton.setOnClickListener(new View.OnClickListener() {
+        mForgottenCardButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent cardForgotten = new Intent(TagViewer.this, CardForgottenActivity.class);
                 startActivity(cardForgotten);
             }
         });
-        mfinishButton.setOnClickListener(new View.OnClickListener() {
+        mFinishButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String teacherLogin=readData(loginFile);
-                teacherLogin= teacherLogin.substring(0, teacherLogin.length()-1);
+                String teacherLogin=VariableRepository.getInstance().getTeacherLogin();
+
                 System.out.println("teacher login:"+teacherLogin+":");
 
                 Log.d(TAG, "Finish button pressed");
@@ -158,11 +136,11 @@ public class TagViewer extends Activity {
                 ((DialogManager)confirmAcquittanceDialog).onDismissListener(closeListener);
             }
         });
-       mmanualAddingButton.setOnClickListener(new View.OnClickListener() {
+       mManualAddingButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            String teacherLogin=readData(loginFile);
-                teacherLogin= teacherLogin.substring(0, teacherLogin.length()-1);
+
+                String teacherLogin=VariableRepository.getInstance().getTeacherLogin();
                 System.out.println("teacher login:"+teacherLogin+":");
 
                 Log.d(TAG, "Finish button pressed");
@@ -174,8 +152,6 @@ public class TagViewer extends Activity {
                 // This functions calls whatever is implemented into the DialogManager onCreateDialog method
                 confirmAcquittanceDialog.show(getFragmentManager(), "ConfirmDialog");
                 ((DialogManager)confirmAcquittanceDialog).onDismissListener(closeListener);
-                /*Intent studentManualAdding = new Intent(TagViewer.this, StudentManualAddingActivity.class);
-                startActivity(studentManualAdding);*/
             }
         });
     }
@@ -215,13 +191,13 @@ public class TagViewer extends Activity {
         }
         if(count>0){
             Log.i(TAG,"let's read");
-            this.student=readData(studentFile);
-            student= student.substring(0, student.length()-1);
+            this.student=VariableRepository.getInstance().getStudentName();
+
             Log.i(TAG,"student: "+student);
-            if(!student.equals("unknown student")){
+            if(!student.equals("")){
                 displayIfForgottenCard(student);
                 Log.i(TAG,"display student: "+student+" and delete him from file");
-                deleteLastStudentNameFromFile(studentFile);
+                VariableRepository.getInstance().setStudentName("");
             }
             else{
                 Log.i(TAG,"unknown student");
@@ -258,7 +234,6 @@ public class TagViewer extends Activity {
     }
 
     private void displayIfForgottenCard(String studentName){
-       // byte[] bytes = studentName.getBytes();
         NdefMessage[] msgs;
         byte[] empty = new byte[0];
         byte[] id = null;
@@ -539,8 +514,7 @@ public class TagViewer extends Activity {
         String studentName=null;
         String type="addPresent";
         try {
-            //sb contains the nfc decimal value
-            saveData(sb,nfcFile);
+            VariableRepository.getInstance().setNfc(sb);
             studentName=new PresenceQuery(this).execute(type,course,sb).get();
 
         } catch (InterruptedException e) {
@@ -549,41 +523,22 @@ public class TagViewer extends Activity {
             e.printStackTrace();
         }
         System.out.println("student before error:"+studentName+":");
-        //TODO determine if the card is not recognized or if the student is registered twice
+
+        //case already register
         if(studentName.contains("ERROR")){
-            System.out.println(" error detected");
+            System.out.println("already register for this course");
+            Toast.makeText(this,R.string.error_unknown_student,Toast.LENGTH_SHORT).show();
+            Intent studentRegistration = new Intent(TagViewer.this, StudentRegistrationActivity.class);
+            startActivity(studentRegistration);
+        }
+        //case card not recognized
+        else if(studentName.equals("")){
+            System.out.println("unknown student");
             Toast.makeText(this,R.string.error_unknown_student,Toast.LENGTH_SHORT).show();
             Intent studentRegistration = new Intent(TagViewer.this, StudentRegistrationActivity.class);
             startActivity(studentRegistration);
         }
         return studentName;
-    }
-    private String readData(String file) {
-        try {
-            FileInputStream in = this.openFileInput(file);
-            BufferedReader br= new BufferedReader(new InputStreamReader(in));
-            StringBuilder sb= new StringBuilder();
-            String s= null;
-            while((s= br.readLine())!= null)  {
-                sb.append(s).append("\n");
-            }
-            br.close();
-            in.close();
-            return sb.toString();
-        } catch (Exception e) {
-            Toast.makeText(this,"Error:"+ e.getMessage(),Toast.LENGTH_SHORT).show();
-        }
-        return null;
-    }
-    private void deleteLastStudentNameFromFile(String file){
-        String unknownStudent="unknown student";
-        try {
-            FileOutputStream out = openFileOutput(file, MODE_PRIVATE);
-            out.write(unknownStudent.getBytes());
-            out.close();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
     }
 
     // SOURCE => https://stackoverflow.com/questions/3141996/android-how-to-override-the-back-button-so-it-doesnt-finish-my-activity
@@ -627,7 +582,6 @@ public class TagViewer extends Activity {
                     Intent mainIntent = new Intent(getBaseContext(), StudentManualAddingActivity.class);
                     Log.d(TAG, "goingToStartActivity");
                     startActivity(mainIntent);
-                    finish();
                     System.out.println("go to manual adding");
                 }
                 else {
@@ -636,16 +590,6 @@ public class TagViewer extends Activity {
             }
         }
     };
-    private void saveData(String nameStudent,String file) {
-        try {
-            FileOutputStream out = this.openFileOutput(file, MODE_PRIVATE);
-            out.write(nameStudent.getBytes());
-            out.close();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
     public void handleDialogClose(DialogInterface dialog) {
         //do here whatever you want to do on Dialog dismiss
     }

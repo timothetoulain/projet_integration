@@ -657,7 +657,7 @@ id beginning
 id blocking
 id bottom
 id buttonPanel
-id buttonValider
+id buttonValidate
 id cancelButton
 id cancel_action
 id chains
@@ -678,8 +678,8 @@ id dimensions
 id direct
 id disableHome
 id disconnectionButton
-id editTextIdentifiant
-id editTextMdp
+id editTextIdentifier
+id editTextPsw
 id edit_query
 id end
 id endDateButton
@@ -733,7 +733,6 @@ id parent
 id parentPanel
 id password
 id percent
-id prof_button
 id progress_circular
 id progress_horizontal
 id radio
@@ -785,11 +784,12 @@ id submitButton
 id submit_area
 id tabMode
 id tag_viewer_text
+id teacher_button
 id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
-id textViewAuthentification
+id textViewSignIn
 id time
 id title
 id titleDividerNoCustom

@@ -16,10 +16,9 @@ import se.anyro.nfc_reader.setup.DialogManager;
 
 public class TeacherMenuActivity extends Activity {
 
-    private Button mcreateButton;
-    private Button mvisualizeButton;
-    private Button mdisconnectionButton;
-    private TextView mmenuTextView;
+    private Button mCreateButton;
+    private Button mVisualizeButton;
+    private Button mDisconnectionButton;
     private DialogFragment logOutDialog;
     private String TAG;
 
@@ -27,29 +26,28 @@ public class TeacherMenuActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_teacher_menu);
-        mcreateButton = findViewById(R.id.createButton);
-        mvisualizeButton = findViewById(R.id.visualizeButton);
-        mdisconnectionButton = findViewById(R.id.disconnectionButton);
-        mmenuTextView = findViewById(R.id.menuTextView);
+        mCreateButton = findViewById(R.id.createButton);
+        mVisualizeButton = findViewById(R.id.visualizeButton);
+        mDisconnectionButton = findViewById(R.id.disconnectionButton);
 
         TAG = "TeacherMenuActivityLog";
 
-        mcreateButton.setOnClickListener(new View.OnClickListener() {
+        mCreateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent profActivity = new Intent(TeacherMenuActivity.this, ClassSelectionActivity.class);
-                startActivity(profActivity);
+                Intent createActivity = new Intent(TeacherMenuActivity.this, ClassSelectionActivity.class);
+                startActivity(createActivity);
             }
         });
 
-        mvisualizeButton.setOnClickListener(new View.OnClickListener() {
+        mVisualizeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent visualizeActivity = new Intent(TeacherMenuActivity.this, SelectVisualizeActivity.class);
                 startActivity(visualizeActivity);
             }
         });
-        mdisconnectionButton.setOnClickListener(new View.OnClickListener() {
+        mDisconnectionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.d(TAG, "onBackPressed Called");
@@ -98,7 +96,7 @@ public class TeacherMenuActivity extends Activity {
             return true;
         }
 
-        // Doon't know what it does.
+        // Don't know what it does.
         return super.onKeyDown(keyCode, event);
     }
 
