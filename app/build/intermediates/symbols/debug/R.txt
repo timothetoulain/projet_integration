@@ -1321,7 +1321,6 @@ int style Widget_AppCompat_Toolbar 0x7f0c0169
 int style Widget_AppCompat_Toolbar_Button_Navigation 0x7f0c016a
 int style Widget_Compat_NotificationActionContainer 0x7f0c016b
 int style Widget_Compat_NotificationActionText 0x7f0c016c
-int style integration 0x7f0c016d
 int[] styleable ActionBar { 0x7f020031, 0x7f020032, 0x7f020033, 0x7f02005c, 0x7f02005d, 0x7f02005e, 0x7f02005f, 0x7f020060, 0x7f020061, 0x7f020063, 0x7f020067, 0x7f020068, 0x7f020073, 0x7f020082, 0x7f020083, 0x7f020084, 0x7f020085, 0x7f020086, 0x7f02008b, 0x7f02008e, 0x7f0200cd, 0x7f0200d4, 0x7f0200df, 0x7f0200e2, 0x7f0200e3, 0x7f0200fd, 0x7f020100, 0x7f02011b, 0x7f020124 }
 int styleable ActionBar_background 0
 int styleable ActionBar_backgroundSplit 1

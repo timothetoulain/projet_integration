@@ -3524,7 +3524,6 @@ public final class R {
     public static final int Widget_AppCompat_Toolbar_Button_Navigation=0x7f0c016a;
     public static final int Widget_Compat_NotificationActionContainer=0x7f0c016b;
     public static final int Widget_Compat_NotificationActionText=0x7f0c016c;
-    public static final int integration=0x7f0c016d;
   }
   public static final class styleable {
     /**

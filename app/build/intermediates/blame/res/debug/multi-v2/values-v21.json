@@ -54,20 +54,20 @@
                 {
                     "source": "C:\\Users\\Marcross\\Desktop\\L3\\SEMESTRE_2\\projet_integration-master\\app\\src\\main\\res\\values-v21\\styles.xml",
                     "from": {
-                        "startLines": "8,-1",
-                        "startColumns": "4,-1",
-                        "startOffsets": "298,-1",
-                        "endLines": "18,-1",
-                        "endColumns": "12,-1",
-                        "endOffsets": "1142,-1"
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "147",
+                        "endLines": "13",
+                        "endColumns": "12",
+                        "endOffsets": "991"
                     },
                     "to": {
-                        "startLines": "295,314",
-                        "startColumns": "4,4",
-                        "startOffsets": "20984,22332",
-                        "endLines": "305,317",
-                        "endColumns": "12,12",
-                        "endOffsets": "21817,22559"
+                        "startLines": "295",
+                        "startColumns": "4",
+                        "startOffsets": "20984",
+                        "endLines": "305",
+                        "endColumns": "12",
+                        "endOffsets": "21817"
                     }
                 }
             ]
