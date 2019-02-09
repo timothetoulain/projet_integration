@@ -45,21 +45,21 @@
                     "to": {
                         "startLines": "2,3,4,5,279,280,287,291,306,309",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,159,223,290,19822,19938,20395,20689,21822,21994",
+                        "startOffsets": "55,159,223,290,19822,19938,20395,20689,21823,21995",
                         "endLines": "2,3,4,5,279,280,287,291,308,313",
                         "endColumns": "103,63,66,63,115,125,125,127,12,12",
-                        "endOffsets": "154,218,285,349,19933,20059,20516,20812,21989,22327"
+                        "endOffsets": "154,218,285,349,19933,20059,20516,20812,21990,22328"
                     }
                 },
                 {
                     "source": "C:\\Users\\Marcross\\Desktop\\L3\\SEMESTRE_2\\projet_integration-master\\app\\src\\main\\res\\values-v21\\styles.xml",
                     "from": {
-                        "startLines": "3",
+                        "startLines": "4",
                         "startColumns": "4",
-                        "startOffsets": "147",
-                        "endLines": "13",
+                        "startOffsets": "149",
+                        "endLines": "14",
                         "endColumns": "12",
-                        "endOffsets": "991"
+                        "endOffsets": "994"
                     },
                     "to": {
                         "startLines": "295",
@@ -67,7 +67,7 @@
                         "startOffsets": "20984",
                         "endLines": "305",
                         "endColumns": "12",
-                        "endOffsets": "21817"
+                        "endOffsets": "21818"
                     }
                 }
             ]

@@ -29,6 +29,7 @@ public class StudentManualAddingActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student_manual_adding);
+        // this.setTheme();
         mConfirmButton = findViewById(R.id.confirmButton);
         mNameEditText=findViewById(R.id.nameEditText);
         if(VariableRepository.getInstance().getStudentName()!=""){

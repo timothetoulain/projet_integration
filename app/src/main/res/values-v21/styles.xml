@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--<style name="Theme.integration.Light" parent="android:Theme.Material.Light" >-->
+
     <style name="Theme.integration.Light" parent="Theme.AppCompat.Light.NoActionBar" >
         <item name="android:colorAccent">@color/accent_material_light</item>
         <item name="android:statusBarColor">?android:attr/colorAccent</item>
         <item name="android:colorPrimaryDark">@android:color/holo_blue_bright</item>
-        <item name="android:windowBackground">@android:color/holo_green_dark</item>
+        <item name="android:windowBackground">@android:color/background_light</item>
         <item name="android:navigationBarColor">@android:color/darker_gray</item>
         <item name="android:colorForeground">@android:color/black</item>
         <item name="android:textColorPrimary">?android:attr/colorAccent</item>
         <item name="android:textColorPrimaryInverse">@android:color/holo_purple</item>
         <item name="android:colorPrimary">@android:color/secondary_text_light_nodisable</item>
     </style>
+    <!--<style name="AppTheme" parent="Theme.integration.Light"/>-->
 </resources>
