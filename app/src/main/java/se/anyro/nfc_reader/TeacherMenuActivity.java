@@ -8,7 +8,6 @@ import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 
 import se.anyro.nfc_reader.setup.DialogInterface;
 import se.anyro.nfc_reader.setup.DialogManager;
@@ -95,8 +94,6 @@ public class TeacherMenuActivity extends Activity {
             // Return true for whatever reason that I don't understand right at the moment as of Thursday 10th of January 5:37 PM.
             return true;
         }
-
-        // Don't know what it does.
         return super.onKeyDown(keyCode, event);
     }
 

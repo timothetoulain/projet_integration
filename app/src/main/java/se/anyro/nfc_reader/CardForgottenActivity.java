@@ -12,6 +12,7 @@ import android.widget.Toast;
 import java.util.concurrent.ExecutionException;
 
 import se.anyro.nfc_reader.database.CardForgottenQuery;
+import se.anyro.nfc_reader.setup.ToastMessage;
 import se.anyro.nfc_reader.setup.VariableRepository;
 
 public class CardForgottenActivity extends Activity {
@@ -34,7 +35,7 @@ public class CardForgottenActivity extends Activity {
             @Override
             public void onClick(View v) {
                 if (studentNumberEditText.getText().length()==0 || nameEditText.getText().length()==0){
-                    incompleteFieldMessage();
+                    ToastMessage.incompleteFieldMessage(getApplicationContext());
                 } else {
                     String nameRetrieved=query();
                     if(nameRetrieved != null && !nameRetrieved.equals("")){
@@ -47,7 +48,7 @@ public class CardForgottenActivity extends Activity {
                     }
                     else{
                         System.out.println("unknown student");
-                        unknownStudentMessage();
+                        ToastMessage.unknownStudentMessage(getApplicationContext());
                         VariableRepository.getInstance().setStudentName("");
                         Intent tagViewer = new Intent(CardForgottenActivity.this, TagViewer.class);
                         startActivity(tagViewer);
@@ -56,12 +57,7 @@ public class CardForgottenActivity extends Activity {
             }
         });
     }
-    private void incompleteFieldMessage(){
-        Toast.makeText(this,R.string.error_incomplete,Toast.LENGTH_SHORT).show();
-    }
-    private void unknownStudentMessage(){
-        Toast.makeText(this,R.string.error_unknown_student,Toast.LENGTH_SHORT).show();
-    }
+
 
     public String query(){
         String type="addPresent";
@@ -90,8 +86,6 @@ public class CardForgottenActivity extends Activity {
             // Return true for whatever reason that I don't understand right at the moment as of Thursday 10th of January 5:37 PM.
             return true;
         }
-
-        // Don't know what it does.
         return super.onKeyDown(keyCode, event);
     }
 

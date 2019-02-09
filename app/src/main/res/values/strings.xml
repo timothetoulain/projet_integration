@@ -6,10 +6,15 @@
 
     <string name="message_welcome">Welcome on CheckPresence! You can connect to access your account.</string>
     <string name="button_connection">Connection</string>
+    <string name="sign_in">Please sign in.</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="error_login_password">Login and/or password are incorrect.</string>
+    <string name="error_password">Incorrect Password.</string>
 
     <string name="message_account">You can create a new presence list or display your existing lists</string>
     <string name="button_create_list">Create</string>
-    <string name="button_display_list">Display</string>
+    <string name="button_display_list">Visualiser</string>
     <string name="button_disconnect">Disconnect</string>
 
     <string name="message_new_list">Create a new presence list.</string>
@@ -19,83 +24,43 @@
     <string name="message_scan">Present your student card at the back of the device.</string>
     <string name="button_forget_card">I forgot my card</string>
     <string name="button_registration_finish">Finish registrations</string>
+    <string name="error_leave_registration">Click on “Finish registrations”.</string>
+
+    <string name="message_registration">Enter your information to register.</string>
 
     <string name="student_number">Student number</string>
     <string name="student_name">Last name First name</string>
-    <string name="button_student_add">Confirm</string>
 
+    <string name="confirm_registration_title">Please confirm the end of registrations.</string>
+    <string name="confirm_registration">Enter your password.</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
 
     <string name="date_start">Choose a beginning date and schedule for registrations</string>
-    <string name="date_end">>Choose a ending date and schedule for registrations</string>
-
+    <string name="date_end">Choose a ending date and schedule for registrations</string>
+    <string name="button_date_start">Start date</string>
+    <string name="button_date_end">End date</string>
+    <string name="button_time_start">Start time</string>
+    <string name="button_time_end">End time</string>
     <string name="button_search">Research</string>
     <string name="results">Your results</string>
 
-    <string name="manual_adding">Add a student manually</string>
-    <string name="button_manual_adding">Manual adding</string>
-    <string name="error_password">Password incorrect</string>
-    <string name="message_registration">Enter your information to register.</string>
-
-    <string name="error">Error:</string>
-    <string name="no_nfc">No NFC found on this device</string>
+    <string name="no_nfc">No NFC reader found on this device.</string>
     <string name="nfc_disabled">NFC is not enable. Please go to the wireless settings to enable it.</string>
-    <string name="menu_main_clear_title">Clear all</string>
-    <string name="menu_main_end_title">End</string>
 
-    <string name="menu_main_copy">Copy IDs</string>
-    <string name="menu_copy_hex">Hex</string>
-    <string name="menu_copy_reversed_hex">Reversed hex</string>
-    <string name="menu_copy_dec">Dec</string>
-    <string name="menu_copy_reversed_dec">Reversed dec</string>
-    <string name="nothing_scanned">Nothing scanned yet</string>
-    <string name="add_sector">Add a sector</string>
-    <string name="add_group">Add a group</string>
-    <string name="new_sector_id">Identifier of the new sector (L1MIPI, L2Info …)</string>
-    <string name="new_sector_name">Name of the new sector (mathematics, physics …)</string>
-    <string name="new_sector_year">Year of study for the new sector (L1, M1 …)</string>
-    <string name="sector_add">Add a sector</string>
-    <string name="enter">Enter</string>
-    <string name="new_group">New group name</string>
-    <string name="group_add">Add a group</string>
-    <string name="sector">Choose a sector:</string>
-    <string name="year">Choose a year of study:</string>
-    <string name="sign_in">Please sign in</string>
-    <string name="login">Login</string>
-    <string name="password">Password</string>
-    <string name="university">University of Cergy-Pontoise</string>
-    <string name="administrator">Administrator</string>
-    <string name="teacher">Teacher</string>
-    <string name="enter_group">Enter the group</string>
-    <string name="select_class">Select the class</string>
-    <string name="error_select_class">Please select a class</string>
-    <string name="error_login_password">Login and/or password incorrect(s)</string>
+    <string name="disconnect">Do you want to disconnect?</string>
     <string name="error_incomplete">At least one field is incomplete!</string>
-    <string name="error_connection">Connection to server impossible</string>
-    <string name="error_unknown_student">Unknown student</string>
+    <string name="error_connection">Can\'t connect to server. Please contact an administrator.</string>
+    <string name="error_unknown_student">Unrecognized student.</string>
+    <string name="manual_adding">Add a student manually.</string>
+    <string name="button_manual_adding">Manual adding</string>
 
+    <string name="menu_main_clear_title">Clear all</string>
+    <string name="nothing_scanned">Nothing scanned yet</string>
+    <string name="error">Error</string>
+    <string name="please_check">Select one of the students before submitting</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
+    <string name="error_select_class">Please select a class</string>
 
-    <string name="logoutDialogTitle">Do you want to log out ?</string>
-    <string name="end_registration">Complete the acquittance roll.</string>
-
-    <string name="confirm_registration">Confirm Acquittance Roll Complete</string>
-    <string name="confirm_registrationText">Enter your password :</string>
-
-    <string name="usernameTextEditHint">ID</string>
-    <string name="passwordTextEditHint">Password</string>
-    <string name="confirm">Submit</string>
-
-    <string name="cancel">Cancel</string>
-
-    <string name="button_date_start">Starting date</string>
-    <string name="button_time_start">Starting hour</string>
-    <string name="button_date_end">Ending date</string>
-    <string name="button_time_end">Ending hour</string>
-
-    <string name="please_check">Select one of the students before submitting</string>
-
-    <!--
-    <string name="intro_message">Scan you card from the device\'s back.</string>
--->
 </resources>

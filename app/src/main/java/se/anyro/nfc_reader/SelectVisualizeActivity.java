@@ -23,6 +23,7 @@ import java.util.concurrent.ExecutionException;
 
 import se.anyro.nfc_reader.database.SpinnerTeacherQuery;
 import se.anyro.nfc_reader.database.VisualizeQuery;
+import se.anyro.nfc_reader.setup.ToastMessage;
 import se.anyro.nfc_reader.setup.VariableRepository;
 
 public class SelectVisualizeActivity extends Activity implements
@@ -66,7 +67,7 @@ public class SelectVisualizeActivity extends Activity implements
         System.out.println("teacher visualize= "+teacher);
 
         List classList=new ArrayList();
-        classList.add(getString(R.string.select_class));
+        classList.add(getString(R.string.course));
 
         String type="getCourses";
         new SpinnerTeacherQuery(this,classList).execute(type,teacher);
@@ -242,11 +243,11 @@ public class SelectVisualizeActivity extends Activity implements
             timePickerDialog.show();
         }
         if (v == mResearchButton) {
-            if(mSpinnerCourse.getSelectedItem().toString().equals(getString(R.string.select_class))||
+            if(mSpinnerCourse.getSelectedItem().toString().equals(getString(R.string.course))||
                     mStartDateEditText.getText().length()==0 || mEndDateEditText.getText().length()==0 ||
                     mStartTimeEditText.getText().length()==0 || mEndTimeEditText.getText().length()==0)
             {
-                incompleteFieldMessage();
+                ToastMessage.incompleteFieldMessage(getApplicationContext());
             }
             else{
                 String type="getPresentStudents";
@@ -277,8 +278,5 @@ public class SelectVisualizeActivity extends Activity implements
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }
-    private void incompleteFieldMessage(){
-        Toast.makeText(this,R.string.error_incomplete,Toast.LENGTH_SHORT).show();
     }
 }

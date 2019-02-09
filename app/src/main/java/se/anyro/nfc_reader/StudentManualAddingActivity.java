@@ -16,12 +16,12 @@ import java.io.InputStreamReader;
 import java.util.concurrent.ExecutionException;
 
 import se.anyro.nfc_reader.database.StudentManualAddingQuery;
+import se.anyro.nfc_reader.setup.ToastMessage;
 import se.anyro.nfc_reader.setup.VariableRepository;
 
 public class StudentManualAddingActivity extends Activity {
     private Button mConfirmButton;
     private EditText mNameEditText;
-    //private String studentFile = "student.txt";
     private String  resultFile = "result.csv";
 
 
@@ -41,28 +41,24 @@ public class StudentManualAddingActivity extends Activity {
             @Override
             public void onClick(View v) {
                 if (mNameEditText.getText().length()==0){
-                    incompleteFieldMessage();
+                    ToastMessage.incompleteFieldMessage(getApplicationContext());
                 }
                 else {
                     String result=queryGetStudents();
-                    if(result != null && !result.equals("")){
+                    if(result != null && !result.equals("") && !result.equals("null")){
                         System.out.println("name retrieved: "+result);
                         saveData(result,resultFile);
 
                         Log.i("StudentManualLog", result);
-                        // Toast.makeText(this,R.string.error_incomplete+nameRetrieved,Toast.LENGTH_SHORT).show();
 
-                       // saveData(result,studentFile);
                         Intent resultView = new Intent(StudentManualAddingActivity.this, ResultManualAddingActivity.class);
                         startActivity(resultView);
                     }
                     else{
                         System.out.println("No student found");
                         Log.i("StudentManualLog", "No Student Found.");
-                        unknownStudentMessage();
+                        ToastMessage.unknownStudentMessage(getApplicationContext());
                         VariableRepository.getInstance().setStudentName("");
-                        Intent tagViewer = new Intent(StudentManualAddingActivity.this, TagViewer.class);
-                        startActivity(tagViewer);
                     }
                 }
             }
@@ -94,12 +90,7 @@ public class StudentManualAddingActivity extends Activity {
             e.printStackTrace();
         }
     }
-    private void incompleteFieldMessage(){
-        Toast.makeText(this,R.string.error_incomplete,Toast.LENGTH_SHORT).show();
-    }
-    private void unknownStudentMessage(){
-        Toast.makeText(this,R.string.error_unknown_student,Toast.LENGTH_SHORT).show();
-    }
+
     @Override
     public void onBackPressed() {
         Intent tagViewer = new Intent(this, TagViewer.class);

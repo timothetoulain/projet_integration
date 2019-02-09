@@ -14,6 +14,7 @@ import se.anyro.nfc_reader.database.PresenceQuery;
 import se.anyro.nfc_reader.record.ParsedNdefRecord;
 import se.anyro.nfc_reader.setup.DialogManager;
 import se.anyro.nfc_reader.setup.NdefMessageParser;
+import se.anyro.nfc_reader.setup.ToastMessage;
 import se.anyro.nfc_reader.setup.VariableRepository;
 
 import android.app.Activity;
@@ -524,17 +525,18 @@ public class TagViewer extends Activity {
         }
         System.out.println("student before error:"+studentName+":");
 
+        //TODO adapt messages for toast
         //case already register
         if(studentName.contains("ERROR")){
             System.out.println("already register for this course");
-            Toast.makeText(this,R.string.error_unknown_student,Toast.LENGTH_SHORT).show();
+            ToastMessage.unknownStudentMessage(getApplicationContext());
             Intent studentRegistration = new Intent(TagViewer.this, StudentRegistrationActivity.class);
             startActivity(studentRegistration);
         }
         //case card not recognized
         else if(studentName.equals("")){
             System.out.println("unknown student");
-            Toast.makeText(this,R.string.error_unknown_student,Toast.LENGTH_SHORT).show();
+            ToastMessage.unknownStudentMessage(getApplicationContext());
             Intent studentRegistration = new Intent(TagViewer.this, StudentRegistrationActivity.class);
             startActivity(studentRegistration);
         }
@@ -560,7 +562,7 @@ public class TagViewer extends Activity {
     @Override
     public void onBackPressed() {
         Log.d(TAG, "onBackPressed Called");
-        Toast.makeText(this,R.string.end_registration,Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,R.string.confirm_registration_title,Toast.LENGTH_SHORT).show();
     }
 
     se.anyro.nfc_reader.setup.DialogInterface closeListener = new se.anyro.nfc_reader.setup.DialogInterface() {

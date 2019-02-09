@@ -6,34 +6,33 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import java.util.concurrent.ExecutionException;
 
 import se.anyro.nfc_reader.database.StudentRegistrationQuery;
+import se.anyro.nfc_reader.setup.ToastMessage;
 import se.anyro.nfc_reader.setup.VariableRepository;
 
 public class StudentRegistrationActivity extends Activity {
 
-    private Button mconfirmButton;
+    private Button mConfirmButton;
     private EditText studentNumberEditText;
     private EditText nameEditText;
-
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student_registration);
-        mconfirmButton = findViewById(R.id.confirmButton);
+        mConfirmButton = findViewById(R.id.confirmButton);
         studentNumberEditText = findViewById(R.id.studentNumberEditText);
         nameEditText = findViewById(R.id.nameEditText);
 
-        mconfirmButton.setOnClickListener(new View.OnClickListener() {
+        mConfirmButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (studentNumberEditText.getText().length()==0 || nameEditText.getText().length()==0){
-                    incompleteFieldMessage();
+                    ToastMessage.incompleteFieldMessage(getApplicationContext());
                 } else {
                     String nameRetrieved=query();
                     if(nameRetrieved != null && !nameRetrieved.equals("")){
@@ -46,9 +45,7 @@ public class StudentRegistrationActivity extends Activity {
             }
         });
     }
-    private void incompleteFieldMessage(){
-        Toast.makeText(this,R.string.error_incomplete,Toast.LENGTH_SHORT).show();
-    }
+
     public String query(){
         String type="registration";
         String numberStudent=studentNumberEditText.getText().toString();
@@ -67,6 +64,7 @@ public class StudentRegistrationActivity extends Activity {
         }
         return nameStudent;
     }
+
     @Override
     public void onBackPressed() {
         Intent tagViewer = new Intent(StudentRegistrationActivity.this, TagViewer.class);

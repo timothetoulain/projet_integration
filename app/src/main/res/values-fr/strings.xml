@@ -6,8 +6,14 @@
 
     <string name="message_welcome">Bienvenue sur CheckPresence ! Connectez-vous pour accéder à votre compte.</string>
     <string name="button_connection">Connexion</string>
+    <string name="sign_in">Veuillez vous connecter.</string>
+    <string name="login">Identifiant</string>
+    <string name="password">Mot de passe</string>
+    <string name="error_login_password">Identifiant et/ou mot de passe incorrect(s).</string>
+    <string name="error_password">Mot de passe incorrect.</string>
 
-    <string name="message_account">Vous pouvez créer une nouvelle liste de présence ou visualiser vos listes existantes.</string>
+
+    <string name="message_account">Vous pouvez créer une nouvelle liste de présence ou visualiser vos listes existante.</string>
     <string name="button_create_list">Créer</string>
     <string name="button_display_list">Visualiser</string>
     <string name="button_disconnect">Déconnexion</string>
@@ -19,76 +25,42 @@
     <string name="message_scan">Présentez votre carte d\'étudiant au dos de l\'appareil.</string>
     <string name="button_forget_card">J\'ai oublié ma carte</string>
     <string name="button_registration_finish">Terminer les inscriptions</string>
+    <string name="error_leave_registration">Cliquez sur “Terminer les inscriptions”.</string>
+
+    <string name="message_registration">Entrez vos informations pour vous enregistrer.</string>
 
     <string name="student_number">Numéro d\'étudiant</string>
     <string name="student_name">Nom Prénom</string>
-    <string name="button_student_add">Confirmer</string>
 
-    <string name="date_start">Choisissez une date et une heure de début des inscriptions</string>
-    <string name="date_end">Choisissez une date et une heure de fin des inscriptions</string>
-
-    <string name="button_search">Rechercher</string>
-    <string name="results">Vos résultats</string>
-    <string name="message_registration">Entrez vos informations pour vous enregistrer.</string>
-
-
-    <string name="error">Erreur</string>
-    <string name="no_nfc">Pas de NFC trouvé sur cet appareil</string>
-    <string name="nfc_disabled">Le NFC n\'est pas activé. Allez dans les paramètres de connexion de votre appareil pour l\'activer.</string>
-    <string name="menu_main_end_title">Terminer</string>
-    <string name="menu_main_clear_title">Effacer tout</string>
-    <string name="menu_main_copy">Copier les IDs</string>
-    <string name="menu_copy_hex">Hex</string>
-    <string name="menu_copy_reversed_hex">Hex renversé</string>
-    <string name="menu_copy_dec">Dec</string>
-    <string name="menu_copy_reversed_dec">Dec renversé</string>
-    <string name="nothing_scanned">Rien de scanné pour le moment</string>
-    <string name="add_sector">Ajouter une filière</string>
-    <string name="add_group">Ajouter un groupe</string>
-    <string name="new_sector_id">Identifiant de la nouvelle filière (L1MIPI, L2Info …)</string>
-    <string name="new_sector_name">Nom de la nouvelle filière (mathématiques, physique …)</string>
-    <string name="new_sector_year">Année d\'étude de la nouvelle filière (L1, M1 …)</string>
-    <string name="sector_add">Ajoutez une filière</string>
-    <string name="enter">Valider</string>
-    <string name="new_group">Nouveau nom de groupe</string>
-    <string name="group_add">Ajoutez un groupe</string>
-    <string name="sector">Choisissez une filière :</string>
-    <string name="year">Choisissez une année d\'étude :</string>
-    <string name="sign_in">Veuillez vous authentifier</string>
-    <string name="login">Identifiant</string>
-    <string name="password">Mot de passe</string>
-    <string name="university">Université de Cergy-Pontoise</string>
-    <string name="administrator">Administrateur</string>
-    <string name="teacher">Enseignant</string>
-    <string name="enter_group">Indiquez le groupe</string>
-    <string name="select_class">Sélectionnez le cours</string>
-    <string name="error_select_class">Veuillez sélectionner un cours</string>
-    <string name="error_login_password">Identifiant et/ou mot de passe incorrect(s)</string>
-    <string name="error_incomplete">Au moins un champ est incomplet !</string>
-    <string name="error_connection">Connexion au serveur impossible</string>
-    <string name="error_unknown_student">Etudiant non reconnu</string>
-
-
-    <string name="yes">Oui</string>
-    <string name="no">Non</string>
-
-    <string name="logoutDialogTitle">Souhaitez-vous vous déconnecter ?</string>
-
-    <string name="confirm_registration">Veuillez confirmer l\'émargement</string>
-    <string name="confirm_registrationText">Entrez votre mot de passe :</string>
-
-    <string name="usernameTextEditHint">Identifiant</string>
-    <string name="passwordTextEditHint">Mot de passe</string>
+    <string name="confirm_registration_title">Veuillez confirmer la fin des inscriptions.</string>
+    <string name="confirm_registration">Entrez votre mot de passe.</string>
     <string name="confirm">Confirmer</string>
     <string name="cancel">Annuler</string>
-    <string name="manual_adding">Ajouter un étudiant manuellement</string>
-    <string name="error_password">Mot de passe incorrect</string>
-    <string name="end_registration">Veuillez compléter l\'émargement.</string>
-    <string name="button_time_start">Heure de début.</string>
-    <string name="button_time_end">Heure de fin.</string>
-    <string name="button_manual_adding">Ajout manuel.</string>
-    <string name="button_date_start">Date de début.</string>
-    <string name="button_date_end">Date de fin</string>
 
+    <string name="date_start">Choisissez une date et une heure de début des inscriptions.</string>
+    <string name="date_end">Choisissez une date et une heure de fin des inscriptions.</string>
+    <string name="button_date_start">Date de début</string>
+    <string name="button_date_end">Date de fin</string>
+    <string name="button_time_start">Heure de début</string>
+    <string name="button_time_end">Heure de fin</string>
+    <string name="button_search">Rechercher</string>
+    <string name="results">Vos résultats</string>
+
+    <string name="no_nfc">Pas de lecteur NFC trouvé sur cet appareil.</string>
+    <string name="nfc_disabled">Le NFC n\'est pas activé. Allez dans les paramètres de connexion de votre appareil pour l\'activer.</string>
+
+    <string name="disconnect">Souhaitez-vous vous déconnecter ?</string>
+    <string name="error_incomplete">Au moins un champ est incomplet !</string>
+    <string name="error_connection">Connexion au serveur impossible. Veuillez contacter un administrateur.</string>
+    <string name="error_unknown_student">Étudiant non reconnu.</string>
+    <string name="manual_adding">Ajouter un étudiant manuellement.</string>
+    <string name="button_manual_adding">Ajout manuel</string>
+
+    <string name="menu_main_clear_title">Effacer tout</string>
+    <string name="nothing_scanned">Rien de scanné pour le moment</string>
+    <string name="error">Erreur</string>
     <string name="please_check">Veuillez sélectionner l\'un des étudiants ci-dessus</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+    <string name="error_select_class">Veuillez sélectionner un cours</string>
 </resources>

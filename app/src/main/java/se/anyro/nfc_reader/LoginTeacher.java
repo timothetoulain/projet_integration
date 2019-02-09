@@ -6,10 +6,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 import java.util.concurrent.ExecutionException;
 
 import se.anyro.nfc_reader.database.LoginTeacherQuery;
+import se.anyro.nfc_reader.setup.ToastMessage;
 import se.anyro.nfc_reader.setup.VariableRepository;
 
 public class LoginTeacher extends Activity {
@@ -30,12 +30,12 @@ public class LoginTeacher extends Activity {
             @Override
             public void onClick(View v) {
                 if (mEditTextIdentifier.getText().length()==0 || mEditTextPsw.getText().length()==0){
-                    incompleteFieldMessage();
+                    ToastMessage.incompleteFieldMessage(getApplicationContext());
                 } else {
                     String teacherName=login();
                     if(teacherName != null ){
                         if(teacherName.equals("")){
-                            loginPasswordIncorrectMessage();
+                            ToastMessage.loginPasswordIncorrectMessage(getApplicationContext());
                         }
                         else{
                             System.out.println("after query");
@@ -46,7 +46,7 @@ public class LoginTeacher extends Activity {
                         }
                     }
                     else{
-                        connectionErrorMessage();
+                        ToastMessage.connectionErrorMessage(getApplicationContext());
                         System.out.println("ERROR 1");
                     }
                 }
@@ -66,15 +66,5 @@ public class LoginTeacher extends Activity {
             e.printStackTrace();
         }
         return null;
-    }
-
-    private void loginPasswordIncorrectMessage(){
-        Toast.makeText(this,R.string.error_login_password,Toast.LENGTH_SHORT).show();
-    }
-    private void incompleteFieldMessage(){
-        Toast.makeText(this,R.string.error_incomplete,Toast.LENGTH_SHORT).show();
-    }
-    private void connectionErrorMessage(){
-        Toast.makeText(this,R.string.error_connection,Toast.LENGTH_SHORT).show();
     }
 }

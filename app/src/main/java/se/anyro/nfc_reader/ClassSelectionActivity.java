@@ -19,6 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import se.anyro.nfc_reader.database.SpinnerTeacherQuery;
+import se.anyro.nfc_reader.setup.ToastMessage;
 import se.anyro.nfc_reader.setup.VariableRepository;
 
 /**
@@ -62,7 +63,7 @@ public class ClassSelectionActivity extends Activity {
             @Override
             public void onClick(View v) {
             if(mSpinnerCourse.getSelectedItem().toString().equals(getString(R.string.course))){
-                incompleteFieldMessage();
+                ToastMessage.incompleteFieldMessage(getApplicationContext());
             }
             else{
                 String course=mSpinnerCourse.getSelectedItem().toString();
@@ -72,8 +73,5 @@ public class ClassSelectionActivity extends Activity {
             }
             }
         });
-    }
-    private void incompleteFieldMessage(){
-        Toast.makeText(this,R.string.error_select_class,Toast.LENGTH_SHORT).show();
     }
 }

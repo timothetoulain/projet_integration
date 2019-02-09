@@ -47,7 +47,7 @@ public class DialogManager extends DialogFragment {
         if ( this.dialogToDisplay.equals("disconnectDialog") ) {
             // Use the Builder class for convenient dialog construction
             builder = new AlertDialog.Builder(getActivity());
-            builder.setMessage(R.string.logoutDialogTitle)
+            builder.setMessage(R.string.disconnect)
                     .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int id) {
                             userChose = true;
@@ -67,7 +67,7 @@ public class DialogManager extends DialogFragment {
             // Get the layout inflater
             LayoutInflater inflater = getActivity().getLayoutInflater();
             builder.setTitle(R.string.confirm_registration);
-            builder.setMessage(R.string.confirm_registrationText);
+            builder.setMessage(R.string.confirm_registration);
             // Inflate and set the layout for the dialog
             // Pass null as the parent view because its going in the dialog layout
             builder.setView(inflater.inflate(R.layout.dialog_signin, null))
