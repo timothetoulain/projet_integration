@@ -87,22 +87,22 @@ public final class R {
         public static final int blocking = 0x7f070021;
         public static final int chronometer = 0x7f070029;
         public static final int forever = 0x7f070046;
-        public static final int icon = 0x7f07004d;
-        public static final int icon_group = 0x7f07004e;
-        public static final int info = 0x7f070051;
-        public static final int italic = 0x7f070053;
-        public static final int line1 = 0x7f070055;
-        public static final int line3 = 0x7f070056;
-        public static final int normal = 0x7f070067;
-        public static final int notification_background = 0x7f070068;
-        public static final int notification_main_column = 0x7f070069;
-        public static final int notification_main_column_container = 0x7f07006a;
-        public static final int right_icon = 0x7f070076;
-        public static final int right_side = 0x7f070077;
-        public static final int text = 0x7f0700a4;
-        public static final int text2 = 0x7f0700a5;
-        public static final int time = 0x7f0700a9;
-        public static final int title = 0x7f0700aa;
+        public static final int icon = 0x7f070050;
+        public static final int icon_group = 0x7f070051;
+        public static final int info = 0x7f070054;
+        public static final int italic = 0x7f070056;
+        public static final int line1 = 0x7f070058;
+        public static final int line3 = 0x7f070059;
+        public static final int normal = 0x7f07006a;
+        public static final int notification_background = 0x7f07006b;
+        public static final int notification_main_column = 0x7f07006c;
+        public static final int notification_main_column_container = 0x7f07006d;
+        public static final int right_icon = 0x7f070079;
+        public static final int right_side = 0x7f07007a;
+        public static final int text = 0x7f0700a7;
+        public static final int text2 = 0x7f0700a8;
+        public static final int time = 0x7f0700ac;
+        public static final int title = 0x7f0700ad;
     }
     public static final class integer {
         private integer() {}

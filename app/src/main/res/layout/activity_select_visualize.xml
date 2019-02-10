@@ -11,8 +11,6 @@
         android:layout_width="0dp"
         android:layout_height="35dp"
         android:layout_marginTop="76dp"
-        android:layout_marginBottom="70dp"
-        app:layout_constraintBottom_toBottomOf="@+id/startTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -29,15 +27,17 @@
 
     <Button
         android:id="@+id/startDateButton"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="19dp"
-        android:layout_marginLeft="19dp"
-        android:layout_marginBottom="39dp"
+
+        android:layout_marginBottom="8dp"
+        android:layout_weight="0.5"
         android:text="@string/button_date_start"
-        app:layout_constraintBottom_toTopOf="@+id/endTextView"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toStartOf="@+id/startTimeButton"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -46,112 +46,123 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="3dp"
         android:layout_marginLeft="3dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="3dp"
         android:layout_marginRight="3dp"
         android:layout_marginBottom="10dp"
         android:textAppearance="?android:attr/textAppearanceMedium"
         app:layout_constraintBottom_toTopOf="@+id/startDateButton"
         app:layout_constraintEnd_toEndOf="@+id/startDateButton"
-        app:layout_constraintStart_toStartOf="@+id/startDateButton" />
+        app:layout_constraintStart_toStartOf="@+id/startDateButton"
+        app:layout_constraintTop_toBottomOf="@+id/startTextView" />
 
     <Button
         android:id="@+id/startTimeButton"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="56dp"
-        android:layout_marginRight="56dp"
-        android:layout_marginBottom="39dp"
+
+        android:layout_weight="0.5"
         android:text="@string/button_time_start"
-        app:layout_constraintBottom_toTopOf="@+id/endTextView"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintBottom_toBottomOf="@+id/startDateButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/startDateButton"
+        app:layout_constraintTop_toTopOf="@+id/startDateButton" />
 
     <Button
         android:id="@+id/endTimeButton"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="56dp"
-        android:layout_marginRight="56dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="0.5"
         android:text="@string/button_time_end"
-        app:layout_constraintBottom_toBottomOf="@+id/endDateButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/endDateButton" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/endDateButton"
+        app:layout_constraintTop_toBottomOf="@+id/endTimeEditText" />
 
     <TextView
         android:id="@+id/startTimeEditText"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="199dp"
+        android:layout_height="21dp"
         android:layout_marginStart="3dp"
         android:layout_marginLeft="3dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="3dp"
         android:layout_marginRight="3dp"
         android:layout_marginBottom="12dp"
         app:layout_constraintBottom_toTopOf="@+id/startTimeButton"
         app:layout_constraintEnd_toEndOf="@+id/startTimeButton"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/startTimeButton" />
+        app:layout_constraintStart_toStartOf="@+id/startTimeButton"
+        app:layout_constraintTop_toBottomOf="@+id/startTextView" />
 
     <TextView
         android:id="@+id/endTimeEditText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
-        app:layout_constraintBottom_toTopOf="@+id/endTimeButton"
-        app:layout_constraintEnd_toEndOf="@+id/endTimeButton"
-        app:layout_constraintStart_toStartOf="@+id/endTimeButton" />
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/endDateEditText"
+        app:layout_constraintStart_toStartOf="@+id/endTimeButton"
+        app:layout_constraintTop_toBottomOf="@+id/endTextView" />
 
     <Button
         android:id="@+id/endDateButton"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="3dp"
-        android:layout_marginLeft="3dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="0.5"
         android:text="@string/button_date_end"
-        app:layout_constraintStart_toStartOf="@+id/endDateEditText"
+        app:layout_constraintEnd_toStartOf="@+id/endTimeButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/endDateEditText" />
 
     <TextView
         android:id="@+id/endDateEditText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="11dp"
-        android:layout_marginLeft="11dp"
-        android:layout_marginTop="23dp"
-        android:layout_marginEnd="11dp"
-        android:layout_marginRight="11dp"
-        app:layout_constraintEnd_toStartOf="@+id/researchButton"
-        app:layout_constraintStart_toStartOf="@+id/startDateButton"
+
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/endTimeEditText"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/endTextView" />
 
     <TextView
         android:id="@+id/startTextView"
         android:layout_width="0dp"
-        android:layout_height="29dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="27dp"
-        android:layout_weight="0.8"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_weight="1"
         android:text="@string/date_start"
-        app:layout_constraintBottom_toTopOf="@+id/startDateEditText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline5" />
 
     <TextView
         android:id="@+id/endTextView"
         android:layout_width="0dp"
-        android:layout_height="30dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         android:layout_weight="0.8"
         android:text="@string/date_end"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        app:layout_constraintVertical_bias="0.517" />
 
     <TextView
         android:id="@+id/courseTextView"
@@ -163,12 +174,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
-        android:layout_width="116dp"
-        android:layout_height="133dp"
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
-        tools:layout_editor_absoluteX="130dp"
-        tools:layout_editor_absoluteY="173dp"></LinearLayout>
+        app:layout_constraintGuide_begin="307dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="49dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="181dp" />
 
 
 </android.support.constraint.ConstraintLayout>

@@ -695,6 +695,9 @@ id forever
 id forgottenCardButton
 id gone
 id groups
+id guideline2
+id guideline3
+id guideline5
 id home
 id homeAsUp
 id horizontalButtonsLayout

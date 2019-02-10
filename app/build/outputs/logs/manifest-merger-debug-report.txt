@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:2:1-57:12
-INJECTED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:2:1-57:12
-INJECTED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:2:1-57:12
-INJECTED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:2:1-57:12
+ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:2:1-58:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\59f237ab07962392801a66d489e17c39\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\f4f8faddf9228f346637a6413f58c71c\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\163a5168fb1a06c6ed89ae1e7fdbe741\AndroidManifest.xml:2:1-11:12
@@ -15,9 +15,9 @@ MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Marcross\.g
 MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\569dc2422b96b0824fae1907539ffeaf\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\bdd5fbd4d9ced065f9650e7745183bf0\AndroidManifest.xml:17:1-31:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\bd03170df472c30695a3c0751dddc13e\AndroidManifest.xml:17:1-30:12
-INJECTED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:2:1-57:12
-INJECTED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:2:1-57:12
-INJECTED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:2:1-57:12
+INJECTED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:2:1-58:12
 	package
 		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:3:5-34
 		INJECTED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml
@@ -35,19 +35,19 @@ INJECTED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\
 	android:installLocation
 		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:4:5-35
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:8:5-67
+ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:9:5-67
 	android:name
-		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:8:22-64
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:9:22-64
 uses-permission#android.permission.NFC
-ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:9:5-62
+ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:10:5-62
 	android:name
-		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:9:22-59
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:10:22-59
 uses-feature#android.hardware.nfc
-ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:11:5-57
+ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:12:5-57
 	android:name
-		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:11:19-54
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:12:19-54
 application
-ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:13:5-55:19
+ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:14:5-56:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\59f237ab07962392801a66d489e17c39\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\59f237ab07962392801a66d489e17c39\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-v4:26.1.0] C:\Users\Marcross\.gradle\caches\transforms-1\files-1.1\support-v4-26.1.0.aar\f4f8faddf9228f346637a6413f58c71c\AndroidManifest.xml:25:5-29:19
@@ -77,79 +77,79 @@ MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Marcross\.gradle\cac
 	android:allowBackup
 		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:15:9-35
 	android:theme
-		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:14:9-55
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:18:9-55
 activity#se.anyro.nfc_reader.ResultManualAddingActivity
-ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:18:9-64
+ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:19:9-64
 	android:name
-		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:18:19-61
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:19:19-61
 activity#se.anyro.nfc_reader.StudentRegistrationActivity
-ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:20:9-65
-	android:name
-		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:20:19-62
-activity#se.anyro.nfc_reader.StudentManualAddingActivity
 ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:21:9-65
 	android:name
 		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:21:19-62
+activity#se.anyro.nfc_reader.StudentManualAddingActivity
+ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:22:9-65
+	android:name
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:22:19-62
 activity#se.anyro.nfc_reader.VisualizeActivity
-ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:22:9-55
+ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:23:9-55
 	android:name
-		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:22:19-52
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:23:19-52
 activity#se.anyro.nfc_reader.SelectVisualizeActivity
-ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:23:9-61
+ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:24:9-61
 	android:name
-		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:23:19-58
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:24:19-58
 activity#se.anyro.nfc_reader.TagViewer
-ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:24:9-43:20
+ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:25:9-44:20
 	android:screenOrientation
-		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:29:13-49
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:30:13-49
 	android:label
-		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:27:13-45
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:28:13-45
 	android:launchMode
-		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:28:13-48
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:29:13-48
 	android:alwaysRetainTaskState
-		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:26:13-49
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:27:13-49
 	android:name
-		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:25:13-38
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:26:13-38
 intent-filter#action:name:android.nfc.action.TAG_DISCOVERED+category:name:android.intent.category.DEFAULT
-ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:38:13-42:29
+ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:39:13-43:29
 action#android.nfc.action.TAG_DISCOVERED
-ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:39:17-76
+ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:40:17-76
 	android:name
-		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:39:25-73
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:40:25-73
 category#android.intent.category.DEFAULT
-ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:41:17-76
+ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:42:17-76
 	android:name
-		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:41:27-73
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:42:27-73
 activity#se.anyro.nfc_reader.MainActivity
-ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:44:9-50:20
+ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:45:9-51:20
 	android:name
-		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:44:19-47
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:45:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:45:13-49:29
+ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:46:13-50:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:46:17-69
+ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:47:17-69
 	android:name
-		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:46:25-66
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:47:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:48:17-77
+ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:49:17-77
 	android:name
-		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:48:27-74
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:49:27-74
 activity#se.anyro.nfc_reader.ClassSelectionActivity
-ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:51:9-60
+ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:52:9-60
 	android:name
-		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:51:19-57
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:52:19-57
 activity#se.anyro.nfc_reader.LoginTeacher
-ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:52:9-50
+ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:53:9-50
 	android:name
-		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:52:19-47
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:53:19-47
 activity#se.anyro.nfc_reader.TeacherMenuActivity
-ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:53:9-57
+ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:54:9-57
 	android:name
-		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:53:19-54
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:54:19-54
 activity#se.anyro.nfc_reader.CardForgottenActivity
-ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:54:9-59
+ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:55:9-59
 	android:name
-		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:54:19-56
+		ADDED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml:55:19-56
 uses-sdk
 INJECTED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Marcross\Desktop\L3\SEMESTRE_2\projet_integration-master\app\src\main\AndroidManifest.xml
