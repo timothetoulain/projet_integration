@@ -19,4 +19,7 @@ public class ToastMessage {
     public static void connectionErrorMessage(Context c){
         Toast.makeText(c,R.string.error_connection,Toast.LENGTH_SHORT).show();
     }
+    public static void studentAlreadyRegistered(Context c){
+        Toast.makeText(c,R.string.already_registered,Toast.LENGTH_SHORT).show();
+    }
 }

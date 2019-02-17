@@ -24,7 +24,7 @@
 
     <string name="message_scan">Présentez votre carte d\'étudiant au dos de l\'appareil.</string>
     <string name="button_forget_card">J\'ai oublié ma carte</string>
-    <string name="button_registration_finish">Terminer les inscriptions</string>
+    <string name="button_registration_finish">Terminer</string>
     <string name="error_leave_registration">Cliquez sur “Terminer les inscriptions”.</string>
 
     <string name="message_registration">Entrez vos informations pour vous enregistrer.</string>
@@ -63,4 +63,6 @@
     <string name="yes">Oui</string>
     <string name="no">Non</string>
     <string name="error_select_class">Veuillez sélectionner un cours</string>
+    <string name="already_registered">Vous êtes déjà inscrit à ce cours"</string>
+
 </resources>

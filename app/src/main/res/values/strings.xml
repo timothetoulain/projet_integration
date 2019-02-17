@@ -23,7 +23,7 @@
 
     <string name="message_scan">Present your student card at the back of the device.</string>
     <string name="button_forget_card">I forgot my card</string>
-    <string name="button_registration_finish">Finish registrations</string>
+    <string name="button_registration_finish">Finish</string>
     <string name="error_leave_registration">Click on “Finish registrations”.</string>
 
     <string name="message_registration">Enter your information to register.</string>
@@ -62,5 +62,5 @@
     <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="error_select_class">Please select a class</string>
-
+    <string name="already_registered">You are already registered for this course"</string>
 </resources>

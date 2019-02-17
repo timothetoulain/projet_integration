@@ -248,7 +248,6 @@ public class TagViewer extends Activity {
         buildTagViews(msgs);
     }
 
-
     private void resolveIntent(Intent intent) {
         String action = intent.getAction();
         if (NfcAdapter.ACTION_TAG_DISCOVERED.equals(action)
@@ -479,17 +478,14 @@ public class TagViewer extends Activity {
     
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-
         if (mTags.size() == 0) {
             Toast.makeText(this, R.string.nothing_scanned, Toast.LENGTH_LONG).show();
             return true;
         }
-
         switch (item.getItemId()) {
         case R.id.menu_main_clear:
             clearTags();
             return true;
-
         default:
             return super.onOptionsItemSelected(item);
         }
@@ -504,7 +500,6 @@ public class TagViewer extends Activity {
             }
         }
     }
-
 
     @Override
     public void onNewIntent(Intent intent) {
@@ -524,14 +519,15 @@ public class TagViewer extends Activity {
             e.printStackTrace();
         }
         System.out.println("student before error:"+studentName+":");
-
-        //TODO adapt messages for toast
+         if(studentName==null){
+            System.out.println("server unreachable");
+            ToastMessage.connectionErrorMessage(getApplicationContext());
+            studentName="";
+        }
         //case already register
-        if(studentName.contains("ERROR")){
+        else if(studentName.contains("ERROR")){
             System.out.println("already register for this course");
-            ToastMessage.unknownStudentMessage(getApplicationContext());
-            Intent studentRegistration = new Intent(TagViewer.this, StudentRegistrationActivity.class);
-            startActivity(studentRegistration);
+            ToastMessage.studentAlreadyRegistered(getApplicationContext());
         }
         //case card not recognized
         else if(studentName.equals("")){
@@ -540,6 +536,7 @@ public class TagViewer extends Activity {
             Intent studentRegistration = new Intent(TagViewer.this, StudentRegistrationActivity.class);
             startActivity(studentRegistration);
         }
+
         return studentName;
     }
 

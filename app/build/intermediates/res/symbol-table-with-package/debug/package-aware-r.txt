@@ -907,6 +907,7 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string already_registered
 string app_name
 string application_name
 string button_connection
