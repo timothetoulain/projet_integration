@@ -33,8 +33,6 @@ public class LoginTeacherQuery extends AsyncTask<String, Void, String>{
 
     @Override
     protected void onPreExecute(){
-        //my_url="http://192.168.1.44/l3_projet_integration/queries.php";
-        //my_url="http://192.168.1.72/projet/queries.php";
         my_url="http://3.120.246.93/checkpresence/controller/queries.php";
     }
 
@@ -52,7 +50,7 @@ public class LoginTeacherQuery extends AsyncTask<String, Void, String>{
             httpURLConnection.setDoOutput(true);
 
            // System.out.println(httpURLConnection.getResponseCode());
-
+            login=login.toLowerCase();
             System.out.println(login);
             System.out.println(password);
             System.out.println(type);
@@ -81,12 +79,6 @@ public class LoginTeacherQuery extends AsyncTask<String, Void, String>{
 
             System.out.println("line=" + line);
 
-            //for some reason, we receive "0", so we have to delete the symbols ""
-            /*if(sb.equals("\"0\"")){
-                sb= sb.substring(1, sb.length()-1);
-            }*/
-          // sb= sb.substring(1, sb.length()-1);
-           // System.out.println("sb= " +sb);
             System.out.println("SB=" + sb);
 
             outputStream.close();
@@ -114,6 +106,5 @@ public class LoginTeacherQuery extends AsyncTask<String, Void, String>{
     @Override
     protected void onPostExecute(String result) {
         super.onPostExecute(result);
-        //va renvoyer le nom de l'etudier a l'activité TagViewer
     }
 }

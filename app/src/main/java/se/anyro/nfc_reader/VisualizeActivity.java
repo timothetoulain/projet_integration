@@ -30,6 +30,10 @@ public class VisualizeActivity extends Activity {
         al=readData(resultFile);
         if(al.isEmpty()){
             Log.i(TAG,"empty");
+            //String empty=R.string.no_result;
+            TextView textViewData = new TextView(this);
+            textViewData.setText(R.string.no_result);
+            layout.addView(textViewData);
         }
         else {
             for (int i = 0; i < al.size(); i+=3) {

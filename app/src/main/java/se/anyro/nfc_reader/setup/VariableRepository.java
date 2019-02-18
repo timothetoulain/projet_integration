@@ -8,6 +8,7 @@ public class VariableRepository {
     private String studentName;
     private String nfc;
     private String studentId;
+    private int studentCounter;
 
     private VariableRepository() {
         this.teacherName = null;
@@ -15,6 +16,7 @@ public class VariableRepository {
         this.courseName = null;
         this.studentName = "";
         this.nfc = null;
+        this.studentCounter=0;
 
     }
     static VariableRepository instance = new VariableRepository();
@@ -66,5 +68,15 @@ public class VariableRepository {
 
     public void setStudentId(String studentId) {
         this.studentId = studentId;
+    }
+
+    public int getStudentCounter(){
+        return this.studentCounter;
+    }
+    public void incrementStudentCounter(){
+        this.studentCounter++;
+    }
+    public void resetStudentCounter(){
+        this.studentCounter=0;
     }
 }

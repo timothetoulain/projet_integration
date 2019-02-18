@@ -195,13 +195,18 @@ public class TagViewer extends Activity {
             this.student=VariableRepository.getInstance().getStudentName();
 
             Log.i(TAG,"student: "+student);
-            if(!student.equals("")){
+            if(!student.equals("") && !student.contains("ERROR")){
                 displayIfForgottenCard(student);
                 Log.i(TAG,"display student: "+student+" and delete him from file");
                 VariableRepository.getInstance().setStudentName("");
             }
-            else{
+            else if(student.equals("")){
+                ToastMessage.unknownStudentMessage(this);
                 Log.i(TAG,"unknown student");
+            }
+            else if(student.contains("ERROR")){
+                ToastMessage.studentAlreadyRegistered(this);
+                Log.i(TAG,"student already registered");
             }
         }
         count++;
@@ -246,6 +251,7 @@ public class TagViewer extends Activity {
         msgs = new NdefMessage[] { msg };
         mTags.add(tag);
         buildTagViews(msgs);
+        VariableRepository.getInstance().incrementStudentCounter();
     }
 
     private void resolveIntent(Intent intent) {
@@ -267,6 +273,9 @@ public class TagViewer extends Activity {
                 Log.i(TAG,"id: "+id);
                 Tag tag = intent.getParcelableExtra(NfcAdapter.EXTRA_TAG);
                 Log.i(TAG,"tag: "+tag);
+                if(dumpTagData(tag).equals("")){
+                    return;
+                }
                 byte[] payload = dumpTagData(tag).getBytes();
                 Log.i(TAG,"payload: "+payload);
 
@@ -278,6 +287,7 @@ public class TagViewer extends Activity {
             Log.i(TAG,"msgs: "+msgs);
             // Setup the views
             buildTagViews(msgs);
+            VariableRepository.getInstance().incrementStudentCounter();
         }
     }
 
@@ -528,6 +538,7 @@ public class TagViewer extends Activity {
         else if(studentName.contains("ERROR")){
             System.out.println("already register for this course");
             ToastMessage.studentAlreadyRegistered(getApplicationContext());
+            studentName="";
         }
         //case card not recognized
         else if(studentName.equals("")){
@@ -572,9 +583,11 @@ public class TagViewer extends Activity {
                         ((DialogManager) confirmAcquittanceDialog).getExitTagViewer() == true ) {
                     Intent mainIntent = new Intent(getBaseContext(), TeacherMenuActivity.class);
                     Log.d(TAG, "goingToStartActivity");
+                    VariableRepository.getInstance().resetStudentCounter();
                     startActivity(mainIntent);
                     finish();
                     System.out.println("exit tag view");
+
                 }
                 else if ( ((DialogManager) confirmAcquittanceDialog).getUserConfirm() == true &&
                         ((DialogManager) confirmAcquittanceDialog).getGoToManualAdd() == true) {

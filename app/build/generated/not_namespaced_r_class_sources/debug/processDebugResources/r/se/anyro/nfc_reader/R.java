@@ -3151,16 +3151,17 @@ public final class R {
     public static final int nfc_disabled=0x7f0b0048;
     public static final int no=0x7f0b0049;
     public static final int no_nfc=0x7f0b004a;
-    public static final int nothing_scanned=0x7f0b004b;
-    public static final int password=0x7f0b004c;
-    public static final int please_check=0x7f0b004d;
-    public static final int results=0x7f0b004e;
-    public static final int search_menu_title=0x7f0b004f;
-    public static final int sign_in=0x7f0b0050;
-    public static final int status_bar_notification_info_overflow=0x7f0b0051;
-    public static final int student_name=0x7f0b0052;
-    public static final int student_number=0x7f0b0053;
-    public static final int yes=0x7f0b0054;
+    public static final int no_result=0x7f0b004b;
+    public static final int nothing_scanned=0x7f0b004c;
+    public static final int password=0x7f0b004d;
+    public static final int please_check=0x7f0b004e;
+    public static final int results=0x7f0b004f;
+    public static final int search_menu_title=0x7f0b0050;
+    public static final int sign_in=0x7f0b0051;
+    public static final int status_bar_notification_info_overflow=0x7f0b0052;
+    public static final int student_name=0x7f0b0053;
+    public static final int student_number=0x7f0b0054;
+    public static final int yes=0x7f0b0055;
   }
   public static final class style {
     public static final int AlertDialog_AppCompat=0x7f0c0000;

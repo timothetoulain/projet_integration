@@ -951,6 +951,7 @@ string message_welcome
 string nfc_disabled
 string no
 string no_nfc
+string no_result
 string nothing_scanned
 string password
 string please_check

@@ -63,4 +63,6 @@
     <string name="no">No</string>
     <string name="error_select_class">Please select a class</string>
     <string name="already_registered">You are already registered for this course"</string>
+    <string name="no_result">"No result found"</string>
+
 </resources>

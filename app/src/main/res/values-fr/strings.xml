@@ -64,5 +64,7 @@
     <string name="no">Non</string>
     <string name="error_select_class">Veuillez sélectionner un cours</string>
     <string name="already_registered">Vous êtes déjà inscrit à ce cours"</string>
+    <string name="no_result">"Aucun résultat"</string>
+
 
 </resources>
