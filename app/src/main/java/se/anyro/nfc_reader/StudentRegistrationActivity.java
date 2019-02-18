@@ -38,6 +38,7 @@ public class StudentRegistrationActivity extends Activity {
                     if(nameRetrieved != null && !nameRetrieved.equals("")){
                         System.out.println("name retrieved: "+nameRetrieved);
                         VariableRepository.getInstance().setStudentName(nameRetrieved);
+                        VariableRepository.getInstance().incrementOnResumeCounter();
                         Intent tagViewer = new Intent(StudentRegistrationActivity.this, TagViewer.class);
                         startActivity(tagViewer);
                     }

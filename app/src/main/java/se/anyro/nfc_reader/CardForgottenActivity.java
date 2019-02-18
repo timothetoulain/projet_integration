@@ -43,6 +43,8 @@ public class CardForgottenActivity extends Activity {
 
                         //we save the student name to display it on the TagViewer activity
                         VariableRepository.getInstance().setStudentName(nameRetrieved);
+                        VariableRepository.getInstance().incrementOnResumeCounter();
+
                         Intent tagViewer = new Intent(CardForgottenActivity.this, TagViewer.class);
                         startActivity(tagViewer);
                     }

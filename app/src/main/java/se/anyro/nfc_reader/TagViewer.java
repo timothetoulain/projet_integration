@@ -190,7 +190,8 @@ public class TagViewer extends Activity {
             mAdapter.enableForegroundDispatch(this, mPendingIntent, null, null);
             mAdapter.enableForegroundNdefPush(this, mNdefPushMessage);
         }
-        if(count>0){
+        //if(count>0){
+        if(VariableRepository.getInstance().getOnResumeCounter()==1){
             Log.i(TAG,"let's read");
             this.student=VariableRepository.getInstance().getStudentName();
 
@@ -201,15 +202,19 @@ public class TagViewer extends Activity {
                 VariableRepository.getInstance().setStudentName("");
             }
             else if(student.equals("")){
+                System.out.println("on resume ubnknown");
                 ToastMessage.unknownStudentMessage(this);
                 Log.i(TAG,"unknown student");
             }
             else if(student.contains("ERROR")){
+                System.out.println("on resume already");
+
                 ToastMessage.studentAlreadyRegistered(this);
                 Log.i(TAG,"student already registered");
             }
         }
-        count++;
+        VariableRepository.getInstance().resetOnResumeCounter();
+        //count++;
         Log.i(TAG,"resume");
     }
 
@@ -273,10 +278,14 @@ public class TagViewer extends Activity {
                 Log.i(TAG,"id: "+id);
                 Tag tag = intent.getParcelableExtra(NfcAdapter.EXTRA_TAG);
                 Log.i(TAG,"tag: "+tag);
-                if(dumpTagData(tag).equals("")){
+
+                byte[] payload = dumpTagData(tag).getBytes();
+                String bytes=new String(payload);
+                System.out.println("bytes= "+bytes);
+                if(bytes.equals("")){
+                    System.out.println("forced exit of function");
                     return;
                 }
-                byte[] payload = dumpTagData(tag).getBytes();
                 Log.i(TAG,"payload: "+payload);
 
                 NdefRecord record = new NdefRecord(NdefRecord.TNF_UNKNOWN, empty, id, payload);
@@ -533,13 +542,15 @@ public class TagViewer extends Activity {
             System.out.println("server unreachable");
             ToastMessage.connectionErrorMessage(getApplicationContext());
             studentName="";
-        }
+            return studentName;
+         }
         //case already register
         else if(studentName.contains("ERROR")){
             System.out.println("already register for this course");
             ToastMessage.studentAlreadyRegistered(getApplicationContext());
             studentName="";
-        }
+            return studentName;
+         }
         //case card not recognized
         else if(studentName.equals("")){
             System.out.println("unknown student");
@@ -547,7 +558,6 @@ public class TagViewer extends Activity {
             Intent studentRegistration = new Intent(TagViewer.this, StudentRegistrationActivity.class);
             startActivity(studentRegistration);
         }
-
         return studentName;
     }
 
@@ -562,8 +572,6 @@ public class TagViewer extends Activity {
             // Return true for whatever reason that I don't understand right at the moment as of Thursday 10th of January 5:37 PM.
             return true;
         }
-
-        // Don't know what it does.
         return super.onKeyDown(keyCode, event);
     }
 

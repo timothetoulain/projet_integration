@@ -19,6 +19,7 @@ import java.util.HashMap;
 import java.util.concurrent.ExecutionException;
 
 import se.anyro.nfc_reader.database.CardForgottenQuery;
+import se.anyro.nfc_reader.setup.ToastMessage;
 import se.anyro.nfc_reader.setup.VariableRepository;
 
 public class ResultManualAddingActivity extends Activity {
@@ -79,18 +80,20 @@ public class ResultManualAddingActivity extends Activity {
         Button submitButton = findViewById(R.id.submitButton);
         submitButton.setOnClickListener(new View.OnClickListener() {
             // Called when the SUBMIT button is clicked
-            // Add the choosen student to the acquittance roll list then bring back to the StudentManualAddingActivity
+            // Add the chosen student to the acquittance roll list then bring back to the StudentManualAddingActivity
             @Override
             public void onClick(View v) {
-                //Toast.makeText(Re.this,"YOUR MESSAGE",Toast.LENGTH_LONG).show();
-
                 if ( radioButtonIsChecked ) {
                     VariableRepository.getInstance().setStudentName(studentName);
                     VariableRepository.getInstance().setStudentId(studentID);
                     String result=queryAddPresent();
                     VariableRepository.getInstance().setStudentName("");
-                    VariableRepository.getInstance().setStudentName(result);
-                    //TODO maybe add a toast here, if result="" => error, else student successfully added
+                    if(!result.contains("ERROR")) {
+                        VariableRepository.getInstance().setStudentName(result);
+                    }
+                    else{
+                        ToastMessage.studentAlreadyRegistered(getApplicationContext());
+                    }
                     Intent resultView = new Intent(ResultManualAddingActivity.this, TagViewer.class);
                     startActivity(resultView);
                 } else {

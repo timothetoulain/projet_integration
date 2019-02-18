@@ -9,6 +9,8 @@ public class VariableRepository {
     private String nfc;
     private String studentId;
     private int studentCounter;
+    private int onResumeCounter;
+
 
     private VariableRepository() {
         this.teacherName = null;
@@ -17,6 +19,7 @@ public class VariableRepository {
         this.studentName = "";
         this.nfc = null;
         this.studentCounter=0;
+        this.onResumeCounter=0;
 
     }
     static VariableRepository instance = new VariableRepository();
@@ -78,5 +81,15 @@ public class VariableRepository {
     }
     public void resetStudentCounter(){
         this.studentCounter=0;
+    }
+
+    public int getOnResumeCounter(){
+        return this.onResumeCounter;
+    }
+    public void incrementOnResumeCounter(){
+        this.onResumeCounter++;
+    }
+    public void resetOnResumeCounter(){
+        this.onResumeCounter=0;
     }
 }
