@@ -712,6 +712,7 @@ id left
 id line1
 id line3
 id linearLayout
+id linearLayout2
 id list
 id listMode
 id list_item
@@ -739,6 +740,8 @@ id percent
 id progress_circular
 id progress_horizontal
 id radio
+id registeredStudentsNumber
+id registeredStudentsNumberLabel
 id registrationTextView
 id researchButton
 id right
@@ -1246,6 +1249,7 @@ style Theme_AppCompat_Light_DialogWhenLarge
 style Theme_AppCompat_Light_NoActionBar
 style Theme_AppCompat_NoActionBar
 style Theme_integration_Light
+style Theme_integration_Light_Light
 style ThemeOverlay_AppCompat
 style ThemeOverlay_AppCompat_ActionBar
 style ThemeOverlay_AppCompat_Dark

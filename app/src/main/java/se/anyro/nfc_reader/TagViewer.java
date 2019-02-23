@@ -42,6 +42,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -68,6 +69,7 @@ public class TagViewer extends Activity {
 
     private Button mForgottenCardButton,mFinishButton, mManualAddingButton;
 
+    private TextView registeredStudentsNumber;
     // Attribute used for storing a tag used for debugging purpose. When using Log.i(TAG, "Something"), it will be easier to track these messages in the logcat.
     private String TAG;
 
@@ -80,6 +82,7 @@ public class TagViewer extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tag_viewer);
 
+        registeredStudentsNumber = findViewById(R.id.registeredStudentsNumber);
         VariableRepository.getInstance().setStudentName("");
 
         mForgottenCardButton = findViewById(R.id.forgottenCardButton);
@@ -297,6 +300,7 @@ public class TagViewer extends Activity {
             // Setup the views
             buildTagViews(msgs);
             VariableRepository.getInstance().incrementStudentCounter();
+            registeredStudentsNumber.setText(VariableRepository.getInstance().getStudentCounter());
         }
     }
 

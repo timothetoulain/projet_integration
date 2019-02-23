@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/toulain/AndroidStudioProjects/projet_integration/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v22/values-v22.xml",
+            "outputFile": "C:\\Users\\Marcross\\Desktop\\L3\\SEMESTRE_2\\projet_integration-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v22\\values-v22.xml",
             "map": [
                 {
-                    "source": "/home/toulain/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/10944e62b7914036d4bfcac14c289566/res/values-v22/values-v22.xml",
+                    "source": "C:\\Users\\Marcross\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f802bdfea4844cd85bf413f5046e8b35\\res\\values-v22\\values-v22.xml",
                     "from": {
                         "startLines": "2,3,4,9",
                         "startColumns": "4,4,4,4",

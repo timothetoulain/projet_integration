@@ -12,6 +12,8 @@ import java.io.FileInputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
+import se.anyro.nfc_reader.setup.VariableRepository;
+
 public class VisualizeActivity extends Activity {
     private LinearLayout layout;
     private String  resultFile = "result.csv";
@@ -25,6 +27,7 @@ public class VisualizeActivity extends Activity {
         TAG = "VisualizeActivityLog";
         layout = findViewById(R.id.linearLayout);
 
+        VariableRepository.getInstance().resetStudentCounter();
 
         ArrayList al = new ArrayList();
         al=readData(resultFile);
@@ -36,7 +39,11 @@ public class VisualizeActivity extends Activity {
             layout.addView(textViewData);
         }
         else {
+            TextView textViewDataCount = new TextView(this);
+            textViewDataCount.setText(String.valueOf(al.size()/3)+ " results found :");
+            layout.addView(textViewDataCount);int test = 0;
             for (int i = 0; i < al.size(); i+=3) {
+                test++;
                 Log.i(TAG,"donnée à l'indice " + i + " = " + al.get(i));
                 Log.i(TAG,"Eleve n° " + i + " : " + al.get(i+2)+ "\n" + "\tprésent le " + al.get(i) + "\n" + "\tidentifiant hexadecimal : " + al.get(i+1) + "\n");
 
@@ -47,6 +54,7 @@ public class VisualizeActivity extends Activity {
                 textViewData.setText(dataBuffer.toString());
                 layout.addView(textViewData);
             }
+            Log.i(TAG,"NOMBRE"+ test +"\n");
         }
     }
     private ArrayList readData(String file) {
