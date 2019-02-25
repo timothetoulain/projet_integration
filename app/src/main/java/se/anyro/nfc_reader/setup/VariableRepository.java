@@ -1,5 +1,7 @@
 package se.anyro.nfc_reader.setup;
 
+import android.util.Log;
+
 public class VariableRepository {
 
     private String teacherName;
@@ -77,7 +79,10 @@ public class VariableRepository {
         return this.studentCounter;
     }
     public void incrementStudentCounter(){
+        Log.i("VARIABLEREPOREPO BEFORE",String.valueOf(this.studentCounter));
         this.studentCounter++;
+        Log.i("VARIABLEREPOREPO AFTER",String.valueOf(this.studentCounter));
+        Log.i("VARIABLEREPOREPO","TOUCHMYTOUCHMYREPOREPO");
     }
     public void resetStudentCounter(){
         this.studentCounter=0;

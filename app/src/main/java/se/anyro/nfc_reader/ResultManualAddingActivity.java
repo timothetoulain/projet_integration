@@ -95,6 +95,7 @@ public class ResultManualAddingActivity extends Activity {
                         ToastMessage.studentAlreadyRegistered(getApplicationContext());
                     }
                     Intent resultView = new Intent(ResultManualAddingActivity.this, TagViewer.class);
+                    // VariableRepository.getInstance().incrementStudentCounter();
                     startActivity(resultView);
                 } else {
                     Toast.makeText(getApplicationContext(),R.string.please_check,Toast.LENGTH_SHORT).show();

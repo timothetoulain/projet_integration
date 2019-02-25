@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.integration.Light.Light" parent="android:Theme.Holo.Light" >
+        <item name="android:colorForeground">?android:attr/actionMenuTextColor</item>
+        <item name="android:textColorSecondaryInverse">?android:attr/actionMenuTextColor</item>
+    </style>
+</resources>

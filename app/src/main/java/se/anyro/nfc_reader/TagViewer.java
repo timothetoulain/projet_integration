@@ -35,6 +35,8 @@ import android.os.IBinder;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.provider.Settings;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -83,6 +85,26 @@ public class TagViewer extends Activity {
         setContentView(R.layout.tag_viewer);
 
         registeredStudentsNumber = findViewById(R.id.registeredStudentsNumber);
+        // registeredStudentsNumber.
+                /*addTextChangedListener(new TextWatcher() {
+            public void afterTextChanged(Editable s) {   //Convert the Text to String
+                // String inputText = registeredStudentsNumber.getText().toString();
+                // registeredStudentsNumber = ((TextView) findViewById(R.id.CustomFontText));
+                Log.i(TAG,"pushpush"+String.valueOf(VariableRepository.getInstance().getStudentCounter()));
+                registeredStudentsNumber.setText(VariableRepository.getInstance().getStudentCounter());
+            }
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                // TODO Auto-generated method stub
+                Log.i(TAG,"pushpush"+String.valueOf(VariableRepository.getInstance().getStudentCounter()));
+                registeredStudentsNumber.setText(VariableRepository.getInstance().getStudentCounter());
+            }
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                // TODO Auto-generated method stub
+                Log.i(TAG,"pushpush"+String.valueOf(VariableRepository.getInstance().getStudentCounter()));
+                registeredStudentsNumber.setText(VariableRepository.getInstance().getStudentCounter());
+            }
+        });
+        */
         VariableRepository.getInstance().setStudentName("");
 
         mForgottenCardButton = findViewById(R.id.forgottenCardButton);
@@ -158,6 +180,8 @@ public class TagViewer extends Activity {
                 ((DialogManager)confirmAcquittanceDialog).onDismissListener(closeListener);
             }
         });
+        // VariableRepository.getInstance().incrementStudentCounter();
+        Log.i(TAG,"testestest"+String.valueOf(VariableRepository.getInstance().getStudentCounter()));
     }
 
     private void showMessage(int title, int message) {
@@ -259,7 +283,9 @@ public class TagViewer extends Activity {
         msgs = new NdefMessage[] { msg };
         mTags.add(tag);
         buildTagViews(msgs);
+        Log.i(TAG,"TOUCHMYTOUCHMY");
         VariableRepository.getInstance().incrementStudentCounter();
+
     }
 
     private void resolveIntent(Intent intent) {
@@ -299,7 +325,9 @@ public class TagViewer extends Activity {
             Log.i(TAG,"msgs: "+msgs);
             // Setup the views
             buildTagViews(msgs);
+            Log.i(TAG,"TOUCHMYYYYYYYYYYYYYYYS");
             VariableRepository.getInstance().incrementStudentCounter();
+
 //            registeredStudentsNumber.setText(VariableRepository.getInstance().getStudentCounter());
         }
     }
@@ -559,6 +587,8 @@ public class TagViewer extends Activity {
     public void onBackPressed() {
         Log.d(TAG, "onBackPressed Called");
         Toast.makeText(this,R.string.confirm_registration_title,Toast.LENGTH_SHORT).show();
+        VariableRepository.getInstance().incrementStudentCounter();
+        this.registeredStudentsNumber.setText(VariableRepository.getInstance().getStudentCounter());
     }
 
     se.anyro.nfc_reader.setup.DialogInterface closeListener = new se.anyro.nfc_reader.setup.DialogInterface() {

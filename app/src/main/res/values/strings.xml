@@ -12,7 +12,7 @@
     <string name="error_password">Incorrect Password.</string>
 
     <string name="button_create_list">Create a presence list</string>
-    <string name="button_display_list">Visualiser</string>
+    <string name="button_display_list">Visualize</string>
     <string name="button_disconnect">Disconnect</string>
 
     <string name="message_new_list">Create a new presence list.</string>
