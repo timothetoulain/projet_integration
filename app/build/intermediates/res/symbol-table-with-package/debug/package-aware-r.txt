@@ -649,6 +649,8 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id addButton
+id addClassTextView
 id alertTitle
 id always
 id async
@@ -716,17 +718,18 @@ id linearLayout2
 id list
 id listMode
 id list_item
+id manageButton
 id manualAddingButton
 id manualAddingTextView
 id media_actions
 id menuTextView
-id menu_main_clear
 id message
 id middle
 id multiply
 id nameEditText
 id nameTextView
 id never
+id newClassEditText
 id none
 id normal
 id notification_background
@@ -848,6 +851,7 @@ layout activity_card_forgotten
 layout activity_class_selection
 layout activity_login_teacher
 layout activity_main
+layout activity_manage_class
 layout activity_result_manual_adding
 layout activity_select_visualize
 layout activity_student_manual_adding
@@ -914,6 +918,7 @@ string already_registered
 string app_name
 string application_name
 string button_connection
+string button_create_course
 string button_create_list
 string button_date_end
 string button_date_start
@@ -931,6 +936,8 @@ string confirm
 string confirm_registration
 string confirm_registration_title
 string course
+string course_added
+string course_not_added
 string date_end
 string date_start
 string disconnect
@@ -939,14 +946,14 @@ string error_connection
 string error_incomplete
 string error_leave_registration
 string error_login_password
+string error_no_student
 string error_password
 string error_select_class
 string error_unknown_student
 string login
 string manual_adding
-string menu
-string menu_main_clear_title
 string message_account
+string message_new_course
 string message_new_list
 string message_registration
 string message_scan
@@ -954,8 +961,6 @@ string message_welcome
 string nfc_disabled
 string no
 string no_nfc
-string no_result
-string nothing_scanned
 string password
 string please_check
 string results
@@ -1249,7 +1254,6 @@ style Theme_AppCompat_Light_DialogWhenLarge
 style Theme_AppCompat_Light_NoActionBar
 style Theme_AppCompat_NoActionBar
 style Theme_integration_Light
-style Theme_integration_Light_Light
 style ThemeOverlay_AppCompat
 style ThemeOverlay_AppCompat_ActionBar
 style ThemeOverlay_AppCompat_Dark

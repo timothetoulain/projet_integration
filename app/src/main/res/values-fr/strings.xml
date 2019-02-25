@@ -2,7 +2,6 @@
 <resources>
     <string name="app_name">CheckPresence</string>
     <string name="application_name">CheckPresence</string>
-    <string name="menu">Menu</string>
 
     <string name="message_welcome">Bienvenue sur CheckPresence ! Connectez-vous pour accéder à votre compte.</string>
     <string name="button_connection">Connexion</string>
@@ -13,8 +12,7 @@
     <string name="error_password">Mot de passe incorrect.</string>
 
 
-    <string name="message_account">Vous pouvez créer une nouvelle liste de présence ou visualiser vos listes existante.</string>
-    <string name="button_create_list">Créer</string>
+    <string name="button_create_list">Créer une liste de présence</string>
     <string name="button_display_list">Visualiser</string>
     <string name="button_disconnect">Déconnexion</string>
 
@@ -56,15 +54,30 @@
     <string name="manual_adding">Ajouter un étudiant manuellement.</string>
     <string name="button_manual_adding">Ajout manuel</string>
 
-    <string name="menu_main_clear_title">Effacer tout</string>
-    <string name="nothing_scanned">Rien de scanné pour le moment</string>
+
     <string name="error">Erreur</string>
     <string name="please_check">Veuillez sélectionner l\'un des étudiants ci-dessus</string>
     <string name="yes">Oui</string>
     <string name="no">Non</string>
     <string name="error_select_class">Veuillez sélectionner un cours</string>
-    <string name="already_registered">Vous êtes déjà inscrit à ce cours"</string>
-    <string name="no_result">"Aucun résultat"</string>
+    <string name="already_registered">Vous êtes déjà inscrit à ce cours</string>
+
+
+
+    <string name="error_no_student">Aucun étudiant n\'a été trouvé.</string>
+
+    <string name="course_added">Cours crée avec succès</string>
+    <string name="course_not_added">Echec de la création du cours</string>
+
+    <string name="message_new_course">Créez un nouveau cours.</string>
+    <string name="button_create_course">Créer un cours</string>
+    <string name="message_account">Vous pouvez créer un cours, créer une nouvelle liste de présence ou visualiser vos listes existantes.</string>
+
+
+
+
+
+
 
 
 </resources>

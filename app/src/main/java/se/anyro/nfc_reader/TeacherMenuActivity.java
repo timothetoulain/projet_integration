@@ -17,6 +17,8 @@ public class TeacherMenuActivity extends Activity {
 
     private Button mCreateButton;
     private Button mVisualizeButton;
+    private Button mManageButton;
+
     private Button mDisconnectionButton;
     private DialogFragment logOutDialog;
     private String TAG;
@@ -26,6 +28,7 @@ public class TeacherMenuActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_teacher_menu);
         mCreateButton = findViewById(R.id.createButton);
+        mManageButton = findViewById(R.id.manageButton);
         mVisualizeButton = findViewById(R.id.visualizeButton);
         mDisconnectionButton = findViewById(R.id.disconnectionButton);
 
@@ -44,6 +47,13 @@ public class TeacherMenuActivity extends Activity {
             public void onClick(View v) {
                 Intent visualizeActivity = new Intent(TeacherMenuActivity.this, SelectVisualizeActivity.class);
                 startActivity(visualizeActivity);
+            }
+        });
+        mManageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent manageActivity = new Intent(TeacherMenuActivity.this, ManageClassActivity.class);
+                startActivity(manageActivity);
             }
         });
         mDisconnectionButton.setOnClickListener(new View.OnClickListener() {

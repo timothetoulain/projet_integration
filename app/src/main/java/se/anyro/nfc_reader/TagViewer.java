@@ -205,7 +205,7 @@ public class TagViewer extends Activity {
                 VariableRepository.getInstance().setStudentName("");
             }
             else if(student.equals("")){
-                System.out.println("on resume ubnknown");
+                System.out.println("on resume unknown");
                 ToastMessage.unknownStudentMessage(this);
                 Log.i(TAG,"unknown student");
             }
@@ -300,7 +300,7 @@ public class TagViewer extends Activity {
             // Setup the views
             buildTagViews(msgs);
             VariableRepository.getInstance().incrementStudentCounter();
-            registeredStudentsNumber.setText(VariableRepository.getInstance().getStudentCounter());
+//            registeredStudentsNumber.setText(VariableRepository.getInstance().getStudentCounter());
         }
     }
 
@@ -499,30 +499,6 @@ public class TagViewer extends Activity {
         return true;
     }
     
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if (mTags.size() == 0) {
-            Toast.makeText(this, R.string.nothing_scanned, Toast.LENGTH_LONG).show();
-            return true;
-        }
-        switch (item.getItemId()) {
-        case R.id.menu_main_clear:
-            clearTags();
-            return true;
-        default:
-            return super.onOptionsItemSelected(item);
-        }
-    }
-
-    private void clearTags() {
-        mTags.clear();
-        for (int i = mTagContent.getChildCount() -1; i >= 0 ; i--) {
-            View view = mTagContent.getChildAt(i);
-            if (view.getId() != R.id.tag_viewer_text) {
-                mTagContent.removeViewAt(i);
-            }
-        }
-    }
 
     @Override
     public void onNewIntent(Intent intent) {

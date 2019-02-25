@@ -2,7 +2,6 @@
 <resources>
     <string name="app_name">CheckPresence</string>
     <string name="application_name">CheckPresence</string>
-    <string name="menu">Menu</string>
 
     <string name="message_welcome">Welcome on CheckPresence! You can connect to access your account.</string>
     <string name="button_connection">Connection</string>
@@ -12,8 +11,7 @@
     <string name="error_login_password">Login and/or password are incorrect.</string>
     <string name="error_password">Incorrect Password.</string>
 
-    <string name="message_account">You can create a new presence list or display your existing lists</string>
-    <string name="button_create_list">Create</string>
+    <string name="button_create_list">Create a presence list</string>
     <string name="button_display_list">Visualiser</string>
     <string name="button_disconnect">Disconnect</string>
 
@@ -55,14 +53,25 @@
     <string name="manual_adding">Add a student manually.</string>
     <string name="button_manual_adding">Manual adding</string>
 
-    <string name="menu_main_clear_title">Clear all</string>
-    <string name="nothing_scanned">Nothing scanned yet</string>
     <string name="error">Error</string>
     <string name="please_check">Select one of the students before submitting</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="error_select_class">Please select a class</string>
     <string name="already_registered">You are already registered for this course"</string>
-    <string name="no_result">"No result found"</string>
+
+    <string name="error_no_student">No students were found.</string>
+
+
+
+
+    <string name="course_added">Course successfully created</string>
+
+   <string name="course_not_added">Course creation failed</string>
+
+    <string name="message_new_course">Create a new course.</string>
+    <string name="button_create_course">Create a course</string>
+    <string name="message_account">You can create a course, create a new presence list or display your existing lists.</string>
+
 
 </resources>

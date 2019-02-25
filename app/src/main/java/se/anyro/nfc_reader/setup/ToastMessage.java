@@ -22,4 +22,10 @@ public class ToastMessage {
     public static void studentAlreadyRegistered(Context c){
         Toast.makeText(c,R.string.already_registered,Toast.LENGTH_SHORT).show();
     }
+    public static void courseCreated(Context c){
+        Toast.makeText(c,R.string.course_added,Toast.LENGTH_SHORT).show();
+    }
+    public static void courseNotCreated(Context c){
+        Toast.makeText(c,R.string.course_not_added,Toast.LENGTH_SHORT).show();
+    }
 }

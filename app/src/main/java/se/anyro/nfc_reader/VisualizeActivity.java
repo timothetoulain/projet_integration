@@ -35,7 +35,7 @@ public class VisualizeActivity extends Activity {
             Log.i(TAG,"empty");
             //String empty=R.string.no_result;
             TextView textViewData = new TextView(this);
-            textViewData.setText(R.string.no_result);
+            textViewData.setText(R.string.error_no_student);
             layout.addView(textViewData);
         }
         else {
