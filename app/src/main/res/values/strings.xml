@@ -44,7 +44,7 @@
     <string name="results">Your results</string>
 
     <string name="no_nfc">No NFC reader found on this device.</string>
-    <string name="nfc_disabled">NFC is not enable. Please go to the wireless settings to enable it.</string>
+    <string name="nfc_disabled">Attention! NFC is not enable</string>
 
     <string name="disconnect">Do you want to disconnect?</string>
     <string name="error_incomplete">At least one field is incomplete!</string>

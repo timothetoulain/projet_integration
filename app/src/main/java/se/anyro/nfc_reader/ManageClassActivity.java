@@ -36,8 +36,6 @@ public class ManageClassActivity extends Activity {
         mNewClassEditText=findViewById(R.id.newClassEditText);
 
 
-
-
         mAddButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

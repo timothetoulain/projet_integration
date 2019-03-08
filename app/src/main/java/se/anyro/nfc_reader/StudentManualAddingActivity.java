@@ -22,7 +22,7 @@ import se.anyro.nfc_reader.setup.VariableRepository;
 public class StudentManualAddingActivity extends Activity {
     private Button mConfirmButton;
     private EditText mNameEditText;
-    private String  resultFile = "result.csv";
+   // private String  resultFile = "result.csv";
 
 
     @Override
@@ -48,10 +48,11 @@ public class StudentManualAddingActivity extends Activity {
                     String result=queryGetStudents();
                     if(result != null && !result.equals("") && !result.equals("null")){
                         System.out.println("name retrieved: "+result);
-                        saveData(result,resultFile);
+                        //saveData(result,resultFile);
 
                         Log.i("StudentManualLog", result);
-
+                        VariableRepository.getInstance().setStudentName(result);
+                        VariableRepository.getInstance().incrementOnResumeCounter();
                         Intent resultView = new Intent(StudentManualAddingActivity.this, ResultManualAddingActivity.class);
                         startActivity(resultView);
                     }

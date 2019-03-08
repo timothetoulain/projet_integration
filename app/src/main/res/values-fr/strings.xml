@@ -45,7 +45,7 @@
     <string name="results">Vos résultats</string>
 
     <string name="no_nfc">Pas de lecteur NFC trouvé sur cet appareil.</string>
-    <string name="nfc_disabled">Le NFC n\'est pas activé. Allez dans les paramètres de connexion de votre appareil pour l\'activer.</string>
+    <string name="nfc_disabled">Attention! Le NFC n\'est pas activé.</string>
 
     <string name="disconnect">Souhaitez-vous vous déconnecter ?</string>
     <string name="error_incomplete">Au moins un champ est incomplet !</string>
