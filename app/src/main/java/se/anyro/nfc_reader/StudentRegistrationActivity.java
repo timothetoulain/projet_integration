@@ -13,12 +13,14 @@ import se.anyro.nfc_reader.database.StudentRegistrationQuery;
 import se.anyro.nfc_reader.setup.ToastMessage;
 import se.anyro.nfc_reader.setup.VariableRepository;
 
+/**
+ * A student whose card was not recognised can add himself to the database on this activity
+ */
 public class StudentRegistrationActivity extends Activity {
 
     private Button mConfirmButton;
     private EditText studentNumberEditText;
     private EditText nameEditText;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +38,6 @@ public class StudentRegistrationActivity extends Activity {
                 } else {
                     String nameRetrieved=query();
                     if(nameRetrieved != null && !nameRetrieved.equals("")){
-                        System.out.println("name retrieved: "+nameRetrieved);
                         VariableRepository.getInstance().setStudentName(nameRetrieved);
                         VariableRepository.getInstance().incrementOnResumeCounter();
                         Intent tagViewer = new Intent(StudentRegistrationActivity.this, TagViewer.class);
@@ -54,7 +55,6 @@ public class StudentRegistrationActivity extends Activity {
         String course= VariableRepository.getInstance().getCourseName();
         String nfc= VariableRepository.getInstance().getNfc();
 
-        System.out.println(nfc+":");
         try {
             nameStudent=new StudentRegistrationQuery(this).execute(type,course,numberStudent,nameStudent,nfc).get();
         }

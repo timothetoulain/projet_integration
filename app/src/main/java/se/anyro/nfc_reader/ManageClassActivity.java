@@ -22,6 +22,9 @@ import se.anyro.nfc_reader.database.SpinnerTeacherQuery;
 import se.anyro.nfc_reader.setup.ToastMessage;
 import se.anyro.nfc_reader.setup.VariableRepository;
 
+/**
+ * Activity used to create a new course
+ */
 public class ManageClassActivity extends Activity {
 
     private Button mAddButton;
@@ -45,7 +48,6 @@ public class ManageClassActivity extends Activity {
                     String course=mNewClassEditText.getText().toString();
                     try {
                         String result=new CreateCourseQuery(getApplicationContext()).execute(type,teacher,course).get();
-                        //TODO gerer les valeurs de retour
                         if(result.equals("1")){
                             ToastMessage.courseCreated(getApplicationContext());
                         }
@@ -65,8 +67,6 @@ public class ManageClassActivity extends Activity {
                 }
             }
         });
-
-
     }
     @Override
     public void onBackPressed() {

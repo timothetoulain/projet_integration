@@ -18,7 +18,11 @@ import java.net.URLEncoder;
 import java.util.ArrayList;
 
 import se.anyro.nfc_reader.setup.EncodingManager;
+import se.anyro.nfc_reader.setup.VariableRepository;
 
+/**
+ * This class makes a query to retrieve the students present to a given class, between 2 given dates
+ */
 public class VisualizeQuery extends AsyncTask<String, Void, String> {
 
         private Context context;
@@ -30,7 +34,7 @@ public class VisualizeQuery extends AsyncTask<String, Void, String> {
 
         @Override
         protected void onPreExecute(){
-            my_url="http://3.120.246.93/checkpresence/controller/queries.php";
+            my_url= VariableRepository.getInstance().getUrl();
         }
 
         @Override
@@ -39,11 +43,6 @@ public class VisualizeQuery extends AsyncTask<String, Void, String> {
             String course=params[1];
             String dateStart=params[2];
             String dateEnd=params[3];
-
-            System.out.println("type:"+type);
-            System.out.println("course:"+course);
-            System.out.println("date start:"+dateStart);
-            System.out.println("date end:"+dateEnd);
 
             try{
                 URL url=new URL(my_url);
@@ -72,7 +71,6 @@ public class VisualizeQuery extends AsyncTask<String, Void, String> {
                 // Read Server Response
                 while((line = reader.readLine()) != null) {
                     sb+=line;
-                    // break;
                 }
                 sb=EncodingManager.convert(sb);
                 sb=sb.replace("[","");
@@ -98,7 +96,6 @@ public class VisualizeQuery extends AsyncTask<String, Void, String> {
                     result+=al.get(i)+":";
                 }
                 result= result.substring(0, result.length()-1);
-                System.out.println(result);
 
                 outputStream.close();
                 InputStream inputStream=httpURLConnection.getInputStream();
@@ -126,7 +123,7 @@ public class VisualizeQuery extends AsyncTask<String, Void, String> {
         @Override
         protected void onPostExecute(String result) {
             super.onPostExecute(result);
-
+            //return all the present students, or a message indicating that no student were found
         }
     }
 

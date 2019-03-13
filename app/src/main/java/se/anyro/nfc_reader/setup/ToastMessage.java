@@ -5,6 +5,9 @@ import android.widget.Toast;
 
 import se.anyro.nfc_reader.R;
 
+/**
+ * regroup all the toast messages used in the app
+ */
 public class ToastMessage {
 
     public static void incompleteFieldMessage(Context c){

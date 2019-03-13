@@ -12,8 +12,10 @@ import java.io.FileInputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
-import se.anyro.nfc_reader.setup.VariableRepository;
-
+/**
+ * we can consult the list of the present students to a given course,
+ * between 2 given dates/times
+ */
 public class VisualizeActivity extends Activity {
     private LinearLayout layout;
     private String  resultFile = "result.csv";
@@ -27,13 +29,10 @@ public class VisualizeActivity extends Activity {
         TAG = "VisualizeActivityLog";
         layout = findViewById(R.id.linearLayout);
 
-        VariableRepository.getInstance().resetStudentCounter();
-
         ArrayList al = new ArrayList();
         al=readData(resultFile);
         if(al.isEmpty()){
             Log.i(TAG,"empty");
-            //String empty=R.string.no_result;
             TextView textViewData = new TextView(this);
             textViewData.setText(R.string.error_no_student);
             layout.addView(textViewData);
@@ -41,11 +40,10 @@ public class VisualizeActivity extends Activity {
         else {
             TextView textViewDataCount = new TextView(this);
             textViewDataCount.setText(String.valueOf(al.size()/3)+ " results found :");
-            layout.addView(textViewDataCount);int test = 0;
+            layout.addView(textViewDataCount);
             for (int i = 0; i < al.size(); i+=3) {
-                test++;
-                Log.i(TAG,"donnée à l'indice " + i + " = " + al.get(i));
-                Log.i(TAG,"Eleve n° " + i + " : " + al.get(i+2)+ "\n" + "\tprésent le " + al.get(i) + "\n" + "\tidentifiant hexadecimal : " + al.get(i+1) + "\n");
+                Log.i(TAG,"Index " + i + " = " + al.get(i));
+                Log.i(TAG,"Student n° " + i + " : " + al.get(i+2)+ "\n" + "\tpresent on " + al.get(i) + "\n" + "\tdecimal id : " + al.get(i+1) + "\n");
 
                 StringBuffer dataBuffer = new StringBuffer();
                 dataBuffer.append("- " + al.get(i+2)+ "\n" + "\tDate : " + al.get(i) + "\n" + "\tID : " + al.get(i+1) + "\n");
@@ -54,9 +52,9 @@ public class VisualizeActivity extends Activity {
                 textViewData.setText(dataBuffer.toString());
                 layout.addView(textViewData);
             }
-            Log.i(TAG,"NOMBRE"+ test +"\n");
         }
     }
+    //we read the csv file containing the results and we put them into an array list
     private ArrayList readData(String file) {
         try {
             FileInputStream in = this.openFileInput(file);

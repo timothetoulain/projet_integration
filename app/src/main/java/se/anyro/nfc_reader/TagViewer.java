@@ -50,7 +50,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 /**
- * An {@link Activity} which handles a broadcast of a new tag that the device just discovered.
+ * Activity that permits the students registration.
+ * Detect the nfc tags, retrieve the information linked to it, and display the corresponding student if found.
  */
 public class TagViewer extends Activity {
 
@@ -71,40 +72,18 @@ public class TagViewer extends Activity {
 
     private Button mForgottenCardButton,mFinishButton, mManualAddingButton;
 
-    private TextView registeredStudentsNumber;
-    // Attribute used for storing a tag used for debugging purpose. When using Log.i(TAG, "Something"), it will be easier to track these messages in the logcat.
+    // Attribute used for storing a tag used for debugging purpose.
+    // When using Log.i(TAG, "Something"), it will be easier to track these messages in the logcat.
     private String TAG;
 
     private DialogFragment confirmAcquittanceDialog;
 
-    private int count=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tag_viewer);
 
-        registeredStudentsNumber = findViewById(R.id.registeredStudentsNumber);
-        // registeredStudentsNumber.
-                /*addTextChangedListener(new TextWatcher() {
-            public void afterTextChanged(Editable s) {   //Convert the Text to String
-                // String inputText = registeredStudentsNumber.getText().toString();
-                // registeredStudentsNumber = ((TextView) findViewById(R.id.CustomFontText));
-                Log.i(TAG,"pushpush"+String.valueOf(VariableRepository.getInstance().getStudentCounter()));
-                registeredStudentsNumber.setText(VariableRepository.getInstance().getStudentCounter());
-            }
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-                // TODO Auto-generated method stub
-                Log.i(TAG,"pushpush"+String.valueOf(VariableRepository.getInstance().getStudentCounter()));
-                registeredStudentsNumber.setText(VariableRepository.getInstance().getStudentCounter());
-            }
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                // TODO Auto-generated method stub
-                Log.i(TAG,"pushpush"+String.valueOf(VariableRepository.getInstance().getStudentCounter()));
-                registeredStudentsNumber.setText(VariableRepository.getInstance().getStudentCounter());
-            }
-        });
-        */
         VariableRepository.getInstance().setStudentName("");
 
         mForgottenCardButton = findViewById(R.id.forgottenCardButton);
@@ -137,6 +116,7 @@ public class TagViewer extends Activity {
         mNdefPushMessage = new NdefMessage(new NdefRecord[] { newTextRecord(
                 "Message from NFC Reader :-)", Locale.ENGLISH, true) });
 
+        //Redirect a student on CardForgottenActivity
         mForgottenCardButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -144,13 +124,12 @@ public class TagViewer extends Activity {
                 startActivity(cardForgotten);
             }
         });
+
+        //Finish the registration, a dialog pops up to ask the teacher's password
         mFinishButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String teacherLogin=VariableRepository.getInstance().getTeacherLogin();
-
-                System.out.println("teacher login:"+teacherLogin+":");
-
                 Log.d(TAG, "Finish button pressed");
                 confirmAcquittanceDialog = new DialogManager();
                 ((DialogManager) confirmAcquittanceDialog).setDialogToDisplay("acquittanceConfirmationDialog");
@@ -162,12 +141,13 @@ public class TagViewer extends Activity {
                 ((DialogManager)confirmAcquittanceDialog).onDismissListener(closeListener);
             }
         });
+
+        //Redirect the teacher on StudentManualAddingActivity, teacher's password is required to do so
        mManualAddingButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 String teacherLogin=VariableRepository.getInstance().getTeacherLogin();
-                System.out.println("teacher login:"+teacherLogin+":");
 
                 Log.d(TAG, "Finish button pressed");
                 confirmAcquittanceDialog = new DialogManager();
@@ -180,8 +160,6 @@ public class TagViewer extends Activity {
                 ((DialogManager)confirmAcquittanceDialog).onDismissListener(closeListener);
             }
         });
-        // VariableRepository.getInstance().incrementStudentCounter();
-        Log.i(TAG,"testestest"+String.valueOf(VariableRepository.getInstance().getStudentCounter()));
     }
 
     private void showMessage(int title, int message) {
@@ -217,8 +195,13 @@ public class TagViewer extends Activity {
             mAdapter.enableForegroundDispatch(this, mPendingIntent, null, null);
             mAdapter.enableForegroundNdefPush(this, mNdefPushMessage);
         }
-        //if(count>0){
-        if(VariableRepository.getInstance().getOnResumeCounter()==1){
+
+        /*This variable is equal to 1 if a student was manually add
+        * through CardForgottenActivity or StudentManualAddingActivity
+        * This student name is stored into the variable repository and can
+        * be displayed after checking different conditions
+        */
+         if(VariableRepository.getInstance().getOnResumeCounter()==1){
             Log.i(TAG,"let's read");
             this.student=VariableRepository.getInstance().getStudentName();
 
@@ -229,19 +212,16 @@ public class TagViewer extends Activity {
                 VariableRepository.getInstance().setStudentName("");
             }
             else if(student.equals("")){
-                System.out.println("on resume unknown");
                 ToastMessage.unknownStudentMessage(this);
                 Log.i(TAG,"unknown student");
             }
             else if(student.contains("ERROR")){
-                System.out.println("on resume already");
 
                 ToastMessage.studentAlreadyRegistered(this);
                 Log.i(TAG,"student already registered");
             }
         }
         VariableRepository.getInstance().resetOnResumeCounter();
-        //count++;
         Log.i(TAG,"resume");
     }
 
@@ -261,13 +241,12 @@ public class TagViewer extends Activity {
             public void onClick(DialogInterface dialogInterface, int i) {
                // Intent intent = new Intent(Settings.ACTION_WIRELESS_SETTINGS);
                 //startActivity(intent);
-
             }
         });
-
         builder.create().show();
     }
 
+    //Display the student name in the case of a manual adding
     private void displayIfForgottenCard(String studentName){
         NdefMessage[] msgs;
         byte[] empty = new byte[0];
@@ -280,11 +259,9 @@ public class TagViewer extends Activity {
         msgs = new NdefMessage[] { msg };
         mTags.add(tag);
         buildTagViews(msgs);
-        Log.i(TAG,"TOUCHMYTOUCHMY");
-        VariableRepository.getInstance().incrementStudentCounter();
-
     }
 
+    //Detect the nfc tag
     private void resolveIntent(Intent intent) {
         String action = intent.getAction();
         if (NfcAdapter.ACTION_TAG_DISCOVERED.equals(action)
@@ -309,7 +286,6 @@ public class TagViewer extends Activity {
                 String bytes=new String(payload);
                 System.out.println("bytes= "+bytes);
                 if(bytes.equals("")){
-                    System.out.println("forced exit of function");
                     return;
                 }
                 Log.i(TAG,"payload: "+payload);
@@ -322,10 +298,6 @@ public class TagViewer extends Activity {
             Log.i(TAG,"msgs: "+msgs);
             // Setup the views
             buildTagViews(msgs);
-            Log.i(TAG,"TOUCHMYYYYYYYYYYYYYYYS");
-            VariableRepository.getInstance().incrementStudentCounter();
-
-//            registeredStudentsNumber.setText(VariableRepository.getInstance().getStudentCounter());
         }
     }
 
@@ -455,12 +427,10 @@ public class TagViewer extends Activity {
             oTechExtras[nfca_idx].putShort("sak", nSak);
             modified = true;
         }
-
         if (nfca_idx != -1 && mc_idx != -1 && oTechExtras[mc_idx] == null) {
             oTechExtras[mc_idx] = oTechExtras[nfca_idx];
             modified = true;
         }
-
         if (!modified) {
             return oTag;
         }
@@ -523,13 +493,14 @@ public class TagViewer extends Activity {
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
-    
 
     @Override
     public void onNewIntent(Intent intent) {
         setIntent(intent);
         resolveIntent(intent);
     }
+
+    //Call the query class to indicate a student as present
     public String presence(String sb){
         String studentName=null;
         String type="addPresent";
@@ -542,23 +513,19 @@ public class TagViewer extends Activity {
         } catch (ExecutionException e) {
             e.printStackTrace();
         }
-        System.out.println("student before error:"+studentName+":");
          if(studentName==null){
-            System.out.println("server unreachable");
             ToastMessage.connectionErrorMessage(getApplicationContext());
             studentName="";
             return studentName;
          }
         //case already register
         else if(studentName.contains("ERROR")){
-            System.out.println("already register for this course");
             ToastMessage.studentAlreadyRegistered(getApplicationContext());
             studentName="";
             return studentName;
          }
         //case card not recognized
         else if(studentName.equals("")){
-            System.out.println("unknown student");
             ToastMessage.unknownStudentMessage(getApplicationContext());
             Intent studentRegistration = new Intent(TagViewer.this, StudentRegistrationActivity.class);
             startActivity(studentRegistration);
@@ -584,8 +551,6 @@ public class TagViewer extends Activity {
     public void onBackPressed() {
         Log.d(TAG, "onBackPressed Called");
         Toast.makeText(this,R.string.confirm_registration_title,Toast.LENGTH_SHORT).show();
-        VariableRepository.getInstance().incrementStudentCounter();
-        this.registeredStudentsNumber.setText(VariableRepository.getInstance().getStudentCounter());
     }
 
     se.anyro.nfc_reader.setup.DialogInterface closeListener = new se.anyro.nfc_reader.setup.DialogInterface() {
@@ -598,18 +563,14 @@ public class TagViewer extends Activity {
                         ((DialogManager) confirmAcquittanceDialog).getExitTagViewer() == true ) {
                     Intent mainIntent = new Intent(getBaseContext(), TeacherMenuActivity.class);
                     Log.d(TAG, "goingToStartActivity");
-                    VariableRepository.getInstance().resetStudentCounter();
                     startActivity(mainIntent);
                     finish();
-                    System.out.println("exit tag view");
-
                 }
                 else if ( ((DialogManager) confirmAcquittanceDialog).getUserConfirm() == true &&
                         ((DialogManager) confirmAcquittanceDialog).getGoToManualAdd() == true) {
                     Intent mainIntent = new Intent(getBaseContext(), StudentManualAddingActivity.class);
                     Log.d(TAG, "goingToStartActivity");
                     startActivity(mainIntent);
-                    System.out.println("go to manual adding");
                 }
                 else {
                     Log.d(TAG, "goingToStayOnThisActivity");
@@ -617,7 +578,4 @@ public class TagViewer extends Activity {
             }
         }
     };
-    public void handleDialogClose(DialogInterface dialog) {
-        //do here whatever you want to do on Dialog dismiss
-    }
 }

@@ -1,5 +1,3 @@
-
-
 package se.anyro.nfc_reader.database;
 
 import android.content.Context;
@@ -19,9 +17,12 @@ import java.net.ProtocolException;
 import java.net.URL;
 import java.net.URLEncoder;
 
-    /**
-     * add a student who forgot his student card to the presence list
-     */
+import se.anyro.nfc_reader.setup.VariableRepository;
+
+/**
+ * add a student to the database with his nfc number
+ *  register a student to a course
+ */
     public class StudentRegistrationQuery extends AsyncTask<String, Void, String> {
         private Context context;
         private String my_url;
@@ -32,7 +33,7 @@ import java.net.URLEncoder;
 
         @Override
         protected void onPreExecute(){
-            my_url="http://3.120.246.93/checkpresence/controller/queries.php";
+            my_url= VariableRepository.getInstance().getUrl();
         }
 
         @Override
@@ -42,16 +43,6 @@ import java.net.URLEncoder;
             String numberStudent=params[2];
             String nameStudent=params[3];
             String nfc=params[4];
-           // nfc= nfc.substring(0, nfc.length()-1);
-
-            //course= course.substring(0, course.length()-1);
-
-            System.out.println("type:"+type);
-            System.out.println("course:"+course);
-            System.out.println("numberStudent:"+numberStudent);
-            System.out.println("nameStudent:"+nameStudent);
-            System.out.println("nfc:"+nfc);
-
 
             try{
                 URL url=new URL(my_url);
@@ -83,8 +74,6 @@ import java.net.URLEncoder;
                     sb+=line;
                     break;
                 }
-                //sb= sb.substring(1, sb.length()-1);
-                System.out.println("sb= "+sb);
 
                 outputStream.close();
                 InputStream inputStream=httpURLConnection.getInputStream();
@@ -111,7 +100,7 @@ import java.net.URLEncoder;
         @Override
         protected void onPostExecute(String result) {
             super.onPostExecute(result);
-            //return the name of the student to TagViewer so it can be displayed
+            //return the name of the student so it can be displayed in TagViewer
         }
     }
 

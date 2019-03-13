@@ -38,7 +38,6 @@ public class LoginTeacher extends Activity {
                             ToastMessage.loginPasswordIncorrectMessage(getApplicationContext());
                         }
                         else{
-                            System.out.println("after query");
                             VariableRepository.getInstance().setTeacherName(teacherName);
                             VariableRepository.getInstance().setTeacherLogin(mEditTextIdentifier.getText().toString());
                             Intent teacherMenuActivity = new Intent(LoginTeacher.this, TeacherMenuActivity.class);
@@ -47,7 +46,6 @@ public class LoginTeacher extends Activity {
                     }
                     else{
                         ToastMessage.connectionErrorMessage(getApplicationContext());
-                        System.out.println("ERROR 1");
                     }
                 }
             }

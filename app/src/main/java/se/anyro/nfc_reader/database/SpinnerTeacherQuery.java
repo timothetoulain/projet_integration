@@ -20,10 +20,11 @@ import java.net.URLEncoder;
 import java.util.List;
 
 import se.anyro.nfc_reader.setup.EncodingManager;
+import se.anyro.nfc_reader.setup.VariableRepository;
 
 /**
  * retrieves the different courses taught by the logged in teacher
- * dynamic display in spinner
+ * used for dynamic display in spinner
  */
 public class SpinnerTeacherQuery extends AsyncTask<String, Void, Void>{
     private Context context;
@@ -38,21 +39,15 @@ public class SpinnerTeacherQuery extends AsyncTask<String, Void, Void>{
 
     @Override
     protected void onPreExecute(){
-        my_url="http://3.120.246.93/checkpresence/controller/queries.php";
+        my_url= VariableRepository.getInstance().getUrl();
     }
 
     @Override
     protected Void doInBackground(String... params)  {
 
         try{
-            System.out.println("in");
             String type=params[0];
             String teacher=params[1];
-            //for some reason, we have to delete the last character
-           // teacher= teacher.substring(0, teacher.length()-1);
-
-            System.out.println("teacher before query= "+teacher);
-
 
             URL url=new URL(my_url);
             HttpURLConnection httpURLConnection=(HttpURLConnection)url.openConnection();
@@ -73,19 +68,15 @@ public class SpinnerTeacherQuery extends AsyncTask<String, Void, Void>{
             // Read Server Response
             while((line = reader.readLine()) != null) {
                 sb+=line;
-                //break;
             }
             sb=EncodingManager.convert(sb);
-            System.out.println("sb= "+sb);
             //delete [ and ] at the beginning and the end
             sb= sb.substring(1, sb.length()-1);
-
 
             String[] spliter = sb.split(",");
             for(int j=0;j< spliter.length;j++) {
                 //delete the ""
                 spliter[j]= spliter[j].substring(1, spliter[j].length()-1);
-                System.out.println(spliter[j]);
                 classList.add(spliter[j]);
             }
 

@@ -26,6 +26,9 @@ import se.anyro.nfc_reader.database.VisualizeQuery;
 import se.anyro.nfc_reader.setup.ToastMessage;
 import se.anyro.nfc_reader.setup.VariableRepository;
 
+/**
+ * The teacher can select here the time, date and course he wants to see the presence list for
+ */
 public class SelectVisualizeActivity extends Activity implements
         View.OnClickListener {
 
@@ -64,7 +67,6 @@ public class SelectVisualizeActivity extends Activity implements
 
 
         teacher=VariableRepository.getInstance().getTeacherName();
-        System.out.println("teacher visualize= "+teacher);
 
         List classList=new ArrayList();
         classList.add(getString(R.string.course));
@@ -254,10 +256,8 @@ public class SelectVisualizeActivity extends Activity implements
                 String course=mSpinnerCourse.getSelectedItem().toString();
                 String dateStart=mStartDateEditText.getText().toString()+" "+mStartTimeEditText.getText().toString();
                 String dateEnd=mEndDateEditText.getText().toString()+" "+mEndTimeEditText.getText().toString();
-                System.out.println("course= "+course+" date start= "+dateStart+" date end= "+dateEnd);
                 try {
                     String result=new VisualizeQuery(this).execute(type,course,dateStart,dateEnd).get();
-                    System.out.println("result visualize query: "+result);
                     saveData(result,resultFile);
                     Intent visualize = new Intent(SelectVisualizeActivity.this, VisualizeActivity.class);
                     startActivity(visualize);
@@ -269,7 +269,7 @@ public class SelectVisualizeActivity extends Activity implements
             }
         }
     }
-
+    //we save the result of the query into a csv file
     private void saveData(String toSave,String file) {
         try {
             FileOutputStream out = this.openFileOutput(file, MODE_PRIVATE);

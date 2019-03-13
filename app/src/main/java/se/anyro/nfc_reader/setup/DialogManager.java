@@ -19,6 +19,10 @@ import java.util.concurrent.ExecutionException;
 import se.anyro.nfc_reader.R;
 import se.anyro.nfc_reader.database.LoginTeacherQuery;
 
+/**
+ * Manage the poping dialogs such as the one asking for the password before leaving the TagViewer activity (end of the registration)
+ *
+ */
 public class DialogManager extends DialogFragment {
     // I'm using these attributes as a temporary mean to store these variable.
     private Boolean userLoggingOut;
@@ -80,7 +84,6 @@ public class DialogManager extends DialogFragment {
                             String resultLogin=null;
                             String login=teacherLogin;
                             String password=passwordEditText.getText().toString();
-                            System.out.println("password: "+password);
                             String type="checkAccount";
                             Context context=getActivity();
                             try {
@@ -92,7 +95,6 @@ public class DialogManager extends DialogFragment {
                             }
                             if((resultLogin==null) || (resultLogin=="")){
                                 Toast.makeText(context,R.string.error_password,Toast.LENGTH_SHORT).show();
-                               // userChose = true;
                             }
                             else {
                                 userChose = true;

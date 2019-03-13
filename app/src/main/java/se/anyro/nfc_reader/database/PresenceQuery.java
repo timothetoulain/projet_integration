@@ -17,6 +17,8 @@ import java.net.ProtocolException;
 import java.net.URL;
 import java.net.URLEncoder;
 
+import se.anyro.nfc_reader.setup.VariableRepository;
+
 /**
  * add a student to the presence list
  */
@@ -30,7 +32,7 @@ public class PresenceQuery extends AsyncTask<String, Void, String>{
 
     @Override
     protected void onPreExecute(){
-        my_url="http://3.120.246.93/checkpresence/controller/queries.php";
+        my_url= VariableRepository.getInstance().getUrl();
     }
 
     @Override
@@ -38,9 +40,6 @@ public class PresenceQuery extends AsyncTask<String, Void, String>{
         String type=params[0];
         String course=params[1];
         String nfc=params[2];
-        System.out.println("type:"+type);
-        System.out.println("nfc:"+nfc);
-        System.out.println("class:"+course);
 
         try{
             URL url=new URL(my_url);
@@ -66,10 +65,7 @@ public class PresenceQuery extends AsyncTask<String, Void, String>{
             // Read Server Response
             while((line = reader.readLine()) != null) {
                 sb+=line;
-               // break;
             }
-            //sb= sb.substring(1, sb.length()-1);
-            System.out.println(sb);
 
             outputStream.close();
             InputStream inputStream=httpURLConnection.getInputStream();
@@ -96,6 +92,6 @@ public class PresenceQuery extends AsyncTask<String, Void, String>{
     @Override
     protected void onPostExecute(String result) {
         super.onPostExecute(result);
-        //return the name of the student to TagViewer so it can be displayed
+        //return the name of the student so it can be displayed in TagViewer
     }
 }

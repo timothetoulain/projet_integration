@@ -24,7 +24,6 @@ import se.anyro.nfc_reader.setup.VariableRepository;
 
 /**
  * Select the course to create the presence list for
- *
  */
 public class ClassSelectionActivity extends Activity {
 
@@ -44,8 +43,6 @@ public class ClassSelectionActivity extends Activity {
 
         TAG="ClassSelectionActivityLog";
         teacher=VariableRepository.getInstance().getTeacherName();
-
-        System.out.println("teacher="+teacher);
 
         List classList=new ArrayList();
 

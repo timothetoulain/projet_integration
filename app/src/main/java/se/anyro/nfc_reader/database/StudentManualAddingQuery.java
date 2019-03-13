@@ -18,6 +18,7 @@ import java.net.URLEncoder;
 import java.util.ArrayList;
 
 import se.anyro.nfc_reader.setup.EncodingManager;
+import se.anyro.nfc_reader.setup.VariableRepository;
 
 import static se.anyro.nfc_reader.setup.EncodingManager.deleteAccent;
 
@@ -34,7 +35,7 @@ public class StudentManualAddingQuery extends AsyncTask<String, Void, String> {
 
     @Override
     protected void onPreExecute(){
-        my_url="http://3.120.246.93/checkpresence/controller/queries.php";
+        my_url= VariableRepository.getInstance().getUrl();
     }
 
     @Override
@@ -42,10 +43,7 @@ public class StudentManualAddingQuery extends AsyncTask<String, Void, String> {
         String type=params[0];
         String nameStudent=params[1];
 
-        System.out.println("type:"+type);
-        System.out.println("nameStudent:"+nameStudent);
         nameStudent=deleteAccent(nameStudent);
-        System.out.println("nameStudent after conversion:"+nameStudent);
 
         try{
             URL url=new URL(my_url);
@@ -86,8 +84,7 @@ public class StudentManualAddingQuery extends AsyncTask<String, Void, String> {
                 al.add(tab[i]);
             }
             for(int i = 0; i < al.size(); i++){
-                if(al.get(i).equals("number_student")||al.get(i).equals("name_student"))
-                {
+                if(al.get(i).equals("number_student")||al.get(i).equals("name_student")){
                     al.remove(i);
                 }
             }
@@ -96,8 +93,6 @@ public class StudentManualAddingQuery extends AsyncTask<String, Void, String> {
                 result+=al.get(i)+":";
             }
             result= result.substring(0, result.length()-1);
-            System.out.println(result);
-
 
             outputStream.close();
             InputStream inputStream=httpURLConnection.getInputStream();

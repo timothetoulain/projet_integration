@@ -18,6 +18,7 @@ import java.net.URL;
 import java.net.URLEncoder;
 
 import se.anyro.nfc_reader.setup.EncodingManager;
+import se.anyro.nfc_reader.setup.VariableRepository;
 
 /**
  * allow or denied access to the teacher's activities
@@ -33,7 +34,7 @@ public class LoginTeacherQuery extends AsyncTask<String, Void, String>{
 
     @Override
     protected void onPreExecute(){
-        my_url="http://3.120.246.93/checkpresence/controller/queries.php";
+        my_url= VariableRepository.getInstance().getUrl();
     }
 
     @Override
@@ -49,11 +50,7 @@ public class LoginTeacherQuery extends AsyncTask<String, Void, String>{
             httpURLConnection.setRequestMethod("POST");
             httpURLConnection.setDoOutput(true);
 
-           // System.out.println(httpURLConnection.getResponseCode());
             login=login.toLowerCase();
-            System.out.println(login);
-            System.out.println(password);
-            System.out.println(type);
 
             OutputStream outputStream=httpURLConnection.getOutputStream();
 
@@ -76,11 +73,6 @@ public class LoginTeacherQuery extends AsyncTask<String, Void, String>{
                 break;
             }
             sb= EncodingManager.convert(sb);
-
-            System.out.println("line=" + line);
-
-            System.out.println("SB=" + sb);
-
             outputStream.close();
             InputStream inputStream=httpURLConnection.getInputStream();
             inputStream.close();
@@ -106,5 +98,6 @@ public class LoginTeacherQuery extends AsyncTask<String, Void, String>{
     @Override
     protected void onPostExecute(String result) {
         super.onPostExecute(result);
+        //return information if the access is granted or not
     }
 }

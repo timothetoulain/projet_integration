@@ -12,7 +12,9 @@ import android.widget.Button;
 import se.anyro.nfc_reader.setup.DialogInterface;
 import se.anyro.nfc_reader.setup.DialogManager;
 
-
+/**
+ * Menu with all the possible actions for the teacher
+ */
 public class TeacherMenuActivity extends Activity {
 
     private Button mCreateButton;
@@ -89,9 +91,6 @@ public class TeacherMenuActivity extends Activity {
         }
     };
 
-    public void handleDialogClose(DialogInterface dialog) {
-        //do here whatever you want to do on Dialog dismiss
-    }
 
     // SOURCE => https://stackoverflow.com/questions/3141996/android-how-to-override-the-back-button-so-it-doesnt-finish-my-activity
     @Override

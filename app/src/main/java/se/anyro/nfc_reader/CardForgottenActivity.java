@@ -15,6 +15,10 @@ import se.anyro.nfc_reader.database.CardForgottenQuery;
 import se.anyro.nfc_reader.setup.ToastMessage;
 import se.anyro.nfc_reader.setup.VariableRepository;
 
+/**
+ * A student who's forgotten his card is redirected on this activity
+ * so he can register himself manually
+ */
 public class CardForgottenActivity extends Activity {
     private Button mConfirmButton;
     private EditText studentNumberEditText;
@@ -39,7 +43,6 @@ public class CardForgottenActivity extends Activity {
                 } else {
                     String nameRetrieved=query();
                     if(nameRetrieved != null && !nameRetrieved.equals("")){
-                        System.out.println("name retrieved: "+nameRetrieved);
 
                         //we save the student name to display it on the TagViewer activity
                         VariableRepository.getInstance().setStudentName(nameRetrieved);
@@ -49,7 +52,6 @@ public class CardForgottenActivity extends Activity {
                         startActivity(tagViewer);
                     }
                     else{
-                        System.out.println("unknown student");
                         ToastMessage.unknownStudentMessage(getApplicationContext());
                         VariableRepository.getInstance().setStudentName("");
                         Intent tagViewer = new Intent(CardForgottenActivity.this, TagViewer.class);

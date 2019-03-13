@@ -22,6 +22,10 @@ import se.anyro.nfc_reader.database.CardForgottenQuery;
 import se.anyro.nfc_reader.setup.ToastMessage;
 import se.anyro.nfc_reader.setup.VariableRepository;
 
+/**
+ * The list of student that the teacher wants to add manually are displayed on this activity
+ * The teacher can chose one of the student thanks to the radio button
+ */
 public class ResultManualAddingActivity extends Activity {
 
     private String  resultFile = "result.csv";
@@ -49,7 +53,7 @@ public class ResultManualAddingActivity extends Activity {
         verticalCheckBoxLayout.addView(radioGroupStudent);
         checkBoxMap = new HashMap<Integer,String>();
 
-        if (al.isEmpty()) {
+        if (al!=null && al.isEmpty()) {
             Log.i(TAG, "empty");
         } else {
             for (int i = 0; i < al.size(); i+=2) {
@@ -95,7 +99,6 @@ public class ResultManualAddingActivity extends Activity {
                         ToastMessage.studentAlreadyRegistered(getApplicationContext());
                     }
                     Intent resultView = new Intent(ResultManualAddingActivity.this, TagViewer.class);
-                    // VariableRepository.getInstance().incrementStudentCounter();
                     startActivity(resultView);
                 } else {
                     Toast.makeText(getApplicationContext(),R.string.please_check,Toast.LENGTH_SHORT).show();
@@ -128,13 +131,11 @@ public class ResultManualAddingActivity extends Activity {
                 // Parsing the text of the checkBox by using "space" as separator
                 String[] split = checkBoxText.split("\\s+");
                 studentID=split[2];
-                System.out.println("id:"+studentID);
                 studentName=split[0]+" "+split[1];
-                System.out.println("studentName:"+studentName);
             }
         }
     }
-
+    //read and place the csv file data into an array list
     private ArrayList readData(String file) {
         try {
             FileInputStream in = this.openFileInput(file);

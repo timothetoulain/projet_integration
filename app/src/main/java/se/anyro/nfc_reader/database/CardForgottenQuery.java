@@ -18,6 +18,7 @@ import java.net.URL;
 import java.net.URLEncoder;
 
 import se.anyro.nfc_reader.setup.EncodingManager;
+import se.anyro.nfc_reader.setup.VariableRepository;
 
 import static se.anyro.nfc_reader.setup.EncodingManager.deleteAccent;
 
@@ -34,7 +35,7 @@ public class CardForgottenQuery extends AsyncTask<String, Void, String>{
 
     @Override
     protected void onPreExecute(){
-        my_url="http://3.120.246.93/checkpresence/controller/queries.php";
+        my_url= VariableRepository.getInstance().getUrl();
     }
 
     @Override
@@ -44,12 +45,7 @@ public class CardForgottenQuery extends AsyncTask<String, Void, String>{
         String numberStudent=params[2];
         String nameStudent=params[3];
 
-        System.out.println("type:"+type);
-        System.out.println("course:"+course);
-        System.out.println("numberStudent:"+numberStudent);
-        System.out.println("nameStudent:"+nameStudent);
         nameStudent=deleteAccent(nameStudent);
-        System.out.println("nameStudent after conversion:"+nameStudent);
 
         try{
             URL url=new URL(my_url);
@@ -81,8 +77,6 @@ public class CardForgottenQuery extends AsyncTask<String, Void, String>{
             }
             sb= EncodingManager.convert(sb);
 
-            System.out.println("sb= "+sb);
-
             outputStream.close();
             InputStream inputStream=httpURLConnection.getInputStream();
             inputStream.close();
@@ -108,6 +102,6 @@ public class CardForgottenQuery extends AsyncTask<String, Void, String>{
     @Override
     protected void onPostExecute(String result) {
         super.onPostExecute(result);
-        //return the name of the student to TagViewer so it can be displayed
+        //return the name of the student so it can be displayed in TagViewer
     }
 }

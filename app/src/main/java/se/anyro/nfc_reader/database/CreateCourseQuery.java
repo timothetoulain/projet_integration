@@ -18,6 +18,7 @@ import java.net.URL;
 import java.net.URLEncoder;
 
 import se.anyro.nfc_reader.setup.EncodingManager;
+import se.anyro.nfc_reader.setup.VariableRepository;
 
 import static se.anyro.nfc_reader.setup.EncodingManager.deleteAccent;
 
@@ -34,7 +35,7 @@ public class CreateCourseQuery extends AsyncTask<String, Void, String>{
 
     @Override
     protected void onPreExecute(){
-        my_url="http://3.120.246.93/checkpresence/controller/queries.php";
+        my_url= VariableRepository.getInstance().getUrl();
     }
 
     @Override
@@ -43,14 +44,7 @@ public class CreateCourseQuery extends AsyncTask<String, Void, String>{
         String teacher=params[1];
         String course=params[2];
 
-
-
-        System.out.println("type:"+type);
-        System.out.println("teacher:"+teacher);
-        System.out.println("course:"+course);
-
-
-        try{
+         try{
             URL url=new URL(my_url);
             HttpURLConnection httpURLConnection=(HttpURLConnection)url.openConnection();
             httpURLConnection.setRequestMethod("POST");
@@ -79,8 +73,6 @@ public class CreateCourseQuery extends AsyncTask<String, Void, String>{
             }
             sb= EncodingManager.convert(sb);
 
-            System.out.println("sb= "+sb);
-
             outputStream.close();
             InputStream inputStream=httpURLConnection.getInputStream();
             inputStream.close();
@@ -106,6 +98,6 @@ public class CreateCourseQuery extends AsyncTask<String, Void, String>{
     @Override
     protected void onPostExecute(String result) {
         super.onPostExecute(result);
-        //return the name of the student to TagViewer so it can be displayed
+        //return information about the success or not of the query
     }
 }
