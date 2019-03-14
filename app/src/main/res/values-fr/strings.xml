@@ -70,7 +70,9 @@
     <string name="course_not_added">Echec de la création du cours</string>
 
     <string name="message_new_course">Créez un nouveau cours.</string>
+    <string name="button_create">Créer</string>
     <string name="button_create_course">Créer un cours</string>
+
     <string name="message_account">Vous pouvez créer un cours, créer une nouvelle liste de présence ou visualiser vos listes existantes.</string>
 
 

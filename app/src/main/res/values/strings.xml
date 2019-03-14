@@ -70,7 +70,9 @@
    <string name="course_not_added">Course creation failed</string>
 
     <string name="message_new_course">Create a new course.</string>
+    <string name="button_create">Create</string>
     <string name="button_create_course">Create a course</string>
+
     <string name="message_account">You can create a course, create a new presence list or display your existing lists.</string>
 
 

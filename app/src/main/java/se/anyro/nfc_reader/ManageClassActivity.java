@@ -50,6 +50,8 @@ public class ManageClassActivity extends Activity {
                         String result=new CreateCourseQuery(getApplicationContext()).execute(type,teacher,course).get();
                         if(result.equals("1")){
                             ToastMessage.courseCreated(getApplicationContext());
+                            Intent menuActivity = new Intent(ManageClassActivity.this, TeacherMenuActivity.class);
+                            startActivity(menuActivity);
                         }
                         else{
                             ToastMessage.courseNotCreated(getApplicationContext());
@@ -59,8 +61,8 @@ public class ManageClassActivity extends Activity {
                     } catch (ExecutionException e) {
                         e.printStackTrace();
                     }
-                    Intent manageActivity = new Intent(ManageClassActivity.this, ManageClassActivity.class);
-                    startActivity(manageActivity);
+                    /*Intent manageActivity = new Intent(ManageClassActivity.this, ManageClassActivity.class);
+                    startActivity(manageActivity);*/
                 }
                 else{
                     ToastMessage.incompleteFieldMessage(getApplicationContext());

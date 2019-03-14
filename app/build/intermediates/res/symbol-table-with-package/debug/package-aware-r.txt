@@ -916,6 +916,7 @@ string already_registered
 string app_name
 string application_name
 string button_connection
+string button_create
 string button_create_course
 string button_create_list
 string button_date_end
